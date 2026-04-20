@@ -76,7 +76,7 @@
             msgDiv.innerHTML = '<p class="loading"><span class="spinner"></span> A carregar...</p>';
             
             try {
-                const response = await fetch('/dados_app.json');
+               const response = await fetch('/dm-dance-app/dados_app.json');
                 const dados = await response.json();
                 
                 console.log('Dados carregados:', dados);
