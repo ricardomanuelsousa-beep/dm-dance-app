@@ -1,11 +1,9 @@
 const CACHE_NAME = 'dm-dance-v1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/dados_app.json',
-  '/icon-192x192.png',
-  '/icon-512x512.png'
+  '/dm-dance-app/',
+  '/dm-dance-app/index.html',
+  '/dm-dance-app/manifest.json',
+  '/dm-dance-app/dados_app.json'
 ];
 
 self.addEventListener('install', event => {
