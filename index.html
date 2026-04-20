@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>DM Dance School - Pais</title>
+    
+    <!-- PWA Configuration -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="DM Dance">
+    <link rel="apple-touch-icon" href="icon-192x192.png">
+    <meta name="theme-color" content="#8B0000">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #FFE4E1; margin: 0; padding: 20px; min-height: 100vh; }
+        .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 20px; padding: 25px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+        h1 { color: #8B0000; text-align: center; font-size: 28px; margin-bottom: 5px; }
+        .subtitle { text-align: center; color: #666; font-size: 16px; margin-bottom: 30px; }
+        input { width: 100%; padding: 14px; margin: 10px 0; border-radius: 12px; border: 1.5px solid #D4AF37; font-size: 16px; box-sizing: border-box; background: white; }
+        input:focus { outline: none; border-color: #8B0000; }
+        button { width: 100%; padding: 14px; margin: 10px 0; border-radius: 12px; border: none; background-color: #D4AF37; color: white; font-weight: bold; font-size: 16px; cursor: pointer; transition: all 0.3s ease; }
+        button:hover { background-color: #b8942e; }
+        .btn-instalar { background-color: #8B0000; display: none; }
+        .aluno { background: #f9f9f9; margin: 15px 0; padding: 15px; border-radius: 15px; border-left: 4px solid #D4AF37; display: flex; gap: 15px; align-items: center; }
+        .foto { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; background: #DDD; }
+        .info { flex: 1; }
+        .nome { color: #8B0000; font-size: 18px; font-weight: bold; margin-bottom: 5px; }
+        .pago { color: #2e7d32; font-weight: bold; }
+        .pendente { color: #ed6c02; font-weight: bold; }
+        .atraso { color: #d32f2f; font-weight: bold; }
+        .erro { color: #d32f2f; text-align: center; margin: 10px 0; font-weight: bold; }
+        .loading { text-align: center; color: #666; margin: 20px 0; }
+        .modalidades { color: #666; font-size: 14px; margin: 5px 0; }
+        .pagamentos { margin-top: 10px; }
+        .pagamentos ul { list-style: none; padding-left: 0; }
+        .pagamentos li { padding: 4px 0; font-size: 14px; }
+        hr { margin: 15px 0; border: none; border-top: 1px solid #eee; }
+        .footer { text-align: center; margin-top: 20px; color: #999; font-size: 12px; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .spinner { display: inline-block; width: 20px; height: 20px; border: 3px solid #D4AF37; border-top-color: #8B0000; border-radius: 50%; animation: spin 0.8s linear infinite; margin-right: 10px; vertical-align: middle; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="loginScreen">
+            <h1>💃 DM Dance School</h1>
+            <div class="subtitle">Área dos Pais</div>
+            <input type="tel" id="telefone" placeholder="Digite o seu telefone" autocomplete="off">
+            <button onclick="login()">Entrar</button>
+            <button id="btnInstalar" class="btn-instalar" onclick="instalarApp()">📲 Instalar App</button>
+            <div id="mensagem"></div>
+        </div>
+        <div id="dashboardScreen" style="display: none;">
+            <div id="dashboardContent"></div>
+            <hr>
+            <button onclick="logout()" style="background-color: #999;">Sair</button>
+        </div>
+        <div class="footer">DM Dance School &copy; 2024</div>
+    </div>
+
+    <script>
+        let deferredPrompt = null;
+        
+        async function login() {
+            const telefone = document.getElementById('telefone').value.trim();
+            const msgDiv = document.getElementById('mensagem');
+            
+            if (!telefone) {
+                msgDiv.innerHTML = '<p class="erro">⚠️ Digite o telefone!</p>';
+                return;
+            }
+            
+            msgDiv.innerHTML = '<p class="loading"><span class="spinner"></span> A carregar...</p>';
+            
+            try {
+                const response = await fetch('/dados_app.json');
+                const dados = await response.json();
+                
+                console.log('Dados carregados:', dados);
+                console.log('Telefone procurado:', telefone);
+                
+                if (dados[telefone]) {
+                    mostrarDashboard(dados[telefone]);
+                } else {
+                    msgDiv.innerHTML = '<p class="erro">❌ Telefone não encontrado!</p>';
+                }
+            } catch (error) {
+                console.error('Erro detalhado:', error);
+                msgDiv.innerHTML = '<p class="erro">❌ Erro ao carregar dados: ' + error.message + '</p>';
+            }
+        }
+        
+        function mostrarDashboard(filhos) {
+            document.getElementById('loginScreen').style.display = 'none';
+            document.getElementById('dashboardScreen').style.display = 'block';
+            const container = document.getElementById('dashboardContent');
+            container.innerHTML = '';
+            
+            for (const filho of filhos) {
+                const fotoUrl = filho.foto || '';
+                const modalidades = Array.isArray(filho.modalidades) ? filho.modalidades.join(', ') : 'Sem modalidades';
+                
+                container.innerHTML += `
+                    <div class="aluno">
+                        <img class="foto" src="${fotoUrl}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23D4AF37%22%3E%3Cpath d=%22M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z%22/%3E%3C/svg%3E'">
+                        <div class="info">
+                            <div class="nome">📚 ${filho.nome || 'Sem nome'}</div>
+                            <div class="modalidades">💃 ${modalidades}</div>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+        
+        function logout() {
+            document.getElementById('telefone').value = '';
+            document.getElementById('mensagem').innerHTML = '';
+            document.getElementById('dashboardContent').innerHTML = '';
+            document.getElementById('loginScreen').style.display = 'block';
+            document.getElementById('dashboardScreen').style.display = 'none';
+        }
+        
+        function instalarApp() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt = null;
+                document.getElementById('btnInstalar').style.display = 'none';
+            }
+        }
+        
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            document.getElementById('btnInstalar').style.display = 'block';
+        });
+        
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js').catch(err => console.log('SW error:', err));
+        }
+    </script>
+</body>
+</html>

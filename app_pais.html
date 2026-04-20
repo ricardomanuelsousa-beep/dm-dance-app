@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM Dance School - Pais</title>
+    <style>
+        body { font-family: Arial; background: #FFE4E1; padding: 20px; }
+        .container { max-width: 500px; margin: auto; background: white; border-radius: 20px; padding: 20px; }
+        h1 { color: #8B0000; text-align: center; }
+        input, button { width: 100%; padding: 12px; margin: 10px 0; border-radius: 10px; border: 1px solid #D4AF37; }
+        button { background: #D4AF37; color: white; font-weight: bold; cursor: pointer; }
+        .aluno { background: #f9f9f9; margin: 15px 0; padding: 15px; border-radius: 15px; display: flex; gap: 15px; align-items: center; }
+        .foto { width: 60px; height: 60px; border-radius: 30px; object-fit: cover; background: #DDD; }
+        .nome { color: #8B0000; font-weight: bold; }
+        .pago { color: green; }
+        .pendente { color: orange; }
+        .atraso { color: red; }
+        .erro { color: red; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💃 DM Dance School</h1>
+        <div id="login">
+            <input type="tel" id="telefone" placeholder="Telefone">
+            <button onclick="login()">Entrar</button>
+            <div id="msg"></div>
+        </div>
+        <div id="dashboard" style="display:none;">
+            <div id="conteudo"></div>
+            <button onclick="logout()">Sair</button>
+        </div>
+    </div>
+
+    <script>
+        async function login() {
+            const tel = document.getElementById('telefone').value;
+            if (!tel) { document.getElementById('msg').innerHTML = '<p class="erro">Digite o telefone</p>'; return; }
+            document.getElementById('msg').innerHTML = '<p>A carregar...</p>';
+            
+            try {
+                const res = await fetch('dados_app.json');
+                const dados = await res.json();
+                if (dados[tel]) { mostrar(dados[tel]); } 
+                else { document.getElementById('msg').innerHTML = '<p class="erro">Telefone não encontrado</p>'; }
+            } catch(e) { document.getElementById('msg').innerHTML = '<p class="erro">Erro</p>'; }
+        }
+        
+        function mostrar(filhos) {
+            document.getElementById('login').style.display = 'none';
+            document.getElementById('dashboard').style.display = 'block';
+            const div = document.getElementById('conteudo');
+            div.innerHTML = '';
+            
+            for (const f of filhos) {
+                const status = obterStatus(f.pagamentos);
+                div.innerHTML += `
+                    <div class="aluno">
+                        <img class="foto" src="${f.foto || ''}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23D4AF37%22%3E%3Cpath d=%22M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z%22/%3E%3C/svg%3E'">
+                        <div>
+                            <div class="nome">${f.nome}</div>
+                            <div>💃 ${(f.modalidades || []).join(', ') || 'Sem modalidades'}</div>
+                            <div class="${status.classe}">${status.texto}</div>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+        
+        function obterStatus(pag) {
+            const hoje = new Date();
+            const meses = ['setembro','outubro','novembro','dezembro','janeiro','fevereiro','marco','abril','maio','junho','julho'];
+            for (const m of meses) {
+                if (pag[m] === false) return { texto: `❌ Pendente (${m})`, classe: 'pendente' };
+            }
+            return { texto: '✅ Pago', classe: 'pago' };
+        }
+        
+        function logout() {
+            document.getElementById('login').style.display = 'block';
+            document.getElementById('dashboard').style.display = 'none';
+            document.getElementById('telefone').value = '';
+            document.getElementById('msg').innerHTML = '';
+        }
+    </script>
+</body>
+</html>
