@@ -1,7 +1,7 @@
 {
   "name": "DM Dance School",
   "short_name": "DM Dance",
-  "start_url": "/app_pais.html",
+  "start_url": "/dm-dance-app/index.html",
   "display": "standalone",
   "background_color": "#FFE4E1",
   "theme_color": "#8B0000",
