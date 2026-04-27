@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>DM Dance School - Pais</title>
-    <link rel="manifest" href="/dm-dance-app/manifest.json?v=2">
+    <title>DM Dance School</title>
+    <link rel="manifest" href="/dm-dance-app/manifest.json?v=3">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="DM Dance">
@@ -15,14 +15,16 @@
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #FFE4E1; margin: 0; padding: 20px; min-height: 100vh; }
         .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 20px; padding: 25px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
         h1 { color: #8B0000; text-align: center; font-size: 28px; margin-bottom: 5px; }
+        .logo { text-align: center; font-size: 60px; margin-bottom: 10px; }
         .subtitle { text-align: center; color: #666; font-size: 16px; margin-bottom: 30px; }
         input { width: 100%; padding: 14px; margin: 10px 0; border-radius: 12px; border: 1.5px solid #D4AF37; font-size: 16px; box-sizing: border-box; background: white; }
         input:focus { outline: none; border-color: #8B0000; }
         button { width: 100%; padding: 14px; margin: 10px 0; border-radius: 12px; border: none; background-color: #D4AF37; color: white; font-weight: bold; font-size: 16px; cursor: pointer; transition: all 0.3s ease; }
         button:hover { background-color: #b8942e; transform: scale(1.02); }
-        .btn-instalar { background-color: #8B0000; display: none; }
+        .btn-instalar { background-color: #4CAF50; display: none; }
         .aluno { background: #f9f9f9; margin: 15px 0; padding: 15px; border-radius: 15px; border-left: 4px solid #D4AF37; display: flex; gap: 15px; align-items: center; }
         .foto { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; background: #DDD; }
+        .foto-placeholder { width: 60px; height: 60px; border-radius: 50%; background: #DDD; display: flex; align-items: center; justify-content: center; font-size: 30px; }
         .info { flex: 1; }
         .nome { color: #8B0000; font-size: 18px; font-weight: bold; margin-bottom: 5px; }
         .pago { color: #2e7d32; font-weight: bold; }
@@ -38,28 +40,82 @@
         .footer { text-align: center; margin-top: 20px; color: #999; font-size: 12px; }
         @keyframes spin { to { transform: rotate(360deg); } }
         .spinner { display: inline-block; width: 20px; height: 20px; border: 3px solid #D4AF37; border-top-color: #8B0000; border-radius: 50%; animation: spin 0.8s linear infinite; margin-right: 10px; vertical-align: middle; }
+        
+        /* NOVOS ESTILOS PARA NAVEGAÇÃO */
+        .nav { display: flex; justify-content: space-around; background: white; border-radius: 20px 20px 0 0; padding: 10px 0; margin-top: 20px; box-shadow: 0 -4px 10px rgba(0,0,0,0.05); }
+        .nav-item { text-align: center; cursor: pointer; padding: 5px 10px; font-size: 12px; color: #999; transition: all 0.3s; }
+        .nav-item.active { color: #D4AF37; font-weight: bold; }
+        .nav-item span { display: block; font-size: 22px; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .extrato-table { width: 100%; border-collapse: collapse; }
+        .extrato-table td, .extrato-table th { padding: 8px 5px; border-bottom: 1px solid #eee; text-align: left; }
+        .horario-card { background: white; border-radius: 12px; padding: 12px; margin: 8px 0; display: flex; gap: 10px; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .horario-cor { width: 6px; height: 50px; border-radius: 3px; }
+        .comunicado { background: white; border-radius: 12px; padding: 15px; margin: 10px 0; border-left: 4px solid #D4AF37; }
+        .galeria-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; }
+        .galeria-grid img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 8px; background: #f0f0f0; }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- LOGIN SCREEN -->
         <div id="loginScreen">
-            <h1>💃 DM Dance School</h1>
-            <div class="subtitle">Área dos Pais</div>
+            <div class="logo">🩰</div>
+            <h1>DM Dance School</h1>
+            <div class="subtitle">Área do Aluno</div>
             <input type="tel" id="telefone" placeholder="Digite o seu telefone" autocomplete="off">
             <button onclick="login()">Entrar</button>
             <button id="btnInstalar" class="btn-instalar" onclick="instalarApp()">📲 Instalar App</button>
             <div id="mensagem"></div>
         </div>
+
+        <!-- DASHBOARD SCREEN -->
         <div id="dashboardScreen" style="display: none;">
+            <h1>DM Dance School</h1>
             <div id="dashboardContent"></div>
+            
+            <!-- NAVEGAÇÃO INFERIOR -->
+            <div class="nav">
+                <div class="nav-item active" onclick="mostrarTab('alunos', this)">
+                    <span>🏠</span> Início
+                </div>
+                <div class="nav-item" onclick="mostrarTab('extrato', this)">
+                    <span>💰</span> Extrato
+                </div>
+                <div class="nav-item" onclick="mostrarTab('horarios', this)">
+                    <span>📅</span> Horários
+                </div>
+                <div class="nav-item" onclick="mostrarTab('galeria', this)">
+                    <span>🖼️</span> Galeria
+                </div>
+                <div class="nav-item" onclick="mostrarTab('comunicados', this)">
+                    <span>📢</span> Avisos
+                </div>
+            </div>
+            
+            <!-- CONTEÚDO DAS TABS -->
+            <div id="tabAlunos" class="tab-content active"></div>
+            <div id="tabExtrato" class="tab-content"></div>
+            <div id="tabHorarios" class="tab-content"></div>
+            <div id="tabGaleria" class="tab-content"></div>
+            <div id="tabComunicados" class="tab-content"></div>
+            
             <hr>
             <button onclick="logout()" style="background-color: #999;">Sair</button>
         </div>
-        <div class="footer">DM Dance School &copy; 2024</div>
+        <div class="footer">DM Dance School &copy; 2025</div>
     </div>
+
     <script>
         let deferredPrompt = null;
+        let dadosApp = {};
+        let telefoneLogado = '';
+        let alunosDoResponsavel = [];
+        let alunoSelecionado = null;
+
         const mesesNum = { "setembro":9, "outubro":10, "novembro":11, "dezembro":12, "janeiro":1, "fevereiro":2, "marco":3, "abril":4, "maio":5, "junho":6, "julho":7 };
+
         function obterStatusPagamento(pagamentos) {
             const hoje = new Date();
             const mesAtualNum = hoje.getMonth() + 1;
@@ -78,6 +134,7 @@
             }
             return { texto: "✅ Pago", classe: "pago" };
         }
+
         async function login() {
             const telefone = document.getElementById('telefone').value.trim();
             const msgDiv = document.getElementById('mensagem');
@@ -85,17 +142,28 @@
             msgDiv.innerHTML = '<p class="loading"><span class="spinner"></span> A carregar...</p>';
             try {
                 const response = await fetch('/dm-dance-app/dados_app.json');
-                const dados = await response.json();
-                if (dados[telefone]) { mostrarDashboard(dados[telefone]); } 
-                else { msgDiv.innerHTML = '<p class="erro">❌ Telefone não encontrado!</p>'; }
-            } catch (error) { msgDiv.innerHTML = '<p class="erro">❌ Erro ao carregar dados.</p>'; }
+                dadosApp = await response.json();
+                if (dadosApp[telefone]) {
+                    telefoneLogado = telefone;
+                    alunosDoResponsavel = dadosApp[telefone];
+                    alunoSelecionado = alunosDoResponsavel[0];
+                    document.getElementById('loginScreen').style.display = 'none';
+                    document.getElementById('dashboardScreen').style.display = 'block';
+                    carregarAlunos();
+                    if (alunoSelecionado) carregarExtrato();
+                    carregarHorarios();
+                } else { 
+                    msgDiv.innerHTML = '<p class="erro">❌ Telefone não encontrado!</p>'; 
+                }
+            } catch (error) { 
+                msgDiv.innerHTML = '<p class="erro">❌ Erro ao carregar dados.</p>'; 
+            }
         }
-        function mostrarDashboard(filhos) {
-            document.getElementById('loginScreen').style.display = 'none';
-            document.getElementById('dashboardScreen').style.display = 'block';
-            const div = document.getElementById('dashboardContent');
+
+        function carregarAlunos() {
+            const div = document.getElementById('tabAlunos');
             div.innerHTML = '';
-            for (const f of filhos) {
+            for (const f of alunosDoResponsavel) {
                 const status = obterStatusPagamento(f.pagamentos || {});
                 const fotoUrl = f.foto || '';
                 const modalidades = (f.modalidades || []).join(', ') || 'Sem modalidades';
@@ -104,28 +172,151 @@
                     pagHtml += `<li class="${pago ? 'pago' : 'pendente'}">${mes}: ${pago ? '✅ Pago' : '❌ Pendente'}</li>`;
                 }
                 div.innerHTML += `
-                    <div class="aluno">
-                        <img class="foto" src="${fotoUrl}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23D4AF37%22%3E%3Cpath d=%22M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z%22/%3E%3C/svg%3E'">
+                    <div class="aluno" onclick="selecionarAluno(${f.id})" style="cursor:pointer;">
+                        <img class="foto" src="${fotoUrl}" 
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                             crossorigin="anonymous">
+                        <div class="foto-placeholder" style="display:${fotoUrl ? 'none' : 'flex'};">👤</div>
                         <div class="info">
                             <div class="nome">📚 ${f.nome}</div>
                             <div class="modalidades">💃 ${modalidades}</div>
-                            <div class="pagamentos"><strong>📅 Mensalidades:</strong><ul>${pagHtml || '<li>Sem registo</li>'}</ul></div>
                             <div class="${status.classe}">${status.texto}</div>
                         </div>
                     </div>
                 `;
             }
         }
+
+        function selecionarAluno(id) {
+            alunoSelecionado = alunosDoResponsavel.find(a => a.id === id);
+            if (alunoSelecionado) {
+                carregarExtrato();
+                mostrarTab('extrato', document.querySelector('.nav-item:nth-child(2)'));
+            }
+        }
+
+        function carregarExtrato() {
+            const div = document.getElementById('tabExtrato');
+            if (!alunoSelecionado) {
+                div.innerHTML = '<p style="text-align:center;color:#999;">Selecione um aluno</p>';
+                return;
+            }
+            const meses = [
+                ["setembro","Setembro"],["outubro","Outubro"],["novembro","Novembro"],
+                ["dezembro","Dezembro"],["janeiro","Janeiro"],["fevereiro","Fevereiro"],
+                ["marco","Março"],["abril","Abril"],["maio","Maio"],
+                ["junho","Junho"],["julho","Julho"]
+            ];
+            let html = `<h3 style="color:#8B0000;">💰 Extrato: ${alunoSelecionado.nome}</h3>`;
+            html += '<table class="extrato-table"><tr><th>Mês</th><th>Valor</th><th>Status</th></tr>';
+            for (const [cod, nome] of meses) {
+                const pago = alunoSelecionado.pagamentos && alunoSelecionado.pagamentos[cod];
+                html += `<tr>
+                    <td>${nome}</td>
+                    <td>-</td>
+                    <td class="${pago ? 'pago' : 'pendente'}">${pago ? '✅ Pago' : '❌ Pendente'}</td>
+                </tr>`;
+            }
+            html += '</table>';
+            div.innerHTML = html;
+        }
+
+        function carregarHorarios() {
+            const div = document.getElementById('tabHorarios');
+            const turmas = [
+                {nome:"Babies", horario:"17:30-18:15", dias:"2ª e 5ª", prof:"Prof. Diana", sala:"Sala 1", cor:"#FF6B6B"},
+                {nome:"Kids 1", horario:"18:15-19:15", dias:"2ª e 5ª", prof:"Prof. Diana", sala:"Sala 1", cor:"#4ECDC4"},
+                {nome:"Kids 2", horario:"18:15-19:15", dias:"3ª e 6ª", prof:"Prof. Ricardo", sala:"Sala 2", cor:"#45B7D1"},
+                {nome:"Teens", horario:"19:15-20:30", dias:"2ª e 5ª", prof:"Prof. Ricardo", sala:"Sala 1", cor:"#96CEB4"},
+                {nome:"Major", horario:"19:15-20:30", dias:"3ª e 6ª", prof:"Prof. Diana", sala:"Sala 2", cor:"#FFEAA7"},
+                {nome:"Ballet", horario:"10:00-11:00", dias:"Sábado", prof:"Profª. Sofia", sala:"Sala 3", cor:"#DDA0DD"},
+                {nome:"Contemporâneo", horario:"11:00-12:00", dias:"Sábado", prof:"Profª. Sofia", sala:"Sala 3", cor:"#98D8C8"},
+                {nome:"Adultas", horario:"20:30-21:30", dias:"3ª e 6ª", prof:"Prof. Ricardo", sala:"Sala 1", cor:"#F7DC6F"},
+                {nome:"Competição", horario:"15:00-17:00", dias:"Sábado", prof:"Prof. Diana", sala:"Sala 1", cor:"#E74C3C"},
+            ];
+            let html = '<h3 style="color:#8B0000;">📅 Horários</h3>';
+            for (const t of turmas) {
+                html += `
+                    <div class="horario-card">
+                        <div class="horario-cor" style="background:${t.cor};"></div>
+                        <div>
+                            <strong style="color:#8B0000;">${t.nome}</strong><br>
+                            <small>🕐 ${t.horario} | ${t.dias}</small><br>
+                            <small>👩‍🏫 ${t.prof} | 📍 ${t.sala}</small>
+                        </div>
+                    </div>
+                `;
+            }
+            div.innerHTML = html;
+        }
+
+        function carregarGaleria() {
+            const div = document.getElementById('tabGaleria');
+            // Galeria simples - pode ser expandida com fotos reais
+            div.innerHTML = '<h3 style="color:#8B0000;">🖼️ Galeria</h3><p style="text-align:center;color:#999;">Brevemente disponível</p>';
+        }
+
+        function carregarComunicados() {
+            const div = document.getElementById('tabComunicados');
+            div.innerHTML = `
+                <h3 style="color:#8B0000;">📢 Comunicados</h3>
+                <div class="comunicado">
+                    <strong>🌟 Bem-vindos ao novo ano letivo!</strong><br>
+                    <small>As aulas começam em setembro. Consulta os horários disponíveis.</small>
+                </div>
+                <div class="comunicado">
+                    <strong>🎉 Festa de Final de Ano</strong><br>
+                    <small>Reserva a data: 15 de julho. Mais informações em breve!</small>
+                </div>
+            `;
+        }
+
+        function mostrarTab(tab, el) {
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+            document.getElementById('tab' + tab.charAt(0).toUpperCase() + tab.slice(1)).classList.add('active');
+            if (el) el.classList.add('active');
+            
+            if (tab === 'extrato') carregarExtrato();
+            if (tab === 'galeria') carregarGaleria();
+            if (tab === 'comunicados') carregarComunicados();
+        }
+
         function logout() {
             document.getElementById('telefone').value = '';
             document.getElementById('mensagem').innerHTML = '';
-            document.getElementById('dashboardContent').innerHTML = '';
             document.getElementById('loginScreen').style.display = 'block';
             document.getElementById('dashboardScreen').style.display = 'none';
+            telefoneLogado = '';
+            alunosDoResponsavel = [];
+            alunoSelecionado = null;
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.getElementById('tabAlunos').classList.add('active');
+            document.querySelectorAll('.nav-item').forEach((n, i) => n.classList.toggle('active', i === 0));
         }
-        function instalarApp() { if (deferredPrompt) { deferredPrompt.prompt(); deferredPrompt = null; document.getElementById('btnInstalar').style.display = 'none'; } }
-        window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); deferredPrompt = e; document.getElementById('btnInstalar').style.display = 'block'; });
-        if ('serviceWorker' in navigator) { navigator.serviceWorker.register('/dm-dance-app/service-worker.js').catch(err => console.log(err)); }
+
+        function instalarApp() { 
+            if (deferredPrompt) { 
+                deferredPrompt.prompt(); 
+                deferredPrompt = null; 
+                document.getElementById('btnInstalar').style.display = 'none'; 
+            } 
+        }
+
+        window.addEventListener('beforeinstallprompt', (e) => { 
+            e.preventDefault(); 
+            deferredPrompt = e; 
+            document.getElementById('btnInstalar').style.display = 'block'; 
+        });
+
+        if ('serviceWorker' in navigator) { 
+            navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=3')
+                .then(reg => {
+                    console.log('SW registado!');
+                    reg.update();
+                })
+                .catch(err => console.log('SW erro:', err)); 
+        }
     </script>
 </body>
 </html>
