@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="/dm-dance-app/manifest.json?v=5">
+    <link rel="manifest" href="/dm-dance-app/manifest.json?v=6">
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -152,32 +152,19 @@
         .horario-card {
             background: white; border-radius: var(--border-radius); padding: 12px 14px;
             margin: 6px 0; display: flex; gap: 12px; align-items: center; box-shadow: var(--sombra);
-            transition: all 0.3s; border-left: 4px solid transparent;
         }
         .horario-card.destaque {
-            border-left: 4px solid #f0f0f0;
-            background: #fffdf5;
-            box-shadow: 0 2px 12px rgba(212, 175, 55, 0.2);
-        }
-        .horario-card.destaque::after {
-            content: "⭐";
-            position: absolute;
-            right: 10px;
-            font-size: 16px;
+            border-left: 4px solid #D4AF37;
+            background: #fce4e4;
+            box-shadow: 0 2px 12px rgba(139, 0, 0, 0.2);
         }
         .horario-cor { width: 6px; height: 45px; border-radius: 3px; flex-shrink: 0; }
         .horario-info { flex: 1; }
         .horario-info strong { color: var(--cor-nome); font-size: 14px; }
         .horario-info small { color: #888; font-size: 11px; display: block; margin-top: 2px; }
         .horario-destaque-badge {
-            display: inline-block;
-            background: #D4AF37;
-            color: white;
-            font-size: 9px;
-            padding: 2px 8px;
-            border-radius: 10px;
-            margin-left: 5px;
-            font-weight: 600;
+            display: inline-block; background: #D4AF37; color: white;
+            font-size: 9px; padding: 2px 8px; border-radius: 10px; margin-left: 5px; font-weight: 600;
         }
         .dia-header {
             color: #4a3000; font-size: 14px; margin-bottom: 8px; padding: 8px 12px;
@@ -192,6 +179,67 @@
         .comunicado h4 { color: var(--cor-nome); margin-bottom: 5px; }
         .comunicado p { color: #666; font-size: 13px; }
         .comunicado .data { color: #aaa; font-size: 11px; margin-top: 5px; }
+        
+        /* GALERIA */
+        .galeria-evento {
+            margin-bottom: 25px;
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 15px;
+            box-shadow: var(--sombra);
+        }
+        .galeria-evento h4 {
+            color: var(--cor-nome);
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .galeria-evento .evento-data {
+            color: #888;
+            font-size: 12px;
+            margin-bottom: 12px;
+        }
+        .galeria-cartaz {
+            width: 100%;
+            aspect-ratio: 1/1.4;
+            max-height: 400px;
+            background: #f5f5f5;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-bottom: 12px;
+            border: 2px dashed #ddd;
+        }
+        .galeria-cartaz img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .galeria-cartaz .placeholder-text {
+            color: #bbb;
+            text-align: center;
+            font-size: 13px;
+            padding: 20px;
+        }
+        .galeria-fotos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+        }
+        .galeria-fotos img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 8px;
+            background: #f0f0f0;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .galeria-fotos img:active {
+            transform: scale(1.5);
+            z-index: 10;
+        }
         
         .nav {
             display: flex; justify-content: space-around; background: white;
@@ -355,10 +403,7 @@
                 if (dadosApp[telefone]) {
                     const alunos = dadosApp[telefone];
                     
-                    // Mostrar banner se houver atrasos
                     mostrarBannerAviso(alunos);
-                    
-                    // Aguardar 2 segundos para o utilizador ver o banner
                     await new Promise(resolve => setTimeout(resolve, 2000));
                     
                     telefoneLogado = telefone;
@@ -371,7 +416,6 @@
                     carregarAlunos();
                     if (alunoSelecionado) carregarExtrato();
                     carregarHorarios();
-                    carregarComunicados();
                 } else { 
                     msgDiv.innerHTML = '<p class="erro">❌ Telefone não encontrado!</p>'; 
                 }
@@ -473,13 +517,11 @@
         function carregarHorarios() {
             const div = document.getElementById('tabHorarios');
             
-            // Obter modalidades do aluno selecionado
             let modalidadesAluno = [];
             if (alunoSelecionado && alunoSelecionado.modalidades) {
                 modalidadesAluno = alunoSelecionado.modalidades.map(m => m.toLowerCase().trim());
             }
             
-            // Função para verificar se a aula é do aluno
             function ehDoAluno(turma, nome) {
                 const texto = (turma + ' ' + nome).toLowerCase();
                 for (const mod of modalidadesAluno) {
@@ -491,56 +533,38 @@
             }
             
             const dias = [
-                {
-                    dia: "Segunda-Feira",
-                    aulas: [
-                        {hora:"18:00-19:00", nome:"Dance Fusion 1", turma:"Babies", cor:"#FF6B6B"},
-                        {hora:"19:00-20:00", nome:"Dance Fusion 2", turma:"Kids 1", cor:"#4ECDC4"},
-                        {hora:"20:00-21:00", nome:"Dance Fusion 6", turma:"Adultos", cor:"#F7DC6F"},
-                    ]
-                },
-                {
-                    dia: "Terça-Feira",
-                    aulas: [
-                        {hora:"17:00-18:00", nome:"Competição Solos", turma:"Competição", cor:"#E74C3C"},
-                        {hora:"18:00-19:00", nome:"Contemporâneo 1", turma:"Contemporâneo", cor:"#98D8C8"},
-                        {hora:"19:00-20:00", nome:"Dance Fusion 5", turma:"Major", cor:"#FFEAA7"},
-                        {hora:"20:00-21:00", nome:"Competição Urbanas", turma:"Competição", cor:"#E74C3C"},
-                    ]
-                },
-                {
-                    dia: "Quarta-Feira",
-                    aulas: [
-                        {hora:"18:00-19:00", nome:"Dance Fusion 3", turma:"Kids 2", cor:"#45B7D1"},
-                        {hora:"19:00-20:00", nome:"Dance Fusion 4", turma:"Teens", cor:"#96CEB4"},
-                    ]
-                },
-                {
-                    dia: "Quinta-Feira",
-                    aulas: [
-                        {hora:"18:00-19:00", nome:"Dance Fusion 1", turma:"Babies", cor:"#FF6B6B"},
-                        {hora:"19:00-20:00", nome:"Dance Fusion 2", turma:"Kids 1", cor:"#4ECDC4"},
-                        {hora:"20:00-21:00", nome:"Dance Fusion 6", turma:"Adultos", cor:"#F7DC6F"},
-                    ]
-                },
-                {
-                    dia: "Sexta-Feira",
-                    aulas: [
-                        {hora:"18:00-19:00", nome:"Dance Fusion 3", turma:"Kids 2", cor:"#45B7D1"},
-                        {hora:"19:00-20:00", nome:"Dance Fusion 4", turma:"Teens", cor:"#96CEB4"},
-                    ]
-                },
-                {
-                    dia: "Sábado",
-                    aulas: [
-                        {hora:"10:30-12:00", nome:"Dance Fusion 5", turma:"Major", cor:"#FFEAA7"},
-                        {hora:"12:00-14:00", nome:"Competição Urbanas", turma:"Competição", cor:"#E74C3C"},
-                        {hora:"14:00-15:30", nome:"Contemporâneo 2", turma:"Contemporâneo", cor:"#98D8C8"},
-                        {hora:"15:30-16:15", nome:"Ballet Pré-Primary", turma:"Ballet", cor:"#DDA0DD"},
-                        {hora:"16:15-17:00", nome:"Ballet Primary", turma:"Ballet", cor:"#DDA0DD"},
-                        {hora:"17:00-18:00", nome:"Ensaios", turma:"Competição", cor:"#E74C3C"},
-                    ]
-                },
+                { dia: "Segunda-Feira", aulas: [
+                    {hora:"18:00-19:00", nome:"Dance Fusion 1", turma:"Babies", cor:"#FF6B6B"},
+                    {hora:"19:00-20:00", nome:"Dance Fusion 2", turma:"Kids 1", cor:"#4ECDC4"},
+                    {hora:"20:00-21:00", nome:"Dance Fusion 6", turma:"Adultos", cor:"#F7DC6F"},
+                ]},
+                { dia: "Terça-Feira", aulas: [
+                    {hora:"17:00-18:00", nome:"Competição Solos", turma:"Competição", cor:"#E74C3C"},
+                    {hora:"18:00-19:00", nome:"Contemporâneo 1", turma:"Contemporâneo", cor:"#98D8C8"},
+                    {hora:"19:00-20:00", nome:"Dance Fusion 5", turma:"Major", cor:"#FFEAA7"},
+                    {hora:"20:00-21:00", nome:"Competição Urbanas", turma:"Competição", cor:"#E74C3C"},
+                ]},
+                { dia: "Quarta-Feira", aulas: [
+                    {hora:"18:00-19:00", nome:"Dance Fusion 3", turma:"Kids 2", cor:"#45B7D1"},
+                    {hora:"19:00-20:00", nome:"Dance Fusion 4", turma:"Teens", cor:"#96CEB4"},
+                ]},
+                { dia: "Quinta-Feira", aulas: [
+                    {hora:"18:00-19:00", nome:"Dance Fusion 1", turma:"Babies", cor:"#FF6B6B"},
+                    {hora:"19:00-20:00", nome:"Dance Fusion 2", turma:"Kids 1", cor:"#4ECDC4"},
+                    {hora:"20:00-21:00", nome:"Dance Fusion 6", turma:"Adultos", cor:"#F7DC6F"},
+                ]},
+                { dia: "Sexta-Feira", aulas: [
+                    {hora:"18:00-19:00", nome:"Dance Fusion 3", turma:"Kids 2", cor:"#45B7D1"},
+                    {hora:"19:00-20:00", nome:"Dance Fusion 4", turma:"Teens", cor:"#96CEB4"},
+                ]},
+                { dia: "Sábado", aulas: [
+                    {hora:"10:30-12:00", nome:"Dance Fusion 5", turma:"Major", cor:"#FFEAA7"},
+                    {hora:"12:00-14:00", nome:"Competição Urbanas", turma:"Competição", cor:"#E74C3C"},
+                    {hora:"14:00-15:30", nome:"Contemporâneo 2", turma:"Contemporâneo", cor:"#98D8C8"},
+                    {hora:"15:30-16:15", nome:"Ballet Pré-Primary", turma:"Ballet", cor:"#DDA0DD"},
+                    {hora:"16:15-17:00", nome:"Ballet Primary", turma:"Ballet", cor:"#DDA0DD"},
+                    {hora:"17:00-18:00", nome:"Ensaios", turma:"Competição", cor:"#E74C3C"},
+                ]},
             ];
             
             let html = '<h3 style="color:#8B0000;margin-bottom:5px;">📅 Horários</h3>';
@@ -551,25 +575,66 @@
             }
             
             for (const d of dias) {
-                html += `<div style="margin-bottom:18px;">
-                    <div class="dia-header">📅 ${d.dia}</div>`;
-                
+                html += `<div style="margin-bottom:18px;"><div class="dia-header">📅 ${d.dia}</div>`;
                 for (const a of d.aulas) {
                     const destaque = modalidadesAluno.length > 0 && ehDoAluno(a.turma, a.nome);
-                    html += `
-                        <div class="horario-card${destaque ? ' destaque' : ''}">
-                            <div class="horario-cor" style="background:${a.cor};"></div>
-                            <div class="horario-info">
-                                <strong>${a.nome}${destaque ? ' <span class="horario-destaque-badge">⭐ Sua aula</span>' : ''}</strong>
-                                <small>🕐 ${a.hora} | ${a.turma}</small>
-                            </div>
+                    html += `<div class="horario-card${destaque ? ' destaque' : ''}">
+                        <div class="horario-cor" style="background:${a.cor};"></div>
+                        <div class="horario-info">
+                            <strong>${a.nome}${destaque ? ' <span class="horario-destaque-badge">⭐ Sua aula</span>' : ''}</strong>
+                            <small>🕐 ${a.hora} | ${a.turma}</small>
                         </div>
-                    `;
+                    </div>`;
                 }
                 html += '</div>';
             }
-            
             div.innerHTML = html;
+        }
+
+        function carregarGaleria() {
+            const div = document.getElementById('tabGaleria');
+            
+            // As fotos devem ser colocadas na pasta: dm-dance-app/galeria/alice/
+            // Nome das fotos: foto1.jpg, foto2.jpg, foto3.jpg ... etc
+            const pastaFotos = '/dm-dance-app/galeria/alice/';
+            const numFotos = 12; // Número total de fotos
+            
+            let fotosHtml = '';
+            for (let i = 1; i <= numFotos; i++) {
+                fotosHtml += `<img src="${pastaFotos}foto${i}.jpg" 
+                    onerror="this.style.display='none';" 
+                    loading="lazy"
+                    alt="Foto ${i}">`;
+            }
+            
+            div.innerHTML = `
+                <h3 style="color:#8B0000;margin-bottom:10px;">🖼️ Galeria</h3>
+                
+                <div class="galeria-evento">
+                    <h4>📸 Era Uma Vez Alice</h4>
+                    <div class="evento-data">22 de Fevereiro de 2026</div>
+                    
+                    <!-- Cartaz (espaço para colocar a imagem) -->
+                    <div class="galeria-cartaz" id="cartazAlice">
+                        <img src="/dm-dance-app/galeria/alice/cartaz.jpg" 
+                             alt="Cartaz Era Uma Vez Alice"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="placeholder-text" style="display:none;">
+                            🎭<br>Espaço para o cartaz<br>
+                            <small>Coloque o ficheiro: galeria/alice/cartaz.jpg</small>
+                        </div>
+                    </div>
+                    
+                    <!-- Grelha de fotos -->
+                    <div class="galeria-fotos">
+                        ${fotosHtml}
+                    </div>
+                    
+                    <p style="color:#aaa;font-size:10px;margin-top:10px;text-align:center;">
+                        Coloque as fotos em: dm-dance-app/galeria/alice/foto1.jpg ... foto${numFotos}.jpg
+                    </p>
+                </div>
+            `;
         }
 
         function carregarComunicados() {
@@ -588,7 +653,7 @@
                 </div>
                 <div class="comunicado">
                     <h4>📸 Fotos das Aulas</h4>
-                    <p>As fotos das aulas estão disponíveis na galeria.</p>
+                    <p>As fotos do evento "Era Uma Vez Alice" já estão na galeria!</p>
                     <div class="data">01/03/2025</div>
                 </div>
             `;
@@ -599,10 +664,8 @@
             document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
             
             const tabMap = {
-                'alunos': 'tabAlunos',
-                'extrato': 'tabExtrato',
-                'horarios': 'tabHorarios',
-                'galeria': 'tabGaleria',
+                'alunos': 'tabAlunos', 'extrato': 'tabExtrato',
+                'horarios': 'tabHorarios', 'galeria': 'tabGaleria',
                 'comunicados': 'tabComunicados'
             };
             
@@ -611,6 +674,8 @@
             
             if (tab === 'horarios') carregarHorarios();
             if (tab === 'extrato' && alunoSelecionado) carregarExtrato();
+            if (tab === 'galeria') carregarGaleria();
+            if (tab === 'comunicados') carregarComunicados();
         }
 
         function logout() {
@@ -622,32 +687,19 @@
             telefoneLogado = '';
             alunosDoResponsavel = [];
             alunoSelecionado = null;
-            
             document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
             document.getElementById('tabAlunos').classList.add('active');
             document.querySelectorAll('.nav-item').forEach((n, i) => n.classList.toggle('active', i === 0));
         }
 
         function instalarApp() { 
-            if (deferredPrompt) { 
-                deferredPrompt.prompt(); 
-                deferredPrompt = null; 
-                document.getElementById('btnInstalar').style.display = 'none'; 
-            } 
+            if (deferredPrompt) { deferredPrompt.prompt(); deferredPrompt = null; document.getElementById('btnInstalar').style.display = 'none'; } 
         }
-
         window.addEventListener('beforeinstallprompt', (e) => { 
-            if (!isIOS) {
-                e.preventDefault(); 
-                deferredPrompt = e; 
-                document.getElementById('btnInstalar').style.display = 'block'; 
-            }
+            if (!isIOS) { e.preventDefault(); deferredPrompt = e; document.getElementById('btnInstalar').style.display = 'block'; }
         });
-
         if ('serviceWorker' in navigator) { 
-            navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=5')
-                .then(reg => reg.update())
-                .catch(err => console.log('SW:', err)); 
+            navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=6').then(reg => reg.update()).catch(err => console.log('SW:', err)); 
         }
     </script>
 </body>
