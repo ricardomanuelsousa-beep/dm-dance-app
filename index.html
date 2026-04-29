@@ -76,7 +76,7 @@
             width: 90px;
             height: 90px;
             margin: 0 auto 15px;
-            background: white;
+            background: transparent;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -84,9 +84,21 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
         
+        .logo-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
         .logo-emoji {
             font-size: 45px;
             line-height: 1;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .header h1 {
@@ -229,7 +241,6 @@
         #dashboardScreen {
             display: none;
             flex: 1;
-            display: none;
             flex-direction: column;
         }
         
@@ -481,7 +492,6 @@
             padding: 8px 5px 12px;
             border-top: 1px solid #f0f0f0;
             margin-top: auto;
-            /* iOS safe area */
             padding-bottom: calc(12px + env(safe-area-inset-bottom));
         }
         
@@ -550,11 +560,9 @@
         ::-webkit-scrollbar {
             width: 4px;
         }
-        
         ::-webkit-scrollbar-track {
             background: transparent;
         }
-        
         ::-webkit-scrollbar-thumb {
             background: #ddd;
             border-radius: 2px;
@@ -566,7 +574,11 @@
         <!-- HEADER COM LOGO -->
         <div class="header">
             <div class="logo-container">
-                <span class="logo-emoji">🩰</span>
+                <img src="/dm-dance-app/logo_dm.png" 
+                     alt="DM Dance School" 
+                     class="logo-img"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <span class="logo-emoji" style="display:none;">🩰</span>
             </div>
             <h1>DM Dance School</h1>
             <div class="subtitle">Escola de Dança</div>
@@ -580,10 +592,8 @@
             <input type="tel" id="telefone" placeholder="Digite o seu telefone" autocomplete="off" inputmode="numeric">
             <button onclick="login()">Entrar</button>
             
-            <!-- Botão Instalar (Android) -->
             <button id="btnInstalar" class="btn-instalar" onclick="instalarApp()">📲 Instalar App</button>
             
-            <!-- Instruções iOS -->
             <div id="instrucoesIOS" class="instrucoes-ios">
                 <div class="titulo">📱 Como instalar no iPhone</div>
                 <div class="passo">
@@ -610,14 +620,12 @@
                 <button class="btn-logout" onclick="logout()" title="Sair">🚪</button>
             </div>
             
-            <!-- CONTEÚDO DAS TABS -->
             <div id="tabAlunos" class="tab-content active"></div>
             <div id="tabExtrato" class="tab-content"></div>
             <div id="tabHorarios" class="tab-content"></div>
             <div id="tabGaleria" class="tab-content"></div>
             <div id="tabComunicados" class="tab-content"></div>
             
-            <!-- NAVEGAÇÃO INFERIOR -->
             <div class="nav">
                 <div class="nav-item active" onclick="mostrarTab('alunos', this)">
                     <span>🏠</span> Início
@@ -641,7 +649,6 @@
     </div>
 
     <script>
-        // ESTADO
         let deferredPrompt = null;
         let dadosApp = {};
         let telefoneLogado = '';
@@ -654,13 +661,11 @@
             "maio":5, "junho":6, "julho":7 
         };
 
-        // DETETAR iOS
         const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
         if (isIOS) {
             document.getElementById('instrucoesIOS').style.display = 'block';
         }
 
-        // STATUS PAGAMENTO
         function obterStatusPagamento(pagamentos) {
             const hoje = new Date();
             const mesAtual = hoje.getMonth() + 1;
@@ -682,7 +687,6 @@
             return { texto: "✅ Em dia", classe: "pago" };
         }
 
-        // LOGIN
         async function login() {
             const telefone = document.getElementById('telefone').value.trim();
             const msgDiv = document.getElementById('mensagem');
@@ -718,7 +722,6 @@
             }
         }
 
-        // CARREGAR ALUNOS
         function carregarAlunos() {
             const div = document.getElementById('tabAlunos');
             div.innerHTML = '';
@@ -745,7 +748,6 @@
             }
         }
 
-        // SELECIONAR ALUNO
         function selecionarAluno(id) {
             alunoSelecionado = alunosDoResponsavel.find(a => a.id === id);
             if (alunoSelecionado) {
@@ -754,7 +756,6 @@
             }
         }
 
-        // CARREGAR EXTRATO
         function carregarExtrato() {
             const div = document.getElementById('tabExtrato');
             
@@ -812,7 +813,6 @@
             document.getElementById('totalPendente').textContent = totalPendente.toFixed(2) + ' €';
         }
 
-        // CARREGAR HORÁRIOS
         function carregarHorarios() {
             const div = document.getElementById('tabHorarios');
             const turmas = [
@@ -846,7 +846,6 @@
             div.innerHTML = html;
         }
 
-        // CARREGAR COMUNICADOS
         function carregarComunicados() {
             const div = document.getElementById('tabComunicados');
             div.innerHTML = `
@@ -869,7 +868,6 @@
             `;
         }
 
-        // MOSTRAR TAB
         function mostrarTab(tab, el) {
             document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
             document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
@@ -888,7 +886,6 @@
             if (tab === 'extrato' && alunoSelecionado) carregarExtrato();
         }
 
-        // LOGOUT
         function logout() {
             document.getElementById('telefone').value = '';
             document.getElementById('mensagem').innerHTML = '';
@@ -903,7 +900,6 @@
             document.querySelectorAll('.nav-item').forEach((n, i) => n.classList.toggle('active', i === 0));
         }
 
-        // INSTALAR APP (Android)
         function instalarApp() { 
             if (deferredPrompt) { 
                 deferredPrompt.prompt(); 
@@ -920,7 +916,6 @@
             }
         });
 
-        // SERVICE WORKER
         if ('serviceWorker' in navigator) { 
             navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=4')
                 .then(reg => reg.update())
