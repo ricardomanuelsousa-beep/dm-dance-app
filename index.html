@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="/dm-dance-app/manifest.json?v=4">
+    <link rel="manifest" href="/dm-dance-app/manifest.json?v=5">
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -60,7 +60,6 @@
             flex-direction: column;
         }
         
-        /* HEADER DOURADO */
         .header {
             background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 40%, #8B6914 100%);
             padding: 30px 25px 25px;
@@ -105,7 +104,6 @@
             color: #4a3000;
         }
         
-        /* LOGIN */
         #loginScreen {
             padding: 30px 25px;
             flex: 1;
@@ -183,7 +181,6 @@
             50% { box-shadow: 0 4px 25px rgba(76, 175, 80, 0.5); }
         }
         
-        /* BANNER DE AVISO MENSALIDADES */
         .banner-aviso {
             background: #fff3cd;
             border: 2px solid #ffc107;
@@ -213,7 +210,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
         
-        /* INSTRUÇÕES iOS */
         .instrucoes-ios {
             display: none;
             background: #f0f7ff;
@@ -253,7 +249,6 @@
             flex-shrink: 0;
         }
         
-        /* DASHBOARD */
         #dashboardScreen {
             display: none;
             flex: 1;
@@ -285,7 +280,6 @@
             box-shadow: none;
         }
         
-        /* TABS */
         .tab-content {
             display: none;
             padding: 0 25px 20px;
@@ -297,7 +291,6 @@
             display: block;
         }
         
-        /* ALUNOS */
         .aluno {
             background: white;
             margin: 12px 0;
@@ -359,7 +352,6 @@
         .pendente { color: var(--cor-pendente); font-weight: 600; font-size: 14px; }
         .atraso { color: var(--cor-atraso); font-weight: 600; font-size: 14px; }
         
-        /* EXTRATO */
         .extrato-header {
             display: flex;
             align-items: center;
@@ -435,12 +427,11 @@
             margin-top: 5px;
         }
         
-        /* HORÁRIOS */
         .horario-card {
             background: white;
             border-radius: var(--border-radius);
-            padding: 14px;
-            margin: 10px 0;
+            padding: 12px 14px;
+            margin: 6px 0;
             display: flex;
             gap: 12px;
             align-items: center;
@@ -449,24 +440,33 @@
         
         .horario-cor {
             width: 6px;
-            height: 50px;
+            height: 45px;
             border-radius: 3px;
             flex-shrink: 0;
         }
         
         .horario-info strong {
             color: var(--cor-nome);
-            font-size: 15px;
+            font-size: 14px;
         }
         
         .horario-info small {
             color: #888;
-            font-size: 12px;
+            font-size: 11px;
             display: block;
             margin-top: 2px;
         }
         
-        /* COMUNICADOS */
+        .dia-header {
+            color: #4a3000;
+            font-size: 14px;
+            margin-bottom: 8px;
+            padding: 8px 12px;
+            background: #fff9e6;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+        
         .comunicado {
             background: white;
             border-radius: var(--border-radius);
@@ -496,7 +496,6 @@
             margin-top: 5px;
         }
         
-        /* NAVEGAÇÃO */
         .nav {
             display: flex;
             justify-content: space-around;
@@ -581,7 +580,6 @@
 </head>
 <body>
     <div class="container">
-        <!-- HEADER DOURADO COM LOGO -->
         <div class="header">
             <div class="logo-container">
                 <img src="/dm-dance-app/logo_dm.png" 
@@ -593,14 +591,12 @@
             <h1>DM Dance School</h1>
         </div>
 
-        <!-- LOGIN SCREEN -->
         <div id="loginScreen">
             <div class="login-title">Área do Aluno</div>
             <div class="login-subtitle">Faça login com o seu telefone</div>
             
             <input type="tel" id="telefone" placeholder="Digite o seu telefone" autocomplete="off" inputmode="numeric">
             
-            <!-- BANNER DE AVISO DE MENSALIDADES -->
             <div id="bannerAviso" class="banner-aviso">
                 <div class="titulo-aviso">⚠️ Mensalidades em Atraso</div>
                 <div class="texto-aviso" id="textoAviso"></div>
@@ -613,23 +609,19 @@
             <div id="instrucoesIOS" class="instrucoes-ios">
                 <div class="titulo">📱 Como instalar no iPhone</div>
                 <div class="passo">
-                    <span class="numero">1</span>
-                    Abra este site no <strong>Safari</strong>
+                    <span class="numero">1</span> Abra este site no <strong>Safari</strong>
                 </div>
                 <div class="passo">
-                    <span class="numero">2</span>
-                    Toque no ícone <strong>Partilhar ⬆️</strong>
+                    <span class="numero">2</span> Toque no ícone <strong>Partilhar ⬆️</strong>
                 </div>
                 <div class="passo">
-                    <span class="numero">3</span>
-                    Escolha <strong>➕ Adicionar ao Ecrã Principal</strong>
+                    <span class="numero">3</span> Escolha <strong>➕ Adicionar ao Ecrã Principal</strong>
                 </div>
             </div>
             
             <div id="mensagem"></div>
         </div>
 
-        <!-- DASHBOARD SCREEN -->
         <div id="dashboardScreen">
             <div class="dashboard-header">
                 <h2>DM Dance School</h2>
@@ -643,21 +635,11 @@
             <div id="tabComunicados" class="tab-content"></div>
             
             <div class="nav">
-                <div class="nav-item active" onclick="mostrarTab('alunos', this)">
-                    <span>🏠</span> Início
-                </div>
-                <div class="nav-item" onclick="mostrarTab('extrato', this)">
-                    <span>💰</span> Extrato
-                </div>
-                <div class="nav-item" onclick="mostrarTab('horarios', this)">
-                    <span>📅</span> Horários
-                </div>
-                <div class="nav-item" onclick="mostrarTab('galeria', this)">
-                    <span>🖼️</span> Galeria
-                </div>
-                <div class="nav-item" onclick="mostrarTab('comunicados', this)">
-                    <span>📢</span> Avisos
-                </div>
+                <div class="nav-item active" onclick="mostrarTab('alunos', this)"><span>🏠</span> Início</div>
+                <div class="nav-item" onclick="mostrarTab('extrato', this)"><span>💰</span> Extrato</div>
+                <div class="nav-item" onclick="mostrarTab('horarios', this)"><span>📅</span> Horários</div>
+                <div class="nav-item" onclick="mostrarTab('galeria', this)"><span>🖼️</span> Galeria</div>
+                <div class="nav-item" onclick="mostrarTab('comunicados', this)"><span>📢</span> Avisos</div>
             </div>
         </div>
         
@@ -703,13 +685,8 @@
             return { texto: "✅ Em dia", classe: "pago" };
         }
 
-        function verificarPagamentos() {
-            const tel = document.getElementById('telefone').value.trim();
-            if (!tel || !dadosApp[tel]) return;
-            
-            const alunos = dadosApp[tel];
+        function mostrarBannerAviso(alunos) {
             let nomesAtraso = [];
-            
             for (const a of alunos) {
                 const status = obterStatusPagamento(a.pagamentos || {});
                 if (status.classe === 'atraso' || status.classe === 'pendente') {
@@ -723,9 +700,9 @@
             if (nomesAtraso.length > 0) {
                 banner.style.display = 'block';
                 if (nomesAtraso.length === 1) {
-                    texto.textContent = nomesAtraso[0] + ' tem mensalidades por regularizar. Por favor, contacte a escola.';
+                    texto.textContent = nomesAtraso[0] + ' tem mensalidades por regularizar. Contacte a escola.';
                 } else {
-                    texto.textContent = nomesAtraso.join(', ') + ' têm mensalidades por regularizar. Por favor, contacte a escola.';
+                    texto.textContent = nomesAtraso.join(', ') + ' têm mensalidades por regularizar. Contacte a escola.';
                 }
             } else {
                 banner.style.display = 'none';
@@ -747,12 +724,17 @@
                 const response = await fetch('/dm-dance-app/dados_app.json');
                 dadosApp = await response.json();
                 
-                // Mostrar aviso de pagamentos ANTES de entrar
-                verificarPagamentos();
-                
                 if (dadosApp[telefone]) {
+                    const alunos = dadosApp[telefone];
+                    
+                    // Mostrar banner se houver atrasos
+                    mostrarBannerAviso(alunos);
+                    
+                    // Aguardar 2 segundos para o utilizador ver o banner
+                    await new Promise(resolve => setTimeout(resolve, 1500));
+                    
                     telefoneLogado = telefone;
-                    alunosDoResponsavel = dadosApp[telefone];
+                    alunosDoResponsavel = alunos;
                     alunoSelecionado = alunosDoResponsavel[0];
                     
                     document.getElementById('loginScreen').style.display = 'none';
@@ -783,8 +765,7 @@
                     <div class="aluno" onclick="selecionarAluno(${f.id})">
                         <img class="foto" src="${fotoUrl}" 
                              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                             crossorigin="anonymous"
-                             loading="lazy">
+                             crossorigin="anonymous" loading="lazy">
                         <div class="foto-placeholder" style="display:${fotoUrl ? 'none' : 'flex'};">👤</div>
                         <div class="info">
                             <div class="nome">${f.nome}</div>
@@ -863,32 +844,78 @@
 
         function carregarHorarios() {
             const div = document.getElementById('tabHorarios');
-            const turmas = [
-                {nome:"Babies", horario:"17:30-18:15", dias:"2ª e 5ª", prof:"Prof. Diana", sala:"Sala 1", cor:"#FF6B6B"},
-                {nome:"Kids 1", horario:"18:15-19:15", dias:"2ª e 5ª", prof:"Prof. Diana", sala:"Sala 1", cor:"#4ECDC4"},
-                {nome:"Kids 2", horario:"18:15-19:15", dias:"3ª e 6ª", prof:"Prof. Ricardo", sala:"Sala 2", cor:"#45B7D1"},
-                {nome:"Teens", horario:"19:15-20:30", dias:"2ª e 5ª", prof:"Prof. Ricardo", sala:"Sala 1", cor:"#96CEB4"},
-                {nome:"Major", horario:"19:15-20:30", dias:"3ª e 6ª", prof:"Prof. Diana", sala:"Sala 2", cor:"#FFEAA7"},
-                {nome:"Ballet", horario:"10:00-11:00", dias:"Sábado", prof:"Profª. Sofia", sala:"Sala 3", cor:"#DDA0DD"},
-                {nome:"Contemporâneo", horario:"11:00-12:00", dias:"Sábado", prof:"Profª. Sofia", sala:"Sala 3", cor:"#98D8C8"},
-                {nome:"Adultas", horario:"20:30-21:30", dias:"3ª e 6ª", prof:"Prof. Ricardo", sala:"Sala 1", cor:"#F7DC6F"},
-                {nome:"Competição", horario:"15:00-17:00", dias:"Sábado", prof:"Prof. Diana", sala:"Sala 1", cor:"#E74C3C"},
+            const dias = [
+                {
+                    dia: "Segunda-Feira",
+                    aulas: [
+                        {hora:"18:00-19:00", nome:"Dance Fusion 1", turma:"Babies", cor:"#FF6B6B"},
+                        {hora:"19:00-20:00", nome:"Dance Fusion 2", turma:"Kids 1", cor:"#4ECDC4"},
+                        {hora:"20:00-21:00", nome:"Dance Fusion 6", turma:"Adultos", cor:"#F7DC6F"},
+                    ]
+                },
+                {
+                    dia: "Terça-Feira",
+                    aulas: [
+                        {hora:"17:00-18:00", nome:"Competição Solos", turma:"Competição", cor:"#E74C3C"},
+                        {hora:"18:00-19:00", nome:"Contemporâneo 1", turma:"Contemporâneo", cor:"#98D8C8"},
+                        {hora:"19:00-20:00", nome:"Dance Fusion 5", turma:"Major", cor:"#FFEAA7"},
+                        {hora:"20:00-21:00", nome:"Competição Urbanas", turma:"Competição", cor:"#E74C3C"},
+                    ]
+                },
+                {
+                    dia: "Quarta-Feira",
+                    aulas: [
+                        {hora:"18:00-19:00", nome:"Dance Fusion 3", turma:"Kids 2", cor:"#45B7D1"},
+                        {hora:"19:00-20:00", nome:"Dance Fusion 4", turma:"Teens", cor:"#96CEB4"},
+                    ]
+                },
+                {
+                    dia: "Quinta-Feira",
+                    aulas: [
+                        {hora:"18:00-19:00", nome:"Dance Fusion 1", turma:"Babies", cor:"#FF6B6B"},
+                        {hora:"19:00-20:00", nome:"Dance Fusion 2", turma:"Kids 1", cor:"#4ECDC4"},
+                        {hora:"20:00-21:00", nome:"Dance Fusion 6", turma:"Adultos", cor:"#F7DC6F"},
+                    ]
+                },
+                {
+                    dia: "Sexta-Feira",
+                    aulas: [
+                        {hora:"18:00-19:00", nome:"Dance Fusion 3", turma:"Kids 2", cor:"#45B7D1"},
+                        {hora:"19:00-20:00", nome:"Dance Fusion 4", turma:"Teens", cor:"#96CEB4"},
+                    ]
+                },
+                {
+                    dia: "Sábado",
+                    aulas: [
+                        {hora:"10:30-12:00", nome:"Dance Fusion 5", turma:"Major", cor:"#FFEAA7"},
+                        {hora:"12:00-14:00", nome:"Competição Urbanas", turma:"Competição", cor:"#E74C3C"},
+                        {hora:"14:00-15:30", nome:"Contemporâneo 2", turma:"Contemporâneo", cor:"#98D8C8"},
+                        {hora:"15:30-16:15", nome:"Ballet Pré-Primary", turma:"Ballet", cor:"#DDA0DD"},
+                        {hora:"16:15-17:00", nome:"Ballet Primary", turma:"Ballet", cor:"#DDA0DD"},
+                        {hora:"17:00-18:00", nome:"Ensaios", turma:"Competição", cor:"#E74C3C"},
+                    ]
+                },
             ];
             
-            let html = '<h3 style="color:#8B0000;margin-bottom:10px;">📅 Horários das Aulas</h3>';
+            let html = '<h3 style="color:#8B0000;margin-bottom:5px;">📅 Horários</h3>';
             html += '<p style="color:#888;font-size:12px;margin-bottom:15px;">Ano letivo 2025/2026</p>';
             
-            for (const t of turmas) {
-                html += `
-                    <div class="horario-card">
-                        <div class="horario-cor" style="background:${t.cor};"></div>
-                        <div class="horario-info">
-                            <strong>${t.nome}</strong>
-                            <small>🕐 ${t.horario} | ${t.dias}</small>
-                            <small>👩‍🏫 ${t.prof} | 📍 ${t.sala}</small>
+            for (const d of dias) {
+                html += `<div style="margin-bottom:18px;">
+                    <div class="dia-header">📅 ${d.dia}</div>`;
+                
+                for (const a of d.aulas) {
+                    html += `
+                        <div class="horario-card">
+                            <div class="horario-cor" style="background:${a.cor};"></div>
+                            <div class="horario-info">
+                                <strong>${a.nome}</strong>
+                                <small>🕐 ${a.hora} | ${a.turma}</small>
+                            </div>
                         </div>
-                    </div>
-                `;
+                    `;
+                }
+                html += '</div>';
             }
             
             div.innerHTML = html;
@@ -900,7 +927,7 @@
                 <h3 style="color:#8B0000;margin-bottom:10px;">📢 Comunicados</h3>
                 <div class="comunicado importante">
                     <h4>🌟 Início do Ano Letivo</h4>
-                    <p>As aulas começam em Setembro. Consulte os horários disponíveis na aba Horários.</p>
+                    <p>As aulas começam em Setembro. Consulte os horários na aba Horários.</p>
                     <div class="data">01/08/2025</div>
                 </div>
                 <div class="comunicado">
@@ -910,7 +937,7 @@
                 </div>
                 <div class="comunicado">
                     <h4>📸 Fotos das Aulas</h4>
-                    <p>As fotos das aulas estão disponíveis na galeria. Aceda para ver!</p>
+                    <p>As fotos das aulas estão disponíveis na galeria.</p>
                     <div class="data">01/03/2025</div>
                 </div>
             `;
@@ -966,7 +993,7 @@
         });
 
         if ('serviceWorker' in navigator) { 
-            navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=4')
+            navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=5')
                 .then(reg => reg.update())
                 .catch(err => console.log('SW:', err)); 
         }
