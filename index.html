@@ -29,562 +29,197 @@
             --border-radius: 16px;
         }
         
-        * { 
-            margin: 0; 
-            padding: 0; 
-            box-sizing: border-box; 
-            -webkit-tap-highlight-color: transparent;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         
         body { 
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
             background: linear-gradient(135deg, #FFE4E1 0%, #FFF5F5 50%, #FFE4E1 100%);
-            margin: 0; 
-            padding: 15px; 
-            min-height: 100vh;
-            min-height: 100dvh;
+            margin: 0; padding: 15px; min-height: 100vh; min-height: 100dvh;
             -webkit-font-smoothing: antialiased;
         }
         
         .container { 
-            max-width: 500px; 
-            margin: 0 auto; 
-            background: var(--cor-branco); 
-            border-radius: 24px; 
-            padding: 0;
-            box-shadow: var(--sombra);
-            overflow: hidden;
-            min-height: 90vh;
-            min-height: 90dvh;
-            display: flex;
-            flex-direction: column;
+            max-width: 500px; margin: 0 auto; background: var(--cor-branco); 
+            border-radius: 24px; padding: 0; box-shadow: var(--sombra);
+            overflow: hidden; min-height: 90vh; min-height: 90dvh;
+            display: flex; flex-direction: column;
         }
         
         .header {
             background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 40%, #8B6914 100%);
-            padding: 30px 25px 25px;
-            text-align: center;
-            color: #4a3000;
+            padding: 30px 25px 25px; text-align: center; color: #4a3000;
         }
         
         .logo-container {
-            width: 90px;
-            height: 90px;
-            margin: 0 auto 15px;
-            background: transparent;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            width: 90px; height: 90px; margin: 0 auto 15px; background: transparent;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
         
-        .logo-img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
+        .logo-img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; }
+        .logo-emoji { font-size: 45px; line-height: 1; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; }
+        .header h1 { font-size: 24px; font-weight: 700; margin-bottom: 5px; letter-spacing: -0.5px; color: #4a3000; }
         
-        .logo-emoji {
-            font-size: 45px;
-            line-height: 1;
-            width: 80px;
-            height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .header h1 {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 5px;
-            letter-spacing: -0.5px;
-            color: #4a3000;
-        }
-        
-        #loginScreen {
-            padding: 30px 25px;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        
-        .login-title {
-            font-size: 22px;
-            font-weight: 700;
-            color: var(--cor-nome);
-            text-align: center;
-            margin-bottom: 5px;
-        }
-        
-        .login-subtitle {
-            font-size: 14px;
-            color: #888;
-            text-align: center;
-            margin-bottom: 25px;
-        }
+        #loginScreen { padding: 30px 25px; flex: 1; display: flex; flex-direction: column; justify-content: center; }
+        .login-title { font-size: 22px; font-weight: 700; color: var(--cor-nome); text-align: center; margin-bottom: 5px; }
+        .login-subtitle { font-size: 14px; color: #888; text-align: center; margin-bottom: 25px; }
         
         input {
-            width: 100%;
-            padding: 16px 18px;
-            margin: 10px 0;
-            border-radius: 14px;
-            border: 2px solid #e0e0e0;
-            font-size: 17px;
-            background: #fafafa;
-            transition: all 0.3s;
-            outline: none;
+            width: 100%; padding: 16px 18px; margin: 10px 0; border-radius: 14px;
+            border: 2px solid #e0e0e0; font-size: 17px; background: #fafafa;
+            transition: all 0.3s; outline: none;
         }
-        
-        input:focus {
-            border-color: var(--cor-destaque);
-            background: white;
-            box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1);
-        }
-        
-        input::placeholder {
-            color: #bbb;
-        }
+        input:focus { border-color: var(--cor-destaque); background: white; box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1); }
+        input::placeholder { color: #bbb; }
         
         button {
-            width: 100%;
-            padding: 16px;
-            margin: 10px 0;
-            border-radius: 14px;
-            border: none;
+            width: 100%; padding: 16px; margin: 10px 0; border-radius: 14px; border: none;
             background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 100%);
-            color: white;
-            font-weight: 700;
-            font-size: 17px;
-            cursor: pointer;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+            color: white; font-weight: 700; font-size: 17px; cursor: pointer;
+            transition: all 0.3s; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
         }
-        
-        button:active {
-            transform: scale(0.97);
-            opacity: 0.9;
-        }
+        button:active { transform: scale(0.97); opacity: 0.9; }
         
         .btn-instalar {
             background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);
-            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
-            display: none;
-            animation: pulse 2s infinite;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3); display: none; animation: pulse 2s infinite;
         }
-        
         @keyframes pulse {
             0%, 100% { box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3); }
             50% { box-shadow: 0 4px 25px rgba(76, 175, 80, 0.5); }
         }
         
         .banner-aviso {
-            background: #fff3cd;
-            border: 2px solid #ffc107;
-            border-radius: 12px;
-            padding: 14px;
-            margin: 15px 0;
-            display: none;
-            text-align: center;
+            background: #fff3cd; border: 2px solid #ffc107; border-radius: 12px;
+            padding: 14px; margin: 15px 0; display: none; text-align: center;
             animation: slideDown 0.5s ease;
         }
-        
-        .banner-aviso .titulo-aviso {
-            font-weight: 700;
-            color: #856404;
-            font-size: 14px;
-            margin-bottom: 5px;
-        }
-        
-        .banner-aviso .texto-aviso {
-            color: #92600a;
-            font-size: 13px;
-            line-height: 1.4;
-        }
-        
-        @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+        .banner-aviso .titulo-aviso { font-weight: 700; color: #856404; font-size: 14px; margin-bottom: 5px; }
+        .banner-aviso .texto-aviso { color: #92600a; font-size: 13px; line-height: 1.4; }
+        @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
         
         .instrucoes-ios {
-            display: none;
-            background: #f0f7ff;
-            border: 2px solid #007AFF;
-            border-radius: 14px;
-            padding: 18px;
-            margin: 15px 0;
-            text-align: center;
+            display: none; background: #f0f7ff; border: 2px solid #007AFF;
+            border-radius: 14px; padding: 18px; margin: 15px 0; text-align: center;
         }
-        
-        .instrucoes-ios .titulo {
-            font-weight: 700;
-            color: #007AFF;
-            font-size: 15px;
-            margin-bottom: 10px;
-        }
-        
-        .instrucoes-ios .passo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin: 8px 0;
-            font-size: 13px;
-        }
-        
+        .instrucoes-ios .titulo { font-weight: 700; color: #007AFF; font-size: 15px; margin-bottom: 10px; }
+        .instrucoes-ios .passo { display: flex; align-items: center; gap: 10px; margin: 8px 0; font-size: 13px; }
         .instrucoes-ios .numero {
-            background: #007AFF;
-            color: white;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            font-weight: 700;
-            flex-shrink: 0;
+            background: #007AFF; color: white; width: 24px; height: 24px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0;
         }
         
-        #dashboardScreen {
-            display: none;
-            flex: 1;
-            flex-direction: column;
-        }
-        
-        .dashboard-header {
-            padding: 20px 25px 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .dashboard-header h2 {
-            font-size: 20px;
-            color: var(--cor-nome);
-        }
-        
+        #dashboardScreen { display: none; flex: 1; flex-direction: column; }
+        .dashboard-header { padding: 20px 25px 15px; display: flex; justify-content: space-between; align-items: center; }
+        .dashboard-header h2 { font-size: 20px; color: var(--cor-nome); }
         .btn-logout {
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            background: #fee;
-            border: none;
-            color: var(--cor-atraso);
-            font-size: 18px;
-            cursor: pointer;
-            padding: 0;
-            box-shadow: none;
+            width: 42px; height: 42px; border-radius: 50%; background: #fee; border: none;
+            color: var(--cor-atraso); font-size: 18px; cursor: pointer; padding: 0; box-shadow: none;
         }
         
-        .tab-content {
-            display: none;
-            padding: 0 25px 20px;
-            flex: 1;
-            overflow-y: auto;
-        }
-        
-        .tab-content.active {
-            display: block;
-        }
+        .tab-content { display: none; padding: 0 25px 20px; flex: 1; overflow-y: auto; }
+        .tab-content.active { display: block; }
         
         .aluno {
-            background: white;
-            margin: 12px 0;
-            padding: 15px;
-            border-radius: var(--border-radius);
-            border-left: 4px solid var(--cor-destaque);
-            display: flex;
-            gap: 14px;
-            align-items: center;
-            box-shadow: var(--sombra);
-            cursor: pointer;
-            transition: transform 0.2s;
+            background: white; margin: 12px 0; padding: 15px; border-radius: var(--border-radius);
+            border-left: 4px solid var(--cor-destaque); display: flex; gap: 14px; align-items: center;
+            box-shadow: var(--sombra); cursor: pointer; transition: transform 0.2s;
         }
-        
-        .aluno:active {
-            transform: scale(0.98);
-        }
-        
-        .foto {
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            object-fit: cover;
-            background: #e0e0e0;
-            flex-shrink: 0;
-        }
-        
-        .foto-placeholder {
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            background: #e0e0e0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 25px;
-            flex-shrink: 0;
-        }
-        
+        .aluno:active { transform: scale(0.98); }
+        .foto { width: 55px; height: 55px; border-radius: 50%; object-fit: cover; background: #e0e0e0; flex-shrink: 0; }
+        .foto-placeholder { width: 55px; height: 55px; border-radius: 50%; background: #e0e0e0; display: flex; align-items: center; justify-content: center; font-size: 25px; flex-shrink: 0; }
         .info { flex: 1; min-width: 0; }
-        .nome { 
-            color: var(--cor-nome); 
-            font-size: 16px; 
-            font-weight: 700; 
-            margin-bottom: 3px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .modalidades { 
-            color: #888; 
-            font-size: 13px; 
-            margin-bottom: 3px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+        .nome { color: var(--cor-nome); font-size: 16px; font-weight: 700; margin-bottom: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .modalidades { color: #888; font-size: 13px; margin-bottom: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         .pago { color: var(--cor-pago); font-weight: 600; font-size: 14px; }
         .pendente { color: var(--cor-pendente); font-weight: 600; font-size: 14px; }
         .atraso { color: var(--cor-atraso); font-weight: 600; font-size: 14px; }
         
-        .extrato-header {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-        
+        .extrato-header { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; }
         .btn-voltar {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background: #f0f0f0;
-            border: none;
-            font-size: 18px;
-            cursor: pointer;
-            padding: 0;
-            box-shadow: none;
-            flex-shrink: 0;
+            width: 36px; height: 36px; border-radius: 50%; background: #f0f0f0;
+            border: none; font-size: 18px; cursor: pointer; padding: 0; box-shadow: none; flex-shrink: 0;
         }
-        
-        .extrato-table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--sombra);
-        }
-        
-        .extrato-table th {
-            background: #f5f5f5;
-            padding: 12px 15px;
-            text-align: left;
-            font-size: 13px;
-            color: #666;
-            font-weight: 600;
-        }
-        
-        .extrato-table td {
-            padding: 12px 15px;
-            border-bottom: 1px solid #f0f0f0;
-            font-size: 14px;
-        }
-        
-        .extrato-table tr:last-child td {
-            border-bottom: none;
-        }
-        
-        .resumo {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-        
-        .resumo-card {
-            flex: 1;
-            background: white;
-            padding: 15px;
-            border-radius: var(--border-radius);
-            text-align: center;
-            box-shadow: var(--sombra);
-        }
-        
-        .resumo-card .valor {
-            font-size: 20px;
-            font-weight: 700;
-        }
-        
-        .resumo-card .label {
-            font-size: 11px;
-            color: #888;
-            text-transform: uppercase;
-            margin-top: 5px;
-        }
+        .extrato-table { width: 100%; border-collapse: collapse; background: white; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--sombra); }
+        .extrato-table th { background: #f5f5f5; padding: 12px 15px; text-align: left; font-size: 13px; color: #666; font-weight: 600; }
+        .extrato-table td { padding: 12px 15px; border-bottom: 1px solid #f0f0f0; font-size: 14px; }
+        .extrato-table tr:last-child td { border-bottom: none; }
+        .resumo { display: flex; gap: 10px; margin-bottom: 15px; }
+        .resumo-card { flex: 1; background: white; padding: 15px; border-radius: var(--border-radius); text-align: center; box-shadow: var(--sombra); }
+        .resumo-card .valor { font-size: 20px; font-weight: 700; }
+        .resumo-card .label { font-size: 11px; color: #888; text-transform: uppercase; margin-top: 5px; }
         
         .horario-card {
-            background: white;
-            border-radius: var(--border-radius);
-            padding: 12px 14px;
-            margin: 6px 0;
-            display: flex;
-            gap: 12px;
-            align-items: center;
-            box-shadow: var(--sombra);
+            background: white; border-radius: var(--border-radius); padding: 12px 14px;
+            margin: 6px 0; display: flex; gap: 12px; align-items: center; box-shadow: var(--sombra);
+            transition: all 0.3s; border-left: 4px solid transparent;
         }
-        
-        .horario-cor {
-            width: 6px;
-            height: 45px;
-            border-radius: 3px;
-            flex-shrink: 0;
+        .horario-card.destaque {
+            border-left: 4px solid #f0f0f0;
+            background: #fffdf5;
+            box-shadow: 0 2px 12px rgba(212, 175, 55, 0.2);
         }
-        
-        .horario-info strong {
-            color: var(--cor-nome);
-            font-size: 14px;
+        .horario-card.destaque::after {
+            content: "⭐";
+            position: absolute;
+            right: 10px;
+            font-size: 16px;
         }
-        
-        .horario-info small {
-            color: #888;
-            font-size: 11px;
-            display: block;
-            margin-top: 2px;
-        }
-        
-        .dia-header {
-            color: #4a3000;
-            font-size: 14px;
-            margin-bottom: 8px;
-            padding: 8px 12px;
-            background: #fff9e6;
-            border-radius: 8px;
+        .horario-cor { width: 6px; height: 45px; border-radius: 3px; flex-shrink: 0; }
+        .horario-info { flex: 1; }
+        .horario-info strong { color: var(--cor-nome); font-size: 14px; }
+        .horario-info small { color: #888; font-size: 11px; display: block; margin-top: 2px; }
+        .horario-destaque-badge {
+            display: inline-block;
+            background: #D4AF37;
+            color: white;
+            font-size: 9px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-left: 5px;
             font-weight: 600;
+        }
+        .dia-header {
+            color: #4a3000; font-size: 14px; margin-bottom: 8px; padding: 8px 12px;
+            background: #fff9e6; border-radius: 8px; font-weight: 600;
         }
         
         .comunicado {
-            background: white;
-            border-radius: var(--border-radius);
-            padding: 15px;
-            margin: 10px 0;
-            border-left: 4px solid var(--cor-destaque);
-            box-shadow: var(--sombra);
+            background: white; border-radius: var(--border-radius); padding: 15px; margin: 10px 0;
+            border-left: 4px solid var(--cor-destaque); box-shadow: var(--sombra);
         }
-        
-        .comunicado.importante {
-            border-left-color: #d32f2f;
-        }
-        
-        .comunicado h4 {
-            color: var(--cor-nome);
-            margin-bottom: 5px;
-        }
-        
-        .comunicado p {
-            color: #666;
-            font-size: 13px;
-        }
-        
-        .comunicado .data {
-            color: #aaa;
-            font-size: 11px;
-            margin-top: 5px;
-        }
+        .comunicado.importante { border-left-color: #d32f2f; }
+        .comunicado h4 { color: var(--cor-nome); margin-bottom: 5px; }
+        .comunicado p { color: #666; font-size: 13px; }
+        .comunicado .data { color: #aaa; font-size: 11px; margin-top: 5px; }
         
         .nav {
-            display: flex;
-            justify-content: space-around;
-            background: white;
-            padding: 8px 5px 12px;
-            border-top: 1px solid #f0f0f0;
-            margin-top: auto;
+            display: flex; justify-content: space-around; background: white;
+            padding: 8px 5px 12px; border-top: 1px solid #f0f0f0; margin-top: auto;
             padding-bottom: calc(12px + env(safe-area-inset-bottom));
         }
-        
         .nav-item {
-            text-align: center;
-            cursor: pointer;
-            padding: 8px 12px;
-            font-size: 11px;
-            color: #999;
-            transition: all 0.2s;
-            border-radius: 12px;
-            min-width: 60px;
+            text-align: center; cursor: pointer; padding: 8px 12px; font-size: 11px;
+            color: #999; transition: all 0.2s; border-radius: 12px; min-width: 60px;
         }
+        .nav-item.active { color: var(--cor-destaque); font-weight: 700; background: #fff9e6; }
+        .nav-item span { display: block; font-size: 24px; margin-bottom: 3px; }
         
-        .nav-item.active {
-            color: var(--cor-destaque);
-            font-weight: 700;
-            background: #fff9e6;
-        }
-        
-        .nav-item span {
-            display: block;
-            font-size: 24px;
-            margin-bottom: 3px;
-        }
-        
-        .erro { 
-            color: var(--cor-atraso); 
-            text-align: center; 
-            margin: 10px 0; 
-            font-weight: 600; 
-            font-size: 14px;
-        }
-        
-        .loading { 
-            text-align: center; 
-            color: #888; 
-            margin: 20px 0; 
-        }
-        
-        @keyframes spin { 
-            to { transform: rotate(360deg); } 
-        }
-        
-        .spinner { 
-            display: inline-block; 
-            width: 22px; 
-            height: 22px; 
-            border: 3px solid #e0e0e0; 
-            border-top-color: var(--cor-destaque); 
-            border-radius: 50%; 
-            animation: spin 0.8s linear infinite; 
-            margin-right: 10px; 
-            vertical-align: middle; 
-        }
-        
-        .footer { 
-            text-align: center; 
-            padding: 15px; 
-            color: #ccc; 
-            font-size: 11px; 
-        }
-        
-        ::-webkit-scrollbar {
-            width: 4px;
-        }
-        ::-webkit-scrollbar-track {
-            background: transparent;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #ddd;
-            border-radius: 2px;
-        }
+        .erro { color: var(--cor-atraso); text-align: center; margin: 10px 0; font-weight: 600; font-size: 14px; }
+        .loading { text-align: center; color: #888; margin: 20px 0; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .spinner { display: inline-block; width: 22px; height: 22px; border: 3px solid #e0e0e0; border-top-color: var(--cor-destaque); border-radius: 50%; animation: spin 0.8s linear infinite; margin-right: 10px; vertical-align: middle; }
+        .footer { text-align: center; padding: 15px; color: #ccc; font-size: 11px; }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #ddd; border-radius: 2px; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <div class="logo-container">
-                <img src="/dm-dance-app/logo_dm.png" 
-                     alt="DM Dance School" 
-                     class="logo-img"
+                <img src="/dm-dance-app/logo_dm.png" alt="DM Dance School" class="logo-img"
                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <span class="logo-emoji" style="display:none;">🩰</span>
             </div>
@@ -603,20 +238,13 @@
             </div>
             
             <button onclick="login()">Entrar</button>
-            
             <button id="btnInstalar" class="btn-instalar" onclick="instalarApp()">📲 Instalar App</button>
             
             <div id="instrucoesIOS" class="instrucoes-ios">
                 <div class="titulo">📱 Como instalar no iPhone</div>
-                <div class="passo">
-                    <span class="numero">1</span> Abra este site no <strong>Safari</strong>
-                </div>
-                <div class="passo">
-                    <span class="numero">2</span> Toque no ícone <strong>Partilhar ⬆️</strong>
-                </div>
-                <div class="passo">
-                    <span class="numero">3</span> Escolha <strong>➕ Adicionar ao Ecrã Principal</strong>
-                </div>
+                <div class="passo"><span class="numero">1</span> Abra este site no <strong>Safari</strong></div>
+                <div class="passo"><span class="numero">2</span> Toque no ícone <strong>Partilhar ⬆️</strong></div>
+                <div class="passo"><span class="numero">3</span> Escolha <strong>➕ Adicionar ao Ecrã Principal</strong></div>
             </div>
             
             <div id="mensagem"></div>
@@ -731,7 +359,7 @@
                     mostrarBannerAviso(alunos);
                     
                     // Aguardar 2 segundos para o utilizador ver o banner
-                    await new Promise(resolve => setTimeout(resolve, 1500));
+                    await new Promise(resolve => setTimeout(resolve, 2000));
                     
                     telefoneLogado = telefone;
                     alunosDoResponsavel = alunos;
@@ -844,6 +472,24 @@
 
         function carregarHorarios() {
             const div = document.getElementById('tabHorarios');
+            
+            // Obter modalidades do aluno selecionado
+            let modalidadesAluno = [];
+            if (alunoSelecionado && alunoSelecionado.modalidades) {
+                modalidadesAluno = alunoSelecionado.modalidades.map(m => m.toLowerCase().trim());
+            }
+            
+            // Função para verificar se a aula é do aluno
+            function ehDoAluno(turma, nome) {
+                const texto = (turma + ' ' + nome).toLowerCase();
+                for (const mod of modalidadesAluno) {
+                    if (texto.includes(mod) || mod.includes(texto.split(' ')[0])) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+            
             const dias = [
                 {
                     dia: "Segunda-Feira",
@@ -900,16 +546,21 @@
             let html = '<h3 style="color:#8B0000;margin-bottom:5px;">📅 Horários</h3>';
             html += '<p style="color:#888;font-size:12px;margin-bottom:15px;">Ano letivo 2025/2026</p>';
             
+            if (modalidadesAluno.length > 0) {
+                html += '<p style="color:#D4AF37;font-size:11px;margin-bottom:10px;">⭐ As suas aulas estão destacadas</p>';
+            }
+            
             for (const d of dias) {
                 html += `<div style="margin-bottom:18px;">
                     <div class="dia-header">📅 ${d.dia}</div>`;
                 
                 for (const a of d.aulas) {
+                    const destaque = modalidadesAluno.length > 0 && ehDoAluno(a.turma, a.nome);
                     html += `
-                        <div class="horario-card">
+                        <div class="horario-card${destaque ? ' destaque' : ''}">
                             <div class="horario-cor" style="background:${a.cor};"></div>
                             <div class="horario-info">
-                                <strong>${a.nome}</strong>
+                                <strong>${a.nome}${destaque ? ' <span class="horario-destaque-badge">⭐ Sua aula</span>' : ''}</strong>
                                 <small>🕐 ${a.hora} | ${a.turma}</small>
                             </div>
                         </div>
@@ -958,6 +609,7 @@
             document.getElementById(tabMap[tab]).classList.add('active');
             if (el) el.classList.add('active');
             
+            if (tab === 'horarios') carregarHorarios();
             if (tab === 'extrato' && alunoSelecionado) carregarExtrato();
         }
 
