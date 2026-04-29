@@ -5,270 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="/dm-dance-app/manifest.json?v=6">
+    <link rel="manifest" href="/dm-dance-app/manifest.json?v=7">
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="DM Dance">
     <link rel="apple-touch-icon" href="/dm-dance-app/icon-192x192.png">
     <link rel="apple-touch-icon" sizes="512x512" href="/dm-dance-app/icon-512x512.png">
-    
     <meta name="theme-color" content="#D4AF37">
     
     <style>
         :root {
-            --cor-fundo: #FFF5F5;
-            --cor-branco: #FFFFFF;
-            --cor-destaque: #D4AF37;
-            --cor-nome: #8B0000;
-            --cor-pago: #2e7d32;
-            --cor-pendente: #ed6c02;
-            --cor-atraso: #d32f2f;
-            --cor-instalar: #4CAF50;
-            --sombra: 0 2px 10px rgba(0,0,0,0.08);
-            --border-radius: 16px;
+            --cor-fundo: #FFF5F5; --cor-branco: #FFFFFF; --cor-destaque: #D4AF37;
+            --cor-nome: #8B0000; --cor-pago: #2e7d32; --cor-pendente: #ed6c02;
+            --cor-atraso: #d32f2f; --cor-instalar: #4CAF50;
+            --sombra: 0 2px 10px rgba(0,0,0,0.08); --border-radius: 16px;
         }
-        
         * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-        
         body { 
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
             background: linear-gradient(135deg, #FFE4E1 0%, #FFF5F5 50%, #FFE4E1 100%);
-            margin: 0; padding: 15px; min-height: 100vh; min-height: 100dvh;
-            -webkit-font-smoothing: antialiased;
+            margin: 0; padding: 15px; min-height: 100vh; min-height: 100dvh; -webkit-font-smoothing: antialiased;
         }
-        
-        .container { 
-            max-width: 500px; margin: 0 auto; background: var(--cor-branco); 
-            border-radius: 24px; padding: 0; box-shadow: var(--sombra);
-            overflow: hidden; min-height: 90vh; min-height: 90dvh;
-            display: flex; flex-direction: column;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 40%, #8B6914 100%);
-            padding: 30px 25px 25px; text-align: center; color: #4a3000;
-        }
-        
-        .logo-container {
-            width: 90px; height: 90px; margin: 0 auto 15px; background: transparent;
-            border-radius: 50%; display: flex; align-items: center; justify-content: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-        
+        .container { max-width: 500px; margin: 0 auto; background: var(--cor-branco); border-radius: 24px; padding: 0; box-shadow: var(--sombra); overflow: hidden; min-height: 90vh; min-height: 90dvh; display: flex; flex-direction: column; }
+        .header { background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 40%, #8B6914 100%); padding: 30px 25px 25px; text-align: center; color: #4a3000; }
+        .logo-container { width: 90px; height: 90px; margin: 0 auto 15px; background: transparent; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
         .logo-img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; }
-        .logo-emoji { font-size: 45px; line-height: 1; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; }
-        .header h1 { font-size: 24px; font-weight: 700; margin-bottom: 5px; letter-spacing: -0.5px; color: #4a3000; }
+        .logo-emoji { font-size: 45px; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; }
+        .header h1 { font-size: 24px; font-weight: 700; color: #4a3000; }
+        
+        /* BARRA DE NOTÍCIAS ROLANTE */
+        .news-ticker {
+            background: #8B0000;
+            color: white;
+            padding: 10px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+        .news-ticker-content {
+            display: inline-block;
+            animation: ticker 20s linear infinite;
+            font-weight: 700;
+            font-size: 14px;
+            padding-left: 100%;
+        }
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        .news-ticker:hover .news-ticker-content {
+            animation-play-state: paused;
+        }
         
         #loginScreen { padding: 30px 25px; flex: 1; display: flex; flex-direction: column; justify-content: center; }
         .login-title { font-size: 22px; font-weight: 700; color: var(--cor-nome); text-align: center; margin-bottom: 5px; }
         .login-subtitle { font-size: 14px; color: #888; text-align: center; margin-bottom: 25px; }
-        
-        input {
-            width: 100%; padding: 16px 18px; margin: 10px 0; border-radius: 14px;
-            border: 2px solid #e0e0e0; font-size: 17px; background: #fafafa;
-            transition: all 0.3s; outline: none;
-        }
+        input { width: 100%; padding: 16px 18px; margin: 10px 0; border-radius: 14px; border: 2px solid #e0e0e0; font-size: 17px; background: #fafafa; transition: all 0.3s; outline: none; }
         input:focus { border-color: var(--cor-destaque); background: white; box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.1); }
-        input::placeholder { color: #bbb; }
+        button { width: 100%; padding: 16px; margin: 10px 0; border-radius: 14px; border: none; background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 100%); color: white; font-weight: 700; font-size: 17px; cursor: pointer; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3); }
+        .btn-instalar { background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%); display: none; animation: pulse 2s infinite; }
+        @keyframes pulse { 0%,100%{box-shadow:0 4px 15px rgba(76,175,80,0.3)} 50%{box-shadow:0 4px 25px rgba(76,175,80,0.5)} }
+        .banner-aviso { background:#fff3cd; border:2px solid #ffc107; border-radius:12px; padding:14px; margin:15px 0; display:none; text-align:center; animation:slideDown 0.5s ease; }
+        .banner-aviso .titulo-aviso { font-weight:700; color:#856404; font-size:14px; margin-bottom:5px; }
+        .banner-aviso .texto-aviso { color:#92600a; font-size:13px; }
+        @keyframes slideDown { from{opacity:0;transform:translateY(-10px)} to{opacity:1;transform:translateY(0)} }
+        .instrucoes-ios { display:none; background:#f0f7ff; border:2px solid #007AFF; border-radius:14px; padding:18px; margin:15px 0; text-align:center; }
+        .instrucoes-ios .titulo { font-weight:700; color:#007AFF; font-size:15px; margin-bottom:10px; }
+        .instrucoes-ios .passo { display:flex; align-items:center; gap:10px; margin:8px 0; font-size:13px; }
+        .instrucoes-ios .numero { background:#007AFF; color:white; width:24px; height:24px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; flex-shrink:0; }
         
-        button {
-            width: 100%; padding: 16px; margin: 10px 0; border-radius: 14px; border: none;
-            background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 100%);
-            color: white; font-weight: 700; font-size: 17px; cursor: pointer;
-            transition: all 0.3s; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
-        }
-        button:active { transform: scale(0.97); opacity: 0.9; }
+        #dashboardScreen { display:none; flex:1; flex-direction:column; }
+        .dashboard-header { padding:8px 25px; display:flex; justify-content:space-between; align-items:center; }
+        .dashboard-header h2 { font-size:18px; color:var(--cor-nome); }
+        .btn-logout { width:38px; height:38px; border-radius:50%; background:#fee; border:none; color:var(--cor-atraso); font-size:16px; cursor:pointer; }
+        .tab-content { display:none; padding:0 25px 20px; flex:1; overflow-y:auto; }
+        .tab-content.active { display:block; }
         
-        .btn-instalar {
-            background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);
-            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3); display: none; animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0%, 100% { box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3); }
-            50% { box-shadow: 0 4px 25px rgba(76, 175, 80, 0.5); }
-        }
+        .aluno { background:white; margin:12px 0; padding:15px; border-radius:var(--border-radius); border-left:4px solid var(--cor-destaque); display:flex; gap:14px; align-items:center; box-shadow:var(--sombra); cursor:pointer; }
+        .foto { width:55px; height:55px; border-radius:50%; object-fit:cover; background:#e0e0e0; }
+        .foto-placeholder { width:55px; height:55px; border-radius:50%; background:#e0e0e0; display:flex; align-items:center; justify-content:center; font-size:25px; }
+        .info { flex:1; }
+        .nome { color:var(--cor-nome); font-size:16px; font-weight:700; }
+        .modalidades { color:#888; font-size:13px; }
+        .pago { color:var(--cor-pago); font-weight:600; font-size:14px; }
+        .pendente { color:var(--cor-pendente); font-weight:600; font-size:14px; }
+        .atraso { color:var(--cor-atraso); font-weight:600; font-size:14px; }
         
-        .banner-aviso {
-            background: #fff3cd; border: 2px solid #ffc107; border-radius: 12px;
-            padding: 14px; margin: 15px 0; display: none; text-align: center;
-            animation: slideDown 0.5s ease;
-        }
-        .banner-aviso .titulo-aviso { font-weight: 700; color: #856404; font-size: 14px; margin-bottom: 5px; }
-        .banner-aviso .texto-aviso { color: #92600a; font-size: 13px; line-height: 1.4; }
-        @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+        .extrato-header { display:flex; align-items:center; gap:10px; margin-bottom:15px; }
+        .btn-voltar { width:36px; height:36px; border-radius:50%; background:#f0f0f0; border:none; font-size:18px; cursor:pointer; }
+        .extrato-table { width:100%; border-collapse:collapse; background:white; border-radius:var(--border-radius); overflow:hidden; box-shadow:var(--sombra); }
+        .extrato-table th { background:#f5f5f5; padding:12px 15px; font-size:13px; color:#666; }
+        .extrato-table td { padding:12px 15px; border-bottom:1px solid #f0f0f0; font-size:14px; }
+        .resumo { display:flex; gap:10px; margin-bottom:15px; }
+        .resumo-card { flex:1; background:white; padding:15px; border-radius:var(--border-radius); text-align:center; box-shadow:var(--sombra); }
+        .resumo-card .valor { font-size:20px; font-weight:700; }
+        .resumo-card .label { font-size:11px; color:#888; margin-top:5px; }
         
-        .instrucoes-ios {
-            display: none; background: #f0f7ff; border: 2px solid #007AFF;
-            border-radius: 14px; padding: 18px; margin: 15px 0; text-align: center;
-        }
-        .instrucoes-ios .titulo { font-weight: 700; color: #007AFF; font-size: 15px; margin-bottom: 10px; }
-        .instrucoes-ios .passo { display: flex; align-items: center; gap: 10px; margin: 8px 0; font-size: 13px; }
-        .instrucoes-ios .numero {
-            background: #007AFF; color: white; width: 24px; height: 24px; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0;
-        }
+        .horario-card { background:white; border-radius:var(--border-radius); padding:12px 14px; margin:6px 0; display:flex; gap:12px; align-items:center; box-shadow:var(--sombra); }
+        .horario-card.destaque { border-left:4px solid #D4AF37; background:#fce4e4; box-shadow:0 2px 12px rgba(139,0,0,0.2); }
+        .horario-cor { width:6px; height:45px; border-radius:3px; }
+        .horario-info strong { color:var(--cor-nome); font-size:14px; }
+        .horario-info small { color:#888; font-size:11px; display:block; }
+        .horario-destaque-badge { display:inline-block; background:#D4AF37; color:white; font-size:9px; padding:2px 8px; border-radius:10px; margin-left:5px; }
+        .dia-header { color:#4a3000; font-size:14px; margin-bottom:8px; padding:8px 12px; background:#fff9e6; border-radius:8px; font-weight:600; }
         
-        #dashboardScreen { display: none; flex: 1; flex-direction: column; }
-        .dashboard-header { padding: 20px 25px 15px; display: flex; justify-content: space-between; align-items: center; }
-        .dashboard-header h2 { font-size: 20px; color: var(--cor-nome); }
-        .btn-logout {
-            width: 42px; height: 42px; border-radius: 50%; background: #fee; border: none;
-            color: var(--cor-atraso); font-size: 18px; cursor: pointer; padding: 0; box-shadow: none;
-        }
+        .comunicado { background:white; border-radius:var(--border-radius); padding:15px; margin:10px 0; border-left:4px solid var(--cor-destaque); box-shadow:var(--sombra); }
+        .comunicado.importante { border-left-color:#d32f2f; }
+        .comunicado h4 { color:var(--cor-nome); margin-bottom:5px; }
+        .comunicado p { color:#666; font-size:13px; }
+        .comunicado .data { color:#aaa; font-size:11px; margin-top:5px; }
         
-        .tab-content { display: none; padding: 0 25px 20px; flex: 1; overflow-y: auto; }
-        .tab-content.active { display: block; }
+        .galeria-evento { margin-bottom:25px; background:white; border-radius:var(--border-radius); padding:15px; box-shadow:var(--sombra); }
+        .galeria-evento h4 { color:var(--cor-nome); font-size:16px; }
+        .evento-data { color:#888; font-size:12px; margin-bottom:12px; }
+        .galeria-cartaz { width:100%; aspect-ratio:1/1.4; max-height:400px; background:#f5f5f5; border-radius:12px; display:flex; align-items:center; justify-content:center; overflow:hidden; margin-bottom:12px; border:2px dashed #ddd; }
+        .galeria-cartaz img { width:100%; height:100%; object-fit:contain; }
+        .placeholder-text { color:#bbb; text-align:center; font-size:13px; padding:20px; }
+        .galeria-fotos { display:grid; grid-template-columns:repeat(3,1fr); gap:5px; }
+        .galeria-fotos img { width:100%; aspect-ratio:1; object-fit:cover; border-radius:8px; background:#f0f0f0; cursor:pointer; }
         
-        .aluno {
-            background: white; margin: 12px 0; padding: 15px; border-radius: var(--border-radius);
-            border-left: 4px solid var(--cor-destaque); display: flex; gap: 14px; align-items: center;
-            box-shadow: var(--sombra); cursor: pointer; transition: transform 0.2s;
-        }
-        .aluno:active { transform: scale(0.98); }
-        .foto { width: 55px; height: 55px; border-radius: 50%; object-fit: cover; background: #e0e0e0; flex-shrink: 0; }
-        .foto-placeholder { width: 55px; height: 55px; border-radius: 50%; background: #e0e0e0; display: flex; align-items: center; justify-content: center; font-size: 25px; flex-shrink: 0; }
-        .info { flex: 1; min-width: 0; }
-        .nome { color: var(--cor-nome); font-size: 16px; font-weight: 700; margin-bottom: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .modalidades { color: #888; font-size: 13px; margin-bottom: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .pago { color: var(--cor-pago); font-weight: 600; font-size: 14px; }
-        .pendente { color: var(--cor-pendente); font-weight: 600; font-size: 14px; }
-        .atraso { color: var(--cor-atraso); font-weight: 600; font-size: 14px; }
-        
-        .extrato-header { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; }
-        .btn-voltar {
-            width: 36px; height: 36px; border-radius: 50%; background: #f0f0f0;
-            border: none; font-size: 18px; cursor: pointer; padding: 0; box-shadow: none; flex-shrink: 0;
-        }
-        .extrato-table { width: 100%; border-collapse: collapse; background: white; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--sombra); }
-        .extrato-table th { background: #f5f5f5; padding: 12px 15px; text-align: left; font-size: 13px; color: #666; font-weight: 600; }
-        .extrato-table td { padding: 12px 15px; border-bottom: 1px solid #f0f0f0; font-size: 14px; }
-        .extrato-table tr:last-child td { border-bottom: none; }
-        .resumo { display: flex; gap: 10px; margin-bottom: 15px; }
-        .resumo-card { flex: 1; background: white; padding: 15px; border-radius: var(--border-radius); text-align: center; box-shadow: var(--sombra); }
-        .resumo-card .valor { font-size: 20px; font-weight: 700; }
-        .resumo-card .label { font-size: 11px; color: #888; text-transform: uppercase; margin-top: 5px; }
-        
-        .horario-card {
-            background: white; border-radius: var(--border-radius); padding: 12px 14px;
-            margin: 6px 0; display: flex; gap: 12px; align-items: center; box-shadow: var(--sombra);
-        }
-        .horario-card.destaque {
-            border-left: 4px solid #D4AF37;
-            background: #fce4e4;
-            box-shadow: 0 2px 12px rgba(139, 0, 0, 0.2);
-        }
-        .horario-cor { width: 6px; height: 45px; border-radius: 3px; flex-shrink: 0; }
-        .horario-info { flex: 1; }
-        .horario-info strong { color: var(--cor-nome); font-size: 14px; }
-        .horario-info small { color: #888; font-size: 11px; display: block; margin-top: 2px; }
-        .horario-destaque-badge {
-            display: inline-block; background: #D4AF37; color: white;
-            font-size: 9px; padding: 2px 8px; border-radius: 10px; margin-left: 5px; font-weight: 600;
-        }
-        .dia-header {
-            color: #4a3000; font-size: 14px; margin-bottom: 8px; padding: 8px 12px;
-            background: #fff9e6; border-radius: 8px; font-weight: 600;
-        }
-        
-        .comunicado {
-            background: white; border-radius: var(--border-radius); padding: 15px; margin: 10px 0;
-            border-left: 4px solid var(--cor-destaque); box-shadow: var(--sombra);
-        }
-        .comunicado.importante { border-left-color: #d32f2f; }
-        .comunicado h4 { color: var(--cor-nome); margin-bottom: 5px; }
-        .comunicado p { color: #666; font-size: 13px; }
-        .comunicado .data { color: #aaa; font-size: 11px; margin-top: 5px; }
-        
-        /* GALERIA */
-        .galeria-evento {
-            margin-bottom: 25px;
-            background: white;
-            border-radius: var(--border-radius);
-            padding: 15px;
-            box-shadow: var(--sombra);
-        }
-        .galeria-evento h4 {
-            color: var(--cor-nome);
-            font-size: 16px;
-            margin-bottom: 5px;
-        }
-        .galeria-evento .evento-data {
-            color: #888;
-            font-size: 12px;
-            margin-bottom: 12px;
-        }
-        .galeria-cartaz {
-            width: 100%;
-            aspect-ratio: 1/1.4;
-            max-height: 400px;
-            background: #f5f5f5;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            margin-bottom: 12px;
-            border: 2px dashed #ddd;
-        }
-        .galeria-cartaz img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-        .galeria-cartaz .placeholder-text {
-            color: #bbb;
-            text-align: center;
-            font-size: 13px;
-            padding: 20px;
-        }
-        .galeria-fotos {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 5px;
-        }
-        .galeria-fotos img {
-            width: 100%;
-            aspect-ratio: 1;
-            object-fit: cover;
-            border-radius: 8px;
-            background: #f0f0f0;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        .galeria-fotos img:active {
-            transform: scale(1.5);
-            z-index: 10;
-        }
-        
-        .nav {
-            display: flex; justify-content: space-around; background: white;
-            padding: 8px 5px 12px; border-top: 1px solid #f0f0f0; margin-top: auto;
-            padding-bottom: calc(12px + env(safe-area-inset-bottom));
-        }
-        .nav-item {
-            text-align: center; cursor: pointer; padding: 8px 12px; font-size: 11px;
-            color: #999; transition: all 0.2s; border-radius: 12px; min-width: 60px;
-        }
-        .nav-item.active { color: var(--cor-destaque); font-weight: 700; background: #fff9e6; }
-        .nav-item span { display: block; font-size: 24px; margin-bottom: 3px; }
-        
-        .erro { color: var(--cor-atraso); text-align: center; margin: 10px 0; font-weight: 600; font-size: 14px; }
-        .loading { text-align: center; color: #888; margin: 20px 0; }
-        @keyframes spin { to { transform: rotate(360deg); } }
-        .spinner { display: inline-block; width: 22px; height: 22px; border: 3px solid #e0e0e0; border-top-color: var(--cor-destaque); border-radius: 50%; animation: spin 0.8s linear infinite; margin-right: 10px; vertical-align: middle; }
-        .footer { text-align: center; padding: 15px; color: #ccc; font-size: 11px; }
-        ::-webkit-scrollbar { width: 4px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: #ddd; border-radius: 2px; }
+        .nav { display:flex; justify-content:space-around; background:white; padding:8px 5px 12px; border-top:1px solid #f0f0f0; margin-top:auto; padding-bottom:calc(12px + env(safe-area-inset-bottom)); }
+        .nav-item { text-align:center; cursor:pointer; padding:8px 12px; font-size:11px; color:#999; transition:all 0.2s; border-radius:12px; min-width:60px; }
+        .nav-item.active { color:var(--cor-destaque); font-weight:700; background:#fff9e6; }
+        .nav-item span { display:block; font-size:24px; margin-bottom:3px; }
+        .erro { color:var(--cor-atraso); text-align:center; margin:10px 0; font-weight:600; }
+        .loading { text-align:center; color:#888; margin:20px 0; }
+        @keyframes spin { to{transform:rotate(360deg)} }
+        .spinner { display:inline-block; width:22px; height:22px; border:3px solid #e0e0e0; border-top-color:var(--cor-destaque); border-radius:50%; animation:spin 0.8s linear infinite; margin-right:10px; vertical-align:middle; }
+        .footer { text-align:center; padding:15px; color:#ccc; font-size:11px; }
+        ::-webkit-scrollbar { width:4px; } ::-webkit-scrollbar-thumb { background:#ddd; border-radius:2px; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <div class="logo-container">
-                <img src="/dm-dance-app/logo_dm.png" alt="DM Dance School" class="logo-img"
-                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <img src="/dm-dance-app/logo_dm.png" alt="DM Dance School" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
                 <span class="logo-emoji" style="display:none;">🩰</span>
             </div>
             <h1>DM Dance School</h1>
@@ -277,24 +150,19 @@
         <div id="loginScreen">
             <div class="login-title">Área do Aluno</div>
             <div class="login-subtitle">Faça login com o seu telefone</div>
-            
             <input type="tel" id="telefone" placeholder="Digite o seu telefone" autocomplete="off" inputmode="numeric">
-            
             <div id="bannerAviso" class="banner-aviso">
                 <div class="titulo-aviso">⚠️ Mensalidades em Atraso</div>
                 <div class="texto-aviso" id="textoAviso"></div>
             </div>
-            
             <button onclick="login()">Entrar</button>
             <button id="btnInstalar" class="btn-instalar" onclick="instalarApp()">📲 Instalar App</button>
-            
             <div id="instrucoesIOS" class="instrucoes-ios">
                 <div class="titulo">📱 Como instalar no iPhone</div>
-                <div class="passo"><span class="numero">1</span> Abra este site no <strong>Safari</strong></div>
-                <div class="passo"><span class="numero">2</span> Toque no ícone <strong>Partilhar ⬆️</strong></div>
-                <div class="passo"><span class="numero">3</span> Escolha <strong>➕ Adicionar ao Ecrã Principal</strong></div>
+                <div class="passo"><span class="numero">1</span>Abra este site no <strong>Safari</strong></div>
+                <div class="passo"><span class="numero">2</span>Toque no ícone <strong>Partilhar ⬆️</strong></div>
+                <div class="passo"><span class="numero">3</span>Escolha <strong>➕ Adicionar ao Ecrã Principal</strong></div>
             </div>
-            
             <div id="mensagem"></div>
         </div>
 
@@ -304,6 +172,13 @@
                 <button class="btn-logout" onclick="logout()" title="Sair">🚪</button>
             </div>
             
+            <!-- BARRA DE NOTÍCIAS ROLANTE -->
+            <div class="news-ticker" id="newsTicker">
+                <div class="news-ticker-content" id="newsTickerContent">
+                    📢 Bem-vindos ao ano letivo 2025/2026! Consulte os horários na aba 📅 Horários.
+                </div>
+            </div>
+            
             <div id="tabAlunos" class="tab-content active"></div>
             <div id="tabExtrato" class="tab-content"></div>
             <div id="tabHorarios" class="tab-content"></div>
@@ -311,396 +186,192 @@
             <div id="tabComunicados" class="tab-content"></div>
             
             <div class="nav">
-                <div class="nav-item active" onclick="mostrarTab('alunos', this)"><span>🏠</span> Início</div>
-                <div class="nav-item" onclick="mostrarTab('extrato', this)"><span>💰</span> Extrato</div>
-                <div class="nav-item" onclick="mostrarTab('horarios', this)"><span>📅</span> Horários</div>
-                <div class="nav-item" onclick="mostrarTab('galeria', this)"><span>🖼️</span> Galeria</div>
-                <div class="nav-item" onclick="mostrarTab('comunicados', this)"><span>📢</span> Avisos</div>
+                <div class="nav-item active" onclick="mostrarTab('alunos', this)"><span>🏠</span>Início</div>
+                <div class="nav-item" onclick="mostrarTab('extrato', this)"><span>💰</span>Extrato</div>
+                <div class="nav-item" onclick="mostrarTab('horarios', this)"><span>📅</span>Horários</div>
+                <div class="nav-item" onclick="mostrarTab('galeria', this)"><span>🖼️</span>Galeria</div>
+                <div class="nav-item" onclick="mostrarTab('comunicados', this)"><span>📢</span>Avisos</div>
             </div>
         </div>
-        
         <div class="footer">DM Dance School © 2025</div>
     </div>
 
     <script>
-        let deferredPrompt = null;
-        let dadosApp = {};
-        let telefoneLogado = '';
-        let alunosDoResponsavel = [];
-        let alunoSelecionado = null;
-
-        const mesesNum = { 
-            "setembro":9, "outubro":10, "novembro":11, "dezembro":12, 
-            "janeiro":1, "fevereiro":2, "marco":3, "abril":4, 
-            "maio":5, "junho":6, "julho":7 
-        };
-
+        let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
+        const mesesNum = {"setembro":9,"outubro":10,"novembro":11,"dezembro":12,"janeiro":1,"fevereiro":2,"marco":3,"abril":4,"maio":5,"junho":6,"julho":7};
         const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
-        if (isIOS) {
-            document.getElementById('instrucoesIOS').style.display = 'block';
+        if(isIOS) document.getElementById('instrucoesIOS').style.display='block';
+
+        // LISTA DE COMUNICADOS
+        const comunicadosLista = [
+            {titulo:"🌟 Início do Ano Letivo", texto:"As aulas começam em Setembro. Consulte os horários na aba Horários.", data:"01/08/2025", importante:true},
+            {titulo:"🎉 Espetáculo de Final de Ano", texto:"Reserve a data: 15 de Julho. Mais informações em breve!", data:"15/06/2025", importante:false},
+            {titulo:"📸 Fotos do Evento", texto:"As fotos do evento 'Era Uma Vez Alice' já estão na galeria!", data:"01/03/2025", importante:false},
+        ];
+
+        function atualizarNewsTicker() {
+            const ticker = document.getElementById('newsTickerContent');
+            const textos = comunicadosLista.map(c => `📢 ${c.titulo}: ${c.texto}`);
+            ticker.textContent = textos.join('  ⭐  ');
         }
 
         function obterStatusPagamento(pagamentos) {
-            const hoje = new Date();
-            const mesAtual = hoje.getMonth() + 1;
-            const anoAtual = hoje.getFullYear();
-            let anoLetivo = mesAtual >= 9 ? anoAtual : anoAtual - 1;
-            
-            for (const [mes, pago] of Object.entries(pagamentos)) {
+            const hoje = new Date(), mesAtual = hoje.getMonth()+1, anoAtual = hoje.getFullYear();
+            let anoLetivo = mesAtual >= 9 ? anoAtual : anoAtual-1;
+            for(const[mes,pago] of Object.entries(pagamentos)){
                 const mesNum = mesesNum[mes.toLowerCase()];
-                if (!mesNum) continue;
-                let anoMes = mesNum >= 9 ? anoLetivo : anoLetivo + 1;
-                let dataMes = new Date(anoMes, mesNum - 1, 1);
-                if (!pago) {
-                    if (dataMes < new Date()) 
-                        return { texto: `❌ Atrasado (${mes})`, classe: "atraso" };
-                    if (dataMes.getMonth() === hoje.getMonth() && dataMes.getFullYear() === hoje.getFullYear()) 
-                        return { texto: `⏳ Pendente (${mes})`, classe: "pendente" };
+                if(!mesNum) continue;
+                let anoMes = mesNum >= 9 ? anoLetivo : anoLetivo+1;
+                let dataMes = new Date(anoMes, mesNum-1, 1);
+                if(!pago){
+                    if(dataMes < new Date()) return {texto:`❌ Atrasado (${mes})`, classe:"atraso"};
+                    if(dataMes.getMonth()===hoje.getMonth() && dataMes.getFullYear()===hoje.getFullYear()) return {texto:`⏳ Pendente (${mes})`, classe:"pendente"};
                 }
             }
-            return { texto: "✅ Em dia", classe: "pago" };
+            return {texto:"✅ Em dia", classe:"pago"};
         }
 
-        function mostrarBannerAviso(alunos) {
-            let nomesAtraso = [];
-            for (const a of alunos) {
-                const status = obterStatusPagamento(a.pagamentos || {});
-                if (status.classe === 'atraso' || status.classe === 'pendente') {
-                    nomesAtraso.push(a.nome);
-                }
+        function mostrarBannerAviso(alunos){
+            let nomesAtraso=[];
+            for(const a of alunos){
+                const s = obterStatusPagamento(a.pagamentos||{});
+                if(s.classe==='atraso'||s.classe==='pendente') nomesAtraso.push(a.nome);
             }
-            
-            const banner = document.getElementById('bannerAviso');
-            const texto = document.getElementById('textoAviso');
-            
-            if (nomesAtraso.length > 0) {
-                banner.style.display = 'block';
-                if (nomesAtraso.length === 1) {
-                    texto.textContent = nomesAtraso[0] + ' tem mensalidades por regularizar. Contacte a escola.';
-                } else {
-                    texto.textContent = nomesAtraso.join(', ') + ' têm mensalidades por regularizar. Contacte a escola.';
-                }
-            } else {
-                banner.style.display = 'none';
-            }
+            const banner=document.getElementById('bannerAviso'), texto=document.getElementById('textoAviso');
+            if(nomesAtraso.length>0){
+                banner.style.display='block';
+                texto.textContent = nomesAtraso.length===1 ? nomesAtraso[0]+' tem mensalidades por regularizar. Contacte a escola.' : nomesAtraso.join(', ')+' têm mensalidades por regularizar. Contacte a escola.';
+            } else { banner.style.display='none'; }
         }
 
-        async function login() {
-            const telefone = document.getElementById('telefone').value.trim();
-            const msgDiv = document.getElementById('mensagem');
-            
-            if (!telefone) { 
-                msgDiv.innerHTML = '<p class="erro">⚠️ Digite o telefone!</p>'; 
-                return; 
-            }
-            
-            msgDiv.innerHTML = '<p class="loading"><span class="spinner"></span> A carregar...</p>';
-            
-            try {
-                const response = await fetch('/dm-dance-app/dados_app.json');
-                dadosApp = await response.json();
-                
-                if (dadosApp[telefone]) {
-                    const alunos = dadosApp[telefone];
-                    
+        async function login(){
+            const telefone=document.getElementById('telefone').value.trim(), msgDiv=document.getElementById('mensagem');
+            if(!telefone){msgDiv.innerHTML='<p class="erro">⚠️ Digite o telefone!</p>'; return;}
+            msgDiv.innerHTML='<p class="loading"><span class="spinner"></span>A carregar...</p>';
+            try{
+                const response=await fetch('/dm-dance-app/dados_app.json');
+                dadosApp=await response.json();
+                if(dadosApp[telefone]){
+                    const alunos=dadosApp[telefone];
                     mostrarBannerAviso(alunos);
-                    await new Promise(resolve => setTimeout(resolve, 2000));
-                    
-                    telefoneLogado = telefone;
-                    alunosDoResponsavel = alunos;
-                    alunoSelecionado = alunosDoResponsavel[0];
-                    
-                    document.getElementById('loginScreen').style.display = 'none';
-                    document.getElementById('dashboardScreen').style.display = 'flex';
-                    
+                    await new Promise(r=>setTimeout(r,2000));
+                    telefoneLogado=telefone; alunosDoResponsavel=alunos; alunoSelecionado=alunosDoResponsavel[0];
+                    document.getElementById('loginScreen').style.display='none';
+                    document.getElementById('dashboardScreen').style.display='flex';
+                    atualizarNewsTicker();
                     carregarAlunos();
-                    if (alunoSelecionado) carregarExtrato();
+                    if(alunoSelecionado) carregarExtrato();
                     carregarHorarios();
-                } else { 
-                    msgDiv.innerHTML = '<p class="erro">❌ Telefone não encontrado!</p>'; 
-                }
-            } catch (error) { 
-                msgDiv.innerHTML = '<p class="erro">❌ Erro ao carregar dados.</p>'; 
+                } else { msgDiv.innerHTML='<p class="erro">❌ Telefone não encontrado!</p>'; }
+            } catch(error){ msgDiv.innerHTML='<p class="erro">❌ Erro ao carregar dados.</p>'; }
+        }
+
+        function carregarAlunos(){
+            const div=document.getElementById('tabAlunos'); div.innerHTML='';
+            for(const f of alunosDoResponsavel){
+                const status=obterStatusPagamento(f.pagamentos||{}), fotoUrl=f.foto||'';
+                div.innerHTML+=`<div class="aluno" onclick="selecionarAluno(${f.id})">
+                    <img class="foto" src="${fotoUrl}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" crossorigin="anonymous" loading="lazy">
+                    <div class="foto-placeholder" style="display:${fotoUrl?'none':'flex'};">👤</div>
+                    <div class="info"><div class="nome">${f.nome}</div><div class="modalidades">💃 ${(f.modalidades||[]).join(', ')||'Sem modalidades'}</div><div class="${status.classe}">${status.texto}</div></div>
+                </div>`;
             }
         }
 
-        function carregarAlunos() {
-            const div = document.getElementById('tabAlunos');
-            div.innerHTML = '';
-            
-            for (const f of alunosDoResponsavel) {
-                const status = obterStatusPagamento(f.pagamentos || {});
-                const fotoUrl = f.foto || '';
-                const modalidades = (f.modalidades || []).join(', ') || 'Sem modalidades';
-                
-                div.innerHTML += `
-                    <div class="aluno" onclick="selecionarAluno(${f.id})">
-                        <img class="foto" src="${fotoUrl}" 
-                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                             crossorigin="anonymous" loading="lazy">
-                        <div class="foto-placeholder" style="display:${fotoUrl ? 'none' : 'flex'};">👤</div>
-                        <div class="info">
-                            <div class="nome">${f.nome}</div>
-                            <div class="modalidades">💃 ${modalidades}</div>
-                            <div class="${status.classe}">${status.texto}</div>
-                        </div>
-                    </div>
-                `;
-            }
+        function selecionarAluno(id){
+            alunoSelecionado=alunosDoResponsavel.find(a=>a.id===id);
+            if(alunoSelecionado){carregarExtrato(); mostrarTab('extrato', document.querySelector('.nav-item:nth-child(2)'));}
         }
 
-        function selecionarAluno(id) {
-            alunoSelecionado = alunosDoResponsavel.find(a => a.id === id);
-            if (alunoSelecionado) {
-                carregarExtrato();
-                mostrarTab('extrato', document.querySelector('.nav-item:nth-child(2)'));
+        function carregarExtrato(){
+            const div=document.getElementById('tabExtrato');
+            if(!alunoSelecionado){div.innerHTML='<p style="text-align:center;color:#999;padding:30px;">Selecione um aluno na aba Início</p>'; return;}
+            const meses=[["setembro","Setembro"],["outubro","Outubro"],["novembro","Novembro"],["dezembro","Dezembro"],["janeiro","Janeiro"],["fevereiro","Fevereiro"],["marco","Março"],["abril","Abril"],["maio","Maio"],["junho","Junho"],["julho","Julho"]];
+            let totalPago=0, totalPendente=0;
+            let html=`<div class="extrato-header"><button class="btn-voltar" onclick="mostrarTab('alunos',document.querySelector('.nav-item:first-child'))">←</button><h3 style="color:#8B0000;font-size:17px;">💰 Extrato: ${alunoSelecionado.nome}</h3></div>
+                <div class="resumo"><div class="resumo-card"><div class="valor" style="color:#2e7d32;" id="totalPago">-</div><div class="label">Total Pago</div></div><div class="resumo-card"><div class="valor" style="color:#d32f2f;" id="totalPendente">-</div><div class="label">Pendente</div></div></div>
+                <table class="extrato-table"><tr><th>Mês</th><th style="text-align:right;">Valor</th><th style="text-align:center;">Status</th></tr>`;
+            for(const[cod,nome] of meses){
+                const pago=alunoSelecionado.pagamentos&&alunoSelecionado.pagamentos[cod], valor=pago?(alunoSelecionado.mensalidade||30):0;
+                if(pago) totalPago+=valor; else totalPendente+=(alunoSelecionado.mensalidade||30);
+                html+=`<tr><td>${nome}</td><td style="text-align:right;">${valor.toFixed(2)}€</td><td style="text-align:center;" class="${pago?'pago':'pendente'}">${pago?'✅ Pago':'❌ Pendente'}</td></tr>`;
             }
+            html+='</table>'; div.innerHTML=html;
+            document.getElementById('totalPago').textContent=totalPago.toFixed(2)+' €';
+            document.getElementById('totalPendente').textContent=totalPendente.toFixed(2)+' €';
         }
 
-        function carregarExtrato() {
-            const div = document.getElementById('tabExtrato');
-            
-            if (!alunoSelecionado) {
-                div.innerHTML = '<p style="text-align:center;color:#999;padding:30px;">Selecione um aluno na aba Início</p>';
-                return;
-            }
-            
-            const meses = [
-                ["setembro","Setembro"],["outubro","Outubro"],["novembro","Novembro"],
-                ["dezembro","Dezembro"],["janeiro","Janeiro"],["fevereiro","Fevereiro"],
-                ["marco","Março"],["abril","Abril"],["maio","Maio"],
-                ["junho","Junho"],["julho","Julho"]
+        function carregarHorarios(){
+            const div=document.getElementById('tabHorarios');
+            let modalidadesAluno=[];
+            if(alunoSelecionado&&alunoSelecionado.modalidades) modalidadesAluno=alunoSelecionado.modalidades.map(m=>m.toLowerCase().trim());
+            function ehDoAluno(turma,nome){const texto=(turma+' '+nome).toLowerCase(); for(const mod of modalidadesAluno){if(texto.includes(mod)||mod.includes(texto.split(' ')[0])) return true;} return false;}
+            const dias=[
+                {dia:"Segunda-Feira",aulas:[{hora:"18:00-19:00",nome:"Dance Fusion 1",turma:"Babies",cor:"#FF6B6B"},{hora:"19:00-20:00",nome:"Dance Fusion 2",turma:"Kids 1",cor:"#4ECDC4"},{hora:"20:00-21:00",nome:"Dance Fusion 6",turma:"Adultos",cor:"#F7DC6F"}]},
+                {dia:"Terça-Feira",aulas:[{hora:"17:00-18:00",nome:"Competição Solos",turma:"Competição",cor:"#E74C3C"},{hora:"18:00-19:00",nome:"Contemporâneo 1",turma:"Contemporâneo",cor:"#98D8C8"},{hora:"19:00-20:00",nome:"Dance Fusion 5",turma:"Major",cor:"#FFEAA7"},{hora:"20:00-21:00",nome:"Competição Urbanas",turma:"Competição",cor:"#E74C3C"}]},
+                {dia:"Quarta-Feira",aulas:[{hora:"18:00-19:00",nome:"Dance Fusion 3",turma:"Kids 2",cor:"#45B7D1"},{hora:"19:00-20:00",nome:"Dance Fusion 4",turma:"Teens",cor:"#96CEB4"}]},
+                {dia:"Quinta-Feira",aulas:[{hora:"18:00-19:00",nome:"Dance Fusion 1",turma:"Babies",cor:"#FF6B6B"},{hora:"19:00-20:00",nome:"Dance Fusion 2",turma:"Kids 1",cor:"#4ECDC4"},{hora:"20:00-21:00",nome:"Dance Fusion 6",turma:"Adultos",cor:"#F7DC6F"}]},
+                {dia:"Sexta-Feira",aulas:[{hora:"18:00-19:00",nome:"Dance Fusion 3",turma:"Kids 2",cor:"#45B7D1"},{hora:"19:00-20:00",nome:"Dance Fusion 4",turma:"Teens",cor:"#96CEB4"}]},
+                {dia:"Sábado",aulas:[{hora:"10:30-12:00",nome:"Dance Fusion 5",turma:"Major",cor:"#FFEAA7"},{hora:"12:00-14:00",nome:"Competição Urbanas",turma:"Competição",cor:"#E74C3C"},{hora:"14:00-15:30",nome:"Contemporâneo 2",turma:"Contemporâneo",cor:"#98D8C8"},{hora:"15:30-16:15",nome:"Ballet Pré-Primary",turma:"Ballet",cor:"#DDA0DD"},{hora:"16:15-17:00",nome:"Ballet Primary",turma:"Ballet",cor:"#DDA0DD"},{hora:"17:00-18:00",nome:"Ensaios",turma:"Competição",cor:"#E74C3C"}]},
             ];
-            
-            let totalPago = 0;
-            let totalPendente = 0;
-            let html = `
-                <div class="extrato-header">
-                    <button class="btn-voltar" onclick="mostrarTab('alunos', document.querySelector('.nav-item:first-child'))">←</button>
-                    <h3 style="color:#8B0000;font-size:17px;">💰 Extrato: ${alunoSelecionado.nome}</h3>
-                </div>
-                <div class="resumo">
-                    <div class="resumo-card">
-                        <div class="valor" style="color:#2e7d32;" id="totalPago">-</div>
-                        <div class="label">Total Pago</div>
-                    </div>
-                    <div class="resumo-card">
-                        <div class="valor" style="color:#d32f2f;" id="totalPendente">-</div>
-                        <div class="label">Pendente</div>
-                    </div>
-                </div>
-                <table class="extrato-table">
-                    <tr><th>Mês</th><th style="text-align:right;">Valor</th><th style="text-align:center;">Status</th></tr>
-            `;
-            
-            for (const [cod, nome] of meses) {
-                const pago = alunoSelecionado.pagamentos && alunoSelecionado.pagamentos[cod];
-                const valor = pago ? (alunoSelecionado.mensalidade || 30) : 0;
-                
-                if (pago) totalPago += valor;
-                else totalPendente += (alunoSelecionado.mensalidade || 30);
-                
-                html += `<tr>
-                    <td>${nome}</td>
-                    <td style="text-align:right;">${valor.toFixed(2)} €</td>
-                    <td style="text-align:center;" class="${pago ? 'pago' : 'pendente'}">${pago ? '✅ Pago' : '❌ Pendente'}</td>
-                </tr>`;
-            }
-            
-            html += '</table>';
-            div.innerHTML = html;
-            
-            document.getElementById('totalPago').textContent = totalPago.toFixed(2) + ' €';
-            document.getElementById('totalPendente').textContent = totalPendente.toFixed(2) + ' €';
-        }
-
-        function carregarHorarios() {
-            const div = document.getElementById('tabHorarios');
-            
-            let modalidadesAluno = [];
-            if (alunoSelecionado && alunoSelecionado.modalidades) {
-                modalidadesAluno = alunoSelecionado.modalidades.map(m => m.toLowerCase().trim());
-            }
-            
-            function ehDoAluno(turma, nome) {
-                const texto = (turma + ' ' + nome).toLowerCase();
-                for (const mod of modalidadesAluno) {
-                    if (texto.includes(mod) || mod.includes(texto.split(' ')[0])) {
-                        return true;
-                    }
+            let html='<h3 style="color:#8B0000;margin-bottom:5px;">📅 Horários</h3><p style="color:#888;font-size:12px;margin-bottom:15px;">Ano letivo 2025/2026</p>';
+            if(modalidadesAluno.length>0) html+='<p style="color:#D4AF37;font-size:11px;margin-bottom:10px;">⭐ As suas aulas estão destacadas</p>';
+            for(const d of dias){
+                html+=`<div style="margin-bottom:18px;"><div class="dia-header">📅 ${d.dia}</div>`;
+                for(const a of d.aulas){
+                    const destaque=modalidadesAluno.length>0&&ehDoAluno(a.turma,a.nome);
+                    html+=`<div class="horario-card${destaque?' destaque':''}"><div class="horario-cor" style="background:${a.cor};"></div><div class="horario-info"><strong>${a.nome}${destaque?' <span class="horario-destaque-badge">⭐ Sua aula</span>':''}</strong><small>🕐 ${a.hora} | ${a.turma}</small></div></div>`;
                 }
-                return false;
+                html+='</div>';
             }
-            
-            const dias = [
-                { dia: "Segunda-Feira", aulas: [
-                    {hora:"18:00-19:00", nome:"Dance Fusion 1", turma:"Babies", cor:"#FF6B6B"},
-                    {hora:"19:00-20:00", nome:"Dance Fusion 2", turma:"Kids 1", cor:"#4ECDC4"},
-                    {hora:"20:00-21:00", nome:"Dance Fusion 6", turma:"Adultos", cor:"#F7DC6F"},
-                ]},
-                { dia: "Terça-Feira", aulas: [
-                    {hora:"17:00-18:00", nome:"Competição Solos", turma:"Competição", cor:"#E74C3C"},
-                    {hora:"18:00-19:00", nome:"Contemporâneo 1", turma:"Contemporâneo", cor:"#98D8C8"},
-                    {hora:"19:00-20:00", nome:"Dance Fusion 5", turma:"Major", cor:"#FFEAA7"},
-                    {hora:"20:00-21:00", nome:"Competição Urbanas", turma:"Competição", cor:"#E74C3C"},
-                ]},
-                { dia: "Quarta-Feira", aulas: [
-                    {hora:"18:00-19:00", nome:"Dance Fusion 3", turma:"Kids 2", cor:"#45B7D1"},
-                    {hora:"19:00-20:00", nome:"Dance Fusion 4", turma:"Teens", cor:"#96CEB4"},
-                ]},
-                { dia: "Quinta-Feira", aulas: [
-                    {hora:"18:00-19:00", nome:"Dance Fusion 1", turma:"Babies", cor:"#FF6B6B"},
-                    {hora:"19:00-20:00", nome:"Dance Fusion 2", turma:"Kids 1", cor:"#4ECDC4"},
-                    {hora:"20:00-21:00", nome:"Dance Fusion 6", turma:"Adultos", cor:"#F7DC6F"},
-                ]},
-                { dia: "Sexta-Feira", aulas: [
-                    {hora:"18:00-19:00", nome:"Dance Fusion 3", turma:"Kids 2", cor:"#45B7D1"},
-                    {hora:"19:00-20:00", nome:"Dance Fusion 4", turma:"Teens", cor:"#96CEB4"},
-                ]},
-                { dia: "Sábado", aulas: [
-                    {hora:"10:30-12:00", nome:"Dance Fusion 5", turma:"Major", cor:"#FFEAA7"},
-                    {hora:"12:00-14:00", nome:"Competição Urbanas", turma:"Competição", cor:"#E74C3C"},
-                    {hora:"14:00-15:30", nome:"Contemporâneo 2", turma:"Contemporâneo", cor:"#98D8C8"},
-                    {hora:"15:30-16:15", nome:"Ballet Pré-Primary", turma:"Ballet", cor:"#DDA0DD"},
-                    {hora:"16:15-17:00", nome:"Ballet Primary", turma:"Ballet", cor:"#DDA0DD"},
-                    {hora:"17:00-18:00", nome:"Ensaios", turma:"Competição", cor:"#E74C3C"},
-                ]},
-            ];
-            
-            let html = '<h3 style="color:#8B0000;margin-bottom:5px;">📅 Horários</h3>';
-            html += '<p style="color:#888;font-size:12px;margin-bottom:15px;">Ano letivo 2025/2026</p>';
-            
-            if (modalidadesAluno.length > 0) {
-                html += '<p style="color:#D4AF37;font-size:11px;margin-bottom:10px;">⭐ As suas aulas estão destacadas</p>';
-            }
-            
-            for (const d of dias) {
-                html += `<div style="margin-bottom:18px;"><div class="dia-header">📅 ${d.dia}</div>`;
-                for (const a of d.aulas) {
-                    const destaque = modalidadesAluno.length > 0 && ehDoAluno(a.turma, a.nome);
-                    html += `<div class="horario-card${destaque ? ' destaque' : ''}">
-                        <div class="horario-cor" style="background:${a.cor};"></div>
-                        <div class="horario-info">
-                            <strong>${a.nome}${destaque ? ' <span class="horario-destaque-badge">⭐ Sua aula</span>' : ''}</strong>
-                            <small>🕐 ${a.hora} | ${a.turma}</small>
-                        </div>
-                    </div>`;
-                }
-                html += '</div>';
-            }
-            div.innerHTML = html;
+            div.innerHTML=html;
         }
 
-        function carregarGaleria() {
-            const div = document.getElementById('tabGaleria');
-            
-            // As fotos devem ser colocadas na pasta: dm-dance-app/galeria/alice/
-            // Nome das fotos: foto1.jpg, foto2.jpg, foto3.jpg ... etc
-            const pastaFotos = '/dm-dance-app/galeria/alice/';
-            const numFotos = 12; // Número total de fotos
-            
-            let fotosHtml = '';
-            for (let i = 1; i <= numFotos; i++) {
-                fotosHtml += `<img src="${pastaFotos}foto${i}.jpg" 
-                    onerror="this.style.display='none';" 
-                    loading="lazy"
-                    alt="Foto ${i}">`;
+        function carregarGaleria(){
+            const div=document.getElementById('tabGaleria');
+            const pastaFotos='/dm-dance-app/galeria/alice/', numFotos=12;
+            let fotosHtml='';
+            for(let i=1;i<=numFotos;i++) fotosHtml+=`<img src="${pastaFotos}foto${i}.jpg" onerror="this.style.display='none';" loading="lazy" alt="Foto ${i}">`;
+            div.innerHTML=`<h3 style="color:#8B0000;margin-bottom:10px;">🖼️ Galeria</h3>
+                <div class="galeria-evento"><h4>📸 Era Uma Vez Alice</h4><div class="evento-data">22 de Fevereiro de 2026</div>
+                <div class="galeria-cartaz"><img src="${pastaFotos}cartaz.jpg" alt="Cartaz" onerror="this.style.display='none';this.nextElementSibling.style.display='block';"><div class="placeholder-text" style="display:none;">🎭<br>Espaço para o cartaz</div></div>
+                <div class="galeria-fotos">${fotosHtml}</div></div>`;
+        }
+
+        function carregarComunicados(){
+            const div=document.getElementById('tabComunicados');
+            let html='<h3 style="color:#8B0000;margin-bottom:10px;">📢 Comunicados</h3>';
+            for(const c of comunicadosLista){
+                html+=`<div class="comunicado${c.importante?' importante':''}"><h4>${c.titulo}</h4><p>${c.texto}</p><div class="data">${c.data}</div></div>`;
             }
-            
-            div.innerHTML = `
-                <h3 style="color:#8B0000;margin-bottom:10px;">🖼️ Galeria</h3>
-                
-                <div class="galeria-evento">
-                    <h4>📸 Era Uma Vez Alice</h4>
-                    <div class="evento-data">22 de Fevereiro de 2026</div>
-                    
-                    <!-- Cartaz (espaço para colocar a imagem) -->
-                    <div class="galeria-cartaz" id="cartazAlice">
-                        <img src="/dm-dance-app/galeria/alice/cartaz.jpg" 
-                             alt="Cartaz Era Uma Vez Alice"
-                             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <div class="placeholder-text" style="display:none;">
-                            🎭<br>Espaço para o cartaz<br>
-                            <small>Coloque o ficheiro: galeria/alice/cartaz.jpg</small>
-                        </div>
-                    </div>
-                    
-                    <!-- Grelha de fotos -->
-                    <div class="galeria-fotos">
-                        ${fotosHtml}
-                    </div>
-                    
-                    <p style="color:#aaa;font-size:10px;margin-top:10px;text-align:center;">
-                        Coloque as fotos em: dm-dance-app/galeria/alice/foto1.jpg ... foto${numFotos}.jpg
-                    </p>
-                </div>
-            `;
+            div.innerHTML=html;
         }
 
-        function carregarComunicados() {
-            const div = document.getElementById('tabComunicados');
-            div.innerHTML = `
-                <h3 style="color:#8B0000;margin-bottom:10px;">📢 Comunicados</h3>
-                <div class="comunicado importante">
-                    <h4>🌟 Início do Ano Letivo</h4>
-                    <p>As aulas começam em Setembro. Consulte os horários na aba Horários.</p>
-                    <div class="data">01/08/2025</div>
-                </div>
-                <div class="comunicado">
-                    <h4>🎉 Espetáculo de Final de Ano</h4>
-                    <p>Reserve a data: 15 de Julho. Mais informações em breve!</p>
-                    <div class="data">15/06/2025</div>
-                </div>
-                <div class="comunicado">
-                    <h4>📸 Fotos das Aulas</h4>
-                    <p>As fotos do evento "Era Uma Vez Alice" já estão na galeria!</p>
-                    <div class="data">01/03/2025</div>
-                </div>
-            `;
-        }
-
-        function mostrarTab(tab, el) {
-            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
-            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-            
-            const tabMap = {
-                'alunos': 'tabAlunos', 'extrato': 'tabExtrato',
-                'horarios': 'tabHorarios', 'galeria': 'tabGaleria',
-                'comunicados': 'tabComunicados'
-            };
-            
+        function mostrarTab(tab,el){
+            document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
+            document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
+            const tabMap={'alunos':'tabAlunos','extrato':'tabExtrato','horarios':'tabHorarios','galeria':'tabGaleria','comunicados':'tabComunicados'};
             document.getElementById(tabMap[tab]).classList.add('active');
-            if (el) el.classList.add('active');
-            
-            if (tab === 'horarios') carregarHorarios();
-            if (tab === 'extrato' && alunoSelecionado) carregarExtrato();
-            if (tab === 'galeria') carregarGaleria();
-            if (tab === 'comunicados') carregarComunicados();
+            if(el) el.classList.add('active');
+            if(tab==='horarios') carregarHorarios();
+            if(tab==='extrato'&&alunoSelecionado) carregarExtrato();
+            if(tab==='galeria') carregarGaleria();
+            if(tab==='comunicados') carregarComunicados();
         }
 
-        function logout() {
-            document.getElementById('telefone').value = '';
-            document.getElementById('mensagem').innerHTML = '';
-            document.getElementById('bannerAviso').style.display = 'none';
-            document.getElementById('loginScreen').style.display = '';
-            document.getElementById('dashboardScreen').style.display = 'none';
-            telefoneLogado = '';
-            alunosDoResponsavel = [];
-            alunoSelecionado = null;
-            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+        function logout(){
+            document.getElementById('telefone').value=''; document.getElementById('mensagem').innerHTML='';
+            document.getElementById('bannerAviso').style.display='none';
+            document.getElementById('loginScreen').style.display=''; document.getElementById('dashboardScreen').style.display='none';
+            telefoneLogado=''; alunosDoResponsavel=[]; alunoSelecionado=null;
+            document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
             document.getElementById('tabAlunos').classList.add('active');
-            document.querySelectorAll('.nav-item').forEach((n, i) => n.classList.toggle('active', i === 0));
+            document.querySelectorAll('.nav-item').forEach((n,i)=>n.classList.toggle('active',i===0));
         }
 
-        function instalarApp() { 
-            if (deferredPrompt) { deferredPrompt.prompt(); deferredPrompt = null; document.getElementById('btnInstalar').style.display = 'none'; } 
-        }
-        window.addEventListener('beforeinstallprompt', (e) => { 
-            if (!isIOS) { e.preventDefault(); deferredPrompt = e; document.getElementById('btnInstalar').style.display = 'block'; }
-        });
-        if ('serviceWorker' in navigator) { 
-            navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=6').then(reg => reg.update()).catch(err => console.log('SW:', err)); 
-        }
+        function instalarApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null;document.getElementById('btnInstalar').style.display='none';}}
+        window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').style.display='block';}});
+        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=7').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
     </script>
 </body>
 </html>
