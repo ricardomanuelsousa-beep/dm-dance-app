@@ -5,20 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <!-- PWA Manifest -->
     <link rel="manifest" href="/dm-dance-app/manifest.json?v=4">
     
-    <!-- iOS Meta Tags -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="DM Dance">
     <link rel="apple-touch-icon" href="/dm-dance-app/icon-192x192.png">
     <link rel="apple-touch-icon" sizes="512x512" href="/dm-dance-app/icon-512x512.png">
     
-    <!-- Cor do topo no iOS -->
-    <meta name="theme-color" content="#8B0000">
+    <meta name="theme-color" content="#D4AF37">
     
-    <!-- CSS -->
     <style>
         :root {
             --cor-fundo: #FFF5F5;
@@ -64,12 +60,12 @@
             flex-direction: column;
         }
         
-        /* HEADER */
+        /* HEADER DOURADO */
         .header {
-            background: linear-gradient(135deg, #8B0000 0%, #6B0000 100%);
+            background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 40%, #8B6914 100%);
             padding: 30px 25px 25px;
             text-align: center;
-            color: white;
+            color: #4a3000;
         }
         
         .logo-container {
@@ -106,12 +102,7 @@
             font-weight: 700;
             margin-bottom: 5px;
             letter-spacing: -0.5px;
-        }
-        
-        .header .subtitle {
-            font-size: 14px;
-            opacity: 0.9;
-            font-weight: 400;
+            color: #4a3000;
         }
         
         /* LOGIN */
@@ -180,11 +171,6 @@
             opacity: 0.9;
         }
         
-        .btn-sair {
-            background: #999;
-            box-shadow: none;
-        }
-        
         .btn-instalar {
             background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);
             box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
@@ -195,6 +181,36 @@
         @keyframes pulse {
             0%, 100% { box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3); }
             50% { box-shadow: 0 4px 25px rgba(76, 175, 80, 0.5); }
+        }
+        
+        /* BANNER DE AVISO MENSALIDADES */
+        .banner-aviso {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 12px;
+            padding: 14px;
+            margin: 15px 0;
+            display: none;
+            text-align: center;
+            animation: slideDown 0.5s ease;
+        }
+        
+        .banner-aviso .titulo-aviso {
+            font-weight: 700;
+            color: #856404;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .banner-aviso .texto-aviso {
+            color: #92600a;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+        
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         
         /* INSTRUÇÕES iOS */
@@ -244,10 +260,6 @@
             flex-direction: column;
         }
         
-        #dashboardScreen.active {
-            display: flex;
-        }
-        
         .dashboard-header {
             padding: 20px 25px 15px;
             display: flex;
@@ -273,7 +285,7 @@
             box-shadow: none;
         }
         
-        /* TABS CONTEÚDO */
+        /* TABS */
         .tab-content {
             display: none;
             padding: 0 25px 20px;
@@ -484,7 +496,7 @@
             margin-top: 5px;
         }
         
-        /* NAVEGAÇÃO INFERIOR */
+        /* NAVEGAÇÃO */
         .nav {
             display: flex;
             justify-content: space-around;
@@ -518,7 +530,6 @@
             margin-bottom: 3px;
         }
         
-        /* MENSAGENS */
         .erro { 
             color: var(--cor-atraso); 
             text-align: center; 
@@ -556,7 +567,6 @@
             font-size: 11px; 
         }
         
-        /* SCROLLBAR */
         ::-webkit-scrollbar {
             width: 4px;
         }
@@ -571,7 +581,7 @@
 </head>
 <body>
     <div class="container">
-        <!-- HEADER COM LOGO -->
+        <!-- HEADER DOURADO COM LOGO -->
         <div class="header">
             <div class="logo-container">
                 <img src="/dm-dance-app/logo_dm.png" 
@@ -581,7 +591,6 @@
                 <span class="logo-emoji" style="display:none;">🩰</span>
             </div>
             <h1>DM Dance School</h1>
-            <div class="subtitle">Escola de Dança</div>
         </div>
 
         <!-- LOGIN SCREEN -->
@@ -590,6 +599,13 @@
             <div class="login-subtitle">Faça login com o seu telefone</div>
             
             <input type="tel" id="telefone" placeholder="Digite o seu telefone" autocomplete="off" inputmode="numeric">
+            
+            <!-- BANNER DE AVISO DE MENSALIDADES -->
+            <div id="bannerAviso" class="banner-aviso">
+                <div class="titulo-aviso">⚠️ Mensalidades em Atraso</div>
+                <div class="texto-aviso" id="textoAviso"></div>
+            </div>
+            
             <button onclick="login()">Entrar</button>
             
             <button id="btnInstalar" class="btn-instalar" onclick="instalarApp()">📲 Instalar App</button>
@@ -687,6 +703,35 @@
             return { texto: "✅ Em dia", classe: "pago" };
         }
 
+        function verificarPagamentos() {
+            const tel = document.getElementById('telefone').value.trim();
+            if (!tel || !dadosApp[tel]) return;
+            
+            const alunos = dadosApp[tel];
+            let nomesAtraso = [];
+            
+            for (const a of alunos) {
+                const status = obterStatusPagamento(a.pagamentos || {});
+                if (status.classe === 'atraso' || status.classe === 'pendente') {
+                    nomesAtraso.push(a.nome);
+                }
+            }
+            
+            const banner = document.getElementById('bannerAviso');
+            const texto = document.getElementById('textoAviso');
+            
+            if (nomesAtraso.length > 0) {
+                banner.style.display = 'block';
+                if (nomesAtraso.length === 1) {
+                    texto.textContent = nomesAtraso[0] + ' tem mensalidades por regularizar. Por favor, contacte a escola.';
+                } else {
+                    texto.textContent = nomesAtraso.join(', ') + ' têm mensalidades por regularizar. Por favor, contacte a escola.';
+                }
+            } else {
+                banner.style.display = 'none';
+            }
+        }
+
         async function login() {
             const telefone = document.getElementById('telefone').value.trim();
             const msgDiv = document.getElementById('mensagem');
@@ -701,6 +746,9 @@
             try {
                 const response = await fetch('/dm-dance-app/dados_app.json');
                 dadosApp = await response.json();
+                
+                // Mostrar aviso de pagamentos ANTES de entrar
+                verificarPagamentos();
                 
                 if (dadosApp[telefone]) {
                     telefoneLogado = telefone;
@@ -889,6 +937,7 @@
         function logout() {
             document.getElementById('telefone').value = '';
             document.getElementById('mensagem').innerHTML = '';
+            document.getElementById('bannerAviso').style.display = 'none';
             document.getElementById('loginScreen').style.display = '';
             document.getElementById('dashboardScreen').style.display = 'none';
             telefoneLogado = '';
