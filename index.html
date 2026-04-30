@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="/dm-dance-app/manifest.json?v=7">
+    <link rel="manifest" href="/dm-dance-app/manifest.json?v=10">
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -28,34 +28,49 @@
             margin: 0; padding: 15px; min-height: 100vh; min-height: 100dvh; -webkit-font-smoothing: antialiased;
         }
         .container { max-width: 500px; margin: 0 auto; background: var(--cor-branco); border-radius: 24px; padding: 0; box-shadow: var(--sombra); overflow: hidden; min-height: 90vh; min-height: 90dvh; display: flex; flex-direction: column; }
-        .header { background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 40%, #8B6914 100%); padding: 30px 25px 25px; text-align: center; color: #4a3000; }
-        .logo-container { width: 90px; height: 90px; margin: 0 auto 15px; background: transparent; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-        .logo-img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; }
-        .logo-emoji { font-size: 45px; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; }
-        .header h1 { font-size: 24px; font-weight: 700; color: #4a3000; }
         
-        /* BARRA DE NOTÍCIAS ROLANTE */
-        .news-ticker {
-            background: #8B0000;
-            color: white;
-            padding: 10px 0;
-            overflow: hidden;
-            white-space: nowrap;
-            position: relative;
+        /* HEADER */
+        .header { background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 40%, #8B6914 100%); padding: 20px 25px; text-align: center; color: #4a3000; position: relative; }
+        .logo-container { width: 70px; height: 70px; margin: 0 auto 10px; background: transparent; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .logo-img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; }
+        .logo-emoji { font-size: 35px; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; }
+        .header-top { display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .header h1 { font-size: 20px; font-weight: 700; color: #4a3000; }
+        .whatsapp-btn {
+            position: absolute; right: 15px; top: 50%; transform: translateY(-50%);
+            width: 38px; height: 38px; border-radius: 50%; background: #25D366;
+            color: white; font-size: 18px; display: flex; align-items: center; justify-content: center;
+            text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
         }
-        .news-ticker-content {
-            display: inline-block;
-            animation: ticker 20s linear infinite;
-            font-weight: 700;
-            font-size: 14px;
-            padding-left: 100%;
+        .whatsapp-btn:active { transform: translateY(-50%) scale(0.9); }
+        
+        /* FRASE MOTIVACIONAL */
+        .frase-motivacional {
+            text-align: center; padding: 10px 25px; font-style: italic;
+            color: #8B0000; font-size: 14px; background: #fff9e6;
+            border-bottom: 2px solid #D4AF37; animation: fadeIn 1s ease;
         }
-        @keyframes ticker {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-100%); }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+        
+        /* BARRA DE NOTÍCIAS */
+        .news-ticker { background: #8B0000; color: white; padding: 10px 0; overflow: hidden; white-space: nowrap; display: none; }
+        .news-ticker-content { display: inline-block; animation: ticker 25s linear infinite; font-weight: 700; font-size: 14px; padding-left: 100%; }
+        @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
+        .news-ticker:hover .news-ticker-content { animation-play-state: paused; }
+        
+        /* BANNER ANIVERSÁRIO */
+        .banner-aniversario {
+            background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+            color: white; text-align: center; padding: 15px;
+            font-weight: 700; font-size: 15px; display: none;
+            animation: bounceIn 0.8s ease;
         }
-        .news-ticker:hover .news-ticker-content {
-            animation-play-state: paused;
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
         }
         
         #loginScreen { padding: 30px 25px; flex: 1; display: flex; flex-direction: column; justify-content: center; }
@@ -76,46 +91,87 @@
         .instrucoes-ios .numero { background:#007AFF; color:white; width:24px; height:24px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; flex-shrink:0; }
         
         #dashboardScreen { display:none; flex:1; flex-direction:column; }
-        .dashboard-header { padding:8px 25px; display:flex; justify-content:space-between; align-items:center; }
-        .dashboard-header h2 { font-size:18px; color:var(--cor-nome); }
-        .btn-logout { width:38px; height:38px; border-radius:50%; background:#fee; border:none; color:var(--cor-atraso); font-size:16px; cursor:pointer; }
-        .tab-content { display:none; padding:0 25px 20px; flex:1; overflow-y:auto; }
+        .dashboard-header { padding:6px 25px; display:flex; justify-content:space-between; align-items:center; }
+        .dashboard-header h2 { font-size:16px; color:var(--cor-nome); }
+        .btn-logout { width:34px; height:34px; border-radius:50%; background:#fee; border:none; color:var(--cor-atraso); font-size:14px; cursor:pointer; }
+        .tab-content { display:none; padding:0 20px 15px; flex:1; overflow-y:auto; }
         .tab-content.active { display:block; }
         
-        .aluno { background:white; margin:12px 0; padding:15px; border-radius:var(--border-radius); border-left:4px solid var(--cor-destaque); display:flex; gap:14px; align-items:center; box-shadow:var(--sombra); cursor:pointer; }
-        .foto { width:55px; height:55px; border-radius:50%; object-fit:cover; background:#e0e0e0; }
-        .foto-placeholder { width:55px; height:55px; border-radius:50%; background:#e0e0e0; display:flex; align-items:center; justify-content:center; font-size:25px; }
+        /* ALUNOS */
+        .aluno { background:white; margin:10px 0; padding:14px; border-radius:var(--border-radius); border-left:4px solid var(--cor-destaque); display:flex; gap:12px; align-items:center; box-shadow:var(--sombra); cursor:pointer; }
+        .foto { width:65px; height:65px; border-radius:50%; object-fit:cover; background:#e0e0e0; flex-shrink:0; }
+        .foto-placeholder { width:65px; height:65px; border-radius:50%; background:#e0e0e0; display:flex; align-items:center; justify-content:center; font-size:28px; flex-shrink:0; }
         .info { flex:1; }
-        .nome { color:var(--cor-nome); font-size:16px; font-weight:700; }
+        .nome { color:var(--cor-nome); font-size:18px; font-weight:700; margin-bottom:2px; }
         .modalidades { color:#888; font-size:13px; }
         .pago { color:var(--cor-pago); font-weight:600; font-size:14px; }
         .pendente { color:var(--cor-pendente); font-weight:600; font-size:14px; }
         .atraso { color:var(--cor-atraso); font-weight:600; font-size:14px; }
         
+        /* EXTRATO */
         .extrato-header { display:flex; align-items:center; gap:10px; margin-bottom:15px; }
         .btn-voltar { width:36px; height:36px; border-radius:50%; background:#f0f0f0; border:none; font-size:18px; cursor:pointer; }
         .extrato-table { width:100%; border-collapse:collapse; background:white; border-radius:var(--border-radius); overflow:hidden; box-shadow:var(--sombra); }
-        .extrato-table th { background:#f5f5f5; padding:12px 15px; font-size:13px; color:#666; }
-        .extrato-table td { padding:12px 15px; border-bottom:1px solid #f0f0f0; font-size:14px; }
-        .resumo { display:flex; gap:10px; margin-bottom:15px; }
-        .resumo-card { flex:1; background:white; padding:15px; border-radius:var(--border-radius); text-align:center; box-shadow:var(--sombra); }
-        .resumo-card .valor { font-size:20px; font-weight:700; }
-        .resumo-card .label { font-size:11px; color:#888; margin-top:5px; }
+        .extrato-table th { background:#f5f5f5; padding:10px 12px; font-size:12px; color:#666; }
+        .extrato-table td { padding:10px 12px; border-bottom:1px solid #f0f0f0; font-size:13px; }
+        .resumo { display:flex; gap:8px; margin-bottom:12px; }
+        .resumo-card { flex:1; background:white; padding:12px; border-radius:var(--border-radius); text-align:center; box-shadow:var(--sombra); }
+        .resumo-card .valor { font-size:18px; font-weight:700; }
+        .resumo-card .label { font-size:10px; color:#888; margin-top:3px; }
         
-        .horario-card { background:white; border-radius:var(--border-radius); padding:12px 14px; margin:6px 0; display:flex; gap:12px; align-items:center; box-shadow:var(--sombra); }
-        .horario-card.destaque { border-left:4px solid #D4AF37; background:#fce4e4; box-shadow:0 2px 12px rgba(139,0,0,0.2); }
-        .horario-cor { width:6px; height:45px; border-radius:3px; }
-        .horario-info strong { color:var(--cor-nome); font-size:14px; }
-        .horario-info small { color:#888; font-size:11px; display:block; }
-        .horario-destaque-badge { display:inline-block; background:#D4AF37; color:white; font-size:9px; padding:2px 8px; border-radius:10px; margin-left:5px; }
-        .dia-header { color:#4a3000; font-size:14px; margin-bottom:8px; padding:8px 12px; background:#fff9e6; border-radius:8px; font-weight:600; }
+        /* HORÁRIOS - ESTILO CAIXAS */
+        .horario-caixa {
+            background: white; border-radius: 12px; margin: 8px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06); overflow: hidden;
+            transition: all 0.3s;
+        }
+        .horario-caixa.destaque {
+            box-shadow: 0 2px 14px rgba(139, 0, 0, 0.2);
+            transform: scale(1.02);
+        }
+        .horario-caixa-topo {
+            display: flex; align-items: center; gap: 0;
+        }
+        .horario-barra-cor {
+            width: 6px; align-self: stretch; flex-shrink: 0;
+        }
+        .horario-caixa-conteudo {
+            flex: 1; padding: 12px 14px;
+        }
+        .horario-caixa-hora {
+            font-weight: 700; font-size: 13px; color: #555;
+            margin-bottom: 4px;
+        }
+        .horario-caixa-nome {
+            font-weight: 700; font-size: 15px; color: #8B0000;
+            margin-bottom: 2px;
+        }
+        .horario-caixa-turma {
+            font-size: 12px; color: #888;
+        }
+        .horario-caixa-badge {
+            display: inline-block; background: #D4AF37; color: white;
+            font-size: 9px; padding: 3px 10px; border-radius: 10px;
+            margin-top: 5px; font-weight: 600;
+        }
+        .dia-header { 
+            color: #4a3000; font-size: 14px; margin: 15px 0 8px; 
+            padding: 10px 14px; background: #fff9e6; border-radius: 10px; 
+            font-weight: 600; text-align: center;
+        }
         
-        .comunicado { background:white; border-radius:var(--border-radius); padding:15px; margin:10px 0; border-left:4px solid var(--cor-destaque); box-shadow:var(--sombra); }
-        .comunicado.importante { border-left-color:#d32f2f; }
-        .comunicado h4 { color:var(--cor-nome); margin-bottom:5px; }
-        .comunicado p { color:#666; font-size:13px; }
-        .comunicado .data { color:#aaa; font-size:11px; margin-top:5px; }
+        /* EVENTOS */
+        .evento-card {
+            background: white; border-radius: 14px; padding: 15px;
+            margin: 10px 0; box-shadow: var(--sombra);
+            border-left: 4px solid var(--cor-destaque);
+        }
+        .evento-card.importante { border-left-color: #d32f2f; }
+        .evento-card h4 { color: var(--cor-nome); font-size: 15px; margin-bottom: 3px; }
+        .evento-card .evento-data { color: #888; font-size: 12px; margin-bottom: 5px; }
+        .evento-card p { color: #666; font-size: 13px; }
         
+        /* GALERIA */
         .galeria-evento { margin-bottom:25px; background:white; border-radius:var(--border-radius); padding:15px; box-shadow:var(--sombra); }
         .galeria-evento h4 { color:var(--cor-nome); font-size:16px; }
         .evento-data { color:#888; font-size:12px; margin-bottom:12px; }
@@ -125,10 +181,11 @@
         .galeria-fotos { display:grid; grid-template-columns:repeat(3,1fr); gap:5px; }
         .galeria-fotos img { width:100%; aspect-ratio:1; object-fit:cover; border-radius:8px; background:#f0f0f0; cursor:pointer; }
         
+        /* NAVEGAÇÃO */
         .nav { display:flex; justify-content:space-around; background:white; padding:8px 5px 12px; border-top:1px solid #f0f0f0; margin-top:auto; padding-bottom:calc(12px + env(safe-area-inset-bottom)); }
-        .nav-item { text-align:center; cursor:pointer; padding:8px 12px; font-size:11px; color:#999; transition:all 0.2s; border-radius:12px; min-width:60px; }
+        .nav-item { text-align:center; cursor:pointer; padding:8px 10px; font-size:10px; color:#999; transition:all 0.2s; border-radius:12px; min-width:55px; }
         .nav-item.active { color:var(--cor-destaque); font-weight:700; background:#fff9e6; }
-        .nav-item span { display:block; font-size:24px; margin-bottom:3px; }
+        .nav-item span { display:block; font-size:22px; margin-bottom:2px; }
         .erro { color:var(--cor-atraso); text-align:center; margin:10px 0; font-weight:600; }
         .loading { text-align:center; color:#888; margin:20px 0; }
         @keyframes spin { to{transform:rotate(360deg)} }
@@ -140,6 +197,7 @@
 <body>
     <div class="container">
         <div class="header">
+            <a href="https://wa.me/351916732582" target="_blank" class="whatsapp-btn" title="Falar connosco no WhatsApp">💬</a>
             <div class="logo-container">
                 <img src="/dm-dance-app/logo_dm.png" alt="DM Dance School" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
                 <span class="logo-emoji" style="display:none;">🩰</span>
@@ -172,25 +230,25 @@
                 <button class="btn-logout" onclick="logout()" title="Sair">🚪</button>
             </div>
             
-            <!-- BARRA DE NOTÍCIAS ROLANTE -->
+            <div class="frase-motivacional" id="fraseMotivacional"></div>
+            <div class="banner-aniversario" id="bannerAniversario"></div>
+            
             <div class="news-ticker" id="newsTicker">
-                <div class="news-ticker-content" id="newsTickerContent">
-                    📢 Bem-vindos ao ano letivo 2025/2026! Consulte os horários na aba 📅 Horários.
-                </div>
+                <div class="news-ticker-content" id="newsTickerContent"></div>
             </div>
             
             <div id="tabAlunos" class="tab-content active"></div>
             <div id="tabExtrato" class="tab-content"></div>
             <div id="tabHorarios" class="tab-content"></div>
+            <div id="tabEventos" class="tab-content"></div>
             <div id="tabGaleria" class="tab-content"></div>
-            <div id="tabComunicados" class="tab-content"></div>
             
             <div class="nav">
                 <div class="nav-item active" onclick="mostrarTab('alunos', this)"><span>🏠</span>Início</div>
                 <div class="nav-item" onclick="mostrarTab('extrato', this)"><span>💰</span>Extrato</div>
                 <div class="nav-item" onclick="mostrarTab('horarios', this)"><span>📅</span>Horários</div>
+                <div class="nav-item" onclick="mostrarTab('eventos', this)"><span>🎉</span>Eventos</div>
                 <div class="nav-item" onclick="mostrarTab('galeria', this)"><span>🖼️</span>Galeria</div>
-                <div class="nav-item" onclick="mostrarTab('comunicados', this)"><span>📢</span>Avisos</div>
             </div>
         </div>
         <div class="footer">DM Dance School © 2025</div>
@@ -198,21 +256,96 @@
 
     <script>
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
+        let fraseDoDia = '', comunicadosLista = [], eventosLista = [];
+        
         const mesesNum = {"setembro":9,"outubro":10,"novembro":11,"dezembro":12,"janeiro":1,"fevereiro":2,"marco":3,"abril":4,"maio":5,"junho":6,"julho":7};
         const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
         if(isIOS) document.getElementById('instrucoesIOS').style.display='block';
 
-        // LISTA DE COMUNICADOS
-        const comunicadosLista = [
-            {titulo:"🌟 Início do Ano Letivo", texto:"As aulas começam em Setembro. Consulte os horários na aba Horários.", data:"01/08/2025", importante:true},
-            {titulo:"🎉 Espetáculo de Final de Ano", texto:"Reserve a data: 15 de Julho. Mais informações em breve!", data:"15/06/2025", importante:false},
-            {titulo:"📸 Fotos do Evento", texto:"As fotos do evento 'Era Uma Vez Alice' já estão na galeria!", data:"01/03/2025", importante:false},
-        ];
+        // WHATSAPP - Altera o número aqui
+        const WHATSAPP_NUMERO = '351916732582';
+
+        // CARREGAR FRASE DO DIA
+        async function carregarFraseDoDia() {
+            try {
+                const response = await fetch('/dm-dance-app/frases.txt');
+                const texto = await response.text();
+                const frases = texto.split('\n').map(f => f.trim()).filter(f => f !== '');
+                if (frases.length > 0) {
+                    const hoje = new Date();
+                    const diaDoAno = Math.floor((hoje - new Date(hoje.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
+                    const indice = diaDoAno % frases.length;
+                    fraseDoDia = frases[indice];
+                    document.getElementById('fraseMotivacional').textContent = '💫 ' + fraseDoDia;
+                } else {
+                    document.getElementById('fraseMotivacional').style.display = 'none';
+                }
+            } catch(e) { document.getElementById('fraseMotivacional').style.display = 'none'; }
+        }
+
+        // VERIFICAR ANIVERSÁRIO
+        function verificarAniversario(alunos) {
+            const hoje = new Date();
+            const diaHoje = hoje.getDate();
+            const mesHoje = hoje.getMonth() + 1;
+            
+            for (const a of alunos) {
+                if (a.aniversario) {
+                    const partes = a.aniversario.split('/');
+                    if (partes.length === 2) {
+                        const dia = parseInt(partes[0]);
+                        const mes = parseInt(partes[1]);
+                        if (dia === diaHoje && mes === mesHoje) {
+                            const banner = document.getElementById('bannerAniversario');
+                            banner.textContent = `🎂 Parabéns ${a.nome}! Que tenhas um dia muito feliz! Contamos com o bolo na aula! 🎉`;
+                            banner.style.display = 'block';
+                            return;
+                        }
+                    }
+                }
+            }
+        }
+
+        // CARREGAR COMUNICADOS
+        async function carregarComunicadoTXT() {
+            try {
+                const response = await fetch('/dm-dance-app/comunicado.txt');
+                const texto = await response.text();
+                const textoLimpo = texto.trim();
+                if (textoLimpo === '') { comunicadosLista = []; }
+                else {
+                    const partes = textoLimpo.split('---').map(p => p.trim()).filter(p => p !== '');
+                    comunicadosLista = partes.map(p => ({ texto: p }));
+                }
+            } catch(e) { comunicadosLista = []; }
+            atualizarNewsTicker();
+        }
 
         function atualizarNewsTicker() {
-            const ticker = document.getElementById('newsTickerContent');
-            const textos = comunicadosLista.map(c => `📢 ${c.titulo}: ${c.texto}`);
-            ticker.textContent = textos.join('  ⭐  ');
+            const ticker = document.getElementById('newsTicker');
+            const tickerContent = document.getElementById('newsTickerContent');
+            if (comunicadosLista.length === 0) { ticker.style.display = 'none'; }
+            else {
+                ticker.style.display = 'block';
+                tickerContent.textContent = comunicadosLista.map(c => c.texto).join('  ⭐  ');
+            }
+        }
+
+        // CARREGAR EVENTOS
+        async function carregarEventos() {
+            try {
+                const response = await fetch('/dm-dance-app/eventos.txt');
+                const texto = await response.text();
+                const linhas = texto.split('\n').map(l => l.trim()).filter(l => l !== '');
+                eventosLista = linhas.map(l => {
+                    const partes = l.split('|');
+                    return {
+                        nome: (partes[0] || '').trim(),
+                        data: (partes[1] || '').trim(),
+                        descricao: (partes[2] || '').trim()
+                    };
+                });
+            } catch(e) { eventosLista = []; }
         }
 
         function obterStatusPagamento(pagamentos) {
@@ -255,10 +388,13 @@
                     const alunos=dadosApp[telefone];
                     mostrarBannerAviso(alunos);
                     await new Promise(r=>setTimeout(r,2000));
+                    await carregarFraseDoDia();
+                    await carregarComunicadoTXT();
+                    await carregarEventos();
+                    verificarAniversario(alunos);
                     telefoneLogado=telefone; alunosDoResponsavel=alunos; alunoSelecionado=alunosDoResponsavel[0];
                     document.getElementById('loginScreen').style.display='none';
                     document.getElementById('dashboardScreen').style.display='flex';
-                    atualizarNewsTicker();
                     carregarAlunos();
                     if(alunoSelecionado) carregarExtrato();
                     carregarHorarios();
@@ -305,24 +441,50 @@
             const div=document.getElementById('tabHorarios');
             let modalidadesAluno=[];
             if(alunoSelecionado&&alunoSelecionado.modalidades) modalidadesAluno=alunoSelecionado.modalidades.map(m=>m.toLowerCase().trim());
-            function ehDoAluno(turma,nome){const texto=(turma+' '+nome).toLowerCase(); for(const mod of modalidadesAluno){if(texto.includes(mod)||mod.includes(texto.split(' ')[0])) return true;} return false;}
+            function ehDoAluno(turma,nome){const texto=(turma+' '+nome).toLowerCase(); for(const mod of modalidadesAluno){if(texto.includes(mod)) return true;} return false;}
             const dias=[
-                {dia:"Segunda-Feira",aulas:[{hora:"18:00-19:00",nome:"Dance Fusion 1",turma:"Babies",cor:"#FF6B6B"},{hora:"19:00-20:00",nome:"Dance Fusion 2",turma:"Kids 1",cor:"#4ECDC4"},{hora:"20:00-21:00",nome:"Dance Fusion 6",turma:"Adultos",cor:"#F7DC6F"}]},
-                {dia:"Terça-Feira",aulas:[{hora:"17:00-18:00",nome:"Competição Solos",turma:"Competição",cor:"#E74C3C"},{hora:"18:00-19:00",nome:"Contemporâneo 1",turma:"Contemporâneo",cor:"#98D8C8"},{hora:"19:00-20:00",nome:"Dance Fusion 5",turma:"Major",cor:"#FFEAA7"},{hora:"20:00-21:00",nome:"Competição Urbanas",turma:"Competição",cor:"#E74C3C"}]},
-                {dia:"Quarta-Feira",aulas:[{hora:"18:00-19:00",nome:"Dance Fusion 3",turma:"Kids 2",cor:"#45B7D1"},{hora:"19:00-20:00",nome:"Dance Fusion 4",turma:"Teens",cor:"#96CEB4"}]},
-                {dia:"Quinta-Feira",aulas:[{hora:"18:00-19:00",nome:"Dance Fusion 1",turma:"Babies",cor:"#FF6B6B"},{hora:"19:00-20:00",nome:"Dance Fusion 2",turma:"Kids 1",cor:"#4ECDC4"},{hora:"20:00-21:00",nome:"Dance Fusion 6",turma:"Adultos",cor:"#F7DC6F"}]},
-                {dia:"Sexta-Feira",aulas:[{hora:"18:00-19:00",nome:"Dance Fusion 3",turma:"Kids 2",cor:"#45B7D1"},{hora:"19:00-20:00",nome:"Dance Fusion 4",turma:"Teens",cor:"#96CEB4"}]},
-                {dia:"Sábado",aulas:[{hora:"10:30-12:00",nome:"Dance Fusion 5",turma:"Major",cor:"#FFEAA7"},{hora:"12:00-14:00",nome:"Competição Urbanas",turma:"Competição",cor:"#E74C3C"},{hora:"14:00-15:30",nome:"Contemporâneo 2",turma:"Contemporâneo",cor:"#98D8C8"},{hora:"15:30-16:15",nome:"Ballet Pré-Primary",turma:"Ballet",cor:"#DDA0DD"},{hora:"16:15-17:00",nome:"Ballet Primary",turma:"Ballet",cor:"#DDA0DD"},{hora:"17:00-18:00",nome:"Ensaios",turma:"Competição",cor:"#E74C3C"}]},
+                {dia:"Segunda-Feira",aulas:[{hora:"18:00 - 19:00",nome:"Dance Fusion 1",turma:"Babies",cor:"#FF6B6B"},{hora:"19:00 - 20:00",nome:"Dance Fusion 2",turma:"Kids 1",cor:"#4ECDC4"},{hora:"20:00 - 21:00",nome:"Dance Fusion 6",turma:"Adultos",cor:"#F7DC6F"}]},
+                {dia:"Terça-Feira",aulas:[{hora:"17:00 - 18:00",nome:"Competição Solos",turma:"Competição",cor:"#E74C3C"},{hora:"18:00 - 19:00",nome:"Contemporâneo 1",turma:"Contemporâneo",cor:"#98D8C8"},{hora:"19:00 - 20:00",nome:"Dance Fusion 5",turma:"Major",cor:"#FFEAA7"},{hora:"20:00 - 21:00",nome:"Competição Urbanas",turma:"Competição",cor:"#E74C3C"}]},
+                {dia:"Quarta-Feira",aulas:[{hora:"18:00 - 19:00",nome:"Dance Fusion 3",turma:"Kids 2",cor:"#45B7D1"},{hora:"19:00 - 20:00",nome:"Dance Fusion 4",turma:"Teens",cor:"#96CEB4"}]},
+                {dia:"Quinta-Feira",aulas:[{hora:"18:00 - 19:00",nome:"Dance Fusion 1",turma:"Babies",cor:"#FF6B6B"},{hora:"19:00 - 20:00",nome:"Dance Fusion 2",turma:"Kids 1",cor:"#4ECDC4"},{hora:"20:00 - 21:00",nome:"Dance Fusion 6",turma:"Adultos",cor:"#F7DC6F"}]},
+                {dia:"Sexta-Feira",aulas:[{hora:"18:00 - 19:00",nome:"Dance Fusion 3",turma:"Kids 2",cor:"#45B7D1"},{hora:"19:00 - 20:00",nome:"Dance Fusion 4",turma:"Teens",cor:"#96CEB4"}]},
+                {dia:"Sábado",aulas:[{hora:"10:30 - 12:00",nome:"Dance Fusion 5",turma:"Major",cor:"#FFEAA7"},{hora:"12:00 - 14:00",nome:"Competição Urbanas",turma:"Competição",cor:"#E74C3C"},{hora:"14:00 - 15:30",nome:"Contemporâneo 2",turma:"Contemporâneo",cor:"#98D8C8"},{hora:"15:30 - 16:15",nome:"Ballet Pré-Primary",turma:"Ballet",cor:"#DDA0DD"},{hora:"16:15 - 17:00",nome:"Ballet Primary",turma:"Ballet",cor:"#DDA0DD"},{hora:"17:00 - 18:00",nome:"Ensaios",turma:"Competição",cor:"#E74C3C"}]},
             ];
             let html='<h3 style="color:#8B0000;margin-bottom:5px;">📅 Horários</h3><p style="color:#888;font-size:12px;margin-bottom:15px;">Ano letivo 2025/2026</p>';
-            if(modalidadesAluno.length>0) html+='<p style="color:#D4AF37;font-size:11px;margin-bottom:10px;">⭐ As suas aulas estão destacadas</p>';
+            if(modalidadesAluno.length>0) html+='<p style="color:#D4AF37;font-size:11px;margin-bottom:5px;">⭐ As suas aulas estão destacadas</p>';
             for(const d of dias){
-                html+=`<div style="margin-bottom:18px;"><div class="dia-header">📅 ${d.dia}</div>`;
+                html+=`<div class="dia-header">📅 ${d.dia}</div>`;
                 for(const a of d.aulas){
                     const destaque=modalidadesAluno.length>0&&ehDoAluno(a.turma,a.nome);
-                    html+=`<div class="horario-card${destaque?' destaque':''}"><div class="horario-cor" style="background:${a.cor};"></div><div class="horario-info"><strong>${a.nome}${destaque?' <span class="horario-destaque-badge">⭐ Sua aula</span>':''}</strong><small>🕐 ${a.hora} | ${a.turma}</small></div></div>`;
+                    html+=`<div class="horario-caixa${destaque?' destaque':''}">
+                        <div class="horario-caixa-topo">
+                            <div class="horario-barra-cor" style="background:${a.cor};"></div>
+                            <div class="horario-caixa-conteudo">
+                                <div class="horario-caixa-hora">🕐 ${a.hora}</div>
+                                <div class="horario-caixa-nome">🎯 ${a.nome}</div>
+                                <div class="horario-caixa-turma">${a.turma}</div>
+                                ${destaque ? '<div class="horario-caixa-badge">⭐ Sua aula</div>' : ''}
+                            </div>
+                        </div>
+                    </div>`;
                 }
-                html+='</div>';
+            }
+            div.innerHTML=html;
+        }
+
+        function carregarTabEventos(){
+            const div=document.getElementById('tabEventos');
+            let html='<h3 style="color:#8B0000;margin-bottom:10px;">🎉 Eventos</h3>';
+            if(eventosLista.length===0){
+                html+='<p style="text-align:center;color:#999;">Nenhum evento programado.</p>';
+            } else {
+                for(const e of eventosLista){
+                    html+=`<div class="evento-card">
+                        <h4>${e.nome}</h4>
+                        <div class="evento-data">📅 ${e.data}</div>
+                        <p>${e.descricao}</p>
+                    </div>`;
+                }
             }
             div.innerHTML=html;
         }
@@ -338,40 +500,29 @@
                 <div class="galeria-fotos">${fotosHtml}</div></div>`;
         }
 
-        function carregarComunicados(){
-            const div=document.getElementById('tabComunicados');
-            let html='<h3 style="color:#8B0000;margin-bottom:10px;">📢 Comunicados</h3>';
-            for(const c of comunicadosLista){
-                html+=`<div class="comunicado${c.importante?' importante':''}"><h4>${c.titulo}</h4><p>${c.texto}</p><div class="data">${c.data}</div></div>`;
-            }
-            div.innerHTML=html;
-        }
-
         function mostrarTab(tab,el){
             document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
             document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
-            const tabMap={'alunos':'tabAlunos','extrato':'tabExtrato','horarios':'tabHorarios','galeria':'tabGaleria','comunicados':'tabComunicados'};
+            const tabMap={'alunos':'tabAlunos','extrato':'tabExtrato','horarios':'tabHorarios','eventos':'tabEventos','galeria':'tabGaleria'};
             document.getElementById(tabMap[tab]).classList.add('active');
             if(el) el.classList.add('active');
             if(tab==='horarios') carregarHorarios();
             if(tab==='extrato'&&alunoSelecionado) carregarExtrato();
+            if(tab==='eventos') carregarTabEventos();
             if(tab==='galeria') carregarGaleria();
-            if(tab==='comunicados') carregarComunicados();
         }
 
         function logout(){
             document.getElementById('telefone').value=''; document.getElementById('mensagem').innerHTML='';
             document.getElementById('bannerAviso').style.display='none';
+            document.getElementById('bannerAniversario').style.display='none';
             document.getElementById('loginScreen').style.display=''; document.getElementById('dashboardScreen').style.display='none';
             telefoneLogado=''; alunosDoResponsavel=[]; alunoSelecionado=null;
-            document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
-            document.getElementById('tabAlunos').classList.add('active');
-            document.querySelectorAll('.nav-item').forEach((n,i)=>n.classList.toggle('active',i===0));
         }
 
         function instalarApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null;document.getElementById('btnInstalar').style.display='none';}}
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').style.display='block';}});
-        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=7').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
+        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=10').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
     </script>
 </body>
 </html>
