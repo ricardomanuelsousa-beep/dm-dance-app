@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="/dm-dance-app/manifest.json?v=10">
+    <link rel="manifest" href="/dm-dance-app/manifest.json?v=11">
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -34,21 +34,20 @@
         .logo-container { width: 70px; height: 70px; margin: 0 auto 10px; background: transparent; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
         .logo-img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; }
         .logo-emoji { font-size: 35px; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; }
-        .header-top { display: flex; align-items: center; justify-content: center; gap: 10px; }
         .header h1 { font-size: 20px; font-weight: 700; color: #4a3000; }
         .whatsapp-btn {
             position: absolute; right: 15px; top: 50%; transform: translateY(-50%);
-            width: 38px; height: 38px; border-radius: 50%; background: #25D366;
-            color: white; font-size: 18px; display: flex; align-items: center; justify-content: center;
+            width: 40px; height: 40px; border-radius: 50%; background: #25D366;
+            color: white; font-size: 20px; display: flex; align-items: center; justify-content: center;
             text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-            transition: transform 0.2s;
+            transition: transform 0.2s; z-index: 10;
         }
         .whatsapp-btn:active { transform: translateY(-50%) scale(0.9); }
         
         /* FRASE MOTIVACIONAL */
         .frase-motivacional {
-            text-align: center; padding: 10px 25px; font-style: italic;
-            color: #8B0000; font-size: 14px; background: #fff9e6;
+            text-align: center; padding: 14px 25px; font-style: italic;
+            color: #8B0000; font-size: 18px; background: #fff9e6; line-height: 1.5;
             border-bottom: 2px solid #D4AF37; animation: fadeIn 1s ease;
         }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
@@ -97,16 +96,16 @@
         .tab-content { display:none; padding:0 20px 15px; flex:1; overflow-y:auto; }
         .tab-content.active { display:block; }
         
-        /* ALUNOS */
-        .aluno { background:white; margin:10px 0; padding:14px; border-radius:var(--border-radius); border-left:4px solid var(--cor-destaque); display:flex; gap:12px; align-items:center; box-shadow:var(--sombra); cursor:pointer; }
-        .foto { width:65px; height:65px; border-radius:50%; object-fit:cover; background:#e0e0e0; flex-shrink:0; }
-        .foto-placeholder { width:65px; height:65px; border-radius:50%; background:#e0e0e0; display:flex; align-items:center; justify-content:center; font-size:28px; flex-shrink:0; }
+        /* ALUNOS - MAIORES */
+        .aluno { background:white; margin:10px 0; padding:16px; border-radius:var(--border-radius); border-left:5px solid var(--cor-destaque); display:flex; gap:14px; align-items:center; box-shadow:var(--sombra); cursor:pointer; }
+        .foto { width:80px; height:80px; border-radius:50%; object-fit:cover; background:#e0e0e0; flex-shrink:0; }
+        .foto-placeholder { width:80px; height:80px; border-radius:50%; background:#e0e0e0; display:flex; align-items:center; justify-content:center; font-size:32px; flex-shrink:0; }
         .info { flex:1; }
-        .nome { color:var(--cor-nome); font-size:18px; font-weight:700; margin-bottom:2px; }
-        .modalidades { color:#888; font-size:13px; }
-        .pago { color:var(--cor-pago); font-weight:600; font-size:14px; }
-        .pendente { color:var(--cor-pendente); font-weight:600; font-size:14px; }
-        .atraso { color:var(--cor-atraso); font-weight:600; font-size:14px; }
+        .nome { color:var(--cor-nome); font-size:20px; font-weight:700; margin-bottom:3px; }
+        .modalidades { color:#888; font-size:14px; margin-bottom:3px; }
+        .pago { color:var(--cor-pago); font-weight:600; font-size:15px; }
+        .pendente { color:var(--cor-pendente); font-weight:600; font-size:15px; }
+        .atraso { color:var(--cor-atraso); font-weight:600; font-size:15px; }
         
         /* EXTRATO */
         .extrato-header { display:flex; align-items:center; gap:10px; margin-bottom:15px; }
@@ -126,32 +125,21 @@
             transition: all 0.3s;
         }
         .horario-caixa.destaque {
-            box-shadow: 0 2px 14px rgba(139, 0, 0, 0.2);
+            background: #fff9e6;
+            box-shadow: 0 3px 15px rgba(212, 175, 55, 0.25);
             transform: scale(1.02);
+            border: 2px solid #D4AF37;
         }
-        .horario-caixa-topo {
-            display: flex; align-items: center; gap: 0;
-        }
-        .horario-barra-cor {
-            width: 6px; align-self: stretch; flex-shrink: 0;
-        }
-        .horario-caixa-conteudo {
-            flex: 1; padding: 12px 14px;
-        }
-        .horario-caixa-hora {
-            font-weight: 700; font-size: 13px; color: #555;
-            margin-bottom: 4px;
-        }
-        .horario-caixa-nome {
-            font-weight: 700; font-size: 15px; color: #8B0000;
-            margin-bottom: 2px;
-        }
-        .horario-caixa-turma {
-            font-size: 12px; color: #888;
-        }
+        .horario-caixa-topo { display: flex; align-items: center; }
+        .horario-barra-cor { width: 6px; align-self: stretch; flex-shrink: 0; }
+        .horario-caixa.destaque .horario-barra-cor { background: #D4AF37 !important; }
+        .horario-caixa-conteudo { flex: 1; padding: 12px 14px; }
+        .horario-caixa-hora { font-weight: 700; font-size: 13px; color: #555; margin-bottom: 4px; }
+        .horario-caixa-nome { font-weight: 700; font-size: 15px; color: #8B0000; margin-bottom: 2px; }
+        .horario-caixa-turma { font-size: 12px; color: #888; }
         .horario-caixa-badge {
             display: inline-block; background: #D4AF37; color: white;
-            font-size: 9px; padding: 3px 10px; border-radius: 10px;
+            font-size: 10px; padding: 3px 10px; border-radius: 10px;
             margin-top: 5px; font-weight: 600;
         }
         .dia-header { 
@@ -232,7 +220,6 @@
             
             <div class="frase-motivacional" id="fraseMotivacional"></div>
             <div class="banner-aniversario" id="bannerAniversario"></div>
-            
             <div class="news-ticker" id="newsTicker">
                 <div class="news-ticker-content" id="newsTickerContent"></div>
             </div>
@@ -256,13 +243,13 @@
 
     <script>
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
-        let fraseDoDia = '', comunicadosLista = [], eventosLista = [];
+        let comunicadosLista = [], eventosLista = [];
         
         const mesesNum = {"setembro":9,"outubro":10,"novembro":11,"dezembro":12,"janeiro":1,"fevereiro":2,"marco":3,"abril":4,"maio":5,"junho":6,"julho":7};
         const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
         if(isIOS) document.getElementById('instrucoesIOS').style.display='block';
 
-        // WHATSAPP - Altera o número aqui
+        // WHATSAPP
         const WHATSAPP_NUMERO = '351916732582';
 
         // CARREGAR FRASE DO DIA
@@ -275,8 +262,7 @@
                     const hoje = new Date();
                     const diaDoAno = Math.floor((hoje - new Date(hoje.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
                     const indice = diaDoAno % frases.length;
-                    fraseDoDia = frases[indice];
-                    document.getElementById('fraseMotivacional').textContent = '💫 ' + fraseDoDia;
+                    document.getElementById('fraseMotivacional').textContent = '💫 ' + frases[indice];
                 } else {
                     document.getElementById('fraseMotivacional').style.display = 'none';
                 }
@@ -288,13 +274,11 @@
             const hoje = new Date();
             const diaHoje = hoje.getDate();
             const mesHoje = hoje.getMonth() + 1;
-            
             for (const a of alunos) {
                 if (a.aniversario) {
                     const partes = a.aniversario.split('/');
                     if (partes.length === 2) {
-                        const dia = parseInt(partes[0]);
-                        const mes = parseInt(partes[1]);
+                        const dia = parseInt(partes[0]), mes = parseInt(partes[1]);
                         if (dia === diaHoje && mes === mesHoje) {
                             const banner = document.getElementById('bannerAniversario');
                             banner.textContent = `🎂 Parabéns ${a.nome}! Que tenhas um dia muito feliz! Contamos com o bolo na aula! 🎉`;
@@ -339,11 +323,7 @@
                 const linhas = texto.split('\n').map(l => l.trim()).filter(l => l !== '');
                 eventosLista = linhas.map(l => {
                     const partes = l.split('|');
-                    return {
-                        nome: (partes[0] || '').trim(),
-                        data: (partes[1] || '').trim(),
-                        descricao: (partes[2] || '').trim()
-                    };
+                    return { nome: (partes[0]||'').trim(), data: (partes[1]||'').trim(), descricao: (partes[2]||'').trim() };
                 });
             } catch(e) { eventosLista = []; }
         }
@@ -451,19 +431,19 @@
                 {dia:"Sábado",aulas:[{hora:"10:30 - 12:00",nome:"Dance Fusion 5",turma:"Major",cor:"#FFEAA7"},{hora:"12:00 - 14:00",nome:"Competição Urbanas",turma:"Competição",cor:"#E74C3C"},{hora:"14:00 - 15:30",nome:"Contemporâneo 2",turma:"Contemporâneo",cor:"#98D8C8"},{hora:"15:30 - 16:15",nome:"Ballet Pré-Primary",turma:"Ballet",cor:"#DDA0DD"},{hora:"16:15 - 17:00",nome:"Ballet Primary",turma:"Ballet",cor:"#DDA0DD"},{hora:"17:00 - 18:00",nome:"Ensaios",turma:"Competição",cor:"#E74C3C"}]},
             ];
             let html='<h3 style="color:#8B0000;margin-bottom:5px;">📅 Horários</h3><p style="color:#888;font-size:12px;margin-bottom:15px;">Ano letivo 2025/2026</p>';
-            if(modalidadesAluno.length>0) html+='<p style="color:#D4AF37;font-size:11px;margin-bottom:5px;">⭐ As suas aulas estão destacadas</p>';
+            if(modalidadesAluno.length>0) html+='<p style="color:#D4AF37;font-size:11px;margin-bottom:5px;">⭐ As suas aulas estão destacadas a dourado</p>';
             for(const d of dias){
                 html+=`<div class="dia-header">📅 ${d.dia}</div>`;
                 for(const a of d.aulas){
                     const destaque=modalidadesAluno.length>0&&ehDoAluno(a.turma,a.nome);
                     html+=`<div class="horario-caixa${destaque?' destaque':''}">
                         <div class="horario-caixa-topo">
-                            <div class="horario-barra-cor" style="background:${a.cor};"></div>
+                            <div class="horario-barra-cor" style="background:${destaque?'#D4AF37':a.cor};"></div>
                             <div class="horario-caixa-conteudo">
                                 <div class="horario-caixa-hora">🕐 ${a.hora}</div>
                                 <div class="horario-caixa-nome">🎯 ${a.nome}</div>
                                 <div class="horario-caixa-turma">${a.turma}</div>
-                                ${destaque ? '<div class="horario-caixa-badge">⭐ Sua aula</div>' : ''}
+                                ${destaque?'<div class="horario-caixa-badge">⭐ Sua aula</div>':''}
                             </div>
                         </div>
                     </div>`;
@@ -479,11 +459,7 @@
                 html+='<p style="text-align:center;color:#999;">Nenhum evento programado.</p>';
             } else {
                 for(const e of eventosLista){
-                    html+=`<div class="evento-card">
-                        <h4>${e.nome}</h4>
-                        <div class="evento-data">📅 ${e.data}</div>
-                        <p>${e.descricao}</p>
-                    </div>`;
+                    html+=`<div class="evento-card"><h4>${e.nome}</h4><div class="evento-data">📅 ${e.data}</div><p>${e.descricao}</p></div>`;
                 }
             }
             div.innerHTML=html;
@@ -496,7 +472,7 @@
             for(let i=1;i<=numFotos;i++) fotosHtml+=`<img src="${pastaFotos}foto${i}.jpg" onerror="this.style.display='none';" loading="lazy" alt="Foto ${i}">`;
             div.innerHTML=`<h3 style="color:#8B0000;margin-bottom:10px;">🖼️ Galeria</h3>
                 <div class="galeria-evento"><h4>📸 Era Uma Vez Alice</h4><div class="evento-data">22 de Fevereiro de 2026</div>
-                <div class="galeria-cartaz"><img src="${pastaFotos}cartaz.jpg" alt="Cartaz" onerror="this.style.display='none';this.nextElementSibling.style.display='block';"><div class="placeholder-text" style="display:none;">🎭<br>Espaço para o cartaz</div></div>
+                <div class="galeria-cartaz"><img src="${pastaFotos}cartaz.png" alt="Cartaz" onerror="this.src='${pastaFotos}cartaz.jpg';this.onerror=function(){this.style.display='none';this.nextElementSibling.style.display='block';};"><div class="placeholder-text" style="display:none;">🎭<br>Espaço para o cartaz</div></div>
                 <div class="galeria-fotos">${fotosHtml}</div></div>`;
         }
 
@@ -522,7 +498,7 @@
 
         function instalarApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null;document.getElementById('btnInstalar').style.display='none';}}
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').style.display='block';}});
-        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=10').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
+        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=11').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
     </script>
 </body>
 </html>
