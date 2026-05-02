@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="/dm-dance-app/manifest.json?v=11">
+    <link rel="manifest" href="/dm-dance-app/manifest.json?v=13">
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -29,7 +29,6 @@
         }
         .container { max-width: 500px; margin: 0 auto; background: var(--cor-branco); border-radius: 24px; padding: 0; box-shadow: var(--sombra); overflow: hidden; min-height: 90vh; min-height: 90dvh; display: flex; flex-direction: column; }
         
-        /* HEADER */
         .header { background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 40%, #8B6914 100%); padding: 20px 25px; text-align: center; color: #4a3000; position: relative; }
         .logo-container { width: 70px; height: 70px; margin: 0 auto 10px; background: transparent; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
         .logo-img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; }
@@ -39,38 +38,18 @@
             position: absolute; right: 15px; top: 50%; transform: translateY(-50%);
             width: 40px; height: 40px; border-radius: 50%; background: #25D366;
             color: white; font-size: 20px; display: flex; align-items: center; justify-content: center;
-            text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-            transition: transform 0.2s; z-index: 10;
+            text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.2); z-index: 10;
         }
-        .whatsapp-btn:active { transform: translateY(-50%) scale(0.9); }
         
-        /* FRASE MOTIVACIONAL */
-        .frase-motivacional {
-            text-align: center; padding: 14px 25px; font-style: italic;
-            color: #8B0000; font-size: 18px; background: #fff9e6; line-height: 1.5;
-            border-bottom: 2px solid #D4AF37; animation: fadeIn 1s ease;
-        }
+        .frase-motivacional { text-align: center; padding: 14px 25px; font-style: italic; color: #8B0000; font-size: 18px; background: #fff9e6; line-height: 1.5; border-bottom: 2px solid #D4AF37; animation: fadeIn 1s ease; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
         
-        /* BARRA DE NOTÍCIAS */
         .news-ticker { background: #8B0000; color: white; padding: 10px 0; overflow: hidden; white-space: nowrap; display: none; }
         .news-ticker-content { display: inline-block; animation: ticker 25s linear infinite; font-weight: 700; font-size: 14px; padding-left: 100%; }
         @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
-        .news-ticker:hover .news-ticker-content { animation-play-state: paused; }
         
-        /* BANNER ANIVERSÁRIO */
-        .banner-aniversario {
-            background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
-            color: white; text-align: center; padding: 15px;
-            font-weight: 700; font-size: 15px; display: none;
-            animation: bounceIn 0.8s ease;
-        }
-        @keyframes bounceIn {
-            0% { transform: scale(0.3); opacity: 0; }
-            50% { transform: scale(1.05); }
-            70% { transform: scale(0.9); }
-            100% { transform: scale(1); opacity: 1; }
-        }
+        .banner-aniversario { background: linear-gradient(135deg, #ff6b6b, #ff8e8e); color: white; text-align: center; padding: 15px; font-weight: 700; font-size: 15px; display: none; animation: bounceIn 0.8s ease; }
+        @keyframes bounceIn { 0%{transform:scale(0.3);opacity:0} 50%{transform:scale(1.05)} 70%{transform:scale(.9)} 100%{transform:scale(1);opacity:1} }
         
         #loginScreen { padding: 30px 25px; flex: 1; display: flex; flex-direction: column; justify-content: center; }
         .login-title { font-size: 22px; font-weight: 700; color: var(--cor-nome); text-align: center; margin-bottom: 5px; }
@@ -96,7 +75,6 @@
         .tab-content { display:none; padding:0 20px 15px; flex:1; overflow-y:auto; }
         .tab-content.active { display:block; }
         
-        /* ALUNOS - MAIORES */
         .aluno { background:white; margin:10px 0; padding:16px; border-radius:var(--border-radius); border-left:5px solid var(--cor-destaque); display:flex; gap:14px; align-items:center; box-shadow:var(--sombra); cursor:pointer; }
         .foto { width:80px; height:80px; border-radius:50%; object-fit:cover; background:#e0e0e0; flex-shrink:0; }
         .foto-placeholder { width:80px; height:80px; border-radius:50%; background:#e0e0e0; display:flex; align-items:center; justify-content:center; font-size:32px; flex-shrink:0; }
@@ -107,7 +85,6 @@
         .pendente { color:var(--cor-pendente); font-weight:600; font-size:15px; }
         .atraso { color:var(--cor-atraso); font-weight:600; font-size:15px; }
         
-        /* EXTRATO */
         .extrato-header { display:flex; align-items:center; gap:10px; margin-bottom:15px; }
         .btn-voltar { width:36px; height:36px; border-radius:50%; background:#f0f0f0; border:none; font-size:18px; cursor:pointer; }
         .extrato-table { width:100%; border-collapse:collapse; background:white; border-radius:var(--border-radius); overflow:hidden; box-shadow:var(--sombra); }
@@ -118,18 +95,8 @@
         .resumo-card .valor { font-size:18px; font-weight:700; }
         .resumo-card .label { font-size:10px; color:#888; margin-top:3px; }
         
-        /* HORÁRIOS - ESTILO CAIXAS */
-        .horario-caixa {
-            background: white; border-radius: 12px; margin: 8px 0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06); overflow: hidden;
-            transition: all 0.3s;
-        }
-        .horario-caixa.destaque {
-            background: #fff9e6;
-            box-shadow: 0 3px 15px rgba(212, 175, 55, 0.25);
-            transform: scale(1.02);
-            border: 2px solid #D4AF37;
-        }
+        .horario-caixa { background: white; border-radius: 12px; margin: 8px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06); overflow: hidden; transition: all 0.3s; }
+        .horario-caixa.destaque { background: #fff9e6; box-shadow: 0 3px 15px rgba(212, 175, 55, 0.25); transform: scale(1.02); border: 2px solid #D4AF37; }
         .horario-caixa-topo { display: flex; align-items: center; }
         .horario-barra-cor { width: 6px; align-self: stretch; flex-shrink: 0; }
         .horario-caixa.destaque .horario-barra-cor { background: #D4AF37 !important; }
@@ -137,29 +104,14 @@
         .horario-caixa-hora { font-weight: 700; font-size: 13px; color: #555; margin-bottom: 4px; }
         .horario-caixa-nome { font-weight: 700; font-size: 15px; color: #8B0000; margin-bottom: 2px; }
         .horario-caixa-turma { font-size: 12px; color: #888; }
-        .horario-caixa-badge {
-            display: inline-block; background: #D4AF37; color: white;
-            font-size: 10px; padding: 3px 10px; border-radius: 10px;
-            margin-top: 5px; font-weight: 600;
-        }
-        .dia-header { 
-            color: #4a3000; font-size: 14px; margin: 15px 0 8px; 
-            padding: 10px 14px; background: #fff9e6; border-radius: 10px; 
-            font-weight: 600; text-align: center;
-        }
+        .horario-caixa-badge { display: inline-block; background: #D4AF37; color: white; font-size: 10px; padding: 3px 10px; border-radius: 10px; margin-top: 5px; font-weight: 600; }
+        .dia-header { color: #4a3000; font-size: 14px; margin: 15px 0 8px; padding: 10px 14px; background: #fff9e6; border-radius: 10px; font-weight: 600; text-align: center; }
         
-        /* EVENTOS */
-        .evento-card {
-            background: white; border-radius: 14px; padding: 15px;
-            margin: 10px 0; box-shadow: var(--sombra);
-            border-left: 4px solid var(--cor-destaque);
-        }
-        .evento-card.importante { border-left-color: #d32f2f; }
+        .evento-card { background: white; border-radius: 14px; padding: 15px; margin: 10px 0; box-shadow: var(--sombra); border-left: 4px solid var(--cor-destaque); }
         .evento-card h4 { color: var(--cor-nome); font-size: 15px; margin-bottom: 3px; }
         .evento-card .evento-data { color: #888; font-size: 12px; margin-bottom: 5px; }
         .evento-card p { color: #666; font-size: 13px; }
         
-        /* GALERIA */
         .galeria-evento { margin-bottom:25px; background:white; border-radius:var(--border-radius); padding:15px; box-shadow:var(--sombra); }
         .galeria-evento h4 { color:var(--cor-nome); font-size:16px; }
         .evento-data { color:#888; font-size:12px; margin-bottom:12px; }
@@ -169,7 +121,6 @@
         .galeria-fotos { display:grid; grid-template-columns:repeat(3,1fr); gap:5px; }
         .galeria-fotos img { width:100%; aspect-ratio:1; object-fit:cover; border-radius:8px; background:#f0f0f0; cursor:pointer; }
         
-        /* NAVEGAÇÃO */
         .nav { display:flex; justify-content:space-around; background:white; padding:8px 5px 12px; border-top:1px solid #f0f0f0; margin-top:auto; padding-bottom:calc(12px + env(safe-area-inset-bottom)); }
         .nav-item { text-align:center; cursor:pointer; padding:8px 10px; font-size:10px; color:#999; transition:all 0.2s; border-radius:12px; min-width:55px; }
         .nav-item.active { color:var(--cor-destaque); font-weight:700; background:#fff9e6; }
@@ -249,10 +200,6 @@
         const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
         if(isIOS) document.getElementById('instrucoesIOS').style.display='block';
 
-        // WHATSAPP
-        const WHATSAPP_NUMERO = '351916732582';
-
-        // CARREGAR FRASE DO DIA
         async function carregarFraseDoDia() {
             try {
                 const response = await fetch('/dm-dance-app/frases.txt');
@@ -261,94 +208,98 @@
                 if (frases.length > 0) {
                     const hoje = new Date();
                     const diaDoAno = Math.floor((hoje - new Date(hoje.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
-                    const indice = diaDoAno % frases.length;
-                    document.getElementById('fraseMotivacional').textContent = '💫 ' + frases[indice];
+                    document.getElementById('fraseMotivacional').textContent = '💫 ' + frases[diaDoAno % frases.length];
                 } else {
                     document.getElementById('fraseMotivacional').style.display = 'none';
                 }
             } catch(e) { document.getElementById('fraseMotivacional').style.display = 'none'; }
         }
 
-        // VERIFICAR ANIVERSÁRIO
         function verificarAniversario(alunos) {
             const hoje = new Date();
-            const diaHoje = hoje.getDate();
-            const mesHoje = hoje.getMonth() + 1;
+            const diaHoje = hoje.getDate(), mesHoje = hoje.getMonth() + 1;
             for (const a of alunos) {
                 if (a.aniversario) {
                     const partes = a.aniversario.split('/');
-                    if (partes.length === 2) {
-                        const dia = parseInt(partes[0]), mes = parseInt(partes[1]);
-                        if (dia === diaHoje && mes === mesHoje) {
-                            const banner = document.getElementById('bannerAniversario');
-                            banner.textContent = `🎂 Parabéns ${a.nome}! Que tenhas um dia muito feliz! Contamos com o bolo na aula! 🎉`;
-                            banner.style.display = 'block';
-                            return;
-                        }
+                    if (partes.length === 2 && parseInt(partes[0]) === diaHoje && parseInt(partes[1]) === mesHoje) {
+                        const banner = document.getElementById('bannerAniversario');
+                        banner.textContent = `🎂 Parabéns ${a.nome}! Que tenhas um dia muito feliz! Contamos com o bolo na aula! 🎉`;
+                        banner.style.display = 'block';
+                        return;
                     }
                 }
             }
         }
 
-        // CARREGAR COMUNICADOS
         async function carregarComunicadoTXT() {
             try {
                 const response = await fetch('/dm-dance-app/comunicado.txt');
-                const texto = await response.text();
-                const textoLimpo = texto.trim();
-                if (textoLimpo === '') { comunicadosLista = []; }
-                else {
-                    const partes = textoLimpo.split('---').map(p => p.trim()).filter(p => p !== '');
-                    comunicadosLista = partes.map(p => ({ texto: p }));
-                }
+                const texto = await response.text().then(t => t.trim());
+                comunicadosLista = texto ? texto.split('---').map(p => p.trim()).filter(p => p).map(p => ({texto: p})) : [];
             } catch(e) { comunicadosLista = []; }
-            atualizarNewsTicker();
-        }
-
-        function atualizarNewsTicker() {
             const ticker = document.getElementById('newsTicker');
             const tickerContent = document.getElementById('newsTickerContent');
             if (comunicadosLista.length === 0) { ticker.style.display = 'none'; }
-            else {
-                ticker.style.display = 'block';
-                tickerContent.textContent = comunicadosLista.map(c => c.texto).join('  ⭐  ');
-            }
+            else { ticker.style.display = 'block'; tickerContent.textContent = comunicadosLista.map(c => c.texto).join('  ⭐  '); }
         }
 
-        // CARREGAR EVENTOS
         async function carregarEventos() {
             try {
                 const response = await fetch('/dm-dance-app/eventos.txt');
                 const texto = await response.text();
-                const linhas = texto.split('\n').map(l => l.trim()).filter(l => l !== '');
-                eventosLista = linhas.map(l => {
+                eventosLista = texto.split('\n').map(l => l.trim()).filter(l => l).map(l => {
                     const partes = l.split('|');
                     return { nome: (partes[0]||'').trim(), data: (partes[1]||'').trim(), descricao: (partes[2]||'').trim() };
                 });
             } catch(e) { eventosLista = []; }
         }
 
+        // NOVA FUNÇÃO - Atraso só após dia 15
         function obterStatusPagamento(pagamentos) {
-            const hoje = new Date(), mesAtual = hoje.getMonth()+1, anoAtual = hoje.getFullYear();
-            let anoLetivo = mesAtual >= 9 ? anoAtual : anoAtual-1;
-            for(const[mes,pago] of Object.entries(pagamentos)){
+            const hoje = new Date();
+            const diaHoje = hoje.getDate();
+            const mesAtual = hoje.getMonth() + 1;
+            const anoAtual = hoje.getFullYear();
+            let anoLetivo = mesAtual >= 9 ? anoAtual : anoAtual - 1;
+            
+            for (const [mes, pago] of Object.entries(pagamentos)) {
                 const mesNum = mesesNum[mes.toLowerCase()];
-                if(!mesNum) continue;
-                let anoMes = mesNum >= 9 ? anoLetivo : anoLetivo+1;
-                let dataMes = new Date(anoMes, mesNum-1, 1);
-                if(!pago){
-                    if(dataMes < new Date()) return {texto:`❌ Atrasado (${mes})`, classe:"atraso"};
-                    if(dataMes.getMonth()===hoje.getMonth() && dataMes.getFullYear()===hoje.getFullYear()) return {texto:`⏳ Pendente (${mes})`, classe:"pendente"};
+                if (!mesNum) continue;
+                let anoMes = mesNum >= 9 ? anoLetivo : anoLetivo + 1;
+                let dataMes = new Date(anoMes, mesNum - 1, 1);
+                
+                if (!pago) {
+                    let dataLimite = new Date(anoMes, mesNum - 1, 15);
+                    
+                    if (dataLimite < hoje) {
+                        return { texto: `❌ Atrasado (${mes})`, classe: "atraso" };
+                    }
+                    if (dataMes.getMonth() === mesAtual && dataMes.getFullYear() === anoAtual) {
+                        if (diaHoje <= 15) {
+                            return { texto: `⏳ A pagar até dia 15`, classe: "pendente" };
+                        }
+                        return { texto: `❌ Atrasado (${mes})`, classe: "atraso" };
+                    }
                 }
             }
-            return {texto:"✅ Em dia", classe:"pago"};
+            return { texto: "✅ Em dia", classe: "pago" };
         }
 
+        // NOVA FUNÇÃO - Banner só após dia 15
         function mostrarBannerAviso(alunos){
+            const hoje = new Date();
+            const diaHoje = hoje.getDate();
+            
+            // Só mostra banner de atraso se já passou dia 15
+            if (diaHoje <= 15) {
+                document.getElementById('bannerAviso').style.display = 'none';
+                return;
+            }
+            
             let nomesAtraso=[];
             for(const a of alunos){
                 const s = obterStatusPagamento(a.pagamentos||{});
-                if(s.classe==='atraso'||s.classe==='pendente') nomesAtraso.push(a.nome);
+                if(s.classe==='atraso') nomesAtraso.push(a.nome);
             }
             const banner=document.getElementById('bannerAviso'), texto=document.getElementById('textoAviso');
             if(nomesAtraso.length>0){
@@ -408,8 +359,8 @@
                 <div class="resumo"><div class="resumo-card"><div class="valor" style="color:#2e7d32;" id="totalPago">-</div><div class="label">Total Pago</div></div><div class="resumo-card"><div class="valor" style="color:#d32f2f;" id="totalPendente">-</div><div class="label">Pendente</div></div></div>
                 <table class="extrato-table"><tr><th>Mês</th><th style="text-align:right;">Valor</th><th style="text-align:center;">Status</th></tr>`;
             for(const[cod,nome] of meses){
-                const pago=alunoSelecionado.pagamentos&&alunoSelecionado.pagamentos[cod], valor=pago?(alunoSelecionado.mensalidade||30):0;
-                if(pago) totalPago+=valor; else totalPendente+=(alunoSelecionado.mensalidade||30);
+                const pago=alunoSelecionado.pagamentos&&alunoSelecionado.pagamentos[cod], valor=pago?30:0;
+                if(pago) totalPago+=valor; else totalPendente+=30;
                 html+=`<tr><td>${nome}</td><td style="text-align:right;">${valor.toFixed(2)}€</td><td style="text-align:center;" class="${pago?'pago':'pendente'}">${pago?'✅ Pago':'❌ Pendente'}</td></tr>`;
             }
             html+='</table>'; div.innerHTML=html;
@@ -455,13 +406,8 @@
         function carregarTabEventos(){
             const div=document.getElementById('tabEventos');
             let html='<h3 style="color:#8B0000;margin-bottom:10px;">🎉 Eventos</h3>';
-            if(eventosLista.length===0){
-                html+='<p style="text-align:center;color:#999;">Nenhum evento programado.</p>';
-            } else {
-                for(const e of eventosLista){
-                    html+=`<div class="evento-card"><h4>${e.nome}</h4><div class="evento-data">📅 ${e.data}</div><p>${e.descricao}</p></div>`;
-                }
-            }
+            if(eventosLista.length===0){ html+='<p style="text-align:center;color:#999;">Nenhum evento programado.</p>'; }
+            else { for(const e of eventosLista){ html+=`<div class="evento-card"><h4>${e.nome}</h4><div class="evento-data">📅 ${e.data}</div><p>${e.descricao}</p></div>`; } }
             div.innerHTML=html;
         }
 
@@ -498,7 +444,7 @@
 
         function instalarApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null;document.getElementById('btnInstalar').style.display='none';}}
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').style.display='block';}});
-        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=12').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
+        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=13').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
     </script>
 </body>
 </html>
