@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="/dm-dance-app/manifest.json?v=13">
+    <link rel="manifest" href="/dm-dance-app/manifest.json?v=14">
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -197,6 +197,7 @@
         let comunicadosLista = [], eventosLista = [];
         
         const mesesNum = {"setembro":9,"outubro":10,"novembro":11,"dezembro":12,"janeiro":1,"fevereiro":2,"marco":3,"abril":4,"maio":5,"junho":6,"julho":7};
+        const DIA_LIMITE = 8; // ⬅️ ALTERADO PARA DIA 8
         const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
         if(isIOS) document.getElementById('instrucoesIOS').style.display='block';
 
@@ -254,7 +255,7 @@
             } catch(e) { eventosLista = []; }
         }
 
-        // NOVA FUNÇÃO - Atraso só após dia 15
+        // Atraso só após dia 8
         function obterStatusPagamento(pagamentos) {
             const hoje = new Date();
             const diaHoje = hoje.getDate();
@@ -269,43 +270,58 @@
                 let dataMes = new Date(anoMes, mesNum - 1, 1);
                 
                 if (!pago) {
-                    let dataLimite = new Date(anoMes, mesNum - 1, 15);
+                    let dataLimite = new Date(anoMes, mesNum - 1, DIA_LIMITE);
                     
                     if (dataLimite < hoje) {
                         return { texto: `❌ Atrasado (${mes})`, classe: "atraso" };
                     }
-                    if (dataMes.getMonth() === mesAtual && dataMes.getFullYear() === anoAtual) {
-                        if (diaHoje <= 15) {
-                            return { texto: `⏳ A pagar até dia 15`, classe: "pendente" };
-                        }
-                        return { texto: `❌ Atrasado (${mes})`, classe: "atraso" };
+                    if (dataMes.getMonth() === mesAtual && dataMes.getFullYear() === anoAtual && diaHoje < DIA_LIMITE) {
+                        return { texto: `⏳ A pagar até dia ${DIA_LIMITE}`, classe: "pendente" };
+                    }
+                    if (dataMes > hoje) {
+                        continue;
                     }
                 }
             }
             return { texto: "✅ Em dia", classe: "pago" };
         }
 
-        // NOVA FUNÇÃO - Banner só após dia 15
+        // Banner só após dia 8
         function mostrarBannerAviso(alunos){
             const hoje = new Date();
             const diaHoje = hoje.getDate();
+            const mesAtual = hoje.getMonth() + 1;
+            const anoAtual = hoje.getFullYear();
+            let anoLetivo = mesAtual >= 9 ? anoAtual : anoAtual - 1;
             
-            // Só mostra banner de atraso se já passou dia 15
-            if (diaHoje <= 15) {
-                document.getElementById('bannerAviso').style.display = 'none';
-                return;
+            let nomesAtraso = [];
+            
+            for (const a of alunos) {
+                for (const [mes, pago] of Object.entries(a.pagamentos || {})) {
+                    const mesNum = mesesNum[mes.toLowerCase()];
+                    if (!mesNum || pago) continue;
+                    
+                    let anoMes = mesNum >= 9 ? anoLetivo : anoLetivo + 1;
+                    let dataLimite = new Date(anoMes, mesNum - 1, DIA_LIMITE);
+                    
+                    if (dataLimite < hoje) {
+                        nomesAtraso.push(a.nome);
+                        break;
+                    }
+                }
             }
             
-            let nomesAtraso=[];
-            for(const a of alunos){
-                const s = obterStatusPagamento(a.pagamentos||{});
-                if(s.classe==='atraso') nomesAtraso.push(a.nome);
+            const banner = document.getElementById('bannerAviso');
+            const texto = document.getElementById('textoAviso');
+            
+            if (nomesAtraso.length > 0) {
+                banner.style.display = 'block';
+                texto.textContent = nomesAtraso.length === 1 
+                    ? nomesAtraso[0] + ' tem mensalidades por regularizar. Contacte a escola.' 
+                    : nomesAtraso.join(', ') + ' têm mensalidades por regularizar. Contacte a escola.';
+            } else {
+                banner.style.display = 'none';
             }
-            const banner=document.getElementById('bannerAviso'), texto=document.getElementById('textoAviso');
-            if(nomesAtraso.length>0){
-                banner.style.display='block';
-                texto.textContent = nomesAtraso.length===1 ? nomesAtraso[0]+' tem mensalidades por regularizar. Contacte a escola.' : nomesAtraso.join(', ')+' têm mensalidades por regularizar. Contacte a escola.';
-            } else { banner.style.display='none'; }
         }
 
         async function login(){
@@ -444,7 +460,7 @@
 
         function instalarApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null;document.getElementById('btnInstalar').style.display='none';}}
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').style.display='block';}});
-        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=13').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
+        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=14').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
     </script>
 </body>
 </html>
