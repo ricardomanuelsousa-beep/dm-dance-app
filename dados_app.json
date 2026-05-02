@@ -50,7 +50,7 @@
   "918176673": [
     {
       "id": 10,
-      "nome": "Beatriz Fernandes",
+      "nome": "Bea Fernandes",
       "aniversario": "26/03",
       "modalidades": [
         "Teens"
@@ -63,12 +63,60 @@
         "janeiro": true,
         "fevereiro": true,
         "marco": true,
-        "abril": false,
+        "abril": true,
         "maio": false,
         "junho": false,
         "julho": false
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_10.jpg"
+    }
+  ],
+  "911929373": [
+    {
+      "id": 12,
+      "nome": "Carolina Ohonovska",
+      "aniversario": "25/09",
+      "modalidades": [
+        "Teens"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": false,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738104/alunos/aluno_12.png"
+    }
+  ],
+  "935502059": [
+    {
+      "id": 12,
+      "nome": "Carolina Ohonovska",
+      "aniversario": "25/09",
+      "modalidades": [
+        "Teens"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": false,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738104/alunos/aluno_12.png"
     }
   ],
   "914448649": [
@@ -87,8 +135,8 @@
         "dezembro": true,
         "janeiro": true,
         "fevereiro": true,
-        "marco": false,
-        "abril": false,
+        "marco": true,
+        "abril": true,
         "maio": false,
         "junho": false,
         "julho": false
@@ -131,10 +179,10 @@
         "outubro": true,
         "novembro": true,
         "dezembro": true,
-        "janeiro": false,
-        "fevereiro": false,
-        "marco": false,
-        "abril": false,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
         "maio": false,
         "junho": false,
         "julho": false
@@ -164,7 +212,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777737338/alunos/aluno_15.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_15.jpg"
     }
   ],
   "917447816": [
@@ -261,6 +309,28 @@
         "julho": false
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_20.jpg"
+    },
+    {
+      "id": 72,
+      "nome": "Lara Pinho",
+      "aniversario": "11/10",
+      "modalidades": [
+        "Teens"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738542/alunos/aluno_72.jpg"
     }
   ],
   "924888476": [
@@ -402,7 +472,7 @@
         "janeiro": true,
         "fevereiro": true,
         "marco": true,
-        "abril": false,
+        "abril": true,
         "maio": false,
         "junho": false,
         "julho": false
@@ -461,7 +531,7 @@
   "913369805": [
     {
       "id": 30,
-      "nome": "Irina Ferreira",
+      "nome": "Irina",
       "aniversario": "14/08",
       "modalidades": [
         "Kids 1",
@@ -505,6 +575,28 @@
         "julho": false
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_31.jpg"
+    },
+    {
+      "id": 114,
+      "nome": "Silvia Ferreira",
+      "aniversario": "12/07",
+      "modalidades": [
+        "Adultas"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_114.jpg"
     }
   ],
   "914665617": [
@@ -556,7 +648,7 @@
     },
     {
       "id": 64,
-      "nome": "Marina Moreira",
+      "nome": "Marina",
       "aniversario": "18/01",
       "modalidades": [
         "Kids 2"
@@ -569,7 +661,7 @@
         "janeiro": true,
         "fevereiro": true,
         "marco": true,
-        "abril": false,
+        "abril": true,
         "maio": false,
         "junho": false,
         "julho": false
@@ -604,7 +696,7 @@
   "918739935": [
     {
       "id": 35,
-      "nome": "Leonor Silva Marques",
+      "nome": "Leonor Marques",
       "aniversario": "14/08",
       "modalidades": [
         "Kids 1",
@@ -625,6 +717,28 @@
         "julho": false
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_35.jpg"
+    },
+    {
+      "id": 107,
+      "nome": "Ana Gomes",
+      "aniversario": "07/01",
+      "modalidades": [
+        "Adultas"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_107.jpg"
     }
   ],
   "911149304": [
@@ -755,7 +869,7 @@
   "916687056": [
     {
       "id": 42,
-      "nome": "Maria Clara Silva",
+      "nome": "Clarinha",
       "aniversario": "16/06",
       "modalidades": [
         "Kids 1"
@@ -768,12 +882,56 @@
         "janeiro": true,
         "fevereiro": true,
         "marco": true,
-        "abril": false,
+        "abril": true,
         "maio": false,
         "junho": false,
         "julho": false
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_42.jpg"
+    },
+    {
+      "id": 106,
+      "nome": "Luisa",
+      "aniversario": "04/01",
+      "modalidades": [
+        "Contemporâneo"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_106.jpg"
+    },
+    {
+      "id": 112,
+      "nome": "Leonor",
+      "aniversario": "28/06",
+      "modalidades": [
+        "Adultas"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_112.jpg"
     }
   ],
   "916803861": [
@@ -803,7 +961,32 @@
   "933254278": [
     {
       "id": 44,
-      "nome": "Maria Miguel Sousa",
+      "nome": "Mimi",
+      "aniversario": "28/01",
+      "modalidades": [
+        "Kids 1",
+        "Contemporâneo"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_44.jpg"
+    }
+  ],
+  "933205425": [
+    {
+      "id": 44,
+      "nome": "Mimi",
       "aniversario": "28/01",
       "modalidades": [
         "Kids 1",
@@ -899,6 +1082,30 @@
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_47.jpg"
     }
   ],
+  "96339893": [
+    {
+      "id": 48,
+      "nome": "Bea Luginger",
+      "aniversario": "20/12",
+      "modalidades": [
+        "Kids 2"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_48.jpg"
+    }
+  ],
   "964379973": [
     {
       "id": 49,
@@ -926,7 +1133,7 @@
   "912111910": [
     {
       "id": 50,
-      "nome": "Carole Oliveira",
+      "nome": "Carole",
       "aniversario": "11/09",
       "modalidades": [
         "Kids 2"
@@ -950,7 +1157,7 @@
   "919697115": [
     {
       "id": 51,
-      "nome": "Carolina Almeida Teixeira",
+      "nome": "Carolina Teixeira",
       "aniversario": "03/11",
       "modalidades": [
         "Kids 2",
@@ -999,7 +1206,7 @@
   "965880436": [
     {
       "id": 53,
-      "nome": "Gabriela Aguiar Almeida",
+      "nome": "Gabriela Aguiar",
       "aniversario": "07/03",
       "modalidades": [
         "Kids 2"
@@ -1023,7 +1230,7 @@
   "919322750": [
     {
       "id": 54,
-      "nome": "Gabriela Almeida Resende",
+      "nome": "Gabriela Resende",
       "aniversario": "11/09",
       "modalidades": [
         "Kids 2"
@@ -1193,7 +1400,32 @@
   "916518128": [
     {
       "id": 61,
-      "nome": "Margarida Lazar",
+      "nome": "Margarida",
+      "aniversario": "08/07",
+      "modalidades": [
+        "Kids 2",
+        "Contemporâneo"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_61.jpg"
+    }
+  ],
+  "960354918": [
+    {
+      "id": 61,
+      "nome": "Margarida",
       "aniversario": "08/07",
       "modalidades": [
         "Kids 2",
@@ -1218,7 +1450,7 @@
   "962556835": [
     {
       "id": 62,
-      "nome": "Maria Miguel Pina",
+      "nome": "Maria M. Pina",
       "aniversario": "13/09",
       "modalidades": [
         "Kids 2"
@@ -1315,7 +1547,33 @@
   "922010663": [
     {
       "id": 67,
-      "nome": "Serena Monteiro",
+      "nome": "Serena",
+      "aniversario": "13/05",
+      "modalidades": [
+        "Kids 2",
+        "Contemporâneo",
+        "Ballet"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_67.jpg"
+    }
+  ],
+  "910547103": [
+    {
+      "id": 67,
+      "nome": "Serena",
       "aniversario": "13/05",
       "modalidades": [
         "Kids 2",
@@ -1341,7 +1599,7 @@
   "913223195": [
     {
       "id": 68,
-      "nome": "Teresa Paiva",
+      "nome": "Teresa",
       "aniversario": "09/09",
       "modalidades": [
         "Kids 2"
@@ -1362,6 +1620,31 @@
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_68.jpg"
     }
   ],
+  "914181099": [
+    {
+      "id": 69,
+      "nome": "Gabriela Duarte",
+      "aniversario": "23/08",
+      "modalidades": [
+        "Teens",
+        "Contemporâneo"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738443/alunos/aluno_69.jpg"
+    }
+  ],
   "915437064": [
     {
       "id": 70,
@@ -1378,12 +1661,228 @@
         "janeiro": true,
         "fevereiro": true,
         "marco": true,
-        "abril": false,
+        "abril": true,
         "maio": false,
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_70.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738492/alunos/aluno_70.jpg"
+    }
+  ],
+  "923185337": [
+    {
+      "id": 70,
+      "nome": "Ines Ferraz",
+      "aniversario": "01/08",
+      "modalidades": [
+        "Teens"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738492/alunos/aluno_70.jpg"
+    }
+  ],
+  "913509212": [
+    {
+      "id": 73,
+      "nome": "Madalena",
+      "aniversario": "08/01",
+      "modalidades": [
+        "Teens"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738793/alunos/aluno_73.jpg"
+    }
+  ],
+  "911155812": [
+    {
+      "id": 74,
+      "nome": "Maria Azevedo",
+      "aniversario": "24/01",
+      "modalidades": [
+        "Teens"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738832/alunos/aluno_74.jpg"
+    }
+  ],
+  "915411701": [
+    {
+      "id": 77,
+      "nome": "Nuria",
+      "aniversario": "28/05",
+      "modalidades": [
+        "Teens"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738890/alunos/aluno_77.jpg"
+    }
+  ],
+  "917609885": [
+    {
+      "id": 77,
+      "nome": "Nuria",
+      "aniversario": "28/05",
+      "modalidades": [
+        "Teens"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738890/alunos/aluno_77.jpg"
+    }
+  ],
+  "913662954": [
+    {
+      "id": 78,
+      "nome": "Rihanna",
+      "aniversario": "03/11",
+      "modalidades": [
+        "Teens"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738931/alunos/aluno_78.jpg"
+    }
+  ],
+  "922282521": [
+    {
+      "id": 78,
+      "nome": "Rihanna",
+      "aniversario": "03/11",
+      "modalidades": [
+        "Teens"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738931/alunos/aluno_78.jpg"
+    }
+  ],
+  "913622154": [
+    {
+      "id": 79,
+      "nome": "Sofia Peixoto",
+      "aniversario": "23/08",
+      "modalidades": [
+        "Teens"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738961/alunos/aluno_79.jpg"
+    }
+  ],
+  "913622084": [
+    {
+      "id": 79,
+      "nome": "Sofia Peixoto",
+      "aniversario": "23/08",
+      "modalidades": [
+        "Teens"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738961/alunos/aluno_79.jpg"
     }
   ],
   "968998485": [
@@ -1408,6 +1907,808 @@
         "julho": false
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_80.jpg"
+    }
+  ],
+  "924238553": [
+    {
+      "id": 81,
+      "nome": "Ana Clara",
+      "aniversario": "26/04",
+      "modalidades": [
+        "Major",
+        "Competição"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_81.jpg"
+    }
+  ],
+  "912473467": [
+    {
+      "id": 82,
+      "nome": "Ana Lara",
+      "aniversario": "26/02",
+      "modalidades": [
+        "Major"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_82.jpg"
+    }
+  ],
+  "969576836": [
+    {
+      "id": 82,
+      "nome": "Ana Lara",
+      "aniversario": "26/02",
+      "modalidades": [
+        "Major"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_82.jpg"
+    }
+  ],
+  "900094904": [
+    {
+      "id": 83,
+      "nome": "Bianca Vicente",
+      "aniversario": "23/03",
+      "modalidades": [
+        "Major"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_83.jpg"
+    }
+  ],
+  "916789564": [
+    {
+      "id": 84,
+      "nome": "Catarina Bernardes",
+      "aniversario": "05/02",
+      "modalidades": [
+        "Major",
+        "Contemporâneo"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_84.jpg"
+    }
+  ],
+  "931127010": [
+    {
+      "id": 85,
+      "nome": "Diana Israel",
+      "aniversario": "19/09",
+      "modalidades": [
+        "Major",
+        "Competição"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_85.jpg"
+    }
+  ],
+  "933059643": [
+    {
+      "id": 86,
+      "nome": "Diana Lopes",
+      "aniversario": "30/11",
+      "modalidades": [
+        "Major",
+        "Contemporâneo"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_86.jpg"
+    }
+  ],
+  "918110436": [
+    {
+      "id": 87,
+      "nome": "Duda",
+      "aniversario": "11/08",
+      "modalidades": [
+        "Major",
+        "Competição"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_87.jpg"
+    }
+  ],
+  "938699796": [
+    {
+      "id": 88,
+      "nome": "Eva Almeida",
+      "aniversario": "14/04",
+      "modalidades": [
+        "Major",
+        "Competição"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_88.jpg"
+    }
+  ],
+  "914885246": [
+    {
+      "id": 89,
+      "nome": "José Chichavel",
+      "aniversario": "23/09",
+      "modalidades": [
+        "Major",
+        "Contemporâneo",
+        "Competição"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_89.jpg"
+    }
+  ],
+  "913386243": [
+    {
+      "id": 90,
+      "nome": "Tuga",
+      "aniversario": "05/11",
+      "modalidades": [
+        "Major",
+        "Contemporâneo"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_90.jpg"
+    }
+  ],
+  "915171153": [
+    {
+      "id": 91,
+      "nome": "Lara Paiva",
+      "aniversario": "20/09",
+      "modalidades": [
+        "Major"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_91.jpg"
+    }
+  ],
+  "928034063": [
+    {
+      "id": 92,
+      "nome": "Mafalda",
+      "aniversario": "29/03",
+      "modalidades": [
+        "Major"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_92.jpg"
+    }
+  ],
+  "912719290": [
+    {
+      "id": 93,
+      "nome": "Maria Oliveira",
+      "aniversario": "22/09",
+      "modalidades": [
+        "Major",
+        "Contemporâneo"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_93.jpg"
+    }
+  ],
+  "916497091": [
+    {
+      "id": 94,
+      "nome": "Mariana Gouveia",
+      "aniversario": "19/02",
+      "modalidades": [
+        "Major"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_94.jpg"
+    }
+  ],
+  "914914693": [
+    {
+      "id": 95,
+      "nome": "Mariana Moreira",
+      "aniversario": "17/06",
+      "modalidades": [
+        "Major",
+        "Competição"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_95.jpg"
+    }
+  ],
+  "918425760": [
+    {
+      "id": 96,
+      "nome": "Alice",
+      "aniversario": "27/05",
+      "modalidades": [
+        "Ballet"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_96.jpg"
+    }
+  ],
+  "967366049": [
+    {
+      "id": 97,
+      "nome": "Clara Rodrigues",
+      "aniversario": "31/05",
+      "modalidades": [
+        "Ballet"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_97.jpg"
+    },
+    {
+      "id": 104,
+      "nome": "Marta Rodrigues",
+      "aniversario": "09/09",
+      "modalidades": [
+        "Ballet"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_104.jpg"
+    }
+  ],
+  "918172980": [
+    {
+      "id": 98,
+      "nome": "Iris Santos",
+      "aniversario": "10/02",
+      "modalidades": [
+        "Ballet"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_98.jpg"
+    }
+  ],
+  "910047172": [
+    {
+      "id": 99,
+      "nome": "Isabella",
+      "aniversario": "01/10",
+      "modalidades": [
+        "Ballet"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_99.jpg"
+    }
+  ],
+  "917256912": [
+    {
+      "id": 99,
+      "nome": "Isabella",
+      "aniversario": "01/10",
+      "modalidades": [
+        "Ballet"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_99.jpg"
+    }
+  ],
+  "919006336": [
+    {
+      "id": 100,
+      "nome": "Joana Moreira",
+      "aniversario": "17/04",
+      "modalidades": [
+        "Ballet"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_100.jpg"
+    }
+  ],
+  "911909884": [
+    {
+      "id": 101,
+      "nome": "Lara Nogueira",
+      "aniversario": "02/09",
+      "modalidades": [
+        "Ballet"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_101.jpg"
+    }
+  ],
+  "914669555": [
+    {
+      "id": 102,
+      "nome": "Maria J.Bastos",
+      "aniversario": "26/11",
+      "modalidades": [
+        "Ballet",
+        "Contemporâneo"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_102.jpg"
+    }
+  ],
+  "918577056": [
+    {
+      "id": 103,
+      "nome": "Maria J.Pinho",
+      "aniversario": "14/01",
+      "modalidades": [
+        "Ballet"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_103.jpg"
+    }
+  ],
+  "917559341": [
+    {
+      "id": 103,
+      "nome": "Maria J.Pinho",
+      "aniversario": "14/01",
+      "modalidades": [
+        "Ballet"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_103.jpg"
+    }
+  ],
+  "916723165": [
+    {
+      "id": 105,
+      "nome": "Camila Silva",
+      "aniversario": "16/07",
+      "modalidades": [
+        "Contemporâneo"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_105.jpg"
+    }
+  ],
+  "915971934": [
+    {
+      "id": 105,
+      "nome": "Camila Silva",
+      "aniversario": "16/07",
+      "modalidades": [
+        "Contemporâneo"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_105.jpg"
+    }
+  ],
+  "910024908": [
+    {
+      "id": 108,
+      "nome": "Andreia Carvalho",
+      "aniversario": "17/07",
+      "modalidades": [
+        "Adultas"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_108.jpg"
+    }
+  ],
+  "915422486": [
+    {
+      "id": 109,
+      "nome": "Andreia Gomes",
+      "aniversario": "11/02",
+      "modalidades": [
+        "Adultas"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_109.jpg"
+    }
+  ],
+  "912331891": [
+    {
+      "id": 111,
+      "nome": "Diana Oliveira",
+      "aniversario": "20/07",
+      "modalidades": [
+        "Adultas"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_111.jpg"
+    }
+  ],
+  "914590970": [
+    {
+      "id": 113,
+      "nome": "Daniela Almeida",
+      "aniversario": "05/11",
+      "modalidades": [
+        "Adultas"
+      ],
+      "pagamentos": {
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_113.jpg"
     }
   ]
 }
