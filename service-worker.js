@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dm-dance-v3';
+const CACHE_NAME = 'dm-dance-v12';
 const urlsToCache = [
   '/dm-dance-app/',
   '/dm-dance-app/index.html',
@@ -8,7 +8,6 @@ const urlsToCache = [
   '/dm-dance-app/icon-512x512.png'
 ];
 
-// Forçar ativação imediata
 self.addEventListener('install', event => {
   self.skipWaiting();
   event.waitUntil(
@@ -18,22 +17,19 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('fetch', event => {
-  const url = event.request.url;
-  
-  // NÃO fazer cache de imagens externas (Cloudinary, Supabase)
-  if (url.includes('cloudinary.com') || url.includes('supabase.co')) {
+  // NÃO interferir com Cloudinary
+  if (event.request.url.includes('cloudinary.com')) {
     event.respondWith(fetch(event.request));
     return;
   }
   
-  // Para outros, tentar cache
   event.respondWith(
     caches.match(event.request)
       .then(response => response || fetch(event.request))
+      .catch(() => caches.match('/dm-dance-app/index.html'))
   );
 });
 
-// Limpar caches antigas
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(cacheNames => {

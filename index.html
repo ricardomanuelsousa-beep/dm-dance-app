@@ -498,7 +498,7 @@
 
         function instalarApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null;document.getElementById('btnInstalar').style.display='none';}}
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').style.display='block';}});
-        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=11').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
+        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=12').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
     </script>
 </body>
 </html>
