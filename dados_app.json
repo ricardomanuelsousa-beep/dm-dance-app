@@ -63,12 +63,12 @@
         "janeiro": true,
         "fevereiro": true,
         "marco": true,
-        "abril": false,
+        "abril": true,
         "maio": false,
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_10.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1776525338/aluno_10.jpg"
     }
   ],
   "911929373": [
@@ -661,12 +661,12 @@
         "janeiro": true,
         "fevereiro": true,
         "marco": true,
-        "abril": false,
+        "abril": true,
         "maio": false,
         "junho": false,
         "julho": false
       },
-      "foto": "https://saprsfpiacbcmmlzogct.supabase.co/storage/v1/object/fotos/aluno_64.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1776525338/aluno_64.jpg"
     }
   ],
   "925489548": [
@@ -1098,7 +1098,7 @@
         "janeiro": true,
         "fevereiro": true,
         "marco": true,
-        "abril": false,
+        "abril": true,
         "maio": false,
         "junho": false,
         "julho": false
@@ -1200,7 +1200,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://saprsfpiacbcmmlzogct.supabase.co/storage/v1/object/fotos/aluno_52.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1776525338/aluno_52.jpg"
     }
   ],
   "965880436": [
@@ -1224,7 +1224,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://saprsfpiacbcmmlzogct.supabase.co/storage/v1/object/fotos/aluno_53.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1776525338/aluno_53.jpg"
     }
   ],
   "919322750": [
@@ -1296,7 +1296,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://saprsfpiacbcmmlzogct.supabase.co/storage/v1/object/fotos/aluno_56.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1776525338/aluno_56.jpg"
     }
   ],
   "914571666": [
@@ -1541,7 +1541,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://saprsfpiacbcmmlzogct.supabase.co/storage/v1/object/fotos/aluno_66.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1776525338/aluno_66.jpg"
     }
   ],
   "922010663": [
