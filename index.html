@@ -364,7 +364,7 @@
                 const status=obterStatusPagamento(f.pagamentos||{});
                 let fotoUrl = f.foto || '';
                 if (fotoUrl && fotoUrl.includes('cloudinary.com') && !fotoUrl.includes('?')) {
-                    fotoUrl += '?q=100';
+                    fotoUrl += '?q=100&w=400&h=400&c=fill&g=face';
                 }
                 div.innerHTML+=`<div class="aluno" onclick="selecionarAluno(${f.id})">
                     <img class="foto" src="${fotoUrl}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" crossorigin="anonymous" loading="lazy">
