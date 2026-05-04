@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="/dm-dance-app/manifest.json?v=16">
+    <link rel="manifest" href="/dm-dance-app/manifest.json?v=17">
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -13,6 +13,9 @@
     <link rel="apple-touch-icon" href="/dm-dance-app/icon-192x192.png">
     <link rel="apple-touch-icon" sizes="512x512" href="/dm-dance-app/icon-512x512.png">
     <meta name="theme-color" content="#D4AF37">
+    
+    <!-- Lordicon -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
     
     <style>
         :root {
@@ -124,7 +127,7 @@
         .nav { display:flex; justify-content:space-around; background:white; padding:8px 5px 12px; border-top:1px solid #f0f0f0; margin-top:auto; padding-bottom:calc(12px + env(safe-area-inset-bottom)); }
         .nav-item { text-align:center; cursor:pointer; padding:8px 10px; font-size:10px; color:#999; transition:all 0.2s; border-radius:12px; min-width:55px; }
         .nav-item.active { color:var(--cor-destaque); font-weight:700; background:#fff9e6; }
-        .nav-item span { display:block; font-size:22px; margin-bottom:2px; }
+        .nav-item .nav-icon { display:block; width:28px; height:28px; margin:0 auto 3px; }
         .erro { color:var(--cor-atraso); text-align:center; margin:10px 0; font-weight:600; }
         .loading { text-align:center; color:#888; margin:20px 0; }
         @keyframes spin { to{transform:rotate(360deg)} }
@@ -182,11 +185,26 @@
             <div id="tabGaleria" class="tab-content"></div>
             
             <div class="nav">
-                <div class="nav-item active" onclick="mostrarTab('alunos', this)"><span>🏠</span>Início</div>
-                <div class="nav-item" onclick="mostrarTab('extrato', this)"><span>💰</span>Extrato</div>
-                <div class="nav-item" onclick="mostrarTab('horarios', this)"><span>📅</span>Horários</div>
-                <div class="nav-item" onclick="mostrarTab('eventos', this)"><span>🎉</span>Eventos</div>
-                <div class="nav-item" onclick="mostrarTab('galeria', this)"><span>🖼️</span>Galeria</div>
+                <div class="nav-item active" onclick="mostrarTab('alunos', this)">
+                    <lord-icon src="https://cdn.lordicon.com/wmltezpx.json" trigger="hover" colors="primary:#D4AF37" class="nav-icon"></lord-icon>
+                    Início
+                </div>
+                <div class="nav-item" onclick="mostrarTab('extrato', this)">
+                    <lord-icon src="https://cdn.lordicon.com/cjieazom.json" trigger="hover" colors="primary:#D4AF37" class="nav-icon"></lord-icon>
+                    Extrato
+                </div>
+                <div class="nav-item" onclick="mostrarTab('horarios', this)">
+                    <lord-icon src="https://cdn.lordicon.com/abfverha.json" trigger="hover" colors="primary:#D4AF37" class="nav-icon"></lord-icon>
+                    Horários
+                </div>
+                <div class="nav-item" onclick="mostrarTab('eventos', this)">
+                    <lord-icon src="https://cdn.lordicon.com/vyukbrod.json" trigger="hover" colors="primary:#D4AF37" class="nav-icon"></lord-icon>
+                    Eventos
+                </div>
+                <div class="nav-item" onclick="mostrarTab('galeria', this)">
+                    <lord-icon src="https://cdn.lordicon.com/kqbofftc.json" trigger="hover" colors="primary:#D4AF37" class="nav-icon"></lord-icon>
+                    Galeria
+                </div>
             </div>
         </div>
         <div class="footer">DM Dance School © 2025</div>
@@ -255,10 +273,8 @@
             } catch(e) { eventosLista = []; }
         }
 
-        // Só mostra depois do dia 8, sem texto "a pagar até dia X"
         function obterStatusPagamento(pagamentos) {
             const hoje = new Date();
-            const diaHoje = hoje.getDate();
             const mesAtual = hoje.getMonth() + 1;
             const anoAtual = hoje.getFullYear();
             let anoLetivo = mesAtual >= 9 ? anoAtual : anoAtual - 1;
@@ -269,7 +285,7 @@
                 let anoMes = mesNum >= 9 ? anoLetivo : anoLetivo + 1;
                 let dataLimite = new Date(anoMes, mesNum - 1, DIA_LIMITE);
                 
-                if (!pago && dataLimite < hoje) {
+                if (!pago && dataLimite < new Date()) {
                     return { texto: `❌ Atrasado (${mes})`, classe: "atraso" };
                 }
             }
@@ -341,7 +357,6 @@
             const div=document.getElementById('tabAlunos'); div.innerHTML='';
             for(const f of alunosDoResponsavel){
                 const status=obterStatusPagamento(f.pagamentos||{});
-                // Melhorar qualidade da foto adicionando ?q=100
                 let fotoUrl = f.foto || '';
                 if (fotoUrl && fotoUrl.includes('cloudinary.com') && !fotoUrl.includes('?')) {
                     fotoUrl += '?q=100';
@@ -453,7 +468,7 @@
 
         function instalarApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null;document.getElementById('btnInstalar').style.display='none';}}
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').style.display='block';}});
-        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=16').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
+        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=17').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
     </script>
 </body>
 </html>
