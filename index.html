@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="/dm-dance-app/manifest.json?v=17">
+    <link rel="manifest" href="/dm-dance-app/manifest.json?v=18">
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -14,8 +14,8 @@
     <link rel="apple-touch-icon" sizes="512x512" href="/dm-dance-app/icon-512x512.png">
     <meta name="theme-color" content="#D4AF37">
     
-    <!-- Lordicon -->
-    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
     
     <style>
         :root {
@@ -125,9 +125,10 @@
         .galeria-fotos img { width:100%; aspect-ratio:1; object-fit:cover; border-radius:8px; background:#f0f0f0; cursor:pointer; }
         
         .nav { display:flex; justify-content:space-around; background:white; padding:8px 5px 12px; border-top:1px solid #f0f0f0; margin-top:auto; padding-bottom:calc(12px + env(safe-area-inset-bottom)); }
-        .nav-item { text-align:center; cursor:pointer; padding:8px 10px; font-size:10px; color:#999; transition:all 0.2s; border-radius:12px; min-width:55px; }
+        .nav-item { text-align:center; cursor:pointer; padding:8px 6px; font-size:10px; color:#999; transition:all 0.2s; border-radius:12px; min-width:55px; }
         .nav-item.active { color:var(--cor-destaque); font-weight:700; background:#fff9e6; }
-        .nav-item .nav-icon { display:block; width:28px; height:28px; margin:0 auto 3px; }
+        .nav-item.active .nav-icon { color:var(--cor-destaque); }
+        .nav-icon { width:26px; height:26px; display:block; margin:0 auto 3px; color:#999; transition:color 0.2s; }
         .erro { color:var(--cor-atraso); text-align:center; margin:10px 0; font-weight:600; }
         .loading { text-align:center; color:#888; margin:20px 0; }
         @keyframes spin { to{transform:rotate(360deg)} }
@@ -186,23 +187,23 @@
             
             <div class="nav">
                 <div class="nav-item active" onclick="mostrarTab('alunos', this)">
-                    <lord-icon src="https://cdn.lordicon.com/wmltezpx.json" trigger="hover" colors="primary:#D4AF37" class="nav-icon"></lord-icon>
+                    <i data-lucide="house" class="nav-icon"></i>
                     Início
                 </div>
                 <div class="nav-item" onclick="mostrarTab('extrato', this)">
-                    <lord-icon src="https://cdn.lordicon.com/cjieazom.json" trigger="hover" colors="primary:#D4AF37" class="nav-icon"></lord-icon>
+                    <i data-lucide="wallet" class="nav-icon"></i>
                     Extrato
                 </div>
                 <div class="nav-item" onclick="mostrarTab('horarios', this)">
-                    <lord-icon src="https://cdn.lordicon.com/abfverha.json" trigger="hover" colors="primary:#D4AF37" class="nav-icon"></lord-icon>
+                    <i data-lucide="calendar-days" class="nav-icon"></i>
                     Horários
                 </div>
                 <div class="nav-item" onclick="mostrarTab('eventos', this)">
-                    <lord-icon src="https://cdn.lordicon.com/vyukbrod.json" trigger="hover" colors="primary:#D4AF37" class="nav-icon"></lord-icon>
+                    <i data-lucide="party-popper" class="nav-icon"></i>
                     Eventos
                 </div>
                 <div class="nav-item" onclick="mostrarTab('galeria', this)">
-                    <lord-icon src="https://cdn.lordicon.com/kqbofftc.json" trigger="hover" colors="primary:#D4AF37" class="nav-icon"></lord-icon>
+                    <i data-lucide="images" class="nav-icon"></i>
                     Galeria
                 </div>
             </div>
@@ -211,6 +212,9 @@
     </div>
 
     <script>
+        // Inicializar ícones Lucide
+        lucide.createIcons();
+        
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
         let comunicadosLista = [], eventosLista = [];
         
@@ -349,6 +353,7 @@
                     carregarAlunos();
                     if(alunoSelecionado) carregarExtrato();
                     carregarHorarios();
+                    lucide.createIcons();
                 } else { msgDiv.innerHTML='<p class="erro">❌ Telefone não encontrado!</p>'; }
             } catch(error){ msgDiv.innerHTML='<p class="erro">❌ Erro ao carregar dados.</p>'; }
         }
@@ -456,6 +461,8 @@
             if(tab==='extrato'&&alunoSelecionado) carregarExtrato();
             if(tab==='eventos') carregarTabEventos();
             if(tab==='galeria') carregarGaleria();
+            // Atualizar ícones
+            setTimeout(() => lucide.createIcons(), 100);
         }
 
         function logout(){
@@ -468,7 +475,7 @@
 
         function instalarApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null;document.getElementById('btnInstalar').style.display='none';}}
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').style.display='block';}});
-        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=17').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
+        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=18').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
     </script>
 </body>
 </html>
