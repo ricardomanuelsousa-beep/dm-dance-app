@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="/dm-dance-app/manifest.json?v=18">
+    <link rel="manifest" href="/dm-dance-app/manifest.json?v=19">
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -363,8 +363,10 @@
             for(const f of alunosDoResponsavel){
                 const status=obterStatusPagamento(f.pagamentos||{});
                 let fotoUrl = f.foto || '';
-                if (fotoUrl && fotoUrl.includes('cloudinary.com') && !fotoUrl.includes('?')) {
-                    fotoUrl += '?q=100&w=400&h=400&c=fill&g=face';
+                // Cloudinary otimiza automaticamente
+                if (fotoUrl && fotoUrl.includes('cloudinary.com')) {
+                    fotoUrl = fotoUrl.split('?')[0];
+                    fotoUrl += '?q=auto&w=400&h=400&c=fill&g=face&f_auto';
                 }
                 div.innerHTML+=`<div class="aluno" onclick="selecionarAluno(${f.id})">
                     <img class="foto" src="${fotoUrl}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" crossorigin="anonymous" loading="lazy">
@@ -461,7 +463,6 @@
             if(tab==='extrato'&&alunoSelecionado) carregarExtrato();
             if(tab==='eventos') carregarTabEventos();
             if(tab==='galeria') carregarGaleria();
-            // Atualizar ícones
             setTimeout(() => lucide.createIcons(), 100);
         }
 
@@ -475,7 +476,7 @@
 
         function instalarApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null;document.getElementById('btnInstalar').style.display='none';}}
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').style.display='block';}});
-        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=18').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
+        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=19').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
     </script>
 </body>
 </html>
