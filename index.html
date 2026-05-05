@@ -283,11 +283,14 @@
             const anoAtual = hoje.getFullYear();
             let anoLetivo = mesAtual >= 9 ? anoAtual : anoAtual - 1;
             
-            for (const [mes, pago] of Object.entries(pagamentos)) {
+            for (const [mes, dados] of Object.entries(pagamentos)) {
                 const mesNum = mesesNum[mes.toLowerCase()];
                 if (!mesNum) continue;
                 let anoMes = mesNum >= 9 ? anoLetivo : anoLetivo + 1;
                 let dataLimite = new Date(anoMes, mesNum - 1, DIA_LIMITE);
+                
+                // NOVO: dados pode ser objeto {pago, valor} ou boolean
+                const pago = typeof dados === 'object' ? dados.pago : dados;
                 
                 if (!pago && dataLimite < new Date()) {
                     return { texto: `❌ Atrasado (${mes})`, classe: "atraso" };
@@ -305,8 +308,9 @@
             let nomesAtraso = [];
             
             for (const a of alunos) {
-                for (const [mes, pago] of Object.entries(a.pagamentos || {})) {
+                for (const [mes, dados] of Object.entries(a.pagamentos || {})) {
                     const mesNum = mesesNum[mes.toLowerCase()];
+                    const pago = typeof dados === 'object' ? dados.pago : dados;
                     if (!mesNum || pago) continue;
                     
                     let anoMes = mesNum >= 9 ? anoLetivo : anoLetivo + 1;
@@ -390,8 +394,13 @@
                 <div class="resumo"><div class="resumo-card"><div class="valor" style="color:#2e7d32;" id="totalPago">-</div><div class="label">Total Pago</div></div><div class="resumo-card"><div class="valor" style="color:#d32f2f;" id="totalPendente">-</div><div class="label">Pendente</div></div></div>
                 <table class="extrato-table"><tr><th>Mês</th><th style="text-align:right;">Valor</th><th style="text-align:center;">Status</th></tr>`;
             for(const[cod,nome] of meses){
-                const pago=alunoSelecionado.pagamentos&&alunoSelecionado.pagamentos[cod], valor=pago?30:0;
-                if(pago) totalPago+=valor; else totalPendente+=30;
+                const dadosMes = alunoSelecionado.pagamentos && alunoSelecionado.pagamentos[cod];
+                const pago = typeof dadosMes === 'object' ? dadosMes.pago : dadosMes;
+                const valor = (typeof dadosMes === 'object' && dadosMes.valor) ? dadosMes.valor : 0;
+                
+                if(pago) totalPago += valor;
+                else totalPendente += (valor || 0);
+                
                 html+=`<tr><td>${nome}</td><td style="text-align:right;">${valor.toFixed(2)}€</td><td style="text-align:center;" class="${pago?'pago':'pendente'}">${pago?'✅ Pago':'❌ Pendente'}</td></tr>`;
             }
             html+='</table>'; div.innerHTML=html;
