@@ -53,7 +53,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_1.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_1.jpg",
+      "mes_entrada": "Outubro"
     }
   ],
   "916690982": [
@@ -110,7 +111,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_2.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_2.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "910912949": [
@@ -168,7 +170,8 @@
           "valor": 34.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777919425/alunos/aluno_8.png"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777919425/alunos/aluno_8.png",
+      "mes_entrada": "Setembro"
     }
   ],
   "918176673": [
@@ -225,7 +228,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_10.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_10.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "911929373": [
@@ -282,7 +286,8 @@
           "valor": 16.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738104/alunos/aluno_12.png"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738104/alunos/aluno_12.png",
+      "mes_entrada": "Outubro"
     }
   ],
   "935502059": [
@@ -339,7 +344,8 @@
           "valor": 16.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738104/alunos/aluno_12.png"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738104/alunos/aluno_12.png",
+      "mes_entrada": "Outubro"
     }
   ],
   "914448649": [
@@ -397,7 +403,8 @@
           "valor": 52.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777740261/alunos/aluno_13.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777740261/alunos/aluno_13.jpg",
+      "mes_entrada": "Setembro"
     },
     {
       "id": 40,
@@ -452,7 +459,8 @@
           "valor": 22.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_40.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_40.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "910667586": [
@@ -509,7 +517,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_14.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_14.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "915321675": [
@@ -567,7 +576,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_15.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_15.jpg",
+      "mes_entrada": "Novembro"
     }
   ],
   "917447816": [
@@ -624,7 +634,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_17.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_17.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "912108699": [
@@ -681,7 +692,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_18.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_18.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "918570849": [
@@ -738,7 +750,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_19.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_19.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "918500328": [
@@ -795,7 +808,8 @@
           "valor": 0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_20.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_20.jpg",
+      "mes_entrada": "Março"
     },
     {
       "id": 72,
@@ -850,7 +864,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738542/alunos/aluno_72.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738542/alunos/aluno_72.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "924888476": [
@@ -907,7 +922,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_21.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_21.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "919106308": [
@@ -965,7 +981,8 @@
           "valor": 34.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_22.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_22.jpg",
+      "mes_entrada": "Fevereiro"
     }
   ],
   "762274961": [
@@ -1022,7 +1039,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_23.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_23.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "919774833": [
@@ -1079,7 +1097,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_24.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_24.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "916995849": [
@@ -1137,7 +1156,8 @@
           "valor": 34.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_25.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_25.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "918439141": [
@@ -1195,7 +1215,8 @@
           "valor": 37.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_27.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_27.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "916346566": [
@@ -1252,7 +1273,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_28.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_28.jpg",
+      "mes_entrada": "Outubro"
     }
   ],
   "933474838": [
@@ -1309,7 +1331,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_29.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_29.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "913369805": [
@@ -1367,7 +1390,8 @@
           "valor": 12.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_30.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_30.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "916082403": [
@@ -1424,7 +1448,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_31.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_31.jpg",
+      "mes_entrada": "Setembro"
     },
     {
       "id": 114,
@@ -1479,7 +1504,8 @@
           "valor": 10.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_114.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_114.jpg",
+      "mes_entrada": "Outubro"
     }
   ],
   "914665617": [
@@ -1536,7 +1562,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_32.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_32.jpg",
+      "mes_entrada": "Janeiro"
     }
   ],
   "915781218": [
@@ -1593,7 +1620,8 @@
           "valor": 24.5
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_33.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_33.jpg",
+      "mes_entrada": "Setembro"
     },
     {
       "id": 64,
@@ -1648,7 +1676,8 @@
           "valor": 24.5
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_64.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_64.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "925489548": [
@@ -1705,7 +1734,8 @@
           "valor": 16.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_34.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_34.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "918739935": [
@@ -1764,7 +1794,8 @@
           "valor": 55.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_35.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_35.jpg",
+      "mes_entrada": "Setembro"
     },
     {
       "id": 107,
@@ -1819,7 +1850,8 @@
           "valor": 12.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_107.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_107.jpg",
+      "mes_entrada": "Março"
     }
   ],
   "911149304": [
@@ -1876,7 +1908,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_36.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_36.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "914493643": [
@@ -1934,7 +1967,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_37.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_37.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "915874995": [
@@ -1993,7 +2027,8 @@
           "valor": 55.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_38.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_38.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "91910153": [
@@ -2051,7 +2086,8 @@
           "valor": 28.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_39.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_39.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "914042075": [
@@ -2109,7 +2145,8 @@
           "valor": 37.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_41.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_41.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "916687056": [
@@ -2166,7 +2203,8 @@
           "valor": 16.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_42.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_42.jpg",
+      "mes_entrada": "Fevereiro"
     },
     {
       "id": 106,
@@ -2221,7 +2259,8 @@
           "valor": 18.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_106.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_106.jpg",
+      "mes_entrada": "Outubro"
     },
     {
       "id": 112,
@@ -2276,7 +2315,8 @@
           "valor": 10.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_112.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_112.jpg",
+      "mes_entrada": "Outubro"
     }
   ],
   "916803861": [
@@ -2333,7 +2373,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_43.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_43.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "933254278": [
@@ -2391,7 +2432,8 @@
           "valor": 37.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_44.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_44.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "933205425": [
@@ -2449,7 +2491,8 @@
           "valor": 37.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_44.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_44.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "913606998": [
@@ -2508,7 +2551,8 @@
           "valor": 55.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_45.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_45.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "914058805": [
@@ -2565,7 +2609,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_46.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_46.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "914170332": [
@@ -2622,7 +2667,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_47.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_47.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "96339893": [
@@ -2679,7 +2725,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_48.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_48.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "964379973": [
@@ -2736,7 +2783,8 @@
           "valor": 16.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_49.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_49.jpg",
+      "mes_entrada": "Abril"
     }
   ],
   "912111910": [
@@ -2793,7 +2841,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_50.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_50.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "919697115": [
@@ -2851,7 +2900,8 @@
           "valor": 28.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_51.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_51.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "912289988": [
@@ -2908,7 +2958,8 @@
           "valor": 16.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_52.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_52.jpg",
+      "mes_entrada": "Fevereiro"
     }
   ],
   "965880436": [
@@ -2965,7 +3016,8 @@
           "valor": 16.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_53.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_53.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "919322750": [
@@ -3022,7 +3074,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_54.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_54.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "937018128": [
@@ -3079,7 +3132,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_55.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_55.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "912607205": [
@@ -3136,7 +3190,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_56.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_56.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "914571666": [
@@ -3193,7 +3248,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_57.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_57.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "925655332": [
@@ -3251,7 +3307,8 @@
           "valor": 37.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_58.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_58.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "916503989": [
@@ -3309,7 +3366,8 @@
           "valor": 28.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_59.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_59.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "919757203": [
@@ -3366,7 +3424,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_60.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_60.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "916518128": [
@@ -3424,7 +3483,8 @@
           "valor": 37.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_61.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_61.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "960354918": [
@@ -3482,7 +3542,8 @@
           "valor": 37.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_61.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_61.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "962556835": [
@@ -3539,7 +3600,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_62.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_62.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "916845387": [
@@ -3596,7 +3658,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_63.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_63.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "914416024": [
@@ -3653,7 +3716,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_65.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_65.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "917485007": [
@@ -3711,7 +3775,8 @@
           "valor": 28.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_66.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_66.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "922010663": [
@@ -3770,7 +3835,8 @@
           "valor": 0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_67.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_67.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "910547103": [
@@ -3829,7 +3895,8 @@
           "valor": 0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_67.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_67.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "913223195": [
@@ -3886,7 +3953,8 @@
           "valor": 16.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_68.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_68.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "914181099": [
@@ -3944,7 +4012,8 @@
           "valor": 37.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738443/alunos/aluno_69.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738443/alunos/aluno_69.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "915437064": [
@@ -4001,7 +4070,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738492/alunos/aluno_70.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738492/alunos/aluno_70.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "923185337": [
@@ -4058,7 +4128,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738492/alunos/aluno_70.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738492/alunos/aluno_70.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "913509212": [
@@ -4115,7 +4186,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738793/alunos/aluno_73.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738793/alunos/aluno_73.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "911155812": [
@@ -4172,7 +4244,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738832/alunos/aluno_74.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738832/alunos/aluno_74.jpg",
+      "mes_entrada": "Outubro"
     }
   ],
   "915411701": [
@@ -4229,7 +4302,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738890/alunos/aluno_77.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738890/alunos/aluno_77.jpg",
+      "mes_entrada": "Outubro"
     }
   ],
   "917609885": [
@@ -4286,7 +4360,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738890/alunos/aluno_77.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738890/alunos/aluno_77.jpg",
+      "mes_entrada": "Outubro"
     }
   ],
   "913662954": [
@@ -4343,7 +4418,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738931/alunos/aluno_78.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738931/alunos/aluno_78.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "922282521": [
@@ -4400,7 +4476,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738931/alunos/aluno_78.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738931/alunos/aluno_78.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "913622154": [
@@ -4457,7 +4534,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738961/alunos/aluno_79.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738961/alunos/aluno_79.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "913622084": [
@@ -4514,7 +4592,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738961/alunos/aluno_79.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738961/alunos/aluno_79.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "968998485": [
@@ -4571,7 +4650,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_80.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_80.jpg",
+      "mes_entrada": "Outubro"
     }
   ],
   "924238553": [
@@ -4629,7 +4709,8 @@
           "valor": 57.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_81.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_81.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "912473467": [
@@ -4686,7 +4767,8 @@
           "valor": 16.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_82.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_82.jpg",
+      "mes_entrada": "Outubro"
     }
   ],
   "969576836": [
@@ -4743,7 +4825,8 @@
           "valor": 16.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_82.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_82.jpg",
+      "mes_entrada": "Outubro"
     }
   ],
   "900094904": [
@@ -4800,7 +4883,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_83.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_83.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "916789564": [
@@ -4858,7 +4942,8 @@
           "valor": 37.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_84.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_84.jpg",
+      "mes_entrada": "Março"
     }
   ],
   "931127010": [
@@ -4916,7 +5001,8 @@
           "valor": 57.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_85.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_85.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "933059643": [
@@ -4974,7 +5060,8 @@
           "valor": 28.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_86.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_86.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "918110436": [
@@ -5032,7 +5119,8 @@
           "valor": 57.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_87.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_87.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "938699796": [
@@ -5090,7 +5178,8 @@
           "valor": 57.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_88.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_88.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "914885246": [
@@ -5149,7 +5238,8 @@
           "valor": 50.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_89.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_89.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "913386243": [
@@ -5207,7 +5297,8 @@
           "valor": 28.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_90.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_90.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "915171153": [
@@ -5264,7 +5355,8 @@
           "valor": 16.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_91.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_91.jpg",
+      "mes_entrada": "Março"
     }
   ],
   "928034063": [
@@ -5321,7 +5413,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_92.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_92.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "912719290": [
@@ -5379,7 +5472,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_93.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_93.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "916497091": [
@@ -5436,7 +5530,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_94.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_94.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "914914693": [
@@ -5494,7 +5589,8 @@
           "valor": 57.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_95.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_95.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "918425760": [
@@ -5551,7 +5647,8 @@
           "valor": 20.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_96.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_96.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "967366049": [
@@ -5608,7 +5705,8 @@
           "valor": 17.5
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_97.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_97.jpg",
+      "mes_entrada": "Setembro"
     },
     {
       "id": 104,
@@ -5663,7 +5761,8 @@
           "valor": 17.5
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_104.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_104.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "918172980": [
@@ -5720,7 +5819,8 @@
           "valor": 20.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_98.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_98.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "910047172": [
@@ -5777,7 +5877,8 @@
           "valor": 20.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_99.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_99.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "917256912": [
@@ -5834,7 +5935,8 @@
           "valor": 20.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_99.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_99.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "919006336": [
@@ -5891,7 +5993,8 @@
           "valor": 20.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_100.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_100.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "911909884": [
@@ -5948,7 +6051,8 @@
           "valor": 2.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_101.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_101.jpg",
+      "mes_entrada": "Outubro"
     }
   ],
   "914669555": [
@@ -6006,7 +6110,8 @@
           "valor": 36.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_102.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_102.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "918577056": [
@@ -6063,7 +6168,8 @@
           "valor": 20.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_103.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_103.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "917559341": [
@@ -6120,7 +6226,8 @@
           "valor": 20.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_103.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_103.jpg",
+      "mes_entrada": "Setembro"
     }
   ],
   "916723165": [
@@ -6177,7 +6284,8 @@
           "valor": 18.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_105.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_105.jpg",
+      "mes_entrada": "Março"
     }
   ],
   "915971934": [
@@ -6234,7 +6342,8 @@
           "valor": 18.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_105.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_105.jpg",
+      "mes_entrada": "Março"
     }
   ],
   "910024908": [
@@ -6291,7 +6400,8 @@
           "valor": 12.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_108.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_108.jpg",
+      "mes_entrada": "Março"
     }
   ],
   "915422486": [
@@ -6348,7 +6458,8 @@
           "valor": 10.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_109.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_109.jpg",
+      "mes_entrada": "Março"
     }
   ],
   "912331891": [
@@ -6405,7 +6516,8 @@
           "valor": 12.5
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_111.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_111.jpg",
+      "mes_entrada": "Novembro"
     }
   ],
   "914590970": [
@@ -6462,7 +6574,8 @@
           "valor": 10.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_113.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_113.jpg",
+      "mes_entrada": "Outubro"
     }
   ],
   "969642483": [
@@ -6519,7 +6632,8 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_115.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_115.jpg",
+      "mes_entrada": "Maio"
     }
   ]
 }

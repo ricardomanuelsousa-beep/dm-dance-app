@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="/dm-dance-app/manifest.json?v=19">
+    <link rel="manifest" href="/dm-dance-app/manifest.json?v=20">
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -14,7 +14,10 @@
     <link rel="apple-touch-icon" sizes="512x512" href="/dm-dance-app/icon-512x512.png">
     <meta name="theme-color" content="#D4AF37">
     
-    <!-- Lucide Icons -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <style>
@@ -186,42 +189,43 @@
             <div id="tabGaleria" class="tab-content"></div>
             
             <div class="nav">
-                <div class="nav-item active" onclick="mostrarTab('alunos', this)">
-                    <i data-lucide="house" class="nav-icon"></i>
-                    Início
-                </div>
-                <div class="nav-item" onclick="mostrarTab('extrato', this)">
-                    <i data-lucide="wallet" class="nav-icon"></i>
-                    Extrato
-                </div>
-                <div class="nav-item" onclick="mostrarTab('horarios', this)">
-                    <i data-lucide="calendar-days" class="nav-icon"></i>
-                    Horários
-                </div>
-                <div class="nav-item" onclick="mostrarTab('eventos', this)">
-                    <i data-lucide="party-popper" class="nav-icon"></i>
-                    Eventos
-                </div>
-                <div class="nav-item" onclick="mostrarTab('galeria', this)">
-                    <i data-lucide="images" class="nav-icon"></i>
-                    Galeria
-                </div>
+                <div class="nav-item active" onclick="mostrarTab('alunos', this)"><i data-lucide="house" class="nav-icon"></i>Início</div>
+                <div class="nav-item" onclick="mostrarTab('extrato', this)"><i data-lucide="wallet" class="nav-icon"></i>Extrato</div>
+                <div class="nav-item" onclick="mostrarTab('horarios', this)"><i data-lucide="calendar-days" class="nav-icon"></i>Horários</div>
+                <div class="nav-item" onclick="mostrarTab('eventos', this)"><i data-lucide="party-popper" class="nav-icon"></i>Eventos</div>
+                <div class="nav-item" onclick="mostrarTab('galeria', this)"><i data-lucide="images" class="nav-icon"></i>Galeria</div>
             </div>
         </div>
         <div class="footer">DM Dance School © 2025</div>
     </div>
 
     <script>
-        // Inicializar ícones Lucide
+        // Versão da app - muda quando houver atualizações
+        const APP_VERSAO = '2.0';
+        
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
         let comunicadosLista = [], eventosLista = [];
         
         const mesesNum = {"setembro":9,"outubro":10,"novembro":11,"dezembro":12,"janeiro":1,"fevereiro":2,"marco":3,"abril":4,"maio":5,"junho":6,"julho":7};
+        const MESES_ORDEM = ["setembro","outubro","novembro","dezembro","janeiro","fevereiro","marco","abril","maio","junho","julho"];
+        const MESES_NOMES = {"setembro":"Setembro","outubro":"Outubro","novembro":"Novembro","dezembro":"Dezembro","janeiro":"Janeiro","fevereiro":"Fevereiro","marco":"Março","abril":"Abril","maio":"Maio","junho":"Junho","julho":"Julho"};
         const DIA_LIMITE = 8;
         const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
         if(isIOS) document.getElementById('instrucoesIOS').style.display='block';
+
+        // Limpar cache quando há nova versão
+        window.addEventListener('load', () => {
+            const versaoAnterior = localStorage.getItem('dm_versao');
+            if (versaoAnterior && versaoAnterior !== APP_VERSAO) {
+                if ('caches' in window) {
+                    caches.keys().then(names => names.forEach(name => caches.delete(name)));
+                }
+                console.log('🔄 App atualizada para versão ' + APP_VERSAO);
+            }
+            localStorage.setItem('dm_versao', APP_VERSAO);
+        });
 
         async function carregarFraseDoDia() {
             try {
@@ -277,6 +281,19 @@
             } catch(e) { eventosLista = []; }
         }
 
+        // Função auxiliar para normalizar dados de pagamento (objeto ou booleano)
+        function getPago(dados) { return typeof dados === 'object' ? dados.pago : dados; }
+        function getValor(dados) { return (typeof dados === 'object' && dados.valor) ? dados.valor : 0; }
+        
+        // Filtrar meses a partir do mês de entrada
+        function filtrarMeses(pagamentos, mesEntrada) {
+            if (!mesEntrada || !MESES_ORDEM.includes(mesEntrada.toLowerCase())) {
+                return MESES_ORDEM; // Todos os meses
+            }
+            const idxInicio = MESES_ORDEM.indexOf(mesEntrada.toLowerCase());
+            return MESES_ORDEM.slice(idxInicio);
+        }
+
         function obterStatusPagamento(pagamentos) {
             const hoje = new Date();
             const mesAtual = hoje.getMonth() + 1;
@@ -289,10 +306,7 @@
                 let anoMes = mesNum >= 9 ? anoLetivo : anoLetivo + 1;
                 let dataLimite = new Date(anoMes, mesNum - 1, DIA_LIMITE);
                 
-                // NOVO: dados pode ser objeto {pago, valor} ou boolean
-                const pago = typeof dados === 'object' ? dados.pago : dados;
-                
-                if (!pago && dataLimite < new Date()) {
+                if (!getPago(dados) && dataLimite < new Date()) {
                     return { texto: `❌ Atrasado (${mes})`, classe: "atraso" };
                 }
             }
@@ -304,36 +318,24 @@
             const mesAtual = hoje.getMonth() + 1;
             const anoAtual = hoje.getFullYear();
             let anoLetivo = mesAtual >= 9 ? anoAtual : anoAtual - 1;
-            
             let nomesAtraso = [];
             
             for (const a of alunos) {
                 for (const [mes, dados] of Object.entries(a.pagamentos || {})) {
                     const mesNum = mesesNum[mes.toLowerCase()];
-                    const pago = typeof dados === 'object' ? dados.pago : dados;
-                    if (!mesNum || pago) continue;
-                    
+                    if (!mesNum || getPago(dados)) continue;
                     let anoMes = mesNum >= 9 ? anoLetivo : anoLetivo + 1;
                     let dataLimite = new Date(anoMes, mesNum - 1, DIA_LIMITE);
-                    
-                    if (dataLimite < hoje) {
-                        nomesAtraso.push(a.nome);
-                        break;
-                    }
+                    if (dataLimite < hoje) { nomesAtraso.push(a.nome); break; }
                 }
             }
             
             const banner = document.getElementById('bannerAviso');
             const texto = document.getElementById('textoAviso');
-            
             if (nomesAtraso.length > 0) {
                 banner.style.display = 'block';
-                texto.textContent = nomesAtraso.length === 1 
-                    ? nomesAtraso[0] + ' tem mensalidades por regularizar. Contacte a escola.' 
-                    : nomesAtraso.join(', ') + ' têm mensalidades por regularizar. Contacte a escola.';
-            } else {
-                banner.style.display = 'none';
-            }
+                texto.textContent = nomesAtraso.length === 1 ? nomesAtraso[0] + ' tem mensalidades por regularizar. Contacte a escola.' : nomesAtraso.join(', ') + ' têm mensalidades por regularizar. Contacte a escola.';
+            } else { banner.style.display = 'none'; }
         }
 
         async function login(){
@@ -367,7 +369,6 @@
             for(const f of alunosDoResponsavel){
                 const status=obterStatusPagamento(f.pagamentos||{});
                 let fotoUrl = f.foto || '';
-                // Cloudinary otimiza automaticamente
                 if (fotoUrl && fotoUrl.includes('cloudinary.com')) {
                     fotoUrl = fotoUrl.split('?')[0];
                     fotoUrl += '?q=auto&w=400&h=400&c=fill&g=face&f_auto';
@@ -388,20 +389,25 @@
         function carregarExtrato(){
             const div=document.getElementById('tabExtrato');
             if(!alunoSelecionado){div.innerHTML='<p style="text-align:center;color:#999;padding:30px;">Selecione um aluno na aba Início</p>'; return;}
-            const meses=[["setembro","Setembro"],["outubro","Outubro"],["novembro","Novembro"],["dezembro","Dezembro"],["janeiro","Janeiro"],["fevereiro","Fevereiro"],["marco","Março"],["abril","Abril"],["maio","Maio"],["junho","Junho"],["julho","Julho"]];
+            
+            // Filtrar meses pelo mês de entrada
+            const mesEntrada = alunoSelecionado.mes_entrada || 'setembro';
+            const mesesFiltrados = filtrarMeses(alunoSelecionado.pagamentos, mesEntrada);
+            
             let totalPago=0, totalPendente=0;
             let html=`<div class="extrato-header"><button class="btn-voltar" onclick="mostrarTab('alunos',document.querySelector('.nav-item:first-child'))">←</button><h3 style="color:#8B0000;font-size:17px;">💰 Extrato: ${alunoSelecionado.nome}</h3></div>
                 <div class="resumo"><div class="resumo-card"><div class="valor" style="color:#2e7d32;" id="totalPago">-</div><div class="label">Total Pago</div></div><div class="resumo-card"><div class="valor" style="color:#d32f2f;" id="totalPendente">-</div><div class="label">Pendente</div></div></div>
                 <table class="extrato-table"><tr><th>Mês</th><th style="text-align:right;">Valor</th><th style="text-align:center;">Status</th></tr>`;
-            for(const[cod,nome] of meses){
+            
+            for(const cod of mesesFiltrados){
                 const dadosMes = alunoSelecionado.pagamentos && alunoSelecionado.pagamentos[cod];
-                const pago = typeof dadosMes === 'object' ? dadosMes.pago : dadosMes;
-                const valor = (typeof dadosMes === 'object' && dadosMes.valor) ? dadosMes.valor : 0;
+                const pago = getPago(dadosMes);
+                const valor = getValor(dadosMes);
                 
                 if(pago) totalPago += valor;
                 else totalPendente += (valor || 0);
                 
-                html+=`<tr><td>${nome}</td><td style="text-align:right;">${valor.toFixed(2)}€</td><td style="text-align:center;" class="${pago?'pago':'pendente'}">${pago?'✅ Pago':'❌ Pendente'}</td></tr>`;
+                html+=`<tr><td>${MESES_NOMES[cod]}</td><td style="text-align:right;">${valor.toFixed(2)}€</td><td style="text-align:center;" class="${pago?'pago':'pendente'}">${pago?'✅ Pago':'❌ Pendente'}</td></tr>`;
             }
             html+='</table>'; div.innerHTML=html;
             document.getElementById('totalPago').textContent=totalPago.toFixed(2)+' €';
@@ -485,7 +491,7 @@
 
         function instalarApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null;document.getElementById('btnInstalar').style.display='none';}}
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').style.display='block';}});
-        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=19').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
+        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=20').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
     </script>
 </body>
 </html>
