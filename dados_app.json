@@ -8,53 +8,19 @@
         "Babies"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_1.jpg",
-      "mes_entrada": "Outubro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_1.jpg"
     }
   ],
   "916690982": [
@@ -66,53 +32,19 @@
         "Babies"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_2.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_2.jpg"
     }
   ],
   "910912949": [
@@ -125,53 +57,19 @@
         "Ballet"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 34.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777919425/alunos/aluno_8.png",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777919425/alunos/aluno_8.png"
     }
   ],
   "918176673": [
@@ -183,53 +81,19 @@
         "Teens"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_10.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_10.jpg"
     }
   ],
   "911929373": [
@@ -241,53 +105,19 @@
         "Teens"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 16.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": false,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738104/alunos/aluno_12.png",
-      "mes_entrada": "Outubro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738104/alunos/aluno_12.png"
     }
   ],
   "935502059": [
@@ -299,53 +129,19 @@
         "Teens"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 16.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": false,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738104/alunos/aluno_12.png",
-      "mes_entrada": "Outubro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738104/alunos/aluno_12.png"
     }
   ],
   "914448649": [
@@ -358,53 +154,19 @@
         "Competição"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 52.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 52.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 52.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 52.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 52.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 52.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 52.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 52.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 52.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 52.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 52.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777740261/alunos/aluno_13.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777740261/alunos/aluno_13.jpg"
     },
     {
       "id": 40,
@@ -414,53 +176,19 @@
         "Kids 1"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 22.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 22.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 22.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 22.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 22.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 22.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 22.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 22.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 22.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 22.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 22.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_40.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_40.jpg"
     }
   ],
   "910667586": [
@@ -472,53 +200,19 @@
         "Teens"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_14.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_14.jpg"
     }
   ],
   "915321675": [
@@ -531,53 +225,19 @@
         "1"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_15.jpg",
-      "mes_entrada": "Novembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_15.jpg"
     }
   ],
   "917447816": [
@@ -589,53 +249,19 @@
         "Babies"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_17.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_17.jpg"
     }
   ],
   "912108699": [
@@ -647,53 +273,19 @@
         "Babies"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_18.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_18.jpg"
     }
   ],
   "918570849": [
@@ -705,53 +297,19 @@
         "Babies"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_19.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_19.jpg"
     }
   ],
   "918500328": [
@@ -763,53 +321,19 @@
         "Babies"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "marco": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "abril": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "maio": {
-          "pago": false,
-          "valor": 0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_20.jpg",
-      "mes_entrada": "Março"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_20.jpg"
     },
     {
       "id": 72,
@@ -819,53 +343,19 @@
         "Teens"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "abril": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738542/alunos/aluno_72.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738542/alunos/aluno_72.jpg"
     }
   ],
   "924888476": [
@@ -877,53 +367,19 @@
         "Babies"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_21.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_21.jpg"
     }
   ],
   "919106308": [
@@ -936,53 +392,19 @@
         "Ballet"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 34.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_22.jpg",
-      "mes_entrada": "Fevereiro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_22.jpg"
     }
   ],
   "762274961": [
@@ -994,53 +416,19 @@
         "Babies"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_23.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_23.jpg"
     }
   ],
   "919774833": [
@@ -1052,53 +440,19 @@
         "Babies"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_24.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_24.jpg"
     }
   ],
   "916995849": [
@@ -1111,53 +465,19 @@
         "Ballet"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 34.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_25.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_25.jpg"
     }
   ],
   "918439141": [
@@ -1170,53 +490,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 37.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_27.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_27.jpg"
     }
   ],
   "916346566": [
@@ -1228,53 +514,19 @@
         "Kids 1"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_28.jpg",
-      "mes_entrada": "Outubro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_28.jpg"
     }
   ],
   "933474838": [
@@ -1286,53 +538,19 @@
         "Kids 1"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_29.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_29.jpg"
     }
   ],
   "913369805": [
@@ -1345,53 +563,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 12.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 12.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 12.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_30.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_30.jpg"
     }
   ],
   "916082403": [
@@ -1403,53 +587,19 @@
         "Kids 1"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 13.5
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_31.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_31.jpg"
     },
     {
       "id": 114,
@@ -1459,53 +609,19 @@
         "Adultas"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 10.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_114.jpg",
-      "mes_entrada": "Outubro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_114.jpg"
     }
   ],
   "914665617": [
@@ -1517,53 +633,19 @@
         "Kids 1"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_32.jpg",
-      "mes_entrada": "Janeiro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_32.jpg"
     }
   ],
   "915781218": [
@@ -1575,53 +657,19 @@
         "Kids 1"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "marco": {
-          "pago": false,
-          "valor": 24.5
-        },
-        "abril": {
-          "pago": false,
-          "valor": 24.5
-        },
-        "maio": {
-          "pago": false,
-          "valor": 24.5
-        },
-        "junho": {
-          "pago": false,
-          "valor": 24.5
-        },
-        "julho": {
-          "pago": false,
-          "valor": 24.5
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_33.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_33.jpg"
     },
     {
       "id": 64,
@@ -1631,53 +679,19 @@
         "Kids 2"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "marco": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "abril": {
-          "pago": true,
-          "valor": 24.5
-        },
-        "maio": {
-          "pago": false,
-          "valor": 24.5
-        },
-        "junho": {
-          "pago": false,
-          "valor": 24.5
-        },
-        "julho": {
-          "pago": false,
-          "valor": 24.5
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_64.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_64.jpg"
     }
   ],
   "925489548": [
@@ -1689,53 +703,19 @@
         "Kids 1"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 16.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_34.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_34.jpg"
     }
   ],
   "918739935": [
@@ -1749,53 +729,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 55.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 55.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 55.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 55.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 55.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_35.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_35.jpg"
     },
     {
       "id": 107,
@@ -1805,53 +751,19 @@
         "Adultas"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 12.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 12.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 12.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 12.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_107.jpg",
-      "mes_entrada": "Março"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_107.jpg"
     }
   ],
   "911149304": [
@@ -1863,53 +775,19 @@
         "Kids 1"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 13.5
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_36.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_36.jpg"
     }
   ],
   "914493643": [
@@ -1922,53 +800,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_37.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_37.jpg"
     }
   ],
   "915874995": [
@@ -1982,53 +826,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 44.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 44.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 44.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 44.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 44.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 44.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 55.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 55.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 55.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 55.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 55.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_38.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_38.jpg"
     }
   ],
   "91910153": [
@@ -2041,53 +851,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 28.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 28.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 28.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_39.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_39.jpg"
     }
   ],
   "914042075": [
@@ -2100,53 +876,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 37.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_41.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_41.jpg"
     }
   ],
   "916687056": [
@@ -2158,53 +900,19 @@
         "Kids 1"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 8.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 16.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_42.jpg",
-      "mes_entrada": "Fevereiro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_42.jpg"
     },
     {
       "id": 106,
@@ -2214,53 +922,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 9.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 18.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 18.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 18.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_106.jpg",
-      "mes_entrada": "Outubro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_106.jpg"
     },
     {
       "id": 112,
@@ -2270,53 +944,19 @@
         "Adultas"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 10.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_112.jpg",
-      "mes_entrada": "Outubro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_112.jpg"
     }
   ],
   "916803861": [
@@ -2328,53 +968,19 @@
         "Kids 1"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_43.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_43.jpg"
     }
   ],
   "933254278": [
@@ -2387,53 +993,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 37.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_44.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_44.jpg"
     }
   ],
   "933205425": [
@@ -2446,53 +1018,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 37.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_44.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_44.jpg"
     }
   ],
   "913606998": [
@@ -2506,53 +1044,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 55.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 55.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 55.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 55.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 55.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 55.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 55.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 55.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 55.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 55.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 55.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_45.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_45.jpg"
     }
   ],
   "914058805": [
@@ -2564,53 +1068,19 @@
         "Kids 1"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_46.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_46.jpg"
     }
   ],
   "914170332": [
@@ -2622,53 +1092,19 @@
         "Kids 1"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_47.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_47.jpg"
     }
   ],
   "96339893": [
@@ -2680,53 +1116,19 @@
         "Kids 2"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_48.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_48.jpg"
     }
   ],
   "964379973": [
@@ -2738,53 +1140,19 @@
         "Kids 2"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 16.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_49.jpg",
-      "mes_entrada": "Abril"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_49.jpg"
     }
   ],
   "912111910": [
@@ -2796,53 +1164,19 @@
         "Kids 2"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_50.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_50.jpg"
     }
   ],
   "919697115": [
@@ -2855,53 +1189,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "maio": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 28.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 28.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": true,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_51.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_51.jpg"
     }
   ],
   "912289988": [
@@ -2913,53 +1213,19 @@
         "Kids 2"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 16.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_52.jpg",
-      "mes_entrada": "Fevereiro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_52.jpg"
     }
   ],
   "965880436": [
@@ -2971,53 +1237,19 @@
         "Kids 2"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "maio": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 16.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": true,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_53.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_53.jpg"
     }
   ],
   "919322750": [
@@ -3029,53 +1261,19 @@
         "Kids 2"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": true,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_54.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_54.jpg"
     }
   ],
   "937018128": [
@@ -3087,53 +1285,19 @@
         "Kids 2"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_55.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_55.jpg"
     }
   ],
   "912607205": [
@@ -3145,53 +1309,19 @@
         "Kids 2"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_56.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_56.jpg"
     }
   ],
   "914571666": [
@@ -3203,53 +1333,19 @@
         "Kids 2"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_57.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_57.jpg"
     }
   ],
   "925655332": [
@@ -3262,53 +1358,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 37.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_58.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_58.jpg"
     }
   ],
   "916503989": [
@@ -3321,53 +1383,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 28.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 28.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 28.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_59.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_59.jpg"
     }
   ],
   "919757203": [
@@ -3379,53 +1407,19 @@
         "Kids 2"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_60.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_60.jpg"
     }
   ],
   "916518128": [
@@ -3438,53 +1432,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "maio": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 37.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": true,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_61.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_61.jpg"
     }
   ],
   "960354918": [
@@ -3497,53 +1457,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "maio": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 37.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": true,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_61.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_61.jpg"
     }
   ],
   "962556835": [
@@ -3555,53 +1481,19 @@
         "Kids 2"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_62.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_62.jpg"
     }
   ],
   "916845387": [
@@ -3613,53 +1505,19 @@
         "Kids 2"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_63.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_63.jpg"
     }
   ],
   "914416024": [
@@ -3671,53 +1529,19 @@
         "Kids 2"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_65.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_65.jpg"
     }
   ],
   "917485007": [
@@ -3730,53 +1554,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 28.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 28.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 28.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_66.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_66.jpg"
     }
   ],
   "922010663": [
@@ -3790,53 +1580,19 @@
         "Ballet"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 0
-        },
-        "maio": {
-          "pago": true,
-          "valor": 0
-        },
-        "junho": {
-          "pago": true,
-          "valor": 0
-        },
-        "julho": {
-          "pago": true,
-          "valor": 0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": true,
+        "junho": true,
+        "julho": true
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_67.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_67.jpg"
     }
   ],
   "910547103": [
@@ -3850,53 +1606,19 @@
         "Ballet"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 0
-        },
-        "maio": {
-          "pago": true,
-          "valor": 0
-        },
-        "junho": {
-          "pago": true,
-          "valor": 0
-        },
-        "julho": {
-          "pago": true,
-          "valor": 0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": true,
+        "junho": true,
+        "julho": true
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_67.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_67.jpg"
     }
   ],
   "913223195": [
@@ -3908,53 +1630,19 @@
         "Kids 2"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 16.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_68.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_68.jpg"
     }
   ],
   "914181099": [
@@ -3967,53 +1655,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 37.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738443/alunos/aluno_69.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738443/alunos/aluno_69.jpg"
     }
   ],
   "915437064": [
@@ -4025,53 +1679,19 @@
         "Teens"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738492/alunos/aluno_70.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738492/alunos/aluno_70.jpg"
     }
   ],
   "923185337": [
@@ -4083,53 +1703,19 @@
         "Teens"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738492/alunos/aluno_70.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738492/alunos/aluno_70.jpg"
     }
   ],
   "913509212": [
@@ -4141,53 +1727,19 @@
         "Teens"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738793/alunos/aluno_73.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738793/alunos/aluno_73.jpg"
     }
   ],
   "911155812": [
@@ -4199,53 +1751,19 @@
         "Teens"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738832/alunos/aluno_74.jpg",
-      "mes_entrada": "Outubro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738832/alunos/aluno_74.jpg"
     }
   ],
   "915411701": [
@@ -4257,53 +1775,19 @@
         "Teens"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738890/alunos/aluno_77.jpg",
-      "mes_entrada": "Outubro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738890/alunos/aluno_77.jpg"
     }
   ],
   "917609885": [
@@ -4315,53 +1799,19 @@
         "Teens"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738890/alunos/aluno_77.jpg",
-      "mes_entrada": "Outubro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738890/alunos/aluno_77.jpg"
     }
   ],
   "913662954": [
@@ -4373,53 +1823,19 @@
         "Teens"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738931/alunos/aluno_78.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738931/alunos/aluno_78.jpg"
     }
   ],
   "922282521": [
@@ -4431,53 +1847,19 @@
         "Teens"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738931/alunos/aluno_78.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738931/alunos/aluno_78.jpg"
     }
   ],
   "913622154": [
@@ -4489,53 +1871,19 @@
         "Teens"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738961/alunos/aluno_79.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738961/alunos/aluno_79.jpg"
     }
   ],
   "913622084": [
@@ -4547,53 +1895,19 @@
         "Teens"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738961/alunos/aluno_79.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738961/alunos/aluno_79.jpg"
     }
   ],
   "968998485": [
@@ -4605,53 +1919,19 @@
         "Major"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_80.jpg",
-      "mes_entrada": "Outubro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_80.jpg"
     }
   ],
   "924238553": [
@@ -4664,53 +1944,19 @@
         "Competição"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 57.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 57.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 57.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 57.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 57.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_81.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_81.jpg"
     }
   ],
   "912473467": [
@@ -4722,53 +1968,19 @@
         "Major"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 16.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_82.jpg",
-      "mes_entrada": "Outubro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_82.jpg"
     }
   ],
   "969576836": [
@@ -4780,53 +1992,19 @@
         "Major"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 16.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_82.jpg",
-      "mes_entrada": "Outubro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_82.jpg"
     }
   ],
   "900094904": [
@@ -4838,53 +2016,19 @@
         "Major"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_83.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_83.jpg"
     }
   ],
   "916789564": [
@@ -4897,53 +2041,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 37.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 37.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_84.jpg",
-      "mes_entrada": "Março"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_84.jpg"
     }
   ],
   "931127010": [
@@ -4956,53 +2066,19 @@
         "Competição"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 57.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 57.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 57.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 57.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_85.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_85.jpg"
     }
   ],
   "933059643": [
@@ -5015,53 +2091,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 28.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 28.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 28.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_86.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_86.jpg"
     }
   ],
   "918110436": [
@@ -5074,53 +2116,19 @@
         "Competição"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 57.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 57.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 57.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_87.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_87.jpg"
     }
   ],
   "938699796": [
@@ -5133,53 +2141,19 @@
         "Competição"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 57.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 57.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 57.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 57.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 57.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_88.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_88.jpg"
     }
   ],
   "914885246": [
@@ -5193,53 +2167,19 @@
         "Competição"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 50.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 50.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 50.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 50.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 50.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 50.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 50.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 50.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 50.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 50.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 50.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_89.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_89.jpg"
     }
   ],
   "913386243": [
@@ -5252,53 +2192,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 28.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 28.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 28.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 28.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 28.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_90.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_90.jpg"
     }
   ],
   "915171153": [
@@ -5310,53 +2216,19 @@
         "Major"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 16.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 16.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 16.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_91.jpg",
-      "mes_entrada": "Março"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_91.jpg"
     }
   ],
   "928034063": [
@@ -5368,53 +2240,19 @@
         "Major"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_92.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_92.jpg"
     }
   ],
   "912719290": [
@@ -5427,53 +2265,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 37.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_93.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_93.jpg"
     }
   ],
   "916497091": [
@@ -5485,53 +2289,19 @@
         "Major"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_94.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_94.jpg"
     }
   ],
   "914914693": [
@@ -5544,53 +2314,19 @@
         "Competição"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 57.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 57.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 57.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 57.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 57.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_95.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_95.jpg"
     }
   ],
   "918425760": [
@@ -5599,56 +2335,22 @@
       "nome": "Alice",
       "aniversario": "27/05",
       "modalidades": [
-        "Ballet Pré-Primary"
+        "Ballet"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "maio": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 20.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": true,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_96.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_96.jpg"
     }
   ],
   "967366049": [
@@ -5660,53 +2362,19 @@
         "Ballet"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 17.5
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 17.5
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 17.5
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 17.5
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 17.5
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 17.5
-        },
-        "marco": {
-          "pago": true,
-          "valor": 17.5
-        },
-        "abril": {
-          "pago": false,
-          "valor": 17.5
-        },
-        "maio": {
-          "pago": false,
-          "valor": 17.5
-        },
-        "junho": {
-          "pago": false,
-          "valor": 17.5
-        },
-        "julho": {
-          "pago": false,
-          "valor": 17.5
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_97.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_97.jpg"
     },
     {
       "id": 104,
@@ -5716,53 +2384,19 @@
         "Ballet"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 17.5
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 17.5
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 17.5
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 17.5
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 17.5
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 17.5
-        },
-        "marco": {
-          "pago": true,
-          "valor": 17.5
-        },
-        "abril": {
-          "pago": false,
-          "valor": 17.5
-        },
-        "maio": {
-          "pago": false,
-          "valor": 17.5
-        },
-        "junho": {
-          "pago": false,
-          "valor": 17.5
-        },
-        "julho": {
-          "pago": false,
-          "valor": 17.5
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_104.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_104.jpg"
     }
   ],
   "918172980": [
@@ -5774,53 +2408,19 @@
         "Ballet"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 20.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_98.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_98.jpg"
     }
   ],
   "910047172": [
@@ -5832,53 +2432,19 @@
         "Ballet"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 20.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_99.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_99.jpg"
     }
   ],
   "917256912": [
@@ -5890,53 +2456,19 @@
         "Ballet"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 20.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_99.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_99.jpg"
     }
   ],
   "919006336": [
@@ -5948,53 +2480,19 @@
         "Ballet"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 20.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_100.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_100.jpg"
     }
   ],
   "911909884": [
@@ -6006,53 +2504,19 @@
         "Ballet"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 2.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 2.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 2.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 2.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 2.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 2.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 2.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 2.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 2.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 2.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 2.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_101.jpg",
-      "mes_entrada": "Outubro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_101.jpg"
     }
   ],
   "914669555": [
@@ -6065,53 +2529,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 36.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 36.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 36.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 36.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 36.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 36.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 36.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 36.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 36.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 36.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 36.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_102.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_102.jpg"
     }
   ],
   "918577056": [
@@ -6123,53 +2553,19 @@
         "Ballet"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 20.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_103.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_103.jpg"
     }
   ],
   "917559341": [
@@ -6181,53 +2577,19 @@
         "Ballet"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 20.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_103.jpg",
-      "mes_entrada": "Setembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_103.jpg"
     }
   ],
   "916723165": [
@@ -6239,53 +2601,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 18.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 18.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 18.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_105.jpg",
-      "mes_entrada": "Março"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_105.jpg"
     }
   ],
   "915971934": [
@@ -6297,53 +2625,19 @@
         "Contemporâneo"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 18.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 18.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 18.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 18.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_105.jpg",
-      "mes_entrada": "Março"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_105.jpg"
     }
   ],
   "910024908": [
@@ -6355,53 +2649,19 @@
         "Adultas"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 12.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 12.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 12.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 12.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 12.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_108.jpg",
-      "mes_entrada": "Março"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_108.jpg"
     }
   ],
   "915422486": [
@@ -6413,53 +2673,19 @@
         "Adultas"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 10.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_109.jpg",
-      "mes_entrada": "Março"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_109.jpg"
     }
   ],
   "912331891": [
@@ -6471,53 +2697,19 @@
         "Adultas"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 12.5
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 12.5
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 12.5
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 12.5
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 12.5
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 12.5
-        },
-        "marco": {
-          "pago": true,
-          "valor": 12.5
-        },
-        "abril": {
-          "pago": false,
-          "valor": 12.5
-        },
-        "maio": {
-          "pago": false,
-          "valor": 12.5
-        },
-        "junho": {
-          "pago": false,
-          "valor": 12.5
-        },
-        "julho": {
-          "pago": false,
-          "valor": 12.5
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_111.jpg",
-      "mes_entrada": "Novembro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_111.jpg"
     }
   ],
   "914590970": [
@@ -6529,53 +2721,19 @@
         "Adultas"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 10.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": false,
+        "abril": false,
+        "maio": false,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_113.jpg",
-      "mes_entrada": "Outubro"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_113.jpg"
     }
   ],
   "969642483": [
@@ -6587,53 +2745,19 @@
         "Babies"
       ],
       "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "maio": {
-          "pago": true,
-          "valor": 27.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 27.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 27.0
-        }
+        "setembro": true,
+        "outubro": true,
+        "novembro": true,
+        "dezembro": true,
+        "janeiro": true,
+        "fevereiro": true,
+        "marco": true,
+        "abril": true,
+        "maio": true,
+        "junho": false,
+        "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_115.jpg",
-      "mes_entrada": "Maio"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_115.jpg"
     }
   ]
 }
