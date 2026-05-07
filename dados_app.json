@@ -691,7 +691,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778088333/alunos/aluno_64.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_64.jpg"
     }
   ],
   "925489548": [
@@ -1152,7 +1152,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778087476/alunos/aluno_49.png"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_49.jpg"
     }
   ],
   "912111910": [
@@ -1176,7 +1176,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778087517/alunos/aluno_50.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_50.jpg"
     }
   ],
   "919697115": [
@@ -1201,7 +1201,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778087577/alunos/aluno_51.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_51.jpg"
     }
   ],
   "912289988": [
@@ -1225,7 +1225,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778087605/alunos/aluno_52.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_52.jpg"
     }
   ],
   "965880436": [
@@ -1249,7 +1249,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778087663/alunos/aluno_53.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_53.jpg"
     }
   ],
   "919322750": [
@@ -1273,7 +1273,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778087698/alunos/aluno_54.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_54.jpg"
     }
   ],
   "937018128": [
@@ -1297,7 +1297,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778087729/alunos/aluno_55.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_55.jpg"
     }
   ],
   "912607205": [
@@ -1321,7 +1321,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778087761/alunos/aluno_56.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_56.jpg"
     }
   ],
   "914571666": [
@@ -1345,7 +1345,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778087796/alunos/aluno_57.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_57.jpg"
     }
   ],
   "925655332": [
@@ -1370,7 +1370,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778087835/alunos/aluno_58.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_58.jpg"
     }
   ],
   "916503989": [
@@ -1395,7 +1395,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778088041/alunos/aluno_59.png"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_59.jpg"
     }
   ],
   "919757203": [
@@ -1419,7 +1419,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778088067/alunos/aluno_60.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_60.jpg"
     }
   ],
   "916518128": [
@@ -1440,11 +1440,11 @@
         "fevereiro": true,
         "marco": true,
         "abril": true,
-        "maio": false,
+        "maio": true,
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778088111/alunos/aluno_61.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_61.jpg"
     }
   ],
   "960354918": [
@@ -1465,17 +1465,17 @@
         "fevereiro": true,
         "marco": true,
         "abril": true,
-        "maio": false,
+        "maio": true,
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778088111/alunos/aluno_61.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_61.jpg"
     }
   ],
   "962556835": [
     {
       "id": 62,
-      "nome": "Maria M. Pina",
+      "nome": "Maria Pina",
       "aniversario": "13/09",
       "modalidades": [
         "Kids 2"
@@ -1493,7 +1493,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778088168/alunos/aluno_62.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_62.jpg"
     }
   ],
   "916845387": [
@@ -1517,7 +1517,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778088301/alunos/aluno_63.png"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_63.jpg"
     }
   ],
   "914416024": [
@@ -1541,7 +1541,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778088361/alunos/aluno_65.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_65.jpg"
     }
   ],
   "917485007": [
@@ -1566,7 +1566,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778088395/alunos/aluno_66.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_66.jpg"
     }
   ],
   "922010663": [
@@ -1592,7 +1592,7 @@
         "junho": true,
         "julho": true
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778088423/alunos/aluno_67.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_67.jpg"
     }
   ],
   "910547103": [
@@ -1618,7 +1618,7 @@
         "junho": true,
         "julho": true
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778088423/alunos/aluno_67.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_67.jpg"
     }
   ],
   "913223195": [
@@ -1642,7 +1642,7 @@
         "junho": false,
         "julho": false
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1778088457/alunos/aluno_68.jpg"
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_68.jpg"
     }
   ],
   "914181099": [
