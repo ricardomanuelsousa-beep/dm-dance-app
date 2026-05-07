@@ -286,7 +286,7 @@
           "valor": 16.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738104/alunos/aluno_12.png",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_12.jpg",
       "mes_entrada": "Outubro"
     }
   ],
@@ -344,7 +344,7 @@
           "valor": 16.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738104/alunos/aluno_12.png",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_12.jpg",
       "mes_entrada": "Outubro"
     }
   ],
@@ -403,7 +403,7 @@
           "valor": 52.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777740261/alunos/aluno_13.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_13.jpg",
       "mes_entrada": "Setembro"
     },
     {
@@ -864,7 +864,7 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738542/alunos/aluno_72.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_72.jpg",
       "mes_entrada": "Setembro"
     }
   ],
@@ -4012,7 +4012,7 @@
           "valor": 37.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738443/alunos/aluno_69.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_69.jpg",
       "mes_entrada": "Setembro"
     }
   ],
@@ -4070,7 +4070,7 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738492/alunos/aluno_70.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_70.jpg",
       "mes_entrada": "Setembro"
     }
   ],
@@ -4128,7 +4128,7 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738492/alunos/aluno_70.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_70.jpg",
       "mes_entrada": "Setembro"
     }
   ],
@@ -4186,7 +4186,7 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738793/alunos/aluno_73.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_73.jpg",
       "mes_entrada": "Setembro"
     }
   ],
@@ -4244,7 +4244,7 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738832/alunos/aluno_74.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_74.jpg",
       "mes_entrada": "Outubro"
     }
   ],
@@ -4302,7 +4302,7 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738890/alunos/aluno_77.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_77.jpg",
       "mes_entrada": "Outubro"
     }
   ],
@@ -4360,7 +4360,7 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738890/alunos/aluno_77.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_77.jpg",
       "mes_entrada": "Outubro"
     }
   ],
@@ -4406,7 +4406,7 @@
           "valor": 27.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 27.0
         },
         "junho": {
@@ -4418,7 +4418,7 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738931/alunos/aluno_78.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_78.jpg",
       "mes_entrada": "Setembro"
     }
   ],
@@ -4464,7 +4464,7 @@
           "valor": 27.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 27.0
         },
         "junho": {
@@ -4476,7 +4476,7 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738931/alunos/aluno_78.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_78.jpg",
       "mes_entrada": "Setembro"
     }
   ],
@@ -4522,7 +4522,7 @@
           "valor": 27.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 27.0
         },
         "junho": {
@@ -4534,7 +4534,7 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738961/alunos/aluno_79.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_79.jpg",
       "mes_entrada": "Setembro"
     }
   ],
@@ -4580,7 +4580,7 @@
           "valor": 27.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 27.0
         },
         "junho": {
@@ -4592,7 +4592,7 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777738961/alunos/aluno_79.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_79.jpg",
       "mes_entrada": "Setembro"
     }
   ],
