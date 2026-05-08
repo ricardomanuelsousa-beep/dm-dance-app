@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="/dm-dance-app/manifest.json?v=21">
+    <link rel="manifest" href="/dm-dance-app/manifest.json?v=22">
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -122,10 +122,43 @@
         .galeria-evento h4 { color:var(--cor-nome); font-size:16px; }
         .evento-data { color:#888; font-size:12px; margin-bottom:12px; }
         .galeria-cartaz { width:100%; aspect-ratio:1/1.4; max-height:400px; background:#f5f5f5; border-radius:12px; display:flex; align-items:center; justify-content:center; overflow:hidden; margin-bottom:12px; border:2px dashed #ddd; }
-        .galeria-cartaz img { width:100%; height:100%; object-fit:contain; }
+        .galeria-cartaz img { width:100%; height:100%; object-fit:contain; cursor:pointer; }
         .placeholder-text { color:#bbb; text-align:center; font-size:13px; padding:20px; }
         .galeria-fotos { display:grid; grid-template-columns:repeat(3,1fr); gap:5px; }
         .galeria-fotos img { width:100%; aspect-ratio:1; object-fit:cover; border-radius:8px; background:#f0f0f0; cursor:pointer; }
+        
+        /* VISUALIZADOR DE FOTOS (LIGHTBOX) */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox.active { display: flex; }
+        .lightbox img {
+            max-width: 95%;
+            max-height: 95%;
+            object-fit: contain;
+            border-radius: 8px;
+            animation: zoomIn 0.3s ease;
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 15px; right: 20px;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+            z-index: 1001;
+            font-weight: bold;
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
         
         .nav { display:flex; justify-content:space-around; background:white; padding:8px 5px 12px; border-top:1px solid #f0f0f0; margin-top:auto; padding-bottom:calc(12px + env(safe-area-inset-bottom)); }
         .nav-item { text-align:center; cursor:pointer; padding:8px 6px; font-size:10px; color:#999; transition:all 0.2s; border-radius:12px; min-width:55px; }
@@ -199,8 +232,13 @@
         <div class="footer">DM Dance School © 2025</div>
     </div>
 
+    <!-- VISUALIZADOR DE FOTOS (LIGHTBOX) -->
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightboxImg" src="">
+    </div>
+
     <script>
-        // Versão da app - muda quando houver atualizações
         const APP_VERSAO = '2.0';
         
         lucide.createIcons();
@@ -215,14 +253,12 @@
         const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
         if(isIOS) document.getElementById('instrucoesIOS').style.display='block';
 
-        // Limpar cache quando há nova versão
         window.addEventListener('load', () => {
             const versaoAnterior = localStorage.getItem('dm_versao');
             if (versaoAnterior && versaoAnterior !== APP_VERSAO) {
                 if ('caches' in window) {
                     caches.keys().then(names => names.forEach(name => caches.delete(name)));
                 }
-                console.log('🔄 App atualizada para versão ' + APP_VERSAO);
             }
             localStorage.setItem('dm_versao', APP_VERSAO);
         });
@@ -249,9 +285,8 @@
                 if (a.aniversario) {
                     const partes = a.aniversario.split('/');
                     if (partes.length === 2 && parseInt(partes[0]) === diaHoje && parseInt(partes[1]) === mesHoje) {
-                        const banner = document.getElementById('bannerAniversario');
-                        banner.textContent = `🎂 Parabéns ${a.nome}! Que tenhas um dia muito feliz! Contamos com o bolo na aula! 🎉`;
-                        banner.style.display = 'block';
+                        document.getElementById('bannerAniversario').textContent = `🎂 Parabéns ${a.nome}! Que tenhas um dia muito feliz! Contamos com o bolo na aula! 🎉`;
+                        document.getElementById('bannerAniversario').style.display = 'block';
                         return;
                     }
                 }
@@ -285,11 +320,8 @@
         function getValor(dados) { return (typeof dados === 'object' && dados.valor) ? dados.valor : 0; }
         
         function filtrarMeses(pagamentos, mesEntrada) {
-            if (!mesEntrada || !MESES_ORDEM.includes(mesEntrada.toLowerCase())) {
-                return MESES_ORDEM;
-            }
-            const idxInicio = MESES_ORDEM.indexOf(mesEntrada.toLowerCase());
-            return MESES_ORDEM.slice(idxInicio);
+            if (!mesEntrada || !MESES_ORDEM.includes(mesEntrada.toLowerCase())) return MESES_ORDEM;
+            return MESES_ORDEM.slice(MESES_ORDEM.indexOf(mesEntrada.toLowerCase()));
         }
 
         function obterStatusPagamento(pagamentos) {
@@ -300,8 +332,7 @@
             for (const [mes, dados] of Object.entries(pagamentos)) {
                 const mesNum = mesesNum[mes.toLowerCase()];
                 if (!mesNum) continue;
-                let anoMes = mesNum >= 9 ? anoLetivo : anoLetivo + 1;
-                let dataLimite = new Date(anoMes, mesNum - 1, DIA_LIMITE);
+                let dataLimite = new Date(mesNum >= 9 ? anoLetivo : anoLetivo + 1, mesNum - 1, DIA_LIMITE);
                 if (!getPago(dados) && dataLimite < new Date()) {
                     return { texto: `❌ Atrasado (${mes})`, classe: "atraso" };
                 }
@@ -319,13 +350,11 @@
                 for (const [mes, dados] of Object.entries(a.pagamentos || {})) {
                     const mesNum = mesesNum[mes.toLowerCase()];
                     if (!mesNum || getPago(dados)) continue;
-                    let anoMes = mesNum >= 9 ? anoLetivo : anoLetivo + 1;
-                    let dataLimite = new Date(anoMes, mesNum - 1, DIA_LIMITE);
+                    let dataLimite = new Date(mesNum >= 9 ? anoLetivo : anoLetivo + 1, mesNum - 1, DIA_LIMITE);
                     if (dataLimite < hoje) { nomesAtraso.push(a.nome); break; }
                 }
             }
-            const banner = document.getElementById('bannerAviso');
-            const texto = document.getElementById('textoAviso');
+            const banner = document.getElementById('bannerAviso'), texto = document.getElementById('textoAviso');
             if (nomesAtraso.length > 0) {
                 banner.style.display = 'block';
                 texto.textContent = nomesAtraso.length === 1 ? nomesAtraso[0] + ' tem mensalidades por regularizar. Contacte a escola.' : nomesAtraso.join(', ') + ' têm mensalidades por regularizar. Contacte a escola.';
@@ -364,8 +393,7 @@
                 const status=obterStatusPagamento(f.pagamentos||{});
                 let fotoUrl = f.foto || '';
                 if (fotoUrl && fotoUrl.includes('cloudinary.com')) {
-                    fotoUrl = fotoUrl.split('?')[0];
-                    fotoUrl += '?q=auto&w=400&h=400&c=fill&g=face&f_auto';
+                    fotoUrl = fotoUrl.split('?')[0] + '?q=auto&w=400&h=400&c=fill&g=face&f_auto';
                 }
                 div.innerHTML+=`<div class="aluno" onclick="selecionarAluno(${f.id})">
                     <img class="foto" src="${fotoUrl}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" crossorigin="anonymous" loading="lazy">
@@ -393,8 +421,7 @@
                 const dadosMes = alunoSelecionado.pagamentos && alunoSelecionado.pagamentos[cod];
                 const pago = getPago(dadosMes);
                 const valor = getValor(dadosMes);
-                if(pago) totalPago += valor;
-                else totalPendente += (valor || 0);
+                if(pago) totalPago += valor; else totalPendente += (valor || 0);
                 html+=`<tr><td>${MESES_NOMES[cod]}</td><td style="text-align:right;">${valor.toFixed(2)}€</td><td style="text-align:center;" class="${pago?'pago':'pendente'}">${pago?'✅ Pago':'❌ Pendente'}</td></tr>`;
             }
             html+='</table>'; div.innerHTML=html;
@@ -422,8 +449,7 @@
                 for(const a of d.aulas){
                     const destaque=modalidadesAluno.length>0&&ehDoAluno(a.turma,a.nome);
                     html+=`<div class="horario-caixa${destaque?' destaque':''}">
-                        <div class="horario-caixa-topo">
-                            <div class="horario-barra-cor" style="background:${destaque?'#D4AF37':a.cor};"></div>
+                        <div class="horario-caixa-topo"><div class="horario-barra-cor" style="background:${destaque?'#D4AF37':a.cor};"></div>
                             <div class="horario-caixa-conteudo">
                                 <div class="horario-caixa-hora">🕐 ${a.hora}</div>
                                 <div class="horario-caixa-nome">🎯 ${a.nome}</div>
@@ -445,15 +471,46 @@
             div.innerHTML=html;
         }
 
+        function abrirLightbox(src) {
+            document.getElementById('lightboxImg').src = src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+
         function carregarGaleria(){
             const div=document.getElementById('tabGaleria');
-            const pastaFotos='/dm-dance-app/galeria/alice/', numFotos=12;
-            let fotosHtml='';
-            for(let i=1;i<=numFotos;i++) fotosHtml+=`<img src="${pastaFotos}foto${i}.png" onerror="this.src='${pastaFotos}foto${i}.jpg';" loading="lazy" alt="Foto ${i}">`;
-            div.innerHTML=`<h3 style="color:#8B0000;margin-bottom:10px;">🖼️ Galeria</h3>
-                <div class="galeria-evento"><h4>📸 Era Uma Vez Alice</h4><div class="evento-data">22 de Fevereiro de 2026</div>
-                <div class="galeria-cartaz"><img src="${pastaFotos}cartaz.png" alt="Cartaz" onerror="this.src='${pastaFotos}cartaz.jpg';this.onerror=function(){this.style.display='none';this.nextElementSibling.style.display='block';};"><div class="placeholder-text" style="display:none;">🎭<br>Espaço para o cartaz</div></div>
-                <div class="galeria-fotos">${fotosHtml}</div></div>`;
+            
+            // Lista de galerias (adicionar novos eventos aqui)
+            const galerias = [
+                { nome: "📸 Era Uma Vez Alice", data: "22 de Fevereiro de 2026", pasta: "alice" },
+                { nome: "🏆 All Dance Portugal", data: "30 e 31 de Março de 2026", pasta: "all-dance" },
+            ];
+            
+            const maxFotos = 20;
+            let html = '<h3 style="color:#8B0000;margin-bottom:10px;">🖼️ Galeria</h3>';
+            
+            for (const g of galerias) {
+                const pastaFotos = `/dm-dance-app/galeria/${g.pasta}/`;
+                let fotosHtml = '';
+                for (let i = 1; i <= maxFotos; i++) {
+                    fotosHtml += `<img src="${pastaFotos}foto${i}.png" 
+                        onerror="this.src='${pastaFotos}foto${i}.jpg'; this.onerror=function(){this.style.display='none';};" 
+                        loading="lazy" alt="Foto ${i}" onclick="abrirLightbox('${pastaFotos}foto${i}.png')">`;
+                }
+                
+                html += `<div class="galeria-evento">
+                    <h4>${g.nome}</h4>
+                    <div class="evento-data">${g.data}</div>
+                    <div class="galeria-cartaz">
+                        <img src="${pastaFotos}cartaz.png" alt="Cartaz" 
+                            onerror="this.src='${pastaFotos}cartaz.jpg'; this.onerror=function(){this.style.display='none';this.nextElementSibling.style.display='block';};"
+                            onclick="abrirLightbox('${pastaFotos}cartaz.png')">
+                        <div class="placeholder-text" style="display:none;">🎭<br>Espaço para o cartaz</div>
+                    </div>
+                    <div class="galeria-fotos">${fotosHtml}</div>
+                </div>`;
+            }
+            
+            div.innerHTML = html;
         }
 
         function mostrarTab(tab,el){
@@ -479,7 +536,7 @@
 
         function instalarApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null;document.getElementById('btnInstalar').style.display='none';}}
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').style.display='block';}});
-        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=21').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
+        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=22').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
     </script>
 </body>
 </html>
