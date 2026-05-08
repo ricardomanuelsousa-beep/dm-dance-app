@@ -183,9 +183,7 @@
         <div id="dashboardScreen">
             <div class="dashboard-header">
                 <h2>DM Dance School</h2>
-                <button class="btn-logout" onclick="logout()" title="Sair">
-                    <i data-lucide="log-out" style="width:18px;height:18px;color:#d32f2f;"></i>
-                </button>
+                <button class="btn-logout" onclick="logout()" title="Sair">🚪</button>
             </div>
             
             <div class="frase-motivacional" id="fraseMotivacional"></div>
@@ -236,7 +234,6 @@
                 if ('caches' in window) caches.keys().then(names => names.forEach(name => caches.delete(name)));
             }
             localStorage.setItem('dm_versao', APP_VERSAO);
-            lucide.createIcons();
         });
 
         async function carregarFraseDoDia() {
