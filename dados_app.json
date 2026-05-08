@@ -564,7 +564,7 @@
           "valor": 27.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 27.0
         },
         "junho": {
