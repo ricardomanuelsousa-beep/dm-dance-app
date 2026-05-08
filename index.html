@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="/dm-dance-app/manifest.json?v=20">
+    <link rel="manifest" href="/dm-dance-app/manifest.json?v=21">
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -281,14 +281,12 @@
             } catch(e) { eventosLista = []; }
         }
 
-        // Função auxiliar para normalizar dados de pagamento (objeto ou booleano)
         function getPago(dados) { return typeof dados === 'object' ? dados.pago : dados; }
         function getValor(dados) { return (typeof dados === 'object' && dados.valor) ? dados.valor : 0; }
         
-        // Filtrar meses a partir do mês de entrada
         function filtrarMeses(pagamentos, mesEntrada) {
             if (!mesEntrada || !MESES_ORDEM.includes(mesEntrada.toLowerCase())) {
-                return MESES_ORDEM; // Todos os meses
+                return MESES_ORDEM;
             }
             const idxInicio = MESES_ORDEM.indexOf(mesEntrada.toLowerCase());
             return MESES_ORDEM.slice(idxInicio);
@@ -299,13 +297,11 @@
             const mesAtual = hoje.getMonth() + 1;
             const anoAtual = hoje.getFullYear();
             let anoLetivo = mesAtual >= 9 ? anoAtual : anoAtual - 1;
-            
             for (const [mes, dados] of Object.entries(pagamentos)) {
                 const mesNum = mesesNum[mes.toLowerCase()];
                 if (!mesNum) continue;
                 let anoMes = mesNum >= 9 ? anoLetivo : anoLetivo + 1;
                 let dataLimite = new Date(anoMes, mesNum - 1, DIA_LIMITE);
-                
                 if (!getPago(dados) && dataLimite < new Date()) {
                     return { texto: `❌ Atrasado (${mes})`, classe: "atraso" };
                 }
@@ -319,7 +315,6 @@
             const anoAtual = hoje.getFullYear();
             let anoLetivo = mesAtual >= 9 ? anoAtual : anoAtual - 1;
             let nomesAtraso = [];
-            
             for (const a of alunos) {
                 for (const [mes, dados] of Object.entries(a.pagamentos || {})) {
                     const mesNum = mesesNum[mes.toLowerCase()];
@@ -329,7 +324,6 @@
                     if (dataLimite < hoje) { nomesAtraso.push(a.nome); break; }
                 }
             }
-            
             const banner = document.getElementById('bannerAviso');
             const texto = document.getElementById('textoAviso');
             if (nomesAtraso.length > 0) {
@@ -389,24 +383,18 @@
         function carregarExtrato(){
             const div=document.getElementById('tabExtrato');
             if(!alunoSelecionado){div.innerHTML='<p style="text-align:center;color:#999;padding:30px;">Selecione um aluno na aba Início</p>'; return;}
-            
-            // Filtrar meses pelo mês de entrada
             const mesEntrada = alunoSelecionado.mes_entrada || 'setembro';
             const mesesFiltrados = filtrarMeses(alunoSelecionado.pagamentos, mesEntrada);
-            
             let totalPago=0, totalPendente=0;
             let html=`<div class="extrato-header"><button class="btn-voltar" onclick="mostrarTab('alunos',document.querySelector('.nav-item:first-child'))">←</button><h3 style="color:#8B0000;font-size:17px;">💰 Extrato: ${alunoSelecionado.nome}</h3></div>
                 <div class="resumo"><div class="resumo-card"><div class="valor" style="color:#2e7d32;" id="totalPago">-</div><div class="label">Total Pago</div></div><div class="resumo-card"><div class="valor" style="color:#d32f2f;" id="totalPendente">-</div><div class="label">Pendente</div></div></div>
                 <table class="extrato-table"><tr><th>Mês</th><th style="text-align:right;">Valor</th><th style="text-align:center;">Status</th></tr>`;
-            
             for(const cod of mesesFiltrados){
                 const dadosMes = alunoSelecionado.pagamentos && alunoSelecionado.pagamentos[cod];
                 const pago = getPago(dadosMes);
                 const valor = getValor(dadosMes);
-                
                 if(pago) totalPago += valor;
                 else totalPendente += (valor || 0);
-                
                 html+=`<tr><td>${MESES_NOMES[cod]}</td><td style="text-align:right;">${valor.toFixed(2)}€</td><td style="text-align:center;" class="${pago?'pago':'pendente'}">${pago?'✅ Pago':'❌ Pendente'}</td></tr>`;
             }
             html+='</table>'; div.innerHTML=html;
@@ -461,7 +449,7 @@
             const div=document.getElementById('tabGaleria');
             const pastaFotos='/dm-dance-app/galeria/alice/', numFotos=12;
             let fotosHtml='';
-            for(let i=1;i<=numFotos;i++) fotosHtml+=`<img src="${pastaFotos}foto${i}.jpg" onerror="this.style.display='none';" loading="lazy" alt="Foto ${i}">`;
+            for(let i=1;i<=numFotos;i++) fotosHtml+=`<img src="${pastaFotos}foto${i}.png" onerror="this.src='${pastaFotos}foto${i}.jpg';" loading="lazy" alt="Foto ${i}">`;
             div.innerHTML=`<h3 style="color:#8B0000;margin-bottom:10px;">🖼️ Galeria</h3>
                 <div class="galeria-evento"><h4>📸 Era Uma Vez Alice</h4><div class="evento-data">22 de Fevereiro de 2026</div>
                 <div class="galeria-cartaz"><img src="${pastaFotos}cartaz.png" alt="Cartaz" onerror="this.src='${pastaFotos}cartaz.jpg';this.onerror=function(){this.style.display='none';this.nextElementSibling.style.display='block';};"><div class="placeholder-text" style="display:none;">🎭<br>Espaço para o cartaz</div></div>
@@ -491,7 +479,7 @@
 
         function instalarApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null;document.getElementById('btnInstalar').style.display='none';}}
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').style.display='block';}});
-        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=20').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
+        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=21').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
     </script>
 </body>
 </html>
