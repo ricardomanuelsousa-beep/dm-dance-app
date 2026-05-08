@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="/dm-dance-app/manifest.json?v=23">
+    <link rel="manifest" href="/dm-dance-app/manifest.json?v=24">
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -217,7 +217,7 @@
     </div>
 
     <script>
-        const APP_VERSAO = '2.1';
+        const APP_VERSAO = '2.2';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
@@ -236,6 +236,7 @@
                 if ('caches' in window) caches.keys().then(names => names.forEach(name => caches.delete(name)));
             }
             localStorage.setItem('dm_versao', APP_VERSAO);
+            lucide.createIcons();
         });
 
         async function carregarFraseDoDia() {
@@ -353,7 +354,7 @@
                     carregarAlunos();
                     if(alunoSelecionado) carregarExtrato();
                     carregarHorarios();
-                    lucide.createIcons();
+                    setTimeout(() => lucide.createIcons(), 300);
                 } else { msgDiv.innerHTML='<p class="erro">❌ Telefone não encontrado!</p>'; }
             } catch(error){ msgDiv.innerHTML='<p class="erro">❌ Erro ao carregar dados.</p>'; }
         }
@@ -484,7 +485,7 @@
             if(tab==='extrato'&&alunoSelecionado) carregarExtrato();
             if(tab==='eventos') carregarTabEventos();
             if(tab==='galeria') carregarGaleria();
-            setTimeout(() => lucide.createIcons(), 100);
+            setTimeout(() => lucide.createIcons(), 300);
         }
 
         function logout(){
@@ -497,7 +498,7 @@
 
         function instalarApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null;document.getElementById('btnInstalar').style.display='none';}}
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').style.display='block';}});
-        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=23').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
+        if('serviceWorker' in navigator){navigator.serviceWorker.register('/dm-dance-app/service-worker.js?v=24').then(reg=>reg.update()).catch(err=>console.log('SW:',err));}
     </script>
 </body>
 </html>
