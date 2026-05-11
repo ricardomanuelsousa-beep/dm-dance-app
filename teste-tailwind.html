@@ -2,66 +2,130 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste Tailwind - DM Dance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <title>DM Dance School — Tailwind</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'dm-nome': '#8B0000',
+                        'dm-fundo': '#FFF5F5',
                         'dm-dourado': '#D4AF37',
+                        'dm-dourado-escuro': '#8B6914',
+                        'dm-dourado-medio': '#c49b2e',
+                        'dm-nome': '#8B0000',
+                        'dm-pago': '#2e7d32',
+                        'dm-pendente': '#ed6c02',
+                        'dm-atraso': '#d32f2f',
+                        'dm-castanho': '#4a3000',
+                        'dm-rosa': '#fce4e4',
+                        'dm-dourado-claro': '#fff9e6',
                     },
                     animation: {
+                        'fade-in': 'fadeIn 1s ease',
                         'slide-down': 'slideDown 0.5s ease',
+                        'pulse-green': 'pulseGreen 2s infinite',
                     },
                     keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(-5px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
                         slideDown: {
                             '0%': { opacity: '0', transform: 'translateY(-10px)' },
                             '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        pulseGreen: {
+                            '0%, 100%': { boxShadow: '0 4px 15px rgba(76,175,80,0.3)' },
+                            '50%': { boxShadow: '0 4px 25px rgba(76,175,80,0.5)' },
                         },
                     }
                 }
             }
         }
     </script>
-</head>
-<body class="bg-gradient-to-br from-pink-200 via-red-50 to-pink-200 p-4 min-h-screen">
     
-    <div class="max-w-md mx-auto bg-white rounded-3xl shadow-lg overflow-hidden">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen p-4 antialiased" style="background: linear-gradient(135deg, #FFE4E1 0%, #FFF5F5 50%, #FFE4E1 100%);">
+    
+    <div class="max-w-md mx-auto bg-white rounded-3xl shadow-[0_2px_10px_rgba(0,0,0,0.08)] overflow-hidden min-h-[90vh] flex flex-col">
         
         <!-- Header -->
-        <div class="bg-gradient-to-br from-amber-400 via-amber-500 to-yellow-700 px-6 py-5 text-center relative">
-            <a href="#" class="absolute right-4 top-4 w-9 h-9 rounded-full bg-green-500 text-white flex items-center justify-center shadow-md text-lg no-underline">💬</a>
-            <div class="w-[70px] h-[70px] mx-auto mb-2.5 rounded-full flex items-center justify-center shadow-lg bg-white/20">
-                <span class="text-[35px]">🩰</span>
+        <div class="px-6 py-5 text-center relative" style="background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 40%, #8B6914 100%);">
+            <a href="https://wa.me/351916732582" target="_blank" 
+               class="absolute right-4 top-4 w-9 h-9 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-md z-10 text-lg no-underline"
+               title="Falar connosco no WhatsApp">💬</a>
+            
+            <div class="w-[70px] h-[70px] mx-auto mb-2.5 bg-transparent rounded-full flex items-center justify-center shadow-[0_4px_15px_rgba(0,0,0,0.2)]">
+                <img src="logo_dm.png" alt="DM Dance School" 
+                     class="w-[60px] h-[60px] rounded-full object-cover"
+                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                <span class="text-[35px] w-[60px] h-[60px] items-center justify-center hidden">🩰</span>
             </div>
-            <h1 class="text-xl font-bold text-amber-900">DM Dance School</h1>
+            <h1 class="text-xl font-bold text-dm-castanho">DM Dance School</h1>
         </div>
 
-        <!-- Login -->
-        <div class="p-8">
+        <!-- Login Screen -->
+        <div id="loginScreen" class="p-8 flex-1 flex flex-col justify-center">
             <div class="text-2xl font-bold text-dm-nome text-center mb-1">Área do Aluno</div>
-            <div class="text-sm text-gray-500 text-center mb-6">Faça login com o seu telefone</div>
+            <div class="text-sm text-gray-400 text-center mb-6">Faça login com o seu telefone</div>
             
-            <input type="tel" placeholder="Digite o seu telefone" 
-                   class="w-full px-4 py-4 my-2.5 text-lg bg-gray-50 border-2 border-gray-200 rounded-2xl 
+            <input type="tel" id="telefone" placeholder="Digite o seu telefone" 
+                   autocomplete="off" inputmode="numeric"
+                   class="w-full px-[18px] py-4 my-2.5 text-[17px] bg-[#fafafa] border-2 border-[#e0e0e0] rounded-[14px] 
                           transition-all outline-none focus:border-dm-dourado focus:bg-white 
                           focus:shadow-[0_0_0_4px_rgba(212,175,55,0.1)]">
             
-            <button class="w-full py-4 my-2.5 text-lg font-bold text-white rounded-2xl 
-                           bg-gradient-to-br from-amber-400 to-amber-500 
-                           shadow-[0_4px_15px_rgba(212,175,55,0.3)] cursor-pointer">
+            <!-- Banner de Aviso -->
+            <div id="bannerAviso" 
+                 class="bg-[#fff3cd] border-2 border-[#ffc107] rounded-xl p-3.5 my-4 text-center animate-slide-down hidden">
+                <div class="font-bold text-[#856404] text-sm mb-1">⚠️ Mensalidades em Atraso</div>
+                <div class="text-[#92600a] text-xs" id="textoAviso"></div>
+            </div>
+            
+            <button onclick="login()" 
+                    class="w-full py-4 my-2.5 text-[17px] font-bold text-white rounded-[14px] 
+                           shadow-[0_4px_15px_rgba(212,175,55,0.3)] cursor-pointer border-none"
+                    style="background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 100%);">
                 Entrar
             </button>
             
-            <button class="w-full py-4 my-2.5 text-lg font-bold text-white rounded-2xl 
-                           bg-gradient-to-br from-green-500 to-green-700 cursor-pointer">
+            <button id="btnInstalar" onclick="instalarApp()"
+                    class="w-full py-4 my-2.5 text-[17px] font-bold text-white rounded-[14px] 
+                           animate-pulse-green cursor-pointer border-none hidden"
+                    style="background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);">
                 📲 Instalar App
             </button>
+            
+            <!-- Instruções iOS -->
+            <div id="instrucoesIOS" 
+                 class="bg-[#f0f7ff] border-2 border-[#007AFF] rounded-2xl p-[18px] my-4 text-center hidden">
+                <div class="font-bold text-[#007AFF] text-sm mb-2.5">📱 Como instalar no iPhone</div>
+                <div class="flex items-center gap-2.5 my-2 text-[13px]">
+                    <span class="bg-[#007AFF] text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0">1</span>
+                    Abra este site no <strong>Safari</strong>
+                </div>
+                <div class="flex items-center gap-2.5 my-2 text-[13px]">
+                    <span class="bg-[#007AFF] text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0">2</span>
+                    Toque no ícone <strong>Partilhar ⬆️</strong>
+                </div>
+                <div class="flex items-center gap-2.5 my-2 text-[13px]">
+                    <span class="bg-[#007AFF] text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0">3</span>
+                    Escolha <strong>➕ Adicionar ao Ecrã Principal</strong>
+                </div>
+            </div>
+            
+            <div id="mensagem"></div>
         </div>
+        
     </div>
 
+    <script>
+        lucide.createIcons();
+        // O teu JavaScript de login vai aqui
+    </script>
 </body>
 </html>
