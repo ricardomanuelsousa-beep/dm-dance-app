@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <title>DM Dance School</title>
+    
+    <link rel="manifest" href="manifest.json?v=26">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="DM Dance">
+    <link rel="apple-touch-icon" href="icon-192x192.png">
+    <meta name="theme-color" content="#D4AF37">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    
+<link rel="stylesheet" href="/src/input.css">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        .news-ticker-content {
+            padding-left: 100%;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .no-scrollbar::-webkit-scrollbar-thumb {
+            background: #ddd;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 antialiased" style="background: linear-gradient(135deg, #FFE4E1 0%, #FFF5F5 50%, #FFE4E1 100%);">
+    
+    <div class="max-w-md mx-auto bg-white rounded-3xl shadow-[0_2px_10px_rgba(0,0,0,0.08)] overflow-hidden min-h-[90vh] flex flex-col">
+        
+        <!-- ========== HEADER ========== -->
+        <div class="px-6 py-5 text-center relative" style="background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 40%, #8B6914 100%);">
+            <a href="https://wa.me/351916732582" target="_blank" 
+               class="absolute right-4 top-4 w-9 h-9 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-md z-10 text-lg no-underline"
+               title="Falar connosco no WhatsApp">
+               <i data-lucide="message-circle" class="w-5 h-5"></i>
+            </a>
+            
+            <div class="w-[70px] h-[70px] mx-auto mb-2.5 bg-transparent rounded-full flex items-center justify-center shadow-[0_4px_15px_rgba(0,0,0,0.2)]">
+                <img src="logo_dm.png" alt="DM Dance School" 
+                     class="w-[60px] h-[60px] rounded-full object-cover"
+                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                <span class="text-[35px] w-[60px] h-[60px] items-center justify-center hidden">🩰</span>
+            </div>
+            <h1 class="text-xl font-bold text-dm-castanho">DM Dance School</h1>
+        </div>
+
+        <!-- ========== LOGIN SCREEN ========== -->
+        <div id="loginScreen" class="p-8 flex-1 flex flex-col justify-center">
+            <div class="text-2xl font-bold text-dm-nome text-center mb-1">Área do Aluno</div>
+            <div class="text-sm text-gray-400 text-center mb-6">Faça login com o seu telefone</div>
+            
+            <input type="tel" id="telefone" placeholder="Digite o seu telefone" 
+                   autocomplete="off" inputmode="numeric"
+                   class="w-full px-[18px] py-4 my-2.5 text-[17px] bg-[#fafafa] border-2 border-[#e0e0e0] rounded-[14px] 
+                          transition-all outline-none focus:border-dm-dourado focus:bg-white 
+                          focus:shadow-[0_0_0_4px_rgba(212,175,55,0.1)]">
+            
+            <div id="bannerAviso" 
+                 class="bg-[#fff3cd] border-2 border-[#ffc107] rounded-xl p-3.5 my-4 text-center animate-slide-down hidden">
+                <div class="font-bold text-[#856404] text-sm mb-1">⚠️ Mensalidades em Atraso</div>
+                <div class="text-[#92600a] text-xs" id="textoAviso"></div>
+            </div>
+            
+            <button onclick="login()" 
+                    class="w-full py-4 my-2.5 text-[17px] font-bold text-white rounded-[14px] 
+                           shadow-[0_4px_15px_rgba(212,175,55,0.3)] cursor-pointer border-none"
+                    style="background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 100%);">
+                Entrar
+            </button>
+            
+            <button id="btnInstalar" onclick="instalarApp()"
+                    class="w-full py-4 my-2.5 text-[17px] font-bold text-white rounded-[14px] 
+                           animate-pulse-green cursor-pointer border-none hidden"
+                    style="background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);">
+                📲 Instalar App
+            </button>
+            
+            <div id="instrucoesIOS" 
+                 class="bg-[#f0f7ff] border-2 border-[#007AFF] rounded-2xl p-[18px] my-4 text-center hidden">
+                <div class="font-bold text-[#007AFF] text-sm mb-2.5">📱 Como instalar no iPhone</div>
+                <div class="flex items-center gap-2.5 my-2 text-[13px]">
+                    <span class="bg-[#007AFF] text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0">1</span>
+                    Abra este site no <strong>Safari</strong>
+                </div>
+                <div class="flex items-center gap-2.5 my-2 text-[13px]">
+                    <span class="bg-[#007AFF] text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0">2</span>
+                    Toque no ícone <strong>Partilhar ⬆️</strong>
+                </div>
+                <div class="flex items-center gap-2.5 my-2 text-[13px]">
+                    <span class="bg-[#007AFF] text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0">3</span>
+                    Escolha <strong>➕ Adicionar ao Ecrã Principal</strong>
+                </div>
+            </div>
+            
+            <div id="mensagem"></div>
+        </div>
+
+        <!-- ========== DASHBOARD SCREEN ========== -->
+        <div id="dashboardScreen" class="hidden flex-1 flex-col">
+            
+            <!-- Dashboard Header -->
+            <div class="px-6 py-1.5 flex justify-between items-center">
+                <h2 class="text-base text-dm-nome">DM Dance School</h2>
+                <button onclick="logout()" 
+                        class="w-[34px] h-[34px] rounded-full bg-red-50 border-none cursor-pointer flex items-center justify-center"
+                        title="Sair">
+                    <i data-lucide="log-out" class="w-4 h-4 text-dm-atraso"></i>
+                </button>
+            </div>
+            
+            <!-- Frase Motivacional -->
+            <div id="fraseMotivacional" 
+                 class="text-center px-6 py-3.5 italic text-dm-castanho text-lg bg-dm-dourado-claro leading-relaxed border-b-2 border-dm-dourado animate-fade-in"></div>
+            
+            <!-- Banner Aniversário -->
+            <div id="bannerAniversario" 
+                 class="text-white text-center p-4 font-bold text-[15px] animate-bounce-in hidden"
+                 style="background: linear-gradient(135deg, #ff6b6b, #ff8e8e);"></div>
+            
+            <!-- News Ticker -->
+            <div id="newsTicker" class="bg-dm-dourado text-dm-castanho py-2.5 overflow-hidden whitespace-nowrap hidden">
+                <div class="inline-block animate-ticker font-bold text-sm" id="newsTickerContent"></div>
+            </div>
+            
+            <!-- Conteúdo das Tabs -->
+            <div id="tabAlunos" class="tab-content active p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
+            <div id="tabExtrato" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
+            <div id="tabHorarios" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
+            <div id="tabEventos" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
+            <div id="tabGaleria" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
+            
+            <!-- Navegação Inferior -->
+            <div class="flex justify-around bg-dm-rosa px-1.5 py-2 border-t border-red-200 mt-auto" style="padding-bottom: calc(12px + env(safe-area-inset-bottom));">
+                <div class="nav-item active text-center cursor-pointer px-1.5 py-2 text-[10px] text-dm-dourado font-bold bg-dm-dourado-claro transition-all rounded-xl min-w-[55px]" onclick="mostrarTab('alunos', this)">
+                    <i data-lucide="house" class="nav-icon w-[26px] h-[26px] block mx-auto mb-[3px] text-dm-dourado"></i>Início
+                </div>
+                <div class="nav-item text-center cursor-pointer px-1.5 py-2 text-[10px] text-gray-400 transition-all rounded-xl min-w-[55px]" onclick="mostrarTab('extrato', this)">
+                    <i data-lucide="wallet" class="nav-icon w-[26px] h-[26px] block mx-auto mb-[3px] text-gray-400"></i>Extrato
+                </div>
+                <div class="nav-item text-center cursor-pointer px-1.5 py-2 text-[10px] text-gray-400 transition-all rounded-xl min-w-[55px]" onclick="mostrarTab('horarios', this)">
+                    <i data-lucide="calendar-days" class="nav-icon w-[26px] h-[26px] block mx-auto mb-[3px] text-gray-400"></i>Horários
+                </div>
+                <div class="nav-item text-center cursor-pointer px-1.5 py-2 text-[10px] text-gray-400 transition-all rounded-xl min-w-[55px]" onclick="mostrarTab('eventos', this)">
+                    <i data-lucide="party-popper" class="nav-icon w-[26px] h-[26px] block mx-auto mb-[3px] text-gray-400"></i>Eventos
+                </div>
+                <div class="nav-item text-center cursor-pointer px-1.5 py-2 text-[10px] text-gray-400 transition-all rounded-xl min-w-[55px]" onclick="mostrarTab('galeria', this)">
+                    <i data-lucide="images" class="nav-icon w-[26px] h-[26px] block mx-auto mb-[3px] text-gray-400"></i>Galeria
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="text-center py-4 text-gray-300 text-[11px]">DM Dance School © 2025</div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox hidden fixed inset-0 bg-black/90 z-[1000] justify-center items-center" id="lightbox" onclick="fecharLightbox(event)">
+        <span class="absolute top-4 right-5 text-white text-[35px] cursor-pointer z-[1001] font-bold" onclick="document.getElementById('lightbox').classList.remove('active'); document.getElementById('lightbox').style.display='none';">&times;</span>
+        <img id="lightboxImg" src="" class="max-w-[95%] max-h-[95%] object-contain rounded-lg animate-zoom-in">
+    </div>
+
+    <script>
+        // ========== CONFIGURAÇÃO ==========
+        const APP_VERSAO = '2.5';
+        lucide.createIcons();
+        
+        let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
+        let comunicadosLista = [], eventosLista = [];
+        
+        const mesesNum = {"setembro":9,"outubro":10,"novembro":11,"dezembro":12,"janeiro":1,"fevereiro":2,"marco":3,"abril":4,"maio":5,"junho":6,"julho":7};
+        const MESES_ORDEM = ["setembro","outubro","novembro","dezembro","janeiro","fevereiro","marco","abril","maio","junho","julho"];
+        const MESES_NOMES = {"setembro":"Setembro","outubro":"Outubro","novembro":"Novembro","dezembro":"Dezembro","janeiro":"Janeiro","fevereiro":"Fevereiro","marco":"Março","abril":"Abril","maio":"Maio","junho":"Junho","julho":"Julho"};
+        const DIA_LIMITE = 8;
+        const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
+        if(isIOS) document.getElementById('instrucoesIOS').classList.remove('hidden');
+
+        // ========== FUNÇÕES DE APOIO ==========
+        function getPago(dados) { return typeof dados === 'object' ? dados.pago : dados; }
+        function getValor(dados) { return (typeof dados === 'object' && dados.valor) ? dados.valor : 0; }
+        
+        function filtrarMeses(pagamentos, mesEntrada) {
+            if (!mesEntrada || !MESES_ORDEM.includes(mesEntrada.toLowerCase())) return MESES_ORDEM;
+            return MESES_ORDEM.slice(MESES_ORDEM.indexOf(mesEntrada.toLowerCase()));
+        }
+
+        function obterStatusPagamento(pagamentos) {
+            const hoje = new Date();
+            const mesAtual = hoje.getMonth() + 1;
+            const anoAtual = hoje.getFullYear();
+            let anoLetivo = mesAtual >= 9 ? anoAtual : anoAtual - 1;
+            for (const [mes, dados] of Object.entries(pagamentos)) {
+                const mesNum = mesesNum[mes.toLowerCase()];
+                if (!mesNum) continue;
+                let dataLimite = new Date(mesNum >= 9 ? anoLetivo : anoLetivo + 1, mesNum - 1, DIA_LIMITE);
+                if (!getPago(dados) && dataLimite < new Date()) return { texto: `❌ Atrasado (${mes})`, classe: "atraso" };
+            }
+            return { texto: "✅ Em dia", classe: "pago" };
+        }
+
+        function mostrarBannerAviso(alunos){
+            const hoje = new Date();
+            const mesAtual = hoje.getMonth() + 1;
+            const anoAtual = hoje.getFullYear();
+            let anoLetivo = mesAtual >= 9 ? anoAtual : anoAtual - 1;
+            let nomesAtraso = [];
+            for (const a of alunos) {
+                for (const [mes, dados] of Object.entries(a.pagamentos || {})) {
+                    const mesNum = mesesNum[mes.toLowerCase()];
+                    if (!mesNum || getPago(dados)) continue;
+                    let dataLimite = new Date(mesNum >= 9 ? anoLetivo : anoLetivo + 1, mesNum - 1, DIA_LIMITE);
+                    if (dataLimite < hoje) { nomesAtraso.push(a.nome); break; }
+                }
+            }
+            const banner = document.getElementById('bannerAviso'), texto = document.getElementById('textoAviso');
+            if (nomesAtraso.length > 0) {
+                banner.classList.remove('hidden');
+                texto.textContent = nomesAtraso.length === 1 ? nomesAtraso[0] + ' tem mensalidades por regularizar. Contacte a escola.' : nomesAtraso.join(', ') + ' têm mensalidades por regularizar. Contacte a escola.';
+            } else { banner.classList.add('hidden'); }
+        }
+
+        // ========== DADOS ==========
+        async function carregarFraseDoDia() {
+            try {
+                const response = await fetch('frases.txt');
+                const texto = await response.text();
+                const frases = texto.split('\n').map(f => f.trim()).filter(f => f !== '');
+                if (frases.length > 0) {
+                    const hoje = new Date();
+                    const diaDoAno = Math.floor((hoje - new Date(hoje.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
+                    document.getElementById('fraseMotivacional').textContent = '💫 ' + frases[diaDoAno % frases.length];
+                } else {
+                    document.getElementById('fraseMotivacional').style.display = 'none';
+                }
+            } catch(e) { document.getElementById('fraseMotivacional').style.display = 'none'; }
+        }
+
+        function verificarAniversario(alunos) {
+            const hoje = new Date();
+            const diaHoje = hoje.getDate(), mesHoje = hoje.getMonth() + 1;
+            for (const a of alunos) {
+                if (a.aniversario) {
+                    const partes = a.aniversario.split('/');
+                    if (partes.length === 2 && parseInt(partes[0]) === diaHoje && parseInt(partes[1]) === mesHoje) {
+                        const el = document.getElementById('bannerAniversario');
+                        el.textContent = `🎂 Parabéns ${a.nome}! Que tenhas um dia muito feliz! Contamos com o bolo na aula! 🎉`;
+                        el.classList.remove('hidden');
+                        return;
+                    }
+                }
+            }
+        }
+
+        async function carregarComunicadoTXT() {
+            try {
+                const response = await fetch('comunicado.txt');
+                const texto = await response.text().then(t => t.trim());
+                comunicadosLista = texto ? texto.split('---').map(p => p.trim()).filter(p => p).map(p => ({texto: p})) : [];
+            } catch(e) { comunicadosLista = []; }
+            const ticker = document.getElementById('newsTicker'), tickerContent = document.getElementById('newsTickerContent');
+            if (comunicadosLista.length === 0) { ticker.classList.add('hidden'); }
+            else { ticker.classList.remove('hidden'); tickerContent.textContent = comunicadosLista.map(c => c.texto).join('  ⭐  '); }
+        }
+
+        async function carregarEventos() {
+            try {
+                const response = await fetch('eventos.txt');
+                const texto = await response.text();
+                eventosLista = texto.split('\n').map(l => l.trim()).filter(l => l).map(l => {
+                    const partes = l.split('|');
+                    return { nome: (partes[0]||'').trim(), data: (partes[1]||'').trim(), descricao: (partes[2]||'').trim() };
+                });
+            } catch(e) { eventosLista = []; }
+        }
+
+        // ========== LOGIN ==========
+        async function login(){
+            const telefone=document.getElementById('telefone').value.trim(), msgDiv=document.getElementById('mensagem');
+            if(!telefone){msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">⚠️ Digite o telefone!</p>'; return;}
+            msgDiv.innerHTML='<p class="text-gray-400 text-center my-5"><span class="spinner inline-block w-[22px] h-[22px] border-[3px] border-gray-200 border-t-dm-dourado rounded-full animate-spin-slow mr-2.5 align-middle"></span>A carregar...</p>';
+            try{
+                const response=await fetch('dados_app.json');
+                dadosApp=await response.json();
+                if(dadosApp[telefone]){
+                    const alunos=dadosApp[telefone];
+                    mostrarBannerAviso(alunos);
+                    await new Promise(r=>setTimeout(r,2000));
+                    await carregarFraseDoDia();
+                    await carregarComunicadoTXT();
+                    await carregarEventos();
+                    verificarAniversario(alunos);
+                    telefoneLogado=telefone; alunosDoResponsavel=alunos; alunoSelecionado=alunosDoResponsavel[0];
+                    document.getElementById('loginScreen').classList.add('hidden');
+                    document.getElementById('dashboardScreen').classList.remove('hidden');
+                    document.getElementById('dashboardScreen').classList.add('flex');
+                    carregarAlunos();
+                    if(alunoSelecionado) carregarExtrato();
+                    carregarHorarios();
+                    setTimeout(() => lucide.createIcons(), 200);
+                } else { msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">❌ Telefone não encontrado!</p>'; }
+            } catch(error){ msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">❌ Erro ao carregar dados.</p>'; }
+        }
+
+        function logout(){
+            document.getElementById('telefone').value=''; document.getElementById('mensagem').innerHTML='';
+            document.getElementById('bannerAviso').classList.add('hidden');
+            document.getElementById('bannerAniversario').classList.add('hidden');
+            document.getElementById('loginScreen').classList.remove('hidden');
+            document.getElementById('dashboardScreen').classList.add('hidden');
+            document.getElementById('dashboardScreen').classList.remove('flex');
+            telefoneLogado=''; alunosDoResponsavel=[]; alunoSelecionado=null;
+        }
+
+        // ========== ALUNOS ==========
+        function carregarAlunos(){
+            const div=document.getElementById('tabAlunos'); div.innerHTML='';
+            for(const f of alunosDoResponsavel){
+                const status=obterStatusPagamento(f.pagamentos||{});
+                let fotoUrl = f.foto || '';
+                if (fotoUrl && fotoUrl.includes('cloudinary.com')) fotoUrl = fotoUrl.split('?')[0] + '?q=auto&w=400&h=400&c=fill&g=face&f_auto';
+                const statusColor = status.classe === 'pago' ? 'text-dm-pago' : status.classe === 'pendente' ? 'text-dm-pendente' : 'text-dm-atraso';
+                div.innerHTML+=`<div class="bg-dm-rosa my-2.5 p-4 rounded-2xl border-l-[5px] border-l-dm-dourado flex gap-3.5 items-center shadow-[0_2px_10px_rgba(0,0,0,0.08)] cursor-pointer" onclick="selecionarAluno(${f.id})">
+                    <img class="w-[90px] h-[90px] rounded-full object-cover bg-gray-200 shrink-0" src="${fotoUrl}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" crossorigin="anonymous" loading="lazy">
+                    <div class="w-[90px] h-[90px] rounded-full bg-gray-200 items-center justify-center text-4xl shrink-0" style="display:${f.foto?'none':'flex'};">👤</div>
+                    <div class="flex-1">
+                        <div class="text-dm-nome text-[22px] font-bold mb-[3px]">${f.nome}</div>
+                        <div class="text-gray-400 text-sm mb-[3px]">💃 ${(f.modalidades||[]).join(', ')||'Sem modalidades'}</div>
+                        <div class="font-semibold text-[15px] ${statusColor}">${status.texto}</div>
+                    </div>
+                </div>`;
+            }
+        }
+
+        function selecionarAluno(id){
+            alunoSelecionado=alunosDoResponsavel.find(a=>a.id===id);
+            if(alunoSelecionado){carregarExtrato(); mostrarTab('extrato', document.querySelectorAll('.nav-item')[1]);}
+        }
+
+        // ========== EXTRATO ==========
+        function carregarExtrato(){
+            const div=document.getElementById('tabExtrato');
+            if(!alunoSelecionado){div.innerHTML='<p class="text-center text-gray-400 p-8">Selecione um aluno na aba Início</p>'; return;}
+            const mesEntrada = alunoSelecionado.mes_entrada || 'setembro';
+            const mesesFiltrados = filtrarMeses(alunoSelecionado.pagamentos, mesEntrada);
+            let totalPago=0, totalPendente=0;
+            let html=`<div class="flex items-center gap-2.5 mb-4">
+                    <button class="w-9 h-9 rounded-full bg-gray-100 border-none text-lg cursor-pointer flex items-center justify-center" onclick="mostrarTab('alunos',document.querySelector('.nav-item:first-child'))"><i data-lucide="arrow-left" class="w-5 h-5"></i></button>
+                    <h3 class="text-dm-nome text-[17px]">💰 Extrato: ${alunoSelecionado.nome}</h3>
+                </div>
+                <div class="flex gap-2 mb-3">
+                    <div class="flex-1 bg-white p-3 rounded-2xl text-center shadow-[0_2px_10px_rgba(0,0,0,0.08)]">
+                        <div class="text-lg font-bold text-dm-pago" id="totalPago">-</div>
+                        <div class="text-[10px] text-gray-400 mt-[3px]">Total Pago</div>
+                    </div>
+                    <div class="flex-1 bg-white p-3 rounded-2xl text-center shadow-[0_2px_10px_rgba(0,0,0,0.08)]">
+                        <div class="text-lg font-bold text-dm-atraso" id="totalPendente">-</div>
+                        <div class="text-[10px] text-gray-400 mt-[3px]">Pendente</div>
+                    </div>
+                </div>
+                <table class="w-full border-collapse bg-white rounded-2xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.08)]">
+                    <tr><th class="bg-gray-50 p-2.5 text-xs text-gray-500">Mês</th><th class="bg-gray-50 p-2.5 text-xs text-gray-500 text-right">Valor</th><th class="bg-gray-50 p-2.5 text-xs text-gray-500 text-center">Status</th></tr>`;
+            for(const cod of mesesFiltrados){
+                const dadosMes = alunoSelecionado.pagamentos && alunoSelecionado.pagamentos[cod];
+                const pago = getPago(dadosMes), valor = getValor(dadosMes);
+                if(pago) totalPago += valor; else totalPendente += (valor || 0);
+                html+=`<tr>
+                    <td class="p-2.5 border-b border-gray-100 text-[13px]">${MESES_NOMES[cod]}</td>
+                    <td class="p-2.5 border-b border-gray-100 text-[13px] text-right">${valor.toFixed(2)}€</td>
+                    <td class="p-2.5 border-b border-gray-100 text-[13px] text-center ${pago?'text-dm-pago font-semibold':'text-dm-pendente font-semibold'}">${pago?'✅ Pago':'❌ Pendente'}</td>
+                </tr>`;
+            }
+            html+='</table>'; div.innerHTML=html;
+            document.getElementById('totalPago').textContent=totalPago.toFixed(2)+' €';
+            document.getElementById('totalPendente').textContent=totalPendente.toFixed(2)+' €';
+            setTimeout(() => lucide.createIcons(), 100);
+        }
+
+        // ========== HORÁRIOS ==========
+        function carregarHorarios(){
+            const div=document.getElementById('tabHorarios');
+            let modalidadesAluno=[];
+            if(alunoSelecionado&&alunoSelecionado.modalidades) modalidadesAluno=alunoSelecionado.modalidades.map(m=>m.toLowerCase().trim());
+            function ehDoAluno(turma,nome){const texto=(turma+' '+nome).toLowerCase(); for(const mod of modalidadesAluno){if(texto.includes(mod)) return true;} return false;}
+            const dias=[
+                {dia:"Segunda-Feira",aulas:[{hora:"18:00 - 19:00",nome:"Dance Fusion 1",turma:"Babies",cor:"#FF6B6B"},{hora:"19:00 - 20:00",nome:"Dance Fusion 2",turma:"Kids 1",cor:"#4ECDC4"},{hora:"20:00 - 21:00",nome:"Dance Fusion 6",turma:"Adultos",cor:"#F7DC6F"}]},
+                {dia:"Terça-Feira",aulas:[{hora:"17:00 - 18:00",nome:"Competição Solos",turma:"Competição",cor:"#E74C3C"},{hora:"18:00 - 19:00",nome:"Contemporâneo 1",turma:"Contemporâneo",cor:"#98D8C8"},{hora:"19:00 - 20:00",nome:"Dance Fusion 5",turma:"Major",cor:"#FFEAA7"},{hora:"20:00 - 21:00",nome:"Competição Urbanas",turma:"Competição",cor:"#E74C3C"}]},
+                {dia:"Quarta-Feira",aulas:[{hora:"18:00 - 19:00",nome:"Dance Fusion 3",turma:"Kids 2",cor:"#45B7D1"},{hora:"19:00 - 20:00",nome:"Dance Fusion 4",turma:"Teens",cor:"#96CEB4"}]},
+                {dia:"Quinta-Feira",aulas:[{hora:"18:00 - 19:00",nome:"Dance Fusion 1",turma:"Babies",cor:"#FF6B6B"},{hora:"19:00 - 20:00",nome:"Dance Fusion 2",turma:"Kids 1",cor:"#4ECDC4"},{hora:"20:00 - 21:00",nome:"Dance Fusion 6",turma:"Adultos",cor:"#F7DC6F"}]},
+                {dia:"Sexta-Feira",aulas:[{hora:"18:00 - 19:00",nome:"Dance Fusion 3",turma:"Kids 2",cor:"#45B7D1"},{hora:"19:00 - 20:00",nome:"Dance Fusion 4",turma:"Teens",cor:"#96CEB4"}]},
+                {dia:"Sábado",aulas:[{hora:"10:30 - 12:00",nome:"Dance Fusion 5",turma:"Major",cor:"#FFEAA7"},{hora:"12:00 - 14:00",nome:"Competição Urbanas",turma:"Competição",cor:"#E74C3C"},{hora:"14:00 - 15:30",nome:"Contemporâneo 2",turma:"Contemporâneo",cor:"#98D8C8"},{hora:"15:30 - 16:15",nome:"Ballet Pré-Primário",turma:"Ballet",cor:"#DDA0DD"},{hora:"16:15 - 17:00",nome:"Ballet Primary",turma:"Ballet",cor:"#DDA0DD"},{hora:"17:00 - 18:00",nome:"Ensaios",turma:"Competição",cor:"#E74C3C"}]},
+            ];
+            let html='<h3 class="text-dm-nome mb-1">📅 Horários</h3><p class="text-gray-400 text-xs mb-4">Ano letivo 2025/2026</p>';
+            if(modalidadesAluno.length>0) html+='<p class="text-dm-dourado text-[11px] mb-1">⭐ As suas aulas estão destacadas a dourado</p>';
+            for(const d of dias){
+                html+=`<div class="text-dm-castanho text-sm my-4 mx-0 py-2.5 px-3.5 bg-dm-dourado-claro rounded-[10px] font-semibold text-center">📅 ${d.dia}</div>`;
+                for(const a of d.aulas){
+                    const destaque=modalidadesAluno.length>0&&ehDoAluno(a.turma,a.nome);
+                    html+=`<div class="bg-white rounded-xl my-2 shadow-[0_2px_8px_rgba(0,0,0,0.06)] overflow-hidden transition-all ${destaque?'bg-dm-dourado-claro shadow-[0_3px_15px_rgba(212,175,55,0.35)] scale-[1.02] border-2 border-dm-dourado':''}">
+                        <div class="flex items-center">
+                            <div class="w-[6px] self-stretch shrink-0" style="background:${destaque?'#D4AF37':a.cor};"></div>
+                            <div class="flex-1 p-3">
+                                <div class="font-bold text-[13px] text-gray-500 mb-1">🕐 ${a.hora}</div>
+                                <div class="font-bold text-[15px] text-dm-nome mb-0.5">🎯 ${a.nome}</div>
+                                <div class="text-xs text-gray-400">${a.turma}</div>
+                                ${destaque?'<div class="inline-block bg-dm-dourado text-white text-[10px] px-2.5 py-[3px] rounded-[10px] mt-1 font-semibold">⭐ Sua aula</div>':''}
+                            </div>
+                        </div>
+                    </div>`;
+                }
+            }
+            div.innerHTML=html;
+        }
+
+        function carregarTabEventos(){
+            const div=document.getElementById('tabEventos');
+            let html='<h3 class="text-dm-nome mb-2.5">🎉 Eventos</h3>';
+            if(eventosLista.length===0){ html+='<p class="text-center text-gray-400">Nenhum evento programado.</p>'; }
+            else { for(const e of eventosLista){ html+=`<div class="bg-white rounded-2xl p-4 my-2.5 shadow-[0_2px_10px_rgba(0,0,0,0.08)] border-l-4 border-l-dm-dourado"><h4 class="text-dm-nome text-[15px] mb-[3px]">${e.nome}</h4><div class="text-gray-400 text-xs mb-1">📅 ${e.data}</div><p class="text-gray-500 text-[13px]">${e.descricao}</p></div>`; } }
+            div.innerHTML=html;
+        }
+
+        function fecharLightbox(event) {
+            if (event.target === document.getElementById('lightbox') || event.target.classList.contains('lightbox-close')) {
+                document.getElementById('lightbox').classList.remove('active');
+                document.getElementById('lightbox').style.display = 'none';
+            }
+        }
+
+        function abrirLightbox(src) {
+            document.getElementById('lightboxImg').src = src;
+            document.getElementById('lightbox').classList.add('active');
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+
+        function carregarGaleria(){
+            const div=document.getElementById('tabGaleria');
+            const galerias = [
+                { nome: "📸 Era Uma Vez Alice", data: "22 de Fevereiro de 2026", pasta: "alice" },
+                { nome: "🏆 All Dance Portugal", data: "30 e 31 de Março de 2026", pasta: "all-dance" },
+            ];
+            const maxFotos = 20;
+            let html = '<h3 class="text-dm-nome mb-2.5">🖼️ Galeria</h3>';
+            for (const g of galerias) {
+                const pastaFotos = `galeria/${g.pasta}/`;
+                let fotosHtml = '';
+                for (let i = 1; i <= maxFotos; i++) {
+                    fotosHtml += `<img src="${pastaFotos}foto${i}.png" 
+                        onerror="this.src='${pastaFotos}foto${i}.jpg'; this.onerror=function(){this.style.display='none';};" 
+                        loading="lazy" alt="Foto ${i}" onclick="abrirLightbox('${pastaFotos}foto${i}.png')"
+                        class="w-full aspect-square object-cover rounded-lg bg-gray-100 cursor-pointer">`;
+                }
+                html += `<div class="mb-6 bg-white rounded-2xl p-4 shadow-[0_2px_10px_rgba(0,0,0,0.08)]">
+                    <h4 class="text-dm-nome text-base">${g.nome}</h4>
+                    <div class="text-gray-400 text-xs mb-3">${g.data}</div>
+                    <div class="w-full aspect-[1/1.4] max-h-[400px] bg-gray-100 rounded-xl flex items-center justify-center overflow-hidden mb-3 border-2 border-dashed border-gray-200">
+                        <img src="${pastaFotos}cartaz.png" alt="Cartaz" 
+                            onerror="this.src='${pastaFotos}cartaz.jpg'; this.onerror=function(){this.style.display='none';this.nextElementSibling.style.display='block';};"
+                            onclick="abrirLightbox('${pastaFotos}cartaz.png')"
+                            class="w-full h-full object-contain cursor-pointer">
+                        <div class="text-gray-300 text-center text-[13px] p-5 hidden">🎭<br>Espaço para o cartaz</div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-1.5">${fotosHtml}</div>
+                </div>`;
+            }
+            div.innerHTML = html;
+        }
+
+        // ========== NAVEGAÇÃO ==========
+        function mostrarTab(tab, el){
+            document.querySelectorAll('.tab-content').forEach(t => { t.classList.add('hidden'); t.classList.remove('active'); });
+            document.querySelectorAll('.nav-item').forEach(n => { 
+                n.classList.remove('active', 'text-dm-dourado', 'font-bold', 'bg-dm-dourado-claro'); 
+                n.classList.add('text-gray-400');
+                const icon = n.querySelector('.nav-icon');
+                if(icon) { icon.classList.remove('text-dm-dourado'); icon.classList.add('text-gray-400'); }
+            });
+            
+            const tabMap = {'alunos':'tabAlunos','extrato':'tabExtrato','horarios':'tabHorarios','eventos':'tabEventos','galeria':'tabGaleria'};
+            const tabEl = document.getElementById(tabMap[tab]);
+            tabEl.classList.remove('hidden');
+            tabEl.classList.add('active');
+            
+            if(el) {
+                el.classList.add('active', 'text-dm-dourado', 'font-bold', 'bg-dm-dourado-claro');
+                el.classList.remove('text-gray-400');
+                const icon = el.querySelector('.nav-icon');
+                if(icon) { icon.classList.remove('text-gray-400'); icon.classList.add('text-dm-dourado'); }
+            }
+            
+            if(tab==='horarios') carregarHorarios();
+            if(tab==='extrato'&&alunoSelecionado) carregarExtrato();
+            if(tab==='eventos') carregarTabEventos();
+            if(tab==='galeria') carregarGaleria();
+            setTimeout(() => lucide.createIcons(), 200);
+        }
+
+        // ========== INSTALAÇÃO ==========
+        function instalarApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null;document.getElementById('btnInstalar').classList.add('hidden');}}
+        window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').classList.remove('hidden');}});
+        
+        // ========== SERVICE WORKER ==========
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js?v=13')
+                .then(reg => reg.update())
+                .catch(err => console.log('SW:', err));
+        }
+        
+        // ========== INIT ==========
+        window.addEventListener('load', () => {
+            const versaoAnterior = localStorage.getItem('dm_versao');
+            if (versaoAnterior && versaoAnterior !== APP_VERSAO) {
+                if ('caches' in window) caches.keys().then(names => names.forEach(name => caches.delete(name)));
+            }
+            localStorage.setItem('dm_versao', APP_VERSAO);
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
