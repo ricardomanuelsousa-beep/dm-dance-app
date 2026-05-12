@@ -152,11 +152,11 @@
 
     <script>
         // ========== CONFIGURAÇÃO ==========
-        const APP_VERSAO = '2.6';
+        const APP_VERSAO = '2.7';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
-        let comunicadosLista = [], eventosLista = [];
+        let comunicadosLista = [], eventosLista = [], galeriasLista = [];
         
         const mesesNum = {"setembro":9,"outubro":10,"novembro":11,"dezembro":12,"janeiro":1,"fevereiro":2,"marco":3,"abril":4,"maio":5,"junho":6,"julho":7};
         const MESES_ORDEM = ["setembro","outubro","novembro","dezembro","janeiro","fevereiro","marco","abril","maio","junho","julho"];
@@ -263,6 +263,17 @@
             } catch(e) { eventosLista = []; }
         }
 
+        async function carregarGaleriaTXT() {
+            try {
+                const response = await fetch('galeria.txt');
+                const texto = await response.text();
+                galeriasLista = texto.split('\n').map(l => l.trim()).filter(l => l).map(l => {
+                    const partes = l.split('|');
+                    return { nome: (partes[0]||'').trim(), data: (partes[1]||'').trim(), pasta: (partes[2]||'').trim() };
+                });
+            } catch(e) { galeriasLista = []; }
+        }
+
         // ========== LOGIN ==========
         async function login(){
             const telefone=document.getElementById('telefone').value.trim(), msgDiv=document.getElementById('mensagem');
@@ -278,6 +289,7 @@
                     await carregarFraseDoDia();
                     await carregarComunicadoTXT();
                     await carregarEventos();
+                    await carregarGaleriaTXT();
                     verificarAniversario(alunos);
                     telefoneLogado=telefone; alunosDoResponsavel=alunos; alunoSelecionado=alunosDoResponsavel[0];
                     document.getElementById('loginScreen').classList.add('hidden');
@@ -378,7 +390,7 @@
                 {dia:"Terça-Feira",aulas:[{hora:"17:00 - 18:00",nome:"Competição Solos",turma:"Competição",cor:"#E74C3C"},{hora:"18:00 - 19:00",nome:"Contemporâneo 1",turma:"Contemporâneo",cor:"#98D8C8"},{hora:"19:00 - 20:00",nome:"Dance Fusion 5",turma:"Major",cor:"#FFEAA7"},{hora:"20:00 - 21:00",nome:"Competição Urbanas",turma:"Competição",cor:"#E74C3C"}]},
                 {dia:"Quarta-Feira",aulas:[{hora:"18:00 - 19:00",nome:"Dance Fusion 3",turma:"Kids 2",cor:"#45B7D1"},{hora:"19:00 - 20:00",nome:"Dance Fusion 4",turma:"Teens",cor:"#96CEB4"}]},
                 {dia:"Quinta-Feira",aulas:[{hora:"18:00 - 19:00",nome:"Dance Fusion 1",turma:"Babies",cor:"#FF6B6B"},{hora:"19:00 - 20:00",nome:"Dance Fusion 2",turma:"Kids 1",cor:"#4ECDC4"},{hora:"20:00 - 21:00",nome:"Dance Fusion 6",turma:"Adultos",cor:"#F7DC6F"}]},
-                {dia:"Sexta-Feira",aulas:[{hora:"18:00 - 19:00",nome:"Dance Fusion 3",turma:"Kids 2",cor:"#45B7D1"},{hora:"19:00 - 20:00",nome:"Dance Fusion 4",turma:"Teens",cor:"#96CEB4"}]},
+                {dia:"Sexta-Feira",aulas:[{hora:"18:00 - 19:00",nome:"Dance Fusion 3",turma:"Kids 2",cor:"#45B7D1"},{hora:"19:00 - 20:00",nome:"Dance Fusion 4",turma:"Teens",cor:"#96CEB4"},{hora:"20:30 - 21:30",nome:"Pilates",turma:"Todos",cor:"#7FDDD4"}]},
                 {dia:"Sábado",aulas:[{hora:"10:30 - 12:00",nome:"Dance Fusion 5",turma:"Major",cor:"#FFEAA7"},{hora:"12:00 - 14:00",nome:"Competição Urbanas",turma:"Competição",cor:"#E74C3C"},{hora:"14:00 - 15:30",nome:"Contemporâneo 2",turma:"Contemporâneo",cor:"#98D8C8"},{hora:"15:30 - 16:15",nome:"Ballet Pré-Primary",turma:"Ballet",cor:"#DDA0DD"},{hora:"16:15 - 17:00",nome:"Ballet Primary",turma:"Ballet",cor:"#DDA0DD"},{hora:"17:00 - 18:00",nome:"Ensaios",turma:"Competição",cor:"#E74C3C"}]},
             ];
             let html='<h3 class="text-dm-nome mb-1">📅 Horários</h3><p class="text-gray-400 text-xs mb-4">Ano letivo 2025/2026</p>';
@@ -425,34 +437,35 @@
         }
 
         function carregarGaleria(){
-            const div=document.getElementById('tabGaleria');
-            const galerias = [
-                { nome: "📸 Era Uma Vez Alice", data: "22 de Fevereiro de 2026", pasta: "alice" },
-                { nome: "🏆 All Dance Portugal", data: "30 e 31 de Março de 2026", pasta: "all-dance" },
-            ];
+            const div = document.getElementById('tabGaleria');
             const maxFotos = 20;
             let html = '<h3 class="text-dm-nome mb-2.5">🖼️ Galeria</h3>';
-            for (const g of galerias) {
-                const pastaFotos = `galeria/${g.pasta}/`;
-                let fotosHtml = '';
-                for (let i = 1; i <= maxFotos; i++) {
-                    fotosHtml += `<img src="${pastaFotos}foto${i}.png" 
-                        onerror="this.src='${pastaFotos}foto${i}.jpg'; this.onerror=function(){this.style.display='none';};" 
-                        loading="lazy" alt="Foto ${i}" onclick="abrirLightbox('${pastaFotos}foto${i}.png')"
-                        class="w-full aspect-square object-cover rounded-lg bg-gray-100 cursor-pointer">`;
+            
+            if (galeriasLista.length === 0) {
+                html += '<p class="text-center text-gray-400">Nenhuma galeria disponível.</p>';
+            } else {
+                for (const g of galeriasLista) {
+                    const pastaFotos = `galeria/${g.pasta}/`;
+                    let fotosHtml = '';
+                    for (let i = 1; i <= maxFotos; i++) {
+                        fotosHtml += `<img src="${pastaFotos}foto${i}.png" 
+                            onerror="this.src='${pastaFotos}foto${i}.jpg'; this.onerror=function(){this.style.display='none';};" 
+                            loading="lazy" alt="Foto ${i}" onclick="abrirLightbox('${pastaFotos}foto${i}.png')"
+                            class="w-full aspect-square object-cover rounded-lg bg-gray-100 cursor-pointer">`;
+                    }
+                    html += `<div class="mb-6 bg-white rounded-2xl p-4 shadow-[0_2px_10px_rgba(0,0,0,0.08)]">
+                        <h4 class="text-dm-nome text-base">${g.nome}</h4>
+                        <div class="text-gray-400 text-xs mb-3">${g.data}</div>
+                        <div class="w-full aspect-[1/1.4] max-h-[400px] bg-gray-100 rounded-xl flex items-center justify-center overflow-hidden mb-3 border-2 border-dashed border-gray-200">
+                            <img src="${pastaFotos}cartaz.png" alt="Cartaz" 
+                                onerror="this.src='${pastaFotos}cartaz.jpg'; this.onerror=function(){this.style.display='none';this.nextElementSibling.style.display='block';};"
+                                onclick="abrirLightbox('${pastaFotos}cartaz.png')"
+                                class="w-full h-full object-contain cursor-pointer">
+                            <div class="text-gray-300 text-center text-[13px] p-5 hidden">🎭<br>Espaço para o cartaz</div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-1.5">${fotosHtml}</div>
+                    </div>`;
                 }
-                html += `<div class="mb-6 bg-white rounded-2xl p-4 shadow-[0_2px_10px_rgba(0,0,0,0.08)]">
-                    <h4 class="text-dm-nome text-base">${g.nome}</h4>
-                    <div class="text-gray-400 text-xs mb-3">${g.data}</div>
-                    <div class="w-full aspect-[1/1.4] max-h-[400px] bg-gray-100 rounded-xl flex items-center justify-center overflow-hidden mb-3 border-2 border-dashed border-gray-200">
-                        <img src="${pastaFotos}cartaz.png" alt="Cartaz" 
-                            onerror="this.src='${pastaFotos}cartaz.jpg'; this.onerror=function(){this.style.display='none';this.nextElementSibling.style.display='block';};"
-                            onclick="abrirLightbox('${pastaFotos}cartaz.png')"
-                            class="w-full h-full object-contain cursor-pointer">
-                        <div class="text-gray-300 text-center text-[13px] p-5 hidden">🎭<br>Espaço para o cartaz</div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-1.5">${fotosHtml}</div>
-                </div>`;
             }
             div.innerHTML = html;
         }
