@@ -22,12 +22,19 @@
     <div class="max-w-md mx-auto bg-white rounded-3xl shadow-[0_2px_10px_rgba(0,0,0,0.08)] overflow-hidden min-h-[90vh] flex flex-col">
         
         <!-- ========== HEADER ========== -->
-        <div class="px-6 py-5 text-center relative" style="background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 40%, #8B6914 100%);">
+        <div class="px-6 py-5 text-center relative" style="background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 40%, #8B6914 100%);" id="mainHeader">
             <a href="https://wa.me/351916732582" target="_blank" 
-               class="absolute right-4 top-4 w-9 h-9 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-md z-10 text-lg no-underline"
+               class="absolute left-4 top-4 w-9 h-9 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-md z-10 text-lg no-underline"
                title="Falar connosco no WhatsApp">
                <i data-lucide="message-circle" class="w-5 h-5"></i>
             </a>
+            
+            <button onclick="logout()" 
+                    class="absolute right-4 top-4 w-9 h-9 rounded-full bg-white/20 border-none cursor-pointer flex items-center justify-center shadow-md z-10 hidden"
+                    id="btnLogout"
+                    title="Sair">
+                <i data-lucide="log-out" class="w-4 h-4 text-white"></i>
+            </button>
             
             <div class="w-[70px] h-[70px] mx-auto mb-2.5 bg-transparent rounded-full flex items-center justify-center shadow-[0_4px_15px_rgba(0,0,0,0.2)]">
                 <img src="logo_dm.png" alt="DM Dance School" 
@@ -91,15 +98,6 @@
 
         <!-- ========== DASHBOARD SCREEN ========== -->
         <div id="dashboardScreen" class="hidden flex-1 flex-col">
-            
-            <!-- Dashboard Header -->
-            <div class="px-6 py-1.5 flex justify-end items-center">
-                <button onclick="logout()" 
-                        class="w-[34px] h-[34px] rounded-full bg-red-50 border-none cursor-pointer flex items-center justify-center"
-                        title="Sair">
-                    <i data-lucide="log-out" class="w-4 h-4 text-dm-atraso"></i>
-                </button>
-            </div>
             
             <!-- Frase Motivacional -->
             <div id="fraseMotivacional" 
@@ -285,6 +283,7 @@
                     document.getElementById('loginScreen').classList.add('hidden');
                     document.getElementById('dashboardScreen').classList.remove('hidden');
                     document.getElementById('dashboardScreen').classList.add('flex');
+                    document.getElementById('btnLogout').classList.remove('hidden');
                     carregarAlunos();
                     if(alunoSelecionado) carregarExtrato();
                     carregarHorarios();
@@ -297,6 +296,7 @@
             document.getElementById('telefone').value=''; document.getElementById('mensagem').innerHTML='';
             document.getElementById('bannerAviso').classList.add('hidden');
             document.getElementById('bannerAniversario').classList.add('hidden');
+            document.getElementById('btnLogout').classList.add('hidden');
             document.getElementById('loginScreen').classList.remove('hidden');
             document.getElementById('dashboardScreen').classList.add('hidden');
             document.getElementById('dashboardScreen').classList.remove('flex');
