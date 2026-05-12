@@ -13,80 +13,9 @@
     <meta name="theme-color" content="#D4AF37">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'dm-fundo': '#FFF5F5',
-                        'dm-dourado': '#D4AF37',
-                        'dm-dourado-escuro': '#8B6914',
-                        'dm-dourado-medio': '#c49b2e',
-                        'dm-nome': '#8B0000',
-                        'dm-pago': '#2e7d32',
-                        'dm-pendente': '#ed6c02',
-                        'dm-atraso': '#d32f2f',
-                        'dm-castanho': '#4a3000',
-                        'dm-rosa': '#fce4e4',
-                        'dm-dourado-claro': '#fff9e6',
-                    },
-                    animation: {
-                        'fade-in': 'fadeIn 1s ease',
-                        'slide-down': 'slideDown 0.5s ease',
-                        'pulse-green': 'pulseGreen 2s infinite',
-                        'bounce-in': 'bounceIn 0.8s ease',
-                        'ticker': 'ticker 25s linear infinite',
-                        'spin-slow': 'spin 0.8s linear infinite',
-                        'zoom-in': 'zoomIn 0.3s ease',
-                    },
-                    keyframes: {
-                        fadeIn: {
-                            '0%': { opacity: '0', transform: 'translateY(-5px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        },
-                        slideDown: {
-                            '0%': { opacity: '0', transform: 'translateY(-10px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        },
-                        pulseGreen: {
-                            '0%, 100%': { boxShadow: '0 4px 15px rgba(76,175,80,0.3)' },
-                            '50%': { boxShadow: '0 4px 25px rgba(76,175,80,0.5)' },
-                        },
-                        bounceIn: {
-                            '0%': { transform: 'scale(0.3)', opacity: '0' },
-                            '50%': { transform: 'scale(1.05)' },
-                            '70%': { transform: 'scale(.9)' },
-                            '100%': { transform: 'scale(1)', opacity: '1' },
-                        },
-                        ticker: {
-                            '0%': { transform: 'translateX(0)' },
-                            '100%': { transform: 'translateX(-100%)' },
-                        },
-                        zoomIn: {
-                            '0%': { transform: 'scale(0.8)', opacity: '0' },
-                            '100%': { transform: 'scale(1)', opacity: '1' },
-                        },
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="app-output.css">
     
     <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <style>
-        .news-ticker-content {
-            padding-left: 100%;
-        }
-        .no-scrollbar::-webkit-scrollbar {
-            width: 4px;
-        }
-        .no-scrollbar::-webkit-scrollbar-thumb {
-            background: #ddd;
-            border-radius: 2px;
-        }
-    </style>
 </head>
 <body class="min-h-screen p-4 antialiased" style="background: linear-gradient(135deg, #FFE4E1 0%, #FFF5F5 50%, #FFE4E1 100%);">
     
@@ -164,8 +93,7 @@
         <div id="dashboardScreen" class="hidden flex-1 flex-col">
             
             <!-- Dashboard Header -->
-            <div class="px-6 py-1.5 flex justify-between items-center">
-                <h2 class="text-base text-dm-nome">DM Dance School</h2>
+            <div class="px-6 py-1.5 flex justify-end items-center">
                 <button onclick="logout()" 
                         class="w-[34px] h-[34px] rounded-full bg-red-50 border-none cursor-pointer flex items-center justify-center"
                         title="Sair">
@@ -226,7 +154,7 @@
 
     <script>
         // ========== CONFIGURAÇÃO ==========
-        const APP_VERSAO = '2.5';
+        const APP_VERSAO = '2.6';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
@@ -451,7 +379,7 @@
                 {dia:"Quarta-Feira",aulas:[{hora:"18:00 - 19:00",nome:"Dance Fusion 3",turma:"Kids 2",cor:"#45B7D1"},{hora:"19:00 - 20:00",nome:"Dance Fusion 4",turma:"Teens",cor:"#96CEB4"}]},
                 {dia:"Quinta-Feira",aulas:[{hora:"18:00 - 19:00",nome:"Dance Fusion 1",turma:"Babies",cor:"#FF6B6B"},{hora:"19:00 - 20:00",nome:"Dance Fusion 2",turma:"Kids 1",cor:"#4ECDC4"},{hora:"20:00 - 21:00",nome:"Dance Fusion 6",turma:"Adultos",cor:"#F7DC6F"}]},
                 {dia:"Sexta-Feira",aulas:[{hora:"18:00 - 19:00",nome:"Dance Fusion 3",turma:"Kids 2",cor:"#45B7D1"},{hora:"19:00 - 20:00",nome:"Dance Fusion 4",turma:"Teens",cor:"#96CEB4"}]},
-                {dia:"Sábado",aulas:[{hora:"10:30 - 12:00",nome:"Dance Fusion 5",turma:"Major",cor:"#FFEAA7"},{hora:"12:00 - 14:00",nome:"Competição Urbanas",turma:"Competição",cor:"#E74C3C"},{hora:"14:00 - 15:30",nome:"Contemporâneo 2",turma:"Contemporâneo",cor:"#98D8C8"},{hora:"15:30 - 16:15",nome:"Ballet Pré-Primário",turma:"Ballet",cor:"#DDA0DD"},{hora:"16:15 - 17:00",nome:"Ballet Primary",turma:"Ballet",cor:"#DDA0DD"},{hora:"17:00 - 18:00",nome:"Ensaios",turma:"Competição",cor:"#E74C3C"}]},
+                {dia:"Sábado",aulas:[{hora:"10:30 - 12:00",nome:"Dance Fusion 5",turma:"Major",cor:"#FFEAA7"},{hora:"12:00 - 14:00",nome:"Competição Urbanas",turma:"Competição",cor:"#E74C3C"},{hora:"14:00 - 15:30",nome:"Contemporâneo 2",turma:"Contemporâneo",cor:"#98D8C8"},{hora:"15:30 - 16:15",nome:"Ballet Pré-Primary",turma:"Ballet",cor:"#DDA0DD"},{hora:"16:15 - 17:00",nome:"Ballet Primary",turma:"Ballet",cor:"#DDA0DD"},{hora:"17:00 - 18:00",nome:"Ensaios",turma:"Competição",cor:"#E74C3C"}]},
             ];
             let html='<h3 class="text-dm-nome mb-1">📅 Horários</h3><p class="text-gray-400 text-xs mb-4">Ano letivo 2025/2026</p>';
             if(modalidadesAluno.length>0) html+='<p class="text-dm-dourado text-[11px] mb-1">⭐ As suas aulas estão destacadas a dourado</p>';
