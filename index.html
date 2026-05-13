@@ -152,7 +152,7 @@
 
     <script>
         // ========== CONFIGURAÇÃO ==========
-        const APP_VERSAO = '2.7';
+        const APP_VERSAO = '2.8';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
@@ -321,7 +321,7 @@
             for(const f of alunosDoResponsavel){
                 const status=obterStatusPagamento(f.pagamentos||{});
                 let fotoUrl = f.foto || '';
-                if (fotoUrl && fotoUrl.includes('cloudinary.com')) fotoUrl = fotoUrl.split('?')[0] + '?q=auto&w=400&h=400&c=fill&g=face&f_auto';
+                if (fotoUrl && fotoUrl.includes('cloudinary.com')) fotoUrl = fotoUrl.split('?')[0] + '?q=100&w=600&h=600&c=fill&g=face&f_auto&dpr=2.0';
                 const statusColor = status.classe === 'pago' ? 'text-dm-pago' : status.classe === 'pendente' ? 'text-dm-pendente' : 'text-dm-atraso';
                 div.innerHTML+=`<div class="bg-dm-rosa my-2.5 p-4 rounded-2xl border-l-[5px] border-l-dm-dourado flex gap-3.5 items-center shadow-[0_2px_10px_rgba(0,0,0,0.08)] cursor-pointer" onclick="selecionarAluno(${f.id})">
                     <img class="w-[90px] h-[90px] rounded-full object-cover bg-gray-200 shrink-0" src="${fotoUrl}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" crossorigin="anonymous" loading="lazy">
@@ -399,7 +399,7 @@
                 html+=`<div class="text-dm-castanho text-sm my-4 mx-0 py-2.5 px-3.5 bg-dm-dourado-claro rounded-[10px] font-semibold text-center">📅 ${d.dia}</div>`;
                 for(const a of d.aulas){
                     const destaque=modalidadesAluno.length>0&&ehDoAluno(a.turma,a.nome);
-                    html+=`<div class="bg-white rounded-xl my-2 shadow-[0_2px_8px_rgba(0,0,0,0.06)] overflow-hidden transition-all ${destaque?'bg-dm-dourado-claro shadow-[0_3px_15px_rgba(212,175,55,0.35)] scale-[1.02] border-2 border-dm-dourado':''}">
+                    html+=`<div class="bg-white rounded-xl my-2 shadow-[0_2px_8px_rgba(0,0,0,0.06)] overflow-hidden transition-all border-2" style="border-color:${destaque?'#D4AF37':a.cor};${destaque?'background:#fff9e6; box-shadow:0 3px 15px rgba(212,175,55,0.35); transform:scale(1.02);':''}">
                         <div class="flex items-center">
                             <div class="w-[6px] self-stretch shrink-0" style="background:${destaque?'#D4AF37':a.cor};"></div>
                             <div class="flex-1 p-3">
@@ -449,7 +449,7 @@
                     let fotosHtml = '';
                     for (let i = 1; i <= maxFotos; i++) {
                         fotosHtml += `<img src="${pastaFotos}foto${i}.png" 
-                            onerror="this.src='${pastaFotos}foto${i}.jpg'; this.onerror=function(){this.style.display='none';};" 
+                            onerror="this.src='${pastaFotos}foto${i}.jpg'; this.setAttribute('onclick',\"abrirLightbox('${pastaFotos}foto${i}.jpg')\"); this.onerror=function(){this.style.display='none';};" 
                             loading="lazy" alt="Foto ${i}" onclick="abrirLightbox('${pastaFotos}foto${i}.png')"
                             class="w-full aspect-square object-cover rounded-lg bg-gray-100 cursor-pointer">`;
                     }
