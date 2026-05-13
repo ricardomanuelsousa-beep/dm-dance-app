@@ -409,7 +409,7 @@
             let html='<h3 class="text-dm-nome mb-1">📅 Horários</h3><p class="text-gray-400 text-xs mb-4">Ano letivo 2025/2026</p>';
             if(modalidadesAluno.length>0) html+='<p class="text-dm-dourado text-[11px] mb-1">⭐ As suas aulas estão destacadas a dourado</p>';
             for(const d of dias){
-                html+=`<div class="text-dm-castanho text-sm my-4 mx-0 py-2.5 px-3.5 bg-dm-dourado-claro rounded-[10px] font-semibold text-center">📅 ${d.dia}</div>`;
+                html+=`<div class="rounded-xl my-2 shadow-[0_2px_8px_rgba(0,0,0,0.06)] overflow-hidden transition-all border-2" style="border-color:${destaque?'#D4AF37':a.cor}; background:${destaque?'#fff9e6':a.cor+'30'}; ${destaque?'box-shadow:0 4px 20px rgba(212,175,55,0.5); transform:scale(1.03);':''}">
                 for(const a of d.aulas){
                     const destaque=modalidadesAluno.length>0&&ehDoAluno(a.turma,a.nome);
                     html+=`<div class="rounded-xl my-2 shadow-[0_2px_8px_rgba(0,0,0,0.06)] overflow-hidden transition-all border-2" style="border-color:${destaque?'#D4AF37':a.cor}; background:${destaque?'#fff9e6':a.cor+'15'}; ${destaque?'box-shadow:0 4px 20px rgba(212,175,55,0.5); transform:scale(1.03);':''}">
