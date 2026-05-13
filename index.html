@@ -411,7 +411,7 @@ function carregarHorarios(){
     for(const d of dias){
         html+='<div class="text-dm-castanho text-sm my-4 mx-0 py-2.5 px-3.5 bg-dm-dourado-claro rounded-[10px] font-semibold text-center">📅 '+d.dia+'</div>';
         for(const a of d.aulas){
-            const destaque=modalidadesAluno.length>0&&ehDoAluno(a.turma,a.nome);
+            const destaque=true;
             const bgColor = destaque ? '#fff9e6' : a.cor+'30';
             const borderColor = destaque ? '#D4AF37' : a.cor;
             const extraStyle = destaque ? 'box-shadow:0 4px 20px rgba(212,175,55,0.5); transform:scale(1.03);' : '';
