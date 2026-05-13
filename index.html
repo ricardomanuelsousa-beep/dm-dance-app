@@ -18,6 +18,9 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <style>
+        .pulse-gold {
+            animation: pulseGold 2s infinite;
+        }
         @keyframes pulseGold {
             0%, 100% { box-shadow: 0 4px 20px rgba(212,175,55,0.5); }
             50% { box-shadow: 0 4px 30px rgba(212,175,55,0.8); }
@@ -151,7 +154,7 @@
     </div>
 
     <script>
-        const APP_VERSAO = '3.0';
+        const APP_VERSAO = '3.1';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
@@ -421,8 +424,7 @@
                     const destaque=modalidadesAluno.length>0&&ehDoAluno(a.turma,a.nome);
                     const bgColor = destaque ? '#ffcc02' : a.cor+'40';
                     const borderColor = destaque ? '#D4AF37' : a.cor;
-                    const extraStyle = destaque ? 'box-shadow:0 4px 20px rgba(212,175,55,0.5); transform:scale(1.03); animation:pulseGold 2s infinite;' : '';
-                    html+='<div style="border-radius:12px; margin:8px 0; overflow:hidden; transition:all 0.3s; border:2px solid '+borderColor+'; background:'+bgColor+'; '+extraStyle+'">';
+                    html+='<div class="' + (destaque ? 'pulse-gold' : '') + '" style="border-radius:12px; margin:8px 0; overflow:hidden; transition:all 0.3s; border:2px solid '+borderColor+'; background:'+bgColor+'; ' + (destaque ? 'box-shadow:0 4px 20px rgba(212,175,55,0.5); transform:scale(1.03);' : '') + '">';
                     html+='<div class="flex items-center">';
                     html+='<div class="w-[6px] self-stretch shrink-0" style="background:'+borderColor+';"></div>';
                     html+='<div class="flex-1 p-3">';
@@ -469,14 +471,11 @@
                     const pastaFotos = 'galeria/' + g.pasta + '/';
                     let fotosHtml = '';
                     for (let i = 1; i <= maxFotos; i++) {
-                        fotosHtml += '<div class="foto-item" style="display:none;">' +
-                            '<img src="' + pastaFotos + 'foto' + i + '.png" ' +
-                            'onload="this.parentElement.style.display=\'block\';" ' +
-                            'onerror="this.src=\'' + pastaFotos + 'foto' + i + '.jpg\'; this.onerror=function(){this.parentElement.style.display=\'none\';};" ' +
+                        fotosHtml += '<img src="' + pastaFotos + 'foto' + i + '.png" ' +
+                            'onerror="this.src=\'' + pastaFotos + 'foto' + i + '.jpg\'; this.onerror=function(){this.style.display=\'none\';};" ' +
                             'loading="lazy" alt="Foto ' + i + '" ' +
                             'onclick="abrirLightbox(this.src)" ' +
-                            'class="w-full aspect-square object-cover rounded-lg bg-gray-100 cursor-pointer">' +
-                            '</div>';
+                            'class="w-full aspect-square object-cover rounded-lg bg-gray-100 cursor-pointer">';
                     }
                     html += '<div class="mb-6 bg-white rounded-2xl p-4 shadow-[0_2px_10px_rgba(0,0,0,0.08)]">' +
                         '<h4 class="text-dm-nome text-base">' + g.nome + '</h4>' +
