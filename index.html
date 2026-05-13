@@ -366,67 +366,68 @@
             setTimeout(() => lucide.createIcons(), 100);
         }
 
-        function carregarHorarios(){
-            const div=document.getElementById('tabHorarios');
-            let modalidadesAluno=[];
-            if(alunoSelecionado&&alunoSelecionado.modalidades) modalidadesAluno=alunoSelecionado.modalidades.map(m=>m.toLowerCase().trim());
-            function ehDoAluno(turma,nome){const texto=(turma+' '+nome).toLowerCase(); for(const mod of modalidadesAluno){if(texto.includes(mod)) return true;} return false;}
-            const dias=[
-                {dia:"Segunda-Feira",aulas:[
-                    {hora:"18:00 - 19:00",nome:"Dance Fusion 1",turma:"Babies",cor:"#00B4D8"},
-                    {hora:"19:00 - 20:00",nome:"Dance Fusion 2",turma:"Kids 1",cor:"#FF6B9D"},
-                    {hora:"20:00 - 21:00",nome:"Dance Fusion 6",turma:"Adultos",cor:"#B19CD9"}
-                ]},
-                {dia:"Terça-Feira",aulas:[
-                    {hora:"17:00 - 18:00",nome:"Competição Solos",turma:"Competição",cor:"#9E9E9E"},
-                    {hora:"18:00 - 19:00",nome:"Contemporâneo 1",turma:"Contemporâneo",cor:"#C9A96E"},
-                    {hora:"19:00 - 20:00",nome:"Dance Fusion 5",turma:"Major",cor:"#E74C3C"},
-                    {hora:"20:00 - 21:00",nome:"Competição Urbanas",turma:"Competição",cor:"#9E9E9E"}
-                ]},
-                {dia:"Quarta-Feira",aulas:[
-                    {hora:"18:00 - 19:00",nome:"Dance Fusion 3",turma:"Kids 2",cor:"#FF8C42"},
-                    {hora:"19:00 - 20:00",nome:"Dance Fusion 4",turma:"Teens",cor:"#5B9BD5"}
-                ]},
-                {dia:"Quinta-Feira",aulas:[
-                    {hora:"18:00 - 19:00",nome:"Dance Fusion 1",turma:"Babies",cor:"#00B4D8"},
-                    {hora:"19:00 - 20:00",nome:"Dance Fusion 2",turma:"Kids 1",cor:"#FF6B9D"},
-                    {hora:"20:00 - 21:00",nome:"Dance Fusion 6",turma:"Adultos",cor:"#B19CD9"}
-                ]},
-                {dia:"Sexta-Feira",aulas:[
-                    {hora:"18:00 - 19:00",nome:"Dance Fusion 3",turma:"Kids 2",cor:"#FF8C42"},
-                    {hora:"19:00 - 20:00",nome:"Dance Fusion 4",turma:"Teens",cor:"#5B9BD5"},
-                    {hora:"20:30 - 21:30",nome:"Pilates",turma:"Todos",cor:"#98D8C8"}
-                ]},
-                {dia:"Sábado",aulas:[
-                    {hora:"10:30 - 12:00",nome:"Dance Fusion 5",turma:"Major",cor:"#E74C3C"},
-                    {hora:"12:00 - 14:00",nome:"Competição Urbanas",turma:"Competição",cor:"#9E9E9E"},
-                    {hora:"14:00 - 15:30",nome:"Contemporâneo 2",turma:"Contemporâneo",cor:"#C9A96E"},
-                    {hora:"15:30 - 16:15",nome:"Ballet Pré-Primary",turma:"Ballet",cor:"#F8C8DC"},
-                    {hora:"16:15 - 17:00",nome:"Ballet Primary",turma:"Ballet",cor:"#F8C8DC"},
-                    {hora:"17:00 - 18:00",nome:"Ensaios",turma:"Competição",cor:"#9E9E9E"}
-                ]},
-            ];
-            let html='<h3 class="text-dm-nome mb-1">📅 Horários</h3><p class="text-gray-400 text-xs mb-4">Ano letivo 2025/2026</p>';
-            if(modalidadesAluno.length>0) html+='<p class="text-dm-dourado text-[11px] mb-1">⭐ As suas aulas estão destacadas a dourado</p>';
-            for(const d of dias){
-                html+=`<div class="rounded-xl my-2 shadow-[0_2px_8px_rgba(0,0,0,0.06)] overflow-hidden transition-all border-2" style="border-color:${destaque?'#D4AF37':a.cor}; background:${destaque?'#fff9e6':a.cor+'30'}; ${destaque?'box-shadow:0 4px 20px rgba(212,175,55,0.5); transform:scale(1.03);':''}">
-                for(const a of d.aulas){
-                    const destaque=modalidadesAluno.length>0&&ehDoAluno(a.turma,a.nome);
-                    html+=`<div class="rounded-xl my-2 shadow-[0_2px_8px_rgba(0,0,0,0.06)] overflow-hidden transition-all border-2" style="border-color:${destaque?'#D4AF37':a.cor}; background:${destaque?'#fff9e6':a.cor+'15'}; ${destaque?'box-shadow:0 4px 20px rgba(212,175,55,0.5); transform:scale(1.03);':''}">
-                        <div class="flex items-center">
-                            <div class="w-[6px] self-stretch shrink-0" style="background:${destaque?'#D4AF37':a.cor};"></div>
-                            <div class="flex-1 p-3">
-                                <div class="font-bold text-[13px] text-gray-500 mb-1">🕐 ${a.hora}</div>
-                                <div class="font-bold text-[15px] text-dm-nome mb-0.5">🎯 ${a.nome}</div>
-                                <div class="text-xs text-gray-400">${a.turma}</div>
-                                ${destaque?'<div class="inline-block bg-dm-dourado text-white text-[10px] px-2.5 py-[3px] rounded-[10px] mt-1 font-semibold">⭐ Sua aula</div>':''}
-                            </div>
-                        </div>
-                    </div>`;
-                }
-            }
-            div.innerHTML=html;
+function carregarHorarios(){
+    const div=document.getElementById('tabHorarios');
+    let modalidadesAluno=[];
+    if(alunoSelecionado&&alunoSelecionado.modalidades) modalidadesAluno=alunoSelecionado.modalidades.map(m=>m.toLowerCase().trim());
+    function ehDoAluno(turma,nome){const texto=(turma+' '+nome).toLowerCase(); for(const mod of modalidadesAluno){if(texto.includes(mod)) return true;} return false;}
+    const dias=[
+        {dia:"Segunda-Feira",aulas:[
+            {hora:"18:00 - 19:00",nome:"Dance Fusion 1",turma:"Babies",cor:"#00B4D8"},
+            {hora:"19:00 - 20:00",nome:"Dance Fusion 2",turma:"Kids 1",cor:"#FF6B9D"},
+            {hora:"20:00 - 21:00",nome:"Dance Fusion 6",turma:"Adultos",cor:"#B19CD9"}
+        ]},
+        {dia:"Terça-Feira",aulas:[
+            {hora:"17:00 - 18:00",nome:"Competição Solos",turma:"Competição",cor:"#9E9E9E"},
+            {hora:"18:00 - 19:00",nome:"Contemporâneo 1",turma:"Contemporâneo",cor:"#C9A96E"},
+            {hora:"19:00 - 20:00",nome:"Dance Fusion 5",turma:"Major",cor:"#E74C3C"},
+            {hora:"20:00 - 21:00",nome:"Competição Urbanas",turma:"Competição",cor:"#9E9E9E"}
+        ]},
+        {dia:"Quarta-Feira",aulas:[
+            {hora:"18:00 - 19:00",nome:"Dance Fusion 3",turma:"Kids 2",cor:"#FF8C42"},
+            {hora:"19:00 - 20:00",nome:"Dance Fusion 4",turma:"Teens",cor:"#5B9BD5"}
+        ]},
+        {dia:"Quinta-Feira",aulas:[
+            {hora:"18:00 - 19:00",nome:"Dance Fusion 1",turma:"Babies",cor:"#00B4D8"},
+            {hora:"19:00 - 20:00",nome:"Dance Fusion 2",turma:"Kids 1",cor:"#FF6B9D"},
+            {hora:"20:00 - 21:00",nome:"Dance Fusion 6",turma:"Adultos",cor:"#B19CD9"}
+        ]},
+        {dia:"Sexta-Feira",aulas:[
+            {hora:"18:00 - 19:00",nome:"Dance Fusion 3",turma:"Kids 2",cor:"#FF8C42"},
+            {hora:"19:00 - 20:00",nome:"Dance Fusion 4",turma:"Teens",cor:"#5B9BD5"},
+            {hora:"20:30 - 21:30",nome:"Pilates",turma:"Todos",cor:"#98D8C8"}
+        ]},
+        {dia:"Sábado",aulas:[
+            {hora:"10:30 - 12:00",nome:"Dance Fusion 5",turma:"Major",cor:"#E74C3C"},
+            {hora:"12:00 - 14:00",nome:"Competição Urbanas",turma:"Competição",cor:"#9E9E9E"},
+            {hora:"14:00 - 15:30",nome:"Contemporâneo 2",turma:"Contemporâneo",cor:"#C9A96E"},
+            {hora:"15:30 - 16:15",nome:"Ballet Pré-Primary",turma:"Ballet",cor:"#F8C8DC"},
+            {hora:"16:15 - 17:00",nome:"Ballet Primary",turma:"Ballet",cor:"#F8C8DC"},
+            {hora:"17:00 - 18:00",nome:"Ensaios",turma:"Competição",cor:"#9E9E9E"}
+        ]}
+    ];
+    let html='<h3 class="text-dm-nome mb-1">📅 Horários</h3><p class="text-gray-400 text-xs mb-4">Ano letivo 2025/2026</p>';
+    if(modalidadesAluno.length>0) html+='<p class="text-dm-dourado text-[11px] mb-1">⭐ As suas aulas estão destacadas a dourado</p>';
+    for(const d of dias){
+        html+='<div class="text-dm-castanho text-sm my-4 mx-0 py-2.5 px-3.5 bg-dm-dourado-claro rounded-[10px] font-semibold text-center">📅 '+d.dia+'</div>';
+        for(const a of d.aulas){
+            const destaque=modalidadesAluno.length>0&&ehDoAluno(a.turma,a.nome);
+            const bgColor = destaque ? '#fff9e6' : a.cor+'30';
+            const borderColor = destaque ? '#D4AF37' : a.cor;
+            const extraStyle = destaque ? 'box-shadow:0 4px 20px rgba(212,175,55,0.5); transform:scale(1.03);' : '';
+            html+='<div class="rounded-xl my-2 overflow-hidden transition-all border-2" style="border-color:'+borderColor+'; background:'+bgColor+'; '+extraStyle+'">';
+            html+='<div class="flex items-center">';
+            html+='<div class="w-[6px] self-stretch shrink-0" style="background:'+borderColor+';"></div>';
+            html+='<div class="flex-1 p-3">';
+            html+='<div class="font-bold text-[13px] text-gray-500 mb-1">🕐 '+a.hora+'</div>';
+            html+='<div class="font-bold text-[15px] text-dm-nome mb-0.5">🎯 '+a.nome+'</div>';
+            html+='<div class="text-xs text-gray-400">'+a.turma+'</div>';
+            if(destaque) html+='<div class="inline-block bg-dm-dourado text-white text-[10px] px-2.5 py-[3px] rounded-[10px] mt-1 font-semibold">⭐ Sua aula</div>';
+            html+='</div></div></div>';
         }
+    }
+    div.innerHTML=html;
+}
 
         function carregarTabEventos(){
             const div=document.getElementById('tabEventos');
