@@ -18,14 +18,14 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <style>
-        .pulse-gold {
-            animation: pulseGold 2s infinite;
-        }
-        @keyframes pulseGold {
-            0%, 100% { box-shadow: 0 4px 20px rgba(212,175,55,0.5); }
-            50% { box-shadow: 0 4px 30px rgba(212,175,55,0.8); }
-        }
-    </style>
+    @keyframes pulseGold {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.6; }
+    }
+    .pulse-gold {
+        animation: pulseGold 1.5s ease-in-out infinite;
+    }
+</style>
 </head>
 <body class="min-h-screen p-4 antialiased" style="background: linear-gradient(135deg, #FFE4E1 0%, #FFF5F5 50%, #FFE4E1 100%);">
     
