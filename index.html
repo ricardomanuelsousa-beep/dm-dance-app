@@ -18,14 +18,21 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <style>
-    @keyframes pulseGold {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.6; }
-    }
-    .pulse-gold {
-        animation: pulseGold 1.5s ease-in-out infinite;
-    }
-</style>
+        @keyframes pulseGold {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+        .pulse-gold {
+            animation: pulseGold 1.5s ease-in-out infinite;
+        }
+        @keyframes pulseLogo {
+            0%, 100% { transform: scale(1); opacity: 0.6; }
+            50% { transform: scale(1.2); opacity: 1; }
+        }
+        .pulse-logo {
+            animation: pulseLogo 1s ease-in-out infinite;
+        }
+    </style>
 </head>
 <body class="min-h-screen p-4 antialiased" style="background: linear-gradient(135deg, #FFE4E1 0%, #FFF5F5 50%, #FFE4E1 100%);">
     
@@ -125,6 +132,7 @@
             <div id="tabHorarios" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
             <div id="tabEventos" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
             <div id="tabGaleria" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
+            <div id="tabPerfil" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
             
             <div class="flex justify-around bg-dm-rosa px-1.5 py-2 border-t border-red-200 mt-auto" style="padding-bottom: calc(12px + env(safe-area-inset-bottom));">
                 <div class="nav-item active text-center cursor-pointer px-1.5 py-2 text-[10px] text-dm-dourado font-bold bg-dm-dourado-claro transition-all rounded-xl min-w-[55px]" onclick="mostrarTab('alunos', this)">
@@ -154,7 +162,7 @@
     </div>
 
     <script>
-        const APP_VERSAO = '3.1';
+        const APP_VERSAO = '3.3';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
@@ -166,6 +174,23 @@
         const DIA_LIMITE = 8;
         const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
         if(isIOS) document.getElementById('instrucoesIOS').classList.remove('hidden');
+
+        const ICONES_MODALIDADES = {
+            'ballet': 'drama',
+            'contemporâneo': 'theater',
+            'fusion': 'radio',
+            'competição': 'trophy',
+            'competicao': 'trophy',
+            'pilates': 'heart-pulse'
+        };
+
+        function getIconeModalidade(nome) {
+            const n = nome.toLowerCase();
+            for (const [chave, icone] of Object.entries(ICONES_MODALIDADES)) {
+                if (n.includes(chave)) return icone;
+            }
+            return 'music';
+        }
 
         function getPago(dados) { return typeof dados === 'object' ? dados.pago : dados; }
         function getValor(dados) { return (typeof dados === 'object' && dados.valor) ? dados.valor : 0; }
@@ -277,14 +302,14 @@
         async function login(){
             const telefone=document.getElementById('telefone').value.trim(), msgDiv=document.getElementById('mensagem');
             if(!telefone){msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">⚠️ Digite o telefone!</p>'; return;}
-            msgDiv.innerHTML='<p class="text-gray-400 text-center my-5"><span class="spinner inline-block w-[22px] h-[22px] border-[3px] border-gray-200 border-t-dm-dourado rounded-full animate-spin-slow mr-2.5 align-middle"></span>A carregar...</p>';
+            msgDiv.innerHTML='<div class="flex flex-col items-center justify-center my-8"><span class="pulse-logo text-[50px]">🩰</span><p class="text-gray-400 text-sm mt-3">A carregar...</p></div>';
             try{
                 const response=await fetch('dados_app.json');
                 dadosApp=await response.json();
                 if(dadosApp[telefone]){
                     const alunos=dadosApp[telefone];
                     mostrarBannerAviso(alunos);
-                    await new Promise(r=>setTimeout(r,2000));
+                    await new Promise(r=>setTimeout(r,1500));
                     await carregarFraseDoDia();
                     await carregarComunicadoTXT();
                     await carregarEventos();
@@ -321,16 +346,62 @@
                 let fotoUrl = f.foto || '';
                 if (fotoUrl && fotoUrl.includes('cloudinary.com')) fotoUrl = fotoUrl.split('?')[0] + '?q=100&w=600&h=600&c=fill&g=face&f_auto&dpr=2.0';
                 const statusColor = status.classe === 'pago' ? 'text-dm-pago' : status.classe === 'pendente' ? 'text-dm-pendente' : 'text-dm-atraso';
-                div.innerHTML+=`<div class="bg-dm-rosa my-2.5 p-4 rounded-2xl border-l-[5px] border-l-dm-dourado flex gap-3.5 items-center shadow-[0_2px_10px_rgba(0,0,0,0.08)] cursor-pointer" onclick="selecionarAluno(${f.id})">
+                const modalidades = f.modalidades || [];
+                const modIcons = modalidades.map(m => {
+                    const iconName = getIconeModalidade(m);
+                    return '<span class="inline-flex items-center gap-1"><i data-lucide="' + iconName + '" class="w-4 h-4"></i>' + m + '</span>';
+                }).join(', ');
+                div.innerHTML+=`<div class="bg-dm-rosa my-2.5 p-4 rounded-2xl border-l-[5px] border-l-dm-dourado flex gap-3.5 items-center shadow-[0_2px_10px_rgba(0,0,0,0.08)] cursor-pointer" onclick="abrirPerfil(${f.id})">
                     <img class="w-[90px] h-[90px] rounded-full object-cover bg-gray-200 shrink-0" src="${fotoUrl}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" crossorigin="anonymous" loading="lazy">
                     <div class="w-[90px] h-[90px] rounded-full bg-gray-200 items-center justify-center text-4xl shrink-0" style="display:${f.foto?'none':'flex'};">👤</div>
                     <div class="flex-1">
                         <div class="text-dm-nome text-[22px] font-bold mb-[3px]">${f.nome}</div>
-                        <div class="text-gray-400 text-sm mb-[3px]">💃 ${(f.modalidades||[]).join(', ')||'Sem modalidades'}</div>
+                        <div class="text-gray-400 text-sm mb-[3px]">${modIcons || 'Sem modalidades'}</div>
                         <div class="font-semibold text-[15px] ${statusColor}">${status.texto}</div>
                     </div>
                 </div>`;
             }
+            setTimeout(() => lucide.createIcons(), 100);
+        }
+
+        function abrirPerfil(id){
+            alunoSelecionado=alunosDoResponsavel.find(a=>a.id===id);
+            if(alunoSelecionado) {
+                carregarPerfil();
+                mostrarTab('perfil', null);
+            }
+        }
+
+        function carregarPerfil(){
+            const div = document.getElementById('tabPerfil');
+            if(!alunoSelecionado) return;
+            const a = alunoSelecionado;
+            let fotoUrl = a.foto || '';
+            if (fotoUrl && fotoUrl.includes('cloudinary.com')) fotoUrl = fotoUrl.split('?')[0] + '?q=100&w=600&h=600&c=fill&g=face&f_auto&dpr=2.0';
+            const status = obterStatusPagamento(a.pagamentos||{});
+            const statusColor = status.classe === 'pago' ? 'text-dm-pago' : status.classe === 'pendente' ? 'text-dm-pendente' : 'text-dm-atraso';
+            const modalidades = a.modalidades || [];
+            const modIcons = modalidades.map(m => {
+                const iconName = getIconeModalidade(m);
+                return '<span class="inline-flex items-center gap-2 text-sm text-gray-600"><i data-lucide="' + iconName + '" class="w-5 h-5 text-dm-dourado"></i>' + m + '</span>';
+            }).join('');
+            let html = '<div class="flex items-center gap-2.5 mb-4">' +
+                '<button class="w-9 h-9 rounded-full bg-gray-100 border-none text-lg cursor-pointer flex items-center justify-center" onclick="mostrarTab(\'alunos\', document.querySelector(\'.nav-item:first-child\'))"><i data-lucide=\"arrow-left\" class=\"w-5 h-5\"></i></button>' +
+                '<h3 class="text-dm-nome text-[17px]">Perfil</h3>' +
+                '</div>' +
+                '<div class="bg-white rounded-2xl p-5 shadow-[0_2px_10px_rgba(0,0,0,0.08)] text-center">' +
+                '<img src="' + fotoUrl + '" class="w-[100px] h-[100px] rounded-full object-cover mx-auto mb-3" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\';">' +
+                '<div class="w-[100px] h-[100px] rounded-full bg-gray-200 items-center justify-center text-4xl mx-auto mb-3" style="display:' + (a.foto?'none':'flex') + ';">👤</div>' +
+                '<h2 class="text-xl font-bold text-dm-nome mb-1">' + a.nome + '</h2>' +
+                '<div class="' + statusColor + ' font-semibold text-sm mb-4">' + status.texto + '</div>' +
+                '<div class="bg-dm-dourado-claro rounded-xl p-4 mb-4">' +
+                '<p class="text-xs text-gray-400 mb-2 font-semibold">MODALIDADES</p>' +
+                '<div class="flex flex-col gap-2 items-start">' + (modIcons || '<span class="text-sm text-gray-400">Sem modalidades</span>') + '</div>' +
+                '</div>' +
+                '<button onclick="alunoSelecionado=alunosDoResponsavel.find(a=>a.id===' + a.id + ');carregarExtrato();mostrarTab(\'extrato\', document.querySelectorAll(\'.nav-item\')[1])" class="w-full py-3 bg-dm-dourado text-white font-bold rounded-xl cursor-pointer border-none text-sm">💰 Ver Extrato</button>' +
+                '</div>';
+            div.innerHTML = html;
+            setTimeout(() => lucide.createIcons(), 100);
         }
 
         function selecionarAluno(id){
@@ -422,7 +493,7 @@
                 html+='<div class="text-dm-castanho text-sm my-4 mx-0 py-2.5 px-3.5 bg-dm-dourado-claro rounded-[10px] font-semibold text-center">📅 '+d.dia+'</div>';
                 for(const a of d.aulas){
                     const destaque=modalidadesAluno.length>0&&ehDoAluno(a.turma,a.nome);
-                    const bgColor = destaque ? '#ffcc02' : a.cor+'40';
+                    const bgColor = destaque ? '#D4AF37' : a.cor+'40';
                     const borderColor = destaque ? '#D4AF37' : a.cor;
                     html+='<div class="' + (destaque ? 'pulse-gold' : '') + '" style="border-radius:12px; margin:8px 0; overflow:hidden; transition:all 0.3s; border:2px solid '+borderColor+'; background:'+bgColor+'; ' + (destaque ? 'box-shadow:0 4px 20px rgba(212,175,55,0.5); transform:scale(1.03);' : '') + '">';
                     html+='<div class="flex items-center">';
@@ -503,10 +574,12 @@
                 if(icon) { icon.classList.remove('text-dm-dourado'); icon.classList.add('text-gray-400'); }
             });
             
-            const tabMap = {'alunos':'tabAlunos','extrato':'tabExtrato','horarios':'tabHorarios','eventos':'tabEventos','galeria':'tabGaleria'};
+            const tabMap = {'alunos':'tabAlunos','extrato':'tabExtrato','horarios':'tabHorarios','eventos':'tabEventos','galeria':'tabGaleria','perfil':'tabPerfil'};
             const tabEl = document.getElementById(tabMap[tab]);
-            tabEl.classList.remove('hidden');
-            tabEl.classList.add('active');
+            if(tabEl) {
+                tabEl.classList.remove('hidden');
+                tabEl.classList.add('active');
+            }
             
             if(el) {
                 el.classList.add('active', 'text-dm-dourado', 'font-bold', 'bg-dm-dourado-claro');
@@ -519,6 +592,7 @@
             if(tab==='extrato'&&alunoSelecionado) carregarExtrato();
             if(tab==='eventos') carregarTabEventos();
             if(tab==='galeria') carregarGaleria();
+            if(tab==='perfil') carregarPerfil();
             setTimeout(() => lucide.createIcons(), 200);
         }
 
