@@ -161,7 +161,7 @@
     </div>
 
     <script>
-        const APP_VERSAO = '3.5';
+        const APP_VERSAO = '3.6';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
@@ -235,7 +235,6 @@
             } else { banner.classList.add('hidden'); }
         }
 
-        // ========== DADOS ==========
         async function carregarFraseDoDia() {
             try {
                 const response = await fetch('frases.txt');
@@ -311,7 +310,6 @@
             } catch(e) { merchandisingLista = []; }
         }
 
-        // ========== LOGIN ==========
         async function login(){
             const telefone=document.getElementById('telefone').value.trim(), msgDiv=document.getElementById('mensagem');
             if(!telefone){msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">⚠️ Digite o telefone!</p>'; return;}
@@ -355,18 +353,17 @@
             document.getElementById('dashboardScreen').classList.add('hidden');
             document.getElementById('dashboardScreen').classList.remove('flex');
             localStorage.removeItem('dm_logado');
-            localStorage.removeItem('dm_telefone');
             telefoneLogado=''; alunosDoResponsavel=[]; alunoSelecionado=null;
         }
 
         function restaurarSessao(){
             const logado = localStorage.getItem('dm_logado');
             const telefone = localStorage.getItem('dm_telefone');
+            if(telefone){
+                document.getElementById('telefone').value = telefone;
+            }
             if(logado === 'true' && telefone){
-                document.getElementById('telefone').value = telefone;
                 login();
-            } else if(telefone){
-                document.getElementById('telefone').value = telefone;
             }
         }
 
@@ -390,7 +387,6 @@
             }
         }
 
-        // ========== CARDS ==========
         function carregarAlunos(){
             const div=document.getElementById('tabAlunos'); div.innerHTML='';
             for(const f of alunosDoResponsavel){
@@ -401,16 +397,19 @@
                 const modalidades = f.modalidades || [];
                 const modIcons = modalidades.map(m => {
                     const iconName = getIconeModalidade(m);
-                    return '<span class="inline-flex items-center gap-1"><i data-lucide="' + iconName + '" class="w-4 h-4"></i>' + m + '</span>';
+                    return '<span class="inline-flex items-center gap-1"><i data-lucide="' + iconName + '" class="w-5 h-5 flex-shrink-0"></i>' + m + '</span>';
                 }).join(', ');
-                div.innerHTML+=`<div class="bg-dm-rosa my-2.5 p-4 rounded-2xl border-l-[5px] border-l-dm-dourado flex gap-3.5 items-center shadow-[0_2px_10px_rgba(0,0,0,0.08)] cursor-pointer" onclick="abrirPerfil(${f.id})">
-                    <img class="w-[90px] h-[90px] rounded-full object-cover bg-gray-200 shrink-0" src="${fotoUrl}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" crossorigin="anonymous" loading="lazy">
-                    <div class="w-[90px] h-[90px] rounded-full bg-gray-200 items-center justify-center text-4xl shrink-0" style="display:${f.foto?'none':'flex'};">👤</div>
-                    <div class="flex-1">
-                        <div class="text-dm-nome text-[22px] font-bold mb-[3px]">${f.nome}</div>
-                        <div class="text-gray-400 text-sm mb-[3px]">${modIcons || 'Sem modalidades'}</div>
-                        <div class="font-semibold text-[15px] ${statusColor}">${status.texto}</div>
+                div.innerHTML+=`<div class="bg-dm-rosa my-2.5 p-4 rounded-2xl border-l-[5px] border-l-dm-dourado shadow-[0_2px_10px_rgba(0,0,0,0.08)]">
+                    <div class="flex gap-3.5 items-center cursor-pointer" onclick="abrirPerfil(${f.id})">
+                        <img class="w-[90px] h-[90px] rounded-full object-cover bg-gray-200 shrink-0" src="${fotoUrl}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" crossorigin="anonymous" loading="lazy">
+                        <div class="w-[90px] h-[90px] rounded-full bg-gray-200 items-center justify-center text-4xl shrink-0" style="display:${f.foto?'none':'flex'};">👤</div>
+                        <div class="flex-1">
+                            <div class="text-dm-nome text-[22px] font-bold mb-[3px]">${f.nome}</div>
+                            <div class="text-gray-400 text-sm mb-[3px]">${modIcons || 'Sem modalidades'}</div>
+                            <div class="font-semibold text-[15px] ${statusColor}">${status.texto}</div>
+                        </div>
                     </div>
+                    <button onclick="abrirPerfil(${f.id})" class="mt-3 w-full py-2.5 bg-dm-dourado text-white font-bold rounded-xl cursor-pointer border-none text-sm">👤 Ver Perfil</button>
                 </div>`;
             }
             setTimeout(() => lucide.createIcons(), 100);
@@ -445,7 +444,7 @@
             const modalidades = a.modalidades || [];
             const modIcons = modalidades.map(m => {
                 const iconName = getIconeModalidade(m);
-                return '<span class="inline-flex items-center gap-2 text-sm text-gray-600"><i data-lucide="' + iconName + '" class="w-5 h-5 text-dm-dourado"></i>' + m + '</span>';
+                return '<span class="inline-flex items-center gap-2 text-sm text-gray-600"><i data-lucide="' + iconName + '" class="w-5 h-5 flex-shrink-0 text-dm-dourado"></i>' + m + '</span>';
             }).join('');
             let html = '<div class="flex items-center gap-2.5 mb-4">' +
                 '<button class="w-9 h-9 rounded-full bg-gray-100 border-none text-lg cursor-pointer flex items-center justify-center" onclick="fecharPerfil()"><i data-lucide=\"arrow-left\" class=\"w-5 h-5\"></i></button>' +
