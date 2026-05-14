@@ -1,0 +1,3 @@
+T-shirt DM Dance|12€|merch/tshirt.png
+Sweatshirt DM Dance|25€|merch/sweat.png
+Garrafa DM Dance|8€|merch/garrafa.png
