@@ -133,22 +133,26 @@
             <div id="tabEventos" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
             <div id="tabGaleria" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
             <div id="tabPerfil" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
+            <div id="tabLoja" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
             
             <div class="flex justify-around bg-dm-rosa px-1.5 py-2 border-t border-red-200 mt-auto" style="padding-bottom: calc(12px + env(safe-area-inset-bottom));">
-                <div class="nav-item active text-center cursor-pointer px-1.5 py-2 text-[10px] text-dm-dourado font-bold bg-dm-dourado-claro transition-all rounded-xl min-w-[55px]" onclick="mostrarTab('alunos', this)">
-                    <i data-lucide="house" class="nav-icon w-[26px] h-[26px] block mx-auto mb-[3px] text-dm-dourado"></i>Início
+                <div class="nav-item active text-center cursor-pointer px-1 py-2 text-[9px] text-dm-dourado font-bold bg-dm-dourado-claro transition-all rounded-xl min-w-[48px]" onclick="mostrarTab('alunos', this)">
+                    <i data-lucide="house" class="nav-icon w-[22px] h-[22px] block mx-auto mb-[2px] text-dm-dourado"></i>Início
                 </div>
-                <div class="nav-item text-center cursor-pointer px-1.5 py-2 text-[10px] text-gray-400 transition-all rounded-xl min-w-[55px]" onclick="mostrarTab('extrato', this)">
-                    <i data-lucide="wallet" class="nav-icon w-[26px] h-[26px] block mx-auto mb-[3px] text-gray-400"></i>Extrato
+                <div class="nav-item text-center cursor-pointer px-1 py-2 text-[9px] text-gray-400 transition-all rounded-xl min-w-[48px]" onclick="mostrarTab('extrato', this)">
+                    <i data-lucide="wallet" class="nav-icon w-[22px] h-[22px] block mx-auto mb-[2px] text-gray-400"></i>Extrato
                 </div>
-                <div class="nav-item text-center cursor-pointer px-1.5 py-2 text-[10px] text-gray-400 transition-all rounded-xl min-w-[55px]" onclick="mostrarTab('horarios', this)">
-                    <i data-lucide="calendar-days" class="nav-icon w-[26px] h-[26px] block mx-auto mb-[3px] text-gray-400"></i>Horários
+                <div class="nav-item text-center cursor-pointer px-1 py-2 text-[9px] text-gray-400 transition-all rounded-xl min-w-[48px]" onclick="mostrarTab('horarios', this)">
+                    <i data-lucide="calendar-days" class="nav-icon w-[22px] h-[22px] block mx-auto mb-[2px] text-gray-400"></i>Horários
                 </div>
-                <div class="nav-item text-center cursor-pointer px-1.5 py-2 text-[10px] text-gray-400 transition-all rounded-xl min-w-[55px]" onclick="mostrarTab('eventos', this)">
-                    <i data-lucide="party-popper" class="nav-icon w-[26px] h-[26px] block mx-auto mb-[3px] text-gray-400"></i>Eventos
+                <div class="nav-item text-center cursor-pointer px-1 py-2 text-[9px] text-gray-400 transition-all rounded-xl min-w-[48px]" onclick="mostrarTab('eventos', this)">
+                    <i data-lucide="party-popper" class="nav-icon w-[22px] h-[22px] block mx-auto mb-[2px] text-gray-400"></i>Eventos
                 </div>
-                <div class="nav-item text-center cursor-pointer px-1.5 py-2 text-[10px] text-gray-400 transition-all rounded-xl min-w-[55px]" onclick="mostrarTab('galeria', this)">
-                    <i data-lucide="images" class="nav-icon w-[26px] h-[26px] block mx-auto mb-[3px] text-gray-400"></i>Galeria
+                <div class="nav-item text-center cursor-pointer px-1 py-2 text-[9px] text-gray-400 transition-all rounded-xl min-w-[48px]" onclick="mostrarTab('galeria', this)">
+                    <i data-lucide="images" class="nav-icon w-[22px] h-[22px] block mx-auto mb-[2px] text-gray-400"></i>Galeria
+                </div>
+                <div class="nav-item text-center cursor-pointer px-1 py-2 text-[9px] text-gray-400 transition-all rounded-xl min-w-[48px]" onclick="mostrarTab('loja', this)">
+                    <i data-lucide="shopping-bag" class="nav-icon w-[22px] h-[22px] block mx-auto mb-[2px] text-gray-400"></i>Loja
                 </div>
             </div>
         </div>
@@ -162,11 +166,11 @@
     </div>
 
     <script>
-        const APP_VERSAO = '3.3';
+        const APP_VERSAO = '3.4';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
-        let comunicadosLista = [], eventosLista = [], galeriasLista = [];
+        let comunicadosLista = [], eventosLista = [], galeriasLista = [], merchandisingLista = [];
         
         const mesesNum = {"setembro":9,"outubro":10,"novembro":11,"dezembro":12,"janeiro":1,"fevereiro":2,"marco":3,"abril":4,"maio":5,"junho":6,"julho":7};
         const MESES_ORDEM = ["setembro","outubro","novembro","dezembro","janeiro","fevereiro","marco","abril","maio","junho","julho"];
@@ -299,6 +303,17 @@
             } catch(e) { galeriasLista = []; }
         }
 
+        async function carregarMerchandisingTXT() {
+            try {
+                const response = await fetch('merchandising.txt');
+                const texto = await response.text();
+                merchandisingLista = texto.split('\n').map(l => l.trim()).filter(l => l).map(l => {
+                    const partes = l.split('|');
+                    return { nome: (partes[0]||'').trim(), preco: (partes[1]||'').trim(), foto: (partes[2]||'').trim() };
+                });
+            } catch(e) { merchandisingLista = []; }
+        }
+
         async function login(){
             const telefone=document.getElementById('telefone').value.trim(), msgDiv=document.getElementById('mensagem');
             if(!telefone){msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">⚠️ Digite o telefone!</p>'; return;}
@@ -314,6 +329,7 @@
                     await carregarComunicadoTXT();
                     await carregarEventos();
                     await carregarGaleriaTXT();
+                    await carregarMerchandisingTXT();
                     verificarAniversario(alunos);
                     telefoneLogado=telefone; alunosDoResponsavel=alunos; alunoSelecionado=alunosDoResponsavel[0];
                     document.getElementById('loginScreen').classList.add('hidden');
@@ -402,11 +418,6 @@
                 '</div>';
             div.innerHTML = html;
             setTimeout(() => lucide.createIcons(), 100);
-        }
-
-        function selecionarAluno(id){
-            alunoSelecionado=alunosDoResponsavel.find(a=>a.id===id);
-            if(alunoSelecionado){carregarExtrato(); mostrarTab('extrato', document.querySelectorAll('.nav-item')[1]);}
         }
 
         function carregarExtrato(){
@@ -565,6 +576,32 @@
             div.innerHTML = html;
         }
 
+        function carregarLoja(){
+            const div = document.getElementById('tabLoja');
+            let html = '<h3 class="text-dm-nome mb-2.5">🛍️ Loja DM</h3>';
+            
+            if (merchandisingLista.length === 0) {
+                html += '<p class="text-center text-gray-400">Nenhum produto disponível.</p>';
+            } else {
+                html += '<div class="grid grid-cols-2 gap-3">';
+                for (const p of merchandisingLista) {
+                    html += '<div class="bg-white rounded-2xl p-3 shadow-[0_2px_10px_rgba(0,0,0,0.08)] text-center">' +
+                        '<img src="' + p.foto + '" alt="' + p.nome + '" ' +
+                        'onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\';" ' +
+                        'class="w-full aspect-square object-cover rounded-xl mb-2 bg-gray-100" onclick="abrirLightbox(\'' + p.foto + '\')">' +
+                        '<div class="w-full aspect-square rounded-xl mb-2 bg-gray-100 items-center justify-center text-3xl" style="display:none;">🛍️</div>' +
+                        '<p class="font-semibold text-sm text-dm-nome">' + p.nome + '</p>' +
+                        '<p class="text-dm-dourado font-bold text-lg">' + p.preco + '</p>' +
+                        '<a href="https://wa.me/351916732582?text=Olá! Quero encomendar: ' + encodeURIComponent(p.nome) + '" target="_blank" ' +
+                        'class="inline-block mt-2 w-full py-2 bg-[#25D366] text-white font-bold rounded-xl text-xs cursor-pointer no-underline">' +
+                        '📱 Encomendar</a>' +
+                        '</div>';
+                }
+                html += '</div>';
+            }
+            div.innerHTML = html;
+        }
+
         function mostrarTab(tab, el){
             document.querySelectorAll('.tab-content').forEach(t => { t.classList.add('hidden'); t.classList.remove('active'); });
             document.querySelectorAll('.nav-item').forEach(n => { 
@@ -574,7 +611,7 @@
                 if(icon) { icon.classList.remove('text-dm-dourado'); icon.classList.add('text-gray-400'); }
             });
             
-            const tabMap = {'alunos':'tabAlunos','extrato':'tabExtrato','horarios':'tabHorarios','eventos':'tabEventos','galeria':'tabGaleria','perfil':'tabPerfil'};
+            const tabMap = {'alunos':'tabAlunos','extrato':'tabExtrato','horarios':'tabHorarios','eventos':'tabEventos','galeria':'tabGaleria','perfil':'tabPerfil','loja':'tabLoja'};
             const tabEl = document.getElementById(tabMap[tab]);
             if(tabEl) {
                 tabEl.classList.remove('hidden');
@@ -593,6 +630,7 @@
             if(tab==='eventos') carregarTabEventos();
             if(tab==='galeria') carregarGaleria();
             if(tab==='perfil') carregarPerfil();
+            if(tab==='loja') carregarLoja();
             setTimeout(() => lucide.createIcons(), 200);
         }
 
