@@ -38,7 +38,6 @@
     
     <div class="max-w-md mx-auto bg-white rounded-3xl shadow-[0_2px_10px_rgba(0,0,0,0.08)] overflow-hidden min-h-[90vh] flex flex-col">
         
-        <!-- ========== HEADER ========== -->
         <div class="px-6 py-5 text-center relative" style="background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 40%, #8B6914 100%);" id="mainHeader">
             <a href="https://wa.me/351916732582" target="_blank" 
                class="absolute left-4 top-4 w-9 h-9 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-md z-10 text-lg no-underline"
@@ -62,7 +61,6 @@
             <h1 class="text-xl font-bold text-dm-castanho">DM Dance School</h1>
         </div>
 
-        <!-- ========== LOGIN SCREEN ========== -->
         <div id="loginScreen" class="p-8 flex-1 flex flex-col justify-center">
             <div class="text-2xl font-bold text-dm-nome text-center mb-1">Área do Aluno</div>
             <div class="text-sm text-gray-400 text-center mb-6">Faça login com o seu telefone</div>
@@ -113,7 +111,6 @@
             <div id="mensagem"></div>
         </div>
 
-        <!-- ========== DASHBOARD SCREEN ========== -->
         <div id="dashboardScreen" class="hidden flex-1 flex-col">
             
             <div id="fraseMotivacional" 
@@ -161,7 +158,7 @@
     </div>
 
     <script>
-        const APP_VERSAO = '3.6';
+        const APP_VERSAO = '3.7';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
@@ -294,7 +291,7 @@
                 const texto = await response.text();
                 galeriasLista = texto.split('\n').map(l => l.trim()).filter(l => l).map(l => {
                     const partes = l.split('|');
-                    return { nome: (partes[0]||'').trim(), data: (partes[1]||'').trim(), pasta: (partes[2]||'').trim() };
+                    return { nome: (partes[0]||'').trim(), data: (partes[1]||'').trim(), pasta: (partes[2]||'').trim(), fotos: parseInt(partes[3]) || 12 };
                 });
             } catch(e) { galeriasLista = []; }
         }
@@ -594,9 +591,20 @@
             document.getElementById('lightbox').style.display = 'flex';
         }
 
+        function alternarFotos(id) {
+            const fotosDiv = document.getElementById('fotos-' + id);
+            const btn = document.getElementById('btn-' + id);
+            if (fotosDiv.style.display === 'none' || fotosDiv.style.display === '') {
+                fotosDiv.style.display = 'grid';
+                btn.textContent = '🔼 Esconder Fotos';
+            } else {
+                fotosDiv.style.display = 'none';
+                btn.textContent = btn.getAttribute('data-texto');
+            }
+        }
+
         function carregarGaleria(){
             const div = document.getElementById('tabGaleria');
-            const maxFotos = 20;
             let html = '<h3 class="text-dm-nome mb-2.5">🖼️ Galeria</h3>';
             
             if (galeriasLista.length === 0) {
@@ -604,6 +612,9 @@
             } else {
                 for (const g of galeriasLista) {
                     const pastaFotos = 'galeria/' + g.pasta + '/';
+                    const maxFotos = g.fotos || 12;
+                    const galeriaId = g.pasta.replace(/[^a-zA-Z0-9]/g, '_');
+                    
                     let fotosHtml = '';
                     for (let i = 1; i <= maxFotos; i++) {
                         fotosHtml += '<img src="' + pastaFotos + 'foto' + i + '.png" ' +
@@ -612,6 +623,7 @@
                             'onclick="abrirLightbox(this.src)" ' +
                             'class="w-full aspect-square object-cover rounded-lg bg-gray-100 cursor-pointer">';
                     }
+                    
                     html += '<div class="mb-6 bg-white rounded-2xl p-4 shadow-[0_2px_10px_rgba(0,0,0,0.08)]">' +
                         '<h4 class="text-dm-nome text-base">' + g.nome + '</h4>' +
                         '<div class="text-gray-400 text-xs mb-3">' + g.data + '</div>' +
@@ -622,7 +634,8 @@
                             'class="w-full h-full object-contain cursor-pointer">' +
                             '<div class="text-gray-300 text-center text-[13px] p-5 hidden">🎭<br>Espaço para o cartaz</div>' +
                         '</div>' +
-                        '<div class="grid grid-cols-3 gap-1.5">' + fotosHtml + '</div>' +
+                        '<button id="btn-' + galeriaId + '" data-texto="📷 Ver Fotos (' + maxFotos + ')" onclick="alternarFotos(\'' + galeriaId + '\')" class="w-full py-2.5 bg-dm-dourado text-white font-bold rounded-xl cursor-pointer border-none text-sm">📷 Ver Fotos (' + maxFotos + ')</button>' +
+                        '<div id="fotos-' + galeriaId + '" class="grid grid-cols-3 gap-1.5 mt-3" style="display:none;">' + fotosHtml + '</div>' +
                     '</div>';
                 }
             }
