@@ -128,31 +128,26 @@
             </div>
             
             <div id="tabAlunos" class="tab-content active p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
-            <div id="tabExtrato" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
             <div id="tabHorarios" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
             <div id="tabEventos" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
             <div id="tabGaleria" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
-            <div id="tabPerfil" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
             <div id="tabLoja" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
             
-            <div class="flex justify-around bg-dm-rosa px-1.5 py-2 border-t border-red-200 mt-auto" style="padding-bottom: calc(12px + env(safe-area-inset-bottom));">
-                <div class="nav-item active text-center cursor-pointer px-1 py-2 text-[9px] text-dm-dourado font-bold bg-dm-dourado-claro transition-all rounded-xl min-w-[48px]" onclick="mostrarTab('alunos', this)">
-                    <i data-lucide="house" class="nav-icon w-[22px] h-[22px] block mx-auto mb-[2px] text-dm-dourado"></i>Início
+            <div class="flex justify-around bg-dm-rosa px-2 py-2 border-t border-red-200 mt-auto" style="padding-bottom: calc(12px + env(safe-area-inset-bottom));">
+                <div class="nav-item active text-center cursor-pointer px-1.5 py-2 text-[10px] text-dm-dourado font-bold bg-dm-dourado-claro transition-all rounded-xl min-w-[50px]" onclick="mostrarTab('alunos', this)">
+                    <i data-lucide="house" class="nav-icon w-[24px] h-[24px] block mx-auto mb-[3px] text-dm-dourado"></i>Início
                 </div>
-                <div class="nav-item text-center cursor-pointer px-1 py-2 text-[9px] text-gray-400 transition-all rounded-xl min-w-[48px]" onclick="mostrarTab('extrato', this)">
-                    <i data-lucide="wallet" class="nav-icon w-[22px] h-[22px] block mx-auto mb-[2px] text-gray-400"></i>Extrato
+                <div class="nav-item text-center cursor-pointer px-1.5 py-2 text-[10px] text-gray-400 transition-all rounded-xl min-w-[50px]" onclick="mostrarTab('horarios', this)">
+                    <i data-lucide="calendar-days" class="nav-icon w-[24px] h-[24px] block mx-auto mb-[3px] text-gray-400"></i>Horários
                 </div>
-                <div class="nav-item text-center cursor-pointer px-1 py-2 text-[9px] text-gray-400 transition-all rounded-xl min-w-[48px]" onclick="mostrarTab('horarios', this)">
-                    <i data-lucide="calendar-days" class="nav-icon w-[22px] h-[22px] block mx-auto mb-[2px] text-gray-400"></i>Horários
+                <div class="nav-item text-center cursor-pointer px-1.5 py-2 text-[10px] text-gray-400 transition-all rounded-xl min-w-[50px]" onclick="mostrarTab('eventos', this)">
+                    <i data-lucide="party-popper" class="nav-icon w-[24px] h-[24px] block mx-auto mb-[3px] text-gray-400"></i>Eventos
                 </div>
-                <div class="nav-item text-center cursor-pointer px-1 py-2 text-[9px] text-gray-400 transition-all rounded-xl min-w-[48px]" onclick="mostrarTab('eventos', this)">
-                    <i data-lucide="party-popper" class="nav-icon w-[22px] h-[22px] block mx-auto mb-[2px] text-gray-400"></i>Eventos
+                <div class="nav-item text-center cursor-pointer px-1.5 py-2 text-[10px] text-gray-400 transition-all rounded-xl min-w-[50px]" onclick="mostrarTab('galeria', this)">
+                    <i data-lucide="images" class="nav-icon w-[24px] h-[24px] block mx-auto mb-[3px] text-gray-400"></i>Galeria
                 </div>
-                <div class="nav-item text-center cursor-pointer px-1 py-2 text-[9px] text-gray-400 transition-all rounded-xl min-w-[48px]" onclick="mostrarTab('galeria', this)">
-                    <i data-lucide="images" class="nav-icon w-[22px] h-[22px] block mx-auto mb-[2px] text-gray-400"></i>Galeria
-                </div>
-                <div class="nav-item text-center cursor-pointer px-1 py-2 text-[9px] text-gray-400 transition-all rounded-xl min-w-[48px]" onclick="mostrarTab('loja', this)">
-                    <i data-lucide="shopping-bag" class="nav-icon w-[22px] h-[22px] block mx-auto mb-[2px] text-gray-400"></i>Loja
+                <div class="nav-item text-center cursor-pointer px-1.5 py-2 text-[10px] text-gray-400 transition-all rounded-xl min-w-[50px]" onclick="mostrarTab('loja', this)">
+                    <i data-lucide="shopping-bag" class="nav-icon w-[24px] h-[24px] block mx-auto mb-[3px] text-gray-400"></i>Loja
                 </div>
             </div>
         </div>
@@ -166,11 +161,12 @@
     </div>
 
     <script>
-        const APP_VERSAO = '3.4';
+        const APP_VERSAO = '3.5';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
         let comunicadosLista = [], eventosLista = [], galeriasLista = [], merchandisingLista = [];
+        let tabAtual = 'alunos';
         
         const mesesNum = {"setembro":9,"outubro":10,"novembro":11,"dezembro":12,"janeiro":1,"fevereiro":2,"marco":3,"abril":4,"maio":5,"junho":6,"julho":7};
         const MESES_ORDEM = ["setembro","outubro","novembro","dezembro","janeiro","fevereiro","marco","abril","maio","junho","julho"];
@@ -239,6 +235,7 @@
             } else { banner.classList.add('hidden'); }
         }
 
+        // ========== DADOS ==========
         async function carregarFraseDoDia() {
             try {
                 const response = await fetch('frases.txt');
@@ -314,6 +311,7 @@
             } catch(e) { merchandisingLista = []; }
         }
 
+        // ========== LOGIN ==========
         async function login(){
             const telefone=document.getElementById('telefone').value.trim(), msgDiv=document.getElementById('mensagem');
             if(!telefone){msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">⚠️ Digite o telefone!</p>'; return;}
@@ -332,29 +330,67 @@
                     await carregarMerchandisingTXT();
                     verificarAniversario(alunos);
                     telefoneLogado=telefone; alunosDoResponsavel=alunos; alunoSelecionado=alunosDoResponsavel[0];
+                    localStorage.setItem('dm_telefone', telefone);
+                    localStorage.setItem('dm_logado', 'true');
                     document.getElementById('loginScreen').classList.add('hidden');
                     document.getElementById('dashboardScreen').classList.remove('hidden');
                     document.getElementById('dashboardScreen').classList.add('flex');
                     document.getElementById('btnLogout').classList.remove('hidden');
+                    tabAtual='alunos';
                     carregarAlunos();
-                    if(alunoSelecionado) carregarExtrato();
                     carregarHorarios();
+                    updateNavActive();
                     setTimeout(() => lucide.createIcons(), 200);
                 } else { msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">❌ Telefone não encontrado!</p>'; }
             } catch(error){ msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">❌ Erro ao carregar dados.</p>'; }
         }
 
         function logout(){
-            document.getElementById('telefone').value=''; document.getElementById('mensagem').innerHTML='';
+            document.getElementById('telefone').value='';
+            document.getElementById('mensagem').innerHTML='';
             document.getElementById('bannerAviso').classList.add('hidden');
             document.getElementById('bannerAniversario').classList.add('hidden');
             document.getElementById('btnLogout').classList.add('hidden');
             document.getElementById('loginScreen').classList.remove('hidden');
             document.getElementById('dashboardScreen').classList.add('hidden');
             document.getElementById('dashboardScreen').classList.remove('flex');
+            localStorage.removeItem('dm_logado');
+            localStorage.removeItem('dm_telefone');
             telefoneLogado=''; alunosDoResponsavel=[]; alunoSelecionado=null;
         }
 
+        function restaurarSessao(){
+            const logado = localStorage.getItem('dm_logado');
+            const telefone = localStorage.getItem('dm_telefone');
+            if(logado === 'true' && telefone){
+                document.getElementById('telefone').value = telefone;
+                login();
+            } else if(telefone){
+                document.getElementById('telefone').value = telefone;
+            }
+        }
+
+        function updateNavActive(){
+            document.querySelectorAll('.nav-item').forEach(n => { 
+                n.classList.remove('active', 'text-dm-dourado', 'font-bold', 'bg-dm-dourado-claro'); 
+                n.classList.add('text-gray-400');
+                const icon = n.querySelector('.nav-icon');
+                if(icon) { icon.classList.remove('text-dm-dourado'); icon.classList.add('text-gray-400'); }
+            });
+            const tabs = ['alunos','horarios','eventos','galeria','loja'];
+            const idx = tabs.indexOf(tabAtual);
+            if(idx >= 0){
+                const el = document.querySelectorAll('.nav-item')[idx];
+                if(el){
+                    el.classList.add('active', 'text-dm-dourado', 'font-bold', 'bg-dm-dourado-claro');
+                    el.classList.remove('text-gray-400');
+                    const icon = el.querySelector('.nav-icon');
+                    if(icon) { icon.classList.remove('text-gray-400'); icon.classList.add('text-dm-dourado'); }
+                }
+            }
+        }
+
+        // ========== CARDS ==========
         function carregarAlunos(){
             const div=document.getElementById('tabAlunos'); div.innerHTML='';
             for(const f of alunosDoResponsavel){
@@ -384,12 +420,22 @@
             alunoSelecionado=alunosDoResponsavel.find(a=>a.id===id);
             if(alunoSelecionado) {
                 carregarPerfil();
-                mostrarTab('perfil', null);
+                tabAtual='perfil';
+                updateNavActive();
+                history.pushState({tab:'perfil'}, '', '#perfil');
             }
         }
 
+        function fecharPerfil(){
+            tabAtual='alunos';
+            updateNavActive();
+            carregarAlunos();
+            mostrarTabConteudo('alunos');
+            history.pushState({tab:'alunos'}, '', '#alunos');
+        }
+
         function carregarPerfil(){
-            const div = document.getElementById('tabPerfil');
+            const div = document.getElementById('tabAlunos');
             if(!alunoSelecionado) return;
             const a = alunoSelecionado;
             let fotoUrl = a.foto || '';
@@ -402,7 +448,7 @@
                 return '<span class="inline-flex items-center gap-2 text-sm text-gray-600"><i data-lucide="' + iconName + '" class="w-5 h-5 text-dm-dourado"></i>' + m + '</span>';
             }).join('');
             let html = '<div class="flex items-center gap-2.5 mb-4">' +
-                '<button class="w-9 h-9 rounded-full bg-gray-100 border-none text-lg cursor-pointer flex items-center justify-center" onclick="mostrarTab(\'alunos\', document.querySelector(\'.nav-item:first-child\'))"><i data-lucide=\"arrow-left\" class=\"w-5 h-5\"></i></button>' +
+                '<button class="w-9 h-9 rounded-full bg-gray-100 border-none text-lg cursor-pointer flex items-center justify-center" onclick="fecharPerfil()"><i data-lucide=\"arrow-left\" class=\"w-5 h-5\"></i></button>' +
                 '<h3 class="text-dm-nome text-[17px]">Perfil</h3>' +
                 '</div>' +
                 '<div class="bg-white rounded-2xl p-5 shadow-[0_2px_10px_rgba(0,0,0,0.08)] text-center">' +
@@ -414,20 +460,27 @@
                 '<p class="text-xs text-gray-400 mb-2 font-semibold">MODALIDADES</p>' +
                 '<div class="flex flex-col gap-2 items-start">' + (modIcons || '<span class="text-sm text-gray-400">Sem modalidades</span>') + '</div>' +
                 '</div>' +
-                '<button onclick="alunoSelecionado=alunosDoResponsavel.find(a=>a.id===' + a.id + ');carregarExtrato();mostrarTab(\'extrato\', document.querySelectorAll(\'.nav-item\')[1])" class="w-full py-3 bg-dm-dourado text-white font-bold rounded-xl cursor-pointer border-none text-sm">💰 Ver Extrato</button>' +
+                '<button onclick="abrirExtrato()" class="w-full py-3 bg-dm-dourado text-white font-bold rounded-xl cursor-pointer border-none text-sm">💰 Ver Extrato</button>' +
                 '</div>';
             div.innerHTML = html;
+            mostrarTabConteudo('alunos');
             setTimeout(() => lucide.createIcons(), 100);
         }
 
+        function abrirExtrato(){
+            carregarExtrato();
+            tabAtual='extrato';
+            history.pushState({tab:'extrato'}, '', '#extrato');
+        }
+
         function carregarExtrato(){
-            const div=document.getElementById('tabExtrato');
+            const div=document.getElementById('tabAlunos');
             if(!alunoSelecionado){div.innerHTML='<p class="text-center text-gray-400 p-8">Selecione um aluno na aba Início</p>'; return;}
             const mesEntrada = alunoSelecionado.mes_entrada || 'setembro';
             const mesesFiltrados = filtrarMeses(alunoSelecionado.pagamentos, mesEntrada);
             let totalPago=0, totalPendente=0;
             let html=`<div class="flex items-center gap-2.5 mb-4">
-                    <button class="w-9 h-9 rounded-full bg-gray-100 border-none text-lg cursor-pointer flex items-center justify-center" onclick="mostrarTab('alunos',document.querySelector('.nav-item:first-child'))"><i data-lucide="arrow-left" class="w-5 h-5"></i></button>
+                    <button class="w-9 h-9 rounded-full bg-gray-100 border-none text-lg cursor-pointer flex items-center justify-center" onclick="abrirPerfil(${alunoSelecionado.id})"><i data-lucide="arrow-left" class="w-5 h-5"></i></button>
                     <h3 class="text-dm-nome text-[17px]">💰 Extrato: ${alunoSelecionado.nome}</h3>
                 </div>
                 <div class="flex gap-2 mb-3">
@@ -453,6 +506,7 @@
                 </tr>`;
             }
             html+='</table>'; div.innerHTML=html;
+            mostrarTabConteudo('alunos');
             document.getElementById('totalPago').textContent=totalPago.toFixed(2)+' €';
             document.getElementById('totalPendente').textContent=totalPendente.toFixed(2)+' €';
             setTimeout(() => lucide.createIcons(), 100);
@@ -602,37 +656,43 @@
             div.innerHTML = html;
         }
 
-        function mostrarTab(tab, el){
+        function mostrarTabConteudo(tab){
             document.querySelectorAll('.tab-content').forEach(t => { t.classList.add('hidden'); t.classList.remove('active'); });
-            document.querySelectorAll('.nav-item').forEach(n => { 
-                n.classList.remove('active', 'text-dm-dourado', 'font-bold', 'bg-dm-dourado-claro'); 
-                n.classList.add('text-gray-400');
-                const icon = n.querySelector('.nav-icon');
-                if(icon) { icon.classList.remove('text-dm-dourado'); icon.classList.add('text-gray-400'); }
-            });
-            
-            const tabMap = {'alunos':'tabAlunos','extrato':'tabExtrato','horarios':'tabHorarios','eventos':'tabEventos','galeria':'tabGaleria','perfil':'tabPerfil','loja':'tabLoja'};
+            const tabMap = {'alunos':'tabAlunos','horarios':'tabHorarios','eventos':'tabEventos','galeria':'tabGaleria','loja':'tabLoja'};
             const tabEl = document.getElementById(tabMap[tab]);
             if(tabEl) {
                 tabEl.classList.remove('hidden');
                 tabEl.classList.add('active');
             }
-            
-            if(el) {
-                el.classList.add('active', 'text-dm-dourado', 'font-bold', 'bg-dm-dourado-claro');
-                el.classList.remove('text-gray-400');
-                const icon = el.querySelector('.nav-icon');
-                if(icon) { icon.classList.remove('text-gray-400'); icon.classList.add('text-dm-dourado'); }
-            }
-            
+        }
+
+        function mostrarTab(tab, el){
+            if(tab === 'perfil') return;
+            tabAtual = tab;
+            mostrarTabConteudo(tab);
+            updateNavActive();
             if(tab==='horarios') carregarHorarios();
-            if(tab==='extrato'&&alunoSelecionado) carregarExtrato();
             if(tab==='eventos') carregarTabEventos();
             if(tab==='galeria') carregarGaleria();
-            if(tab==='perfil') carregarPerfil();
             if(tab==='loja') carregarLoja();
+            if(tab==='alunos' && alunoSelecionado) {
+                carregarAlunos();
+            }
+            history.pushState({tab:tab}, '', '#'+tab);
             setTimeout(() => lucide.createIcons(), 200);
         }
+
+        window.addEventListener('popstate', function(event) {
+            if(event.state && event.state.tab){
+                if(event.state.tab === 'perfil'){
+                    abrirPerfil(alunoSelecionado ? alunoSelecionado.id : (alunosDoResponsavel[0] ? alunosDoResponsavel[0].id : null));
+                } else if(event.state.tab === 'extrato'){
+                    abrirExtrato();
+                } else {
+                    mostrarTab(event.state.tab, null);
+                }
+            }
+        });
 
         function instalarApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null;document.getElementById('btnInstalar').classList.add('hidden');}}
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').classList.remove('hidden');}});
@@ -650,6 +710,7 @@
             }
             localStorage.setItem('dm_versao', APP_VERSAO);
             lucide.createIcons();
+            restaurarSessao();
         });
     </script>
 </body>
