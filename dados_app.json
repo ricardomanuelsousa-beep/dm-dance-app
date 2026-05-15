@@ -41,7 +41,7 @@
           "valor": 27.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 27.0
         },
         "junho": {
@@ -55,7 +55,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_1.jpg",
       "mes_entrada": "Outubro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Ana Raquel Moreira Silva",
       "idade": 8,
       "data_nascimento": "02/04/2018",
@@ -65,7 +65,7 @@
   "916690982": [
     {
       "id": 2,
-      "nome": "Beatriz Tavares Santos",
+      "nome": "Beatriz Santos",
       "aniversario": "02/11",
       "modalidades": [
         "Babies"
@@ -104,7 +104,7 @@
           "valor": 27.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 27.0
         },
         "junho": {
@@ -118,11 +118,392 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_2.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Beatriz Tavares Santos",
       "idade": 4,
       "data_nascimento": "02/11/2021",
       "morada": "Nogueira do Cravo"
+    }
+  ],
+  "915703452": [
+    {
+      "id": 3,
+      "nome": "Benedita Pinto",
+      "aniversario": "25/10",
+      "modalidades": [
+        "Babies"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "novembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "dezembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "janeiro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "fevereiro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "marco": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "abril": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "maio": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 27.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 27.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_3.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Benedita Pinto",
+      "idade": 7,
+      "data_nascimento": "25/10/2018",
+      "morada": "Rua do Alambique - CESAR"
+    }
+  ],
+  "910866131": [
+    {
+      "id": 4,
+      "nome": "Bianca Barbosa",
+      "aniversario": "22/05",
+      "modalidades": [
+        "Babies",
+        "Ballet Pré-Primary",
+        "Contemporâneo 1"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 50.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 50.0
+        },
+        "novembro": {
+          "pago": true,
+          "valor": 50.0
+        },
+        "dezembro": {
+          "pago": true,
+          "valor": 50.0
+        },
+        "janeiro": {
+          "pago": true,
+          "valor": 50.0
+        },
+        "fevereiro": {
+          "pago": true,
+          "valor": 50.0
+        },
+        "marco": {
+          "pago": true,
+          "valor": 50.0
+        },
+        "abril": {
+          "pago": true,
+          "valor": 50.0
+        },
+        "maio": {
+          "pago": true,
+          "valor": 50.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 50.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 50.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_4.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Bianca Barbosa",
+      "idade": 5,
+      "data_nascimento": "22/05/2020",
+      "morada": "CESAR"
+    },
+    {
+      "id": 114,
+      "nome": "Patricia Rocha",
+      "aniversario": "25/12",
+      "modalidades": [
+        "Adultas",
+        "Pilates"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "novembro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "dezembro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "janeiro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "fevereiro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "marco": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "abril": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 20.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_114.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Patricia Silva Rocha",
+      "idade": 41,
+      "data_nascimento": "25/12/1984",
+      "morada": "CESAR"
+    }
+  ],
+  "916751568": [
+    {
+      "id": 5,
+      "nome": "Camila",
+      "aniversario": "18/08",
+      "modalidades": [
+        "Babies",
+        "Contemporâneo 1",
+        "Ballet Pré-Primary"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 55.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 55.0
+        },
+        "novembro": {
+          "pago": true,
+          "valor": 55.0
+        },
+        "dezembro": {
+          "pago": true,
+          "valor": 55.0
+        },
+        "janeiro": {
+          "pago": true,
+          "valor": 55.0
+        },
+        "fevereiro": {
+          "pago": true,
+          "valor": 55.0
+        },
+        "marco": {
+          "pago": true,
+          "valor": 55.0
+        },
+        "abril": {
+          "pago": true,
+          "valor": 55.0
+        },
+        "maio": {
+          "pago": true,
+          "valor": 55.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 55.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 55.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_5.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Camila Amorim",
+      "idade": 5,
+      "data_nascimento": "18/08/2020",
+      "morada": "Rua Padre Baltasar - FAJOES"
+    }
+  ],
+  "916417820": [
+    {
+      "id": 6,
+      "nome": "Eduarda Resende",
+      "aniversario": "13/07",
+      "modalidades": [
+        "Babies"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 16.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 16.0
+        },
+        "novembro": {
+          "pago": true,
+          "valor": 16.0
+        },
+        "dezembro": {
+          "pago": true,
+          "valor": 16.0
+        },
+        "janeiro": {
+          "pago": true,
+          "valor": 16.0
+        },
+        "fevereiro": {
+          "pago": true,
+          "valor": 16.0
+        },
+        "marco": {
+          "pago": true,
+          "valor": 16.0
+        },
+        "abril": {
+          "pago": true,
+          "valor": 16.0
+        },
+        "maio": {
+          "pago": true,
+          "valor": 16.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 16.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 16.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_6.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Eduarda Resende",
+      "idade": 6,
+      "data_nascimento": "13/07/2019",
+      "morada": "Rua do Travasso - CESAR"
+    }
+  ],
+  "965786593": [
+    {
+      "id": 7,
+      "nome": "Francisca Silva",
+      "aniversario": "11/09",
+      "modalidades": [
+        "Babies"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "novembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "dezembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "janeiro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "fevereiro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "marco": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "abril": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "maio": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 27.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 27.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_7.jpg",
+      "mes_entrada": "Abril",
+      "pin": "1234",
+      "nome_completo": "Francisca Almeida e Silva",
+      "idade": 4,
+      "data_nascimento": "11/09/2021",
+      "morada": "Rua Banda Musical - FAJOES"
     }
   ],
   "910912949": [
@@ -132,7 +513,7 @@
       "aniversario": "06/10",
       "modalidades": [
         "Babies",
-        "Ballet"
+        "Ballet Primary"
       ],
       "pagamentos": {
         "setembro": {
@@ -164,7 +545,7 @@
           "valor": 34.0
         },
         "abril": {
-          "pago": false,
+          "pago": true,
           "valor": 34.0
         },
         "maio": {
@@ -182,11 +563,74 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777919425/alunos/aluno_8.png",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Iris Oliveira Santos",
       "idade": 7,
       "data_nascimento": "06/10/2018",
       "morada": "Vilarinho - CESAR"
+    }
+  ],
+  "916047110": [
+    {
+      "id": 9,
+      "nome": "Joana Ferreira",
+      "aniversario": "03/10",
+      "modalidades": [
+        "Babies"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "novembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "dezembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "janeiro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "fevereiro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "marco": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "abril": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "maio": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 27.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 27.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_9.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Joana Oliveira Ferreira",
+      "idade": 5,
+      "data_nascimento": "03/10/2020",
+      "morada": "CESAR"
     }
   ],
   "918176673": [
@@ -632,7 +1076,7 @@
   "917447816": [
     {
       "id": 17,
-      "nome": "Lara Bastos Reis",
+      "nome": "Lara Reis",
       "aniversario": "14/04",
       "modalidades": [
         "Babies"
@@ -671,7 +1115,7 @@
           "valor": 27.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 27.0
         },
         "junho": {
@@ -685,7 +1129,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_17.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Lara Bastos Reis",
       "idade": 4,
       "data_nascimento": "14/04/2022",
@@ -695,7 +1139,7 @@
   "912108699": [
     {
       "id": 18,
-      "nome": "Lara Oliveira Almeida",
+      "nome": "Lara Almeida",
       "aniversario": "02/04",
       "modalidades": [
         "Babies"
@@ -734,7 +1178,7 @@
           "valor": 27.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 27.0
         },
         "junho": {
@@ -748,7 +1192,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_18.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Lara Oliveira Almeida",
       "idade": 6,
       "data_nascimento": "02/04/2020",
@@ -797,7 +1241,7 @@
           "valor": 27.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 27.0
         },
         "junho": {
@@ -811,8 +1255,71 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_19.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
-      "nome_completo": "Lia Estrela",
+      "pin": "1234",
+      "nome_completo": "Lia Pinto Estrela",
+      "idade": 7,
+      "data_nascimento": "28/02/2019",
+      "morada": "Rua Nova Camum - CESAR"
+    }
+  ],
+  "918818891": [
+    {
+      "id": 19,
+      "nome": "Lia Estrela",
+      "aniversario": "28/02",
+      "modalidades": [
+        "Babies"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "novembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "dezembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "janeiro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "fevereiro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "marco": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "abril": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "maio": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 27.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 27.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_19.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Lia Pinto Estrela",
       "idade": 7,
       "data_nascimento": "28/02/2019",
       "morada": "Rua Nova Camum - CESAR"
@@ -821,7 +1328,7 @@
   "918500328": [
     {
       "id": 20,
-      "nome": "Marta Almeida Pinho",
+      "nome": "Marta Pinho",
       "aniversario": "26/01",
       "modalidades": [
         "Babies"
@@ -860,8 +1367,8 @@
           "valor": 24.5
         },
         "maio": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 24.5
         },
         "junho": {
           "pago": false,
@@ -874,7 +1381,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_20.jpg",
       "mes_entrada": "Março",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Marta Almeida Pinho",
       "idade": 6,
       "data_nascimento": "26/01/2020",
@@ -942,10 +1449,73 @@
       "morada": "Rua Pe. Manuel Gomes - FAJOES"
     }
   ],
+  "919570221": [
+    {
+      "id": 20,
+      "nome": "Marta Pinho",
+      "aniversario": "26/01",
+      "modalidades": [
+        "Babies"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 24.5
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 24.5
+        },
+        "novembro": {
+          "pago": true,
+          "valor": 24.5
+        },
+        "dezembro": {
+          "pago": true,
+          "valor": 24.5
+        },
+        "janeiro": {
+          "pago": true,
+          "valor": 24.5
+        },
+        "fevereiro": {
+          "pago": true,
+          "valor": 24.5
+        },
+        "marco": {
+          "pago": true,
+          "valor": 24.5
+        },
+        "abril": {
+          "pago": true,
+          "valor": 24.5
+        },
+        "maio": {
+          "pago": true,
+          "valor": 24.5
+        },
+        "junho": {
+          "pago": false,
+          "valor": 0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_20.jpg",
+      "mes_entrada": "Março",
+      "pin": "1234",
+      "nome_completo": "Marta Almeida Pinho",
+      "idade": 6,
+      "data_nascimento": "26/01/2020",
+      "morada": "Rua Pe. Manuel Gomes - FAJOES"
+    }
+  ],
   "924888476": [
     {
       "id": 21,
-      "nome": "Rebeca Silva",
+      "nome": "Rebeca",
       "aniversario": "07/04",
       "modalidades": [
         "Babies"
@@ -980,7 +1550,7 @@
           "valor": 27.0
         },
         "abril": {
-          "pago": false,
+          "pago": true,
           "valor": 27.0
         },
         "maio": {
@@ -998,8 +1568,8 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_21.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
-      "nome_completo": "Rebeca Silva",
+      "pin": "1234",
+      "nome_completo": "Rebeca Sophia Tavares Silva",
       "idade": 6,
       "data_nascimento": "07/04/2020",
       "morada": "FAJOES"
@@ -1008,11 +1578,11 @@
   "919106308": [
     {
       "id": 22,
-      "nome": "Sofia Marques Ribeiro",
+      "nome": "Sofia Ribeiro",
       "aniversario": "11/01",
       "modalidades": [
         "Babies",
-        "Ballet"
+        "Ballet Pré-Primary"
       ],
       "pagamentos": {
         "setembro": {
@@ -1048,7 +1618,7 @@
           "valor": 34.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 34.0
         },
         "junho": {
@@ -1062,7 +1632,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_22.jpg",
       "mes_entrada": "Fevereiro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Sofia Marques Ribeiro",
       "idade": 5,
       "data_nascimento": "11/01/2021",
@@ -1072,7 +1642,7 @@
   "762274961": [
     {
       "id": 23,
-      "nome": "Valentina Pinho",
+      "nome": "Valentina",
       "aniversario": "17/07",
       "modalidades": [
         "Babies"
@@ -1111,7 +1681,7 @@
           "valor": 27.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 27.0
         },
         "junho": {
@@ -1125,7 +1695,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_23.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Valentina Pinho",
       "idade": 4,
       "data_nascimento": "17/07/2021",
@@ -1174,7 +1744,7 @@
           "valor": 27.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 27.0
         },
         "junho": {
@@ -1188,8 +1758,8 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_24.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
-      "nome_completo": "Yara Ferreira",
+      "pin": "1234",
+      "nome_completo": "Yara Fernandes Ferreira",
       "idade": 8,
       "data_nascimento": "16/02/2018",
       "morada": "Tv Sra Ribeira - FAJOES"
@@ -2339,7 +2909,7 @@
       "nome": "Luisa",
       "aniversario": "04/01",
       "modalidades": [
-        "Contemporâneo"
+        "Contemporâneo 1"
       ],
       "pagamentos": {
         "setembro": {
@@ -2375,7 +2945,7 @@
           "valor": 9.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 18.0
         },
         "junho": {
@@ -2389,7 +2959,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_106.jpg",
       "mes_entrada": "Outubro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Maria Luisa Dias Silva",
       "idade": 6,
       "data_nascimento": "04/01/2020",
@@ -6320,7 +6890,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_96.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Alice Bastos de Oliveira",
       "idade": 4,
       "data_nascimento": "27/05/2021",
@@ -6333,7 +6903,7 @@
       "nome": "Clara Rodrigues",
       "aniversario": "31/05",
       "modalidades": [
-        "Ballet"
+        "Ballet Primary"
       ],
       "pagamentos": {
         "setembro": {
@@ -6365,7 +6935,7 @@
           "valor": 17.5
         },
         "abril": {
-          "pago": false,
+          "pago": true,
           "valor": 17.5
         },
         "maio": {
@@ -6383,7 +6953,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_97.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Clara Pinho Rodrigues",
       "idade": 7,
       "data_nascimento": "31/05/2018",
@@ -6394,7 +6964,7 @@
       "nome": "Marta Rodrigues",
       "aniversario": "09/09",
       "modalidades": [
-        "Ballet"
+        "Ballet Pré-Primary"
       ],
       "pagamentos": {
         "setembro": {
@@ -6426,7 +6996,7 @@
           "valor": 17.5
         },
         "abril": {
-          "pago": false,
+          "pago": true,
           "valor": 17.5
         },
         "maio": {
@@ -6444,7 +7014,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_104.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Marta Pinho Rodrigues",
       "idade": 5,
       "data_nascimento": "09/09/2020",
@@ -6457,7 +7027,7 @@
       "nome": "Iris Santos",
       "aniversario": "10/02",
       "modalidades": [
-        "Ballet"
+        "Ballet Pré-Primary"
       ],
       "pagamentos": {
         "setembro": {
@@ -6489,11 +7059,11 @@
           "valor": 20.0
         },
         "abril": {
-          "pago": false,
+          "pago": true,
           "valor": 20.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 20.0
         },
         "junho": {
@@ -6507,7 +7077,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_98.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Iris Dias Santos",
       "idade": 6,
       "data_nascimento": "10/02/2020",
@@ -6520,7 +7090,7 @@
       "nome": "Isabella",
       "aniversario": "01/10",
       "modalidades": [
-        "Ballet"
+        "Ballet Pré-Primary"
       ],
       "pagamentos": {
         "setembro": {
@@ -6552,7 +7122,7 @@
           "valor": 20.0
         },
         "abril": {
-          "pago": false,
+          "pago": true,
           "valor": 20.0
         },
         "maio": {
@@ -6570,7 +7140,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_99.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Isabella Almeida Sousa",
       "idade": 6,
       "data_nascimento": "01/10/2019",
@@ -6583,7 +7153,7 @@
       "nome": "Isabella",
       "aniversario": "01/10",
       "modalidades": [
-        "Ballet"
+        "Ballet Pré-Primary"
       ],
       "pagamentos": {
         "setembro": {
@@ -6615,7 +7185,7 @@
           "valor": 20.0
         },
         "abril": {
-          "pago": false,
+          "pago": true,
           "valor": 20.0
         },
         "maio": {
@@ -6633,7 +7203,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_99.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Isabella Almeida Sousa",
       "idade": 6,
       "data_nascimento": "01/10/2019",
@@ -6646,7 +7216,7 @@
       "nome": "Joana Moreira",
       "aniversario": "17/04",
       "modalidades": [
-        "Ballet"
+        "Ballet Pré-Primary"
       ],
       "pagamentos": {
         "setembro": {
@@ -6682,7 +7252,7 @@
           "valor": 20.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 20.0
         },
         "junho": {
@@ -6696,7 +7266,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_100.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Joana Tavares Moreira",
       "idade": 6,
       "data_nascimento": "17/04/2020",
@@ -6709,57 +7279,57 @@
       "nome": "Lara Nogueira",
       "aniversario": "02/09",
       "modalidades": [
-        "Ballet"
+        "Ballet Pré-Primary"
       ],
       "pagamentos": {
         "setembro": {
           "pago": true,
-          "valor": 2.0
+          "valor": 20.0
         },
         "outubro": {
           "pago": true,
-          "valor": 2.0
+          "valor": 20.0
         },
         "novembro": {
           "pago": true,
-          "valor": 2.0
+          "valor": 20.0
         },
         "dezembro": {
           "pago": true,
-          "valor": 2.0
+          "valor": 20.0
         },
         "janeiro": {
           "pago": true,
-          "valor": 2.0
+          "valor": 20.0
         },
         "fevereiro": {
           "pago": true,
-          "valor": 2.0
+          "valor": 20.0
         },
         "marco": {
           "pago": true,
-          "valor": 2.0
+          "valor": 20.0
         },
         "abril": {
           "pago": true,
-          "valor": 2.0
+          "valor": 20.0
         },
         "maio": {
-          "pago": false,
-          "valor": 2.0
+          "pago": true,
+          "valor": 20.0
         },
         "junho": {
           "pago": false,
-          "valor": 2.0
+          "valor": 20.0
         },
         "julho": {
           "pago": false,
-          "valor": 2.0
+          "valor": 20.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_101.jpg",
       "mes_entrada": "Outubro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Lara Manuela Silva Nogueira",
       "idade": 5,
       "data_nascimento": "02/09/2020",
@@ -6772,8 +7342,8 @@
       "nome": "Maria J.Bastos",
       "aniversario": "26/11",
       "modalidades": [
-        "Ballet",
-        "Contemporâneo"
+        "Contemporâneo 1",
+        "Ballet Primary"
       ],
       "pagamentos": {
         "setembro": {
@@ -6805,7 +7375,7 @@
           "valor": 36.0
         },
         "abril": {
-          "pago": false,
+          "pago": true,
           "valor": 36.0
         },
         "maio": {
@@ -6823,7 +7393,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_102.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Maria Joao Bastos",
       "idade": 6,
       "data_nascimento": "26/11/2019",
@@ -6836,7 +7406,7 @@
       "nome": "Maria J.Pinho",
       "aniversario": "14/01",
       "modalidades": [
-        "Ballet"
+        "Ballet Pré-Primary"
       ],
       "pagamentos": {
         "setembro": {
@@ -6886,7 +7456,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_103.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Maria Joao Santos Pinho",
       "idade": 5,
       "data_nascimento": "14/01/2021",
@@ -6899,7 +7469,7 @@
       "nome": "Maria J.Pinho",
       "aniversario": "14/01",
       "modalidades": [
-        "Ballet"
+        "Ballet Pré-Primary"
       ],
       "pagamentos": {
         "setembro": {
@@ -6949,7 +7519,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_103.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Maria Joao Santos Pinho",
       "idade": 5,
       "data_nascimento": "14/01/2021",
@@ -6962,7 +7532,7 @@
       "nome": "Camila Silva",
       "aniversario": "16/07",
       "modalidades": [
-        "Contemporâneo"
+        "Contemporâneo 2"
       ],
       "pagamentos": {
         "setembro": {
@@ -6998,7 +7568,7 @@
           "valor": 18.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 18.0
         },
         "junho": {
@@ -7012,7 +7582,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_105.jpg",
       "mes_entrada": "Março",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Camila Gonçalves da Silva",
       "idade": 9,
       "data_nascimento": "16/07/2016",
@@ -7025,7 +7595,7 @@
       "nome": "Camila Silva",
       "aniversario": "16/07",
       "modalidades": [
-        "Contemporâneo"
+        "Contemporâneo 2"
       ],
       "pagamentos": {
         "setembro": {
@@ -7061,7 +7631,7 @@
           "valor": 18.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 18.0
         },
         "junho": {
@@ -7075,7 +7645,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_105.jpg",
       "mes_entrada": "Março",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Camila Gonçalves da Silva",
       "idade": 9,
       "data_nascimento": "16/07/2016",
@@ -7332,70 +7902,6 @@
       "idade": 24,
       "data_nascimento": "05/11/2001",
       "morada": "FAJOES"
-    }
-  ],
-  "910866131": [
-    {
-      "id": 114,
-      "nome": "Patricia Rocha",
-      "aniversario": "25/12",
-      "modalidades": [
-        "Adultas",
-        "Pilates"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "abril": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 20.0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_114.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "1234",
-      "nome_completo": "Patricia Silva Rocha",
-      "idade": 41,
-      "data_nascimento": "25/12/1984",
-      "morada": "CESAR"
     }
   ],
   "969642483": [
