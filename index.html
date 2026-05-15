@@ -158,7 +158,7 @@
     </div>
 
     <script>
-        const APP_VERSAO = '3.7';
+        const APP_VERSAO = '4.0';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
@@ -192,9 +192,15 @@
         function getPago(dados) { return typeof dados === 'object' ? dados.pago : dados; }
         function getValor(dados) { return (typeof dados === 'object' && dados.valor) ? dados.valor : 0; }
         
+        function normalizarMes(mes) {
+            if (!mes) return 'setembro';
+            return mes.toLowerCase().trim();
+        }
+
         function filtrarMeses(pagamentos, mesEntrada) {
-            if (!mesEntrada || !MESES_ORDEM.includes(mesEntrada.toLowerCase())) return MESES_ORDEM;
-            return MESES_ORDEM.slice(MESES_ORDEM.indexOf(mesEntrada.toLowerCase()));
+            const mesNorm = normalizarMes(mesEntrada);
+            if (!MESES_ORDEM.includes(mesNorm)) return MESES_ORDEM;
+            return MESES_ORDEM.slice(MESES_ORDEM.indexOf(mesNorm));
         }
 
         function obterStatusPagamento(pagamentos) {
@@ -396,20 +402,30 @@
                     const iconName = getIconeModalidade(m);
                     return '<span class="inline-flex items-center gap-1"><i data-lucide="' + iconName + '" class="w-5 h-5 flex-shrink-0"></i>' + m + '</span>';
                 }).join(', ');
+                const nickname = f.nickname || f.nome || 'Aluno';
                 div.innerHTML+=`<div class="bg-dm-rosa my-2.5 p-4 rounded-2xl border-l-[5px] border-l-dm-dourado shadow-[0_2px_10px_rgba(0,0,0,0.08)]">
                     <div class="flex gap-3.5 items-center cursor-pointer" onclick="abrirPerfil(${f.id})">
                         <img class="w-[90px] h-[90px] rounded-full object-cover bg-gray-200 shrink-0" src="${fotoUrl}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" crossorigin="anonymous" loading="lazy">
                         <div class="w-[90px] h-[90px] rounded-full bg-gray-200 items-center justify-center text-4xl shrink-0" style="display:${f.foto?'none':'flex'};">👤</div>
                         <div class="flex-1">
-                            <div class="text-dm-nome text-[22px] font-bold mb-[3px]">${f.nome}</div>
+                            <div class="text-dm-nome text-[22px] font-bold mb-[3px]">#${nickname}</div>
                             <div class="text-gray-400 text-sm mb-[3px]">${modIcons || 'Sem modalidades'}</div>
-                            <div class="font-semibold text-[15px] ${statusColor}">${status.texto}</div>
+                            <div class="font-semibold text-[15px] ${statusColor} cursor-pointer underline decoration-dotted" onclick="event.stopPropagation(); selecionarAlunoExtrato(${f.id})">${status.texto}</div>
                         </div>
                     </div>
                     <button onclick="abrirPerfil(${f.id})" class="mt-3 w-full py-2.5 bg-dm-dourado text-white font-bold rounded-xl cursor-pointer border-none text-sm">👤 Ver Perfil</button>
                 </div>`;
             }
             setTimeout(() => lucide.createIcons(), 100);
+        }
+
+        function selecionarAlunoExtrato(id){
+            alunoSelecionado = alunosDoResponsavel.find(a => a.id === id);
+            if (alunoSelecionado) {
+                carregarExtrato();
+                tabAtual = 'extrato';
+                history.pushState({tab:'extrato'}, '', '#extrato');
+            }
         }
 
         function abrirPerfil(id){
@@ -443,6 +459,8 @@
                 const iconName = getIconeModalidade(m);
                 return '<span class="inline-flex items-center gap-2 text-sm text-gray-600"><i data-lucide="' + iconName + '" class="w-5 h-5 flex-shrink-0 text-dm-dourado"></i>' + m + '</span>';
             }).join('');
+            const nomeCompleto = a.nome_completo || a.nome || '';
+            const idade = a.idade ? a.idade + ' anos' : '';
             let html = '<div class="flex items-center gap-2.5 mb-4">' +
                 '<button class="w-9 h-9 rounded-full bg-gray-100 border-none text-lg cursor-pointer flex items-center justify-center" onclick="fecharPerfil()"><i data-lucide=\"arrow-left\" class=\"w-5 h-5\"></i></button>' +
                 '<h3 class="text-dm-nome text-[17px]">Perfil</h3>' +
@@ -450,7 +468,8 @@
                 '<div class="bg-white rounded-2xl p-5 shadow-[0_2px_10px_rgba(0,0,0,0.08)] text-center">' +
                 '<img src="' + fotoUrl + '" class="w-[100px] h-[100px] rounded-full object-cover mx-auto mb-3" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\';">' +
                 '<div class="w-[100px] h-[100px] rounded-full bg-gray-200 items-center justify-center text-4xl mx-auto mb-3" style="display:' + (a.foto?'none':'flex') + ';">👤</div>' +
-                '<h2 class="text-xl font-bold text-dm-nome mb-1">' + a.nome + '</h2>' +
+                '<h2 class="text-xl font-bold text-dm-nome mb-1">' + nomeCompleto + '</h2>' +
+                (idade ? '<p class="text-sm text-gray-500 mb-1">' + idade + '</p>' : '') +
                 '<div class="' + statusColor + ' font-semibold text-sm mb-4">' + status.texto + '</div>' +
                 '<div class="bg-dm-dourado-claro rounded-xl p-4 mb-4">' +
                 '<p class="text-xs text-gray-400 mb-2 font-semibold">MODALIDADES</p>' +
@@ -477,7 +496,7 @@
             let totalPago=0, totalPendente=0;
             let html=`<div class="flex items-center gap-2.5 mb-4">
                     <button class="w-9 h-9 rounded-full bg-gray-100 border-none text-lg cursor-pointer flex items-center justify-center" onclick="abrirPerfil(${alunoSelecionado.id})"><i data-lucide="arrow-left" class="w-5 h-5"></i></button>
-                    <h3 class="text-dm-nome text-[17px]">💰 Extrato: ${alunoSelecionado.nome}</h3>
+                    <h3 class="text-dm-nome text-[17px]">💰 Extrato: ${alunoSelecionado.nome_completo || alunoSelecionado.nome}</h3>
                 </div>
                 <div class="flex gap-2 mb-3">
                     <div class="flex-1 bg-white p-3 rounded-2xl text-center shadow-[0_2px_10px_rgba(0,0,0,0.08)]">
@@ -548,20 +567,20 @@
                     {hora:"17:00 - 18:00",nome:"Ensaios",turma:"Competição",cor:"#9E9E9E"}
                 ]}
             ];
-            let html='<h3 class="text-dm-nome mb-1">📅 Horários</h3><p class="text-gray-400 text-xs mb-4">Ano letivo 2025/2026</p>';
-            if(modalidadesAluno.length>0) html+='<p class="text-dm-dourado text-[11px] mb-1">⭐ As suas aulas estão destacadas a dourado</p>';
+            let html='<div class="text-center mb-4"><h3 class="text-dm-nome text-lg mb-1">📅 Horários</h3><p class="text-dm-castanho text-base font-bold">Ano Letivo 2025/2026</p></div>';
+            if(modalidadesAluno.length>0) html+='<p class="text-dm-dourado text-[11px] mb-1 text-center">⭐ As suas aulas estão destacadas a dourado</p>';
             for(const d of dias){
                 html+='<div class="text-dm-castanho text-sm my-4 mx-0 py-2.5 px-3.5 bg-dm-dourado-claro rounded-[10px] font-semibold text-center">📅 '+d.dia+'</div>';
                 for(const a of d.aulas){
                     const destaque=modalidadesAluno.length>0&&ehDoAluno(a.turma,a.nome);
-                    const bgColor = destaque ? '#D4AF37' : a.cor+'40';
+                    const bgColor = destaque ? '#D4AF37' : a.cor+'20';
                     const borderColor = destaque ? '#D4AF37' : a.cor;
                     html+='<div class="' + (destaque ? 'pulse-gold' : '') + '" style="border-radius:12px; margin:8px 0; overflow:hidden; transition:all 0.3s; border:2px solid '+borderColor+'; background:'+bgColor+'; ' + (destaque ? 'box-shadow:0 4px 20px rgba(212,175,55,0.5); transform:scale(1.03);' : '') + '">';
                     html+='<div class="flex items-center">';
                     html+='<div class="w-[6px] self-stretch shrink-0" style="background:'+borderColor+';"></div>';
                     html+='<div class="flex-1 p-3">';
                     html+='<div class="font-bold text-[13px] text-gray-500 mb-1">🕐 '+a.hora+'</div>';
-                    html+='<div class="font-bold text-[15px] text-dm-nome mb-0.5">🎯 '+a.nome+'</div>';
+                    html+='<div class="font-bold text-[15px] text-dm-nome mb-0.5">'+a.nome+'</div>';
                     html+='<div class="text-xs text-gray-400">'+a.turma+'</div>';
                     if(destaque) html+='<div class="inline-block bg-dm-dourado text-white text-[10px] px-2.5 py-[3px] rounded-[10px] mt-1 font-semibold">⭐ Sua aula</div>';
                     html+='</div></div></div>';

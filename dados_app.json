@@ -54,7 +54,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_1.jpg",
-      "mes_entrada": "Outubro"
+      "mes_entrada": "Outubro",
+      "pin": "",
+      "nome_completo": "Ana Raquel Moreira Silva",
+      "idade": 8,
+      "data_nascimento": "02/04/2018",
+      "morada": "Tv Outeirinho - AZAGAES"
     }
   ],
   "916690982": [
@@ -112,7 +117,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_2.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Beatriz Tavares Santos",
+      "idade": 4,
+      "data_nascimento": "02/11/2021",
+      "morada": "Nogueira do Cravo"
     }
   ],
   "910912949": [
@@ -171,7 +181,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777919425/alunos/aluno_8.png",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Iris Oliveira Santos",
+      "idade": 7,
+      "data_nascimento": "06/10/2018",
+      "morada": "Vilarinho - CESAR"
     }
   ],
   "918176673": [
@@ -216,7 +231,7 @@
           "valor": 27.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 27.0
         },
         "junho": {
@@ -229,7 +244,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_10.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Beatriz Fernandes",
+      "idade": 14,
+      "data_nascimento": "26/03/2012",
+      "morada": "Av Sra. Ribeira - FAJOES"
     }
   ],
   "911929373": [
@@ -287,7 +307,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_12.jpg",
-      "mes_entrada": "Outubro"
+      "mes_entrada": "Outubro",
+      "pin": "",
+      "nome_completo": "Carolina Ohonovska",
+      "idade": 13,
+      "data_nascimento": "25/09/2012",
+      "morada": "Rua Sta Barbara - ROMARIZ"
     }
   ],
   "935502059": [
@@ -345,7 +370,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_12.jpg",
-      "mes_entrada": "Outubro"
+      "mes_entrada": "Outubro",
+      "pin": "",
+      "nome_completo": "Carolina Ohonovska",
+      "idade": 13,
+      "data_nascimento": "25/09/2012",
+      "morada": "Rua Sta Barbara - ROMARIZ"
     }
   ],
   "914448649": [
@@ -404,7 +434,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_13.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Diana Paiva",
+      "idade": 14,
+      "data_nascimento": "19/12/2011",
+      "morada": "Largo Martires Sao Sebastiao - CESAR"
     },
     {
       "id": 40,
@@ -460,7 +495,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_40.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Mara Paiva",
+      "idade": 10,
+      "data_nascimento": "09/12/2015",
+      "morada": "Largo Martires S. Sebastiao - CESAR"
     }
   ],
   "910667586": [
@@ -518,7 +558,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_14.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Francisca Teixeira",
+      "idade": 13,
+      "data_nascimento": "18/01/2013",
+      "morada": "CESAR"
     }
   ],
   "915321675": [
@@ -576,7 +621,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_15.jpg",
-      "mes_entrada": "Novembro"
+      "mes_entrada": "Novembro",
+      "pin": "1234",
+      "nome_completo": "Beatriz Pinho Portugal",
+      "idade": 15,
+      "data_nascimento": "29/07/2010",
+      "morada": "ROMARIZ"
     }
   ],
   "917447816": [
@@ -634,7 +684,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_17.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Lara Bastos Reis",
+      "idade": 4,
+      "data_nascimento": "14/04/2022",
+      "morada": "Rua Vila Cesari  - CESAR"
     }
   ],
   "912108699": [
@@ -692,7 +747,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_18.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Lara Oliveira Almeida",
+      "idade": 6,
+      "data_nascimento": "02/04/2020",
+      "morada": "Rua Bartolomeu Perestrelo - ARRIFANA"
     }
   ],
   "918570849": [
@@ -750,7 +810,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_19.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Lia Estrela",
+      "idade": 7,
+      "data_nascimento": "28/02/2019",
+      "morada": "Rua Nova Camum - CESAR"
     }
   ],
   "918500328": [
@@ -808,7 +873,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_20.jpg",
-      "mes_entrada": "Março"
+      "mes_entrada": "Março",
+      "pin": "",
+      "nome_completo": "Marta Almeida Pinho",
+      "idade": 6,
+      "data_nascimento": "26/01/2020",
+      "morada": "Rua Pe. Manuel Gomes - FAJOES"
     },
     {
       "id": 72,
@@ -851,8 +921,8 @@
           "valor": 24.5
         },
         "maio": {
-          "pago": false,
-          "valor": 27.0
+          "pago": true,
+          "valor": 24.5
         },
         "junho": {
           "pago": false,
@@ -864,7 +934,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_72.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Lara Almeida Pinho",
+      "idade": 15,
+      "data_nascimento": "11/10/2010",
+      "morada": "Rua Pe. Manuel Gomes - FAJOES"
     }
   ],
   "924888476": [
@@ -922,7 +997,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_21.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Rebeca Silva",
+      "idade": 6,
+      "data_nascimento": "07/04/2020",
+      "morada": "FAJOES"
     }
   ],
   "919106308": [
@@ -981,7 +1061,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_22.jpg",
-      "mes_entrada": "Fevereiro"
+      "mes_entrada": "Fevereiro",
+      "pin": "",
+      "nome_completo": "Sofia Marques Ribeiro",
+      "idade": 5,
+      "data_nascimento": "11/01/2021",
+      "morada": "Rua da Gandara - CESAR"
     }
   ],
   "762274961": [
@@ -1039,7 +1124,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_23.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Valentina Pinho",
+      "idade": 4,
+      "data_nascimento": "17/07/2021",
+      "morada": "Tv 30 Agosto - FAJOES"
     }
   ],
   "919774833": [
@@ -1097,7 +1187,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_24.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Yara Ferreira",
+      "idade": 8,
+      "data_nascimento": "16/02/2018",
+      "morada": "Tv Sra Ribeira - FAJOES"
     }
   ],
   "916995849": [
@@ -1156,7 +1251,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_25.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Benedita Moreira",
+      "idade": 7,
+      "data_nascimento": "16/05/2018",
+      "morada": "Rua Souto Costa - FAJOES"
     }
   ],
   "918439141": [
@@ -1215,7 +1315,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_27.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Clara Correia",
+      "idade": 8,
+      "data_nascimento": "23/12/2017",
+      "morada": "Tv 30 Agosto - FAJOES"
     }
   ],
   "916346566": [
@@ -1273,7 +1378,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_28.jpg",
-      "mes_entrada": "Outubro"
+      "mes_entrada": "Outubro",
+      "pin": "",
+      "nome_completo": "Francisca Paiva Lima",
+      "idade": 8,
+      "data_nascimento": "11/04/2018",
+      "morada": "ROMARIZ"
     }
   ],
   "933474838": [
@@ -1331,7 +1441,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_29.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Ines Dias",
+      "idade": 9,
+      "data_nascimento": "07/07/2016",
+      "morada": "Rua das Cavadas - CESAR"
     }
   ],
   "913369805": [
@@ -1390,7 +1505,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_30.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Irina Costa Ferreira",
+      "idade": 7,
+      "data_nascimento": "14/08/2018",
+      "morada": "Rua da Lomba - NOGUEIRA CRAVO"
     }
   ],
   "916082403": [
@@ -1448,63 +1568,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_31.jpg",
-      "mes_entrada": "Setembro"
-    },
-    {
-      "id": 114,
-      "nome": "Silvia Ferreira",
-      "aniversario": "12/07",
-      "modalidades": [
-        "Adultas"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "novembro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "dezembro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "janeiro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "fevereiro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "marco": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 10.0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_114.jpg",
-      "mes_entrada": "Outubro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Iris Ferreira Barbosa",
+      "idade": 9,
+      "data_nascimento": "08/07/2016",
+      "morada": "Rua Nova Vilarinho - CESAR"
     }
   ],
   "914665617": [
@@ -1562,7 +1631,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_32.jpg",
-      "mes_entrada": "Janeiro"
+      "mes_entrada": "Janeiro",
+      "pin": "",
+      "nome_completo": "Kyara Mendes",
+      "idade": 9,
+      "data_nascimento": "21/01/2017",
+      "morada": "CESAR"
     }
   ],
   "915781218": [
@@ -1620,7 +1694,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_33.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Lais Vieira Fonseca",
+      "idade": 8,
+      "data_nascimento": "19/06/2017",
+      "morada": "CESAR"
     },
     {
       "id": 64,
@@ -1663,7 +1742,7 @@
           "valor": 24.5
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 24.5
         },
         "junho": {
@@ -1676,7 +1755,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_64.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Marina Moreira",
+      "idade": 12,
+      "data_nascimento": "18/01/2014",
+      "morada": "Rua Gandara - CESAR"
     }
   ],
   "925489548": [
@@ -1734,7 +1818,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_34.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Lara Belfort Pinho",
+      "idade": 10,
+      "data_nascimento": "27/02/2016",
+      "morada": "Rua Central - CESAR"
     }
   ],
   "918739935": [
@@ -1794,7 +1883,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_35.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Leonor Silva Marques",
+      "idade": 7,
+      "data_nascimento": "14/08/2018",
+      "morada": "Rua Dr Francisco Portal - CESAR"
     },
     {
       "id": 107,
@@ -1806,51 +1900,56 @@
       "pagamentos": {
         "setembro": {
           "pago": true,
-          "valor": 12.0
+          "valor": 10.0
         },
         "outubro": {
           "pago": true,
-          "valor": 12.0
+          "valor": 10.0
         },
         "novembro": {
           "pago": true,
-          "valor": 12.0
+          "valor": 10.0
         },
         "dezembro": {
           "pago": true,
-          "valor": 12.0
+          "valor": 10.0
         },
         "janeiro": {
           "pago": true,
-          "valor": 12.0
+          "valor": 10.0
         },
         "fevereiro": {
           "pago": true,
-          "valor": 12.0
+          "valor": 10.0
         },
         "marco": {
           "pago": true,
-          "valor": 12.0
+          "valor": 10.0
         },
         "abril": {
-          "pago": false,
-          "valor": 12.0
+          "pago": true,
+          "valor": 10.0
         },
         "maio": {
-          "pago": false,
-          "valor": 12.0
+          "pago": true,
+          "valor": 10.0
         },
         "junho": {
           "pago": false,
-          "valor": 12.0
+          "valor": 10.0
         },
         "julho": {
           "pago": false,
-          "valor": 12.0
+          "valor": 10.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_107.jpg",
-      "mes_entrada": "Março"
+      "mes_entrada": "Março",
+      "pin": "1234",
+      "nome_completo": "Ana Sofia Gomes Silva",
+      "idade": 38,
+      "data_nascimento": "07/01/1988",
+      "morada": "R.Dr. Francisco Portal e Silva - CESAR"
     }
   ],
   "911149304": [
@@ -1908,7 +2007,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_36.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Luana Beatriz Silva",
+      "idade": 9,
+      "data_nascimento": "30/10/2016",
+      "morada": "Leira - ESCARIZ"
     }
   ],
   "914493643": [
@@ -1967,7 +2071,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_37.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Luena Jesus Pinho",
+      "idade": 9,
+      "data_nascimento": "26/10/2016",
+      "morada": "Rua da Torre - FAJOES"
     }
   ],
   "915874995": [
@@ -2027,7 +2136,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_38.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Lyana Oliveira",
+      "idade": 7,
+      "data_nascimento": "01/07/2018",
+      "morada": "Rua Sra Ribeira - FAJOES"
     }
   ],
   "91910153": [
@@ -2086,7 +2200,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_39.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Mara Oliveira Silva",
+      "idade": 9,
+      "data_nascimento": "17/09/2016",
+      "morada": "Rua Afonso Henriques - ESPINHEIRO"
     }
   ],
   "914042075": [
@@ -2145,7 +2264,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_41.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Mara Santos",
+      "idade": 10,
+      "data_nascimento": "04/02/2016",
+      "morada": "FAJOES"
     }
   ],
   "916687056": [
@@ -2203,7 +2327,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_42.jpg",
-      "mes_entrada": "Fevereiro"
+      "mes_entrada": "Fevereiro",
+      "pin": "",
+      "nome_completo": "Maria Clara Dias Silva",
+      "idade": 8,
+      "data_nascimento": "16/06/2017",
+      "morada": "NOGUEIRA CRAVO"
     },
     {
       "id": 106,
@@ -2259,7 +2388,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_106.jpg",
-      "mes_entrada": "Outubro"
+      "mes_entrada": "Outubro",
+      "pin": "",
+      "nome_completo": "Maria Luisa Dias Silva",
+      "idade": 6,
+      "data_nascimento": "04/01/2020",
+      "morada": "R. Mina Pintor - NOG CRAVO"
     },
     {
       "id": 112,
@@ -2302,7 +2436,7 @@
           "valor": 10.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 10.0
         },
         "junho": {
@@ -2315,7 +2449,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_112.jpg",
-      "mes_entrada": "Outubro"
+      "mes_entrada": "Outubro",
+      "pin": "1234",
+      "nome_completo": "Leonor Dias",
+      "idade": 41,
+      "data_nascimento": "28/06/1984",
+      "morada": "R.Mina Pintor - NOG CRAVO"
     }
   ],
   "916803861": [
@@ -2373,7 +2512,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_43.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Maria Francisca Santos",
+      "idade": 9,
+      "data_nascimento": "04/03/2017",
+      "morada": "Calçada Lavandeira - FAJOES"
     }
   ],
   "933254278": [
@@ -2432,7 +2576,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_44.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Maria Miguel Pinho Sousa",
+      "idade": 9,
+      "data_nascimento": "28/01/2017",
+      "morada": "Rua Mato d'Arca - FAJOES"
     }
   ],
   "933205425": [
@@ -2491,7 +2640,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_44.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Maria Miguel Pinho Sousa",
+      "idade": 9,
+      "data_nascimento": "28/01/2017",
+      "morada": "Rua Mato d'Arca - FAJOES"
     }
   ],
   "913606998": [
@@ -2551,7 +2705,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_45.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Mariana Pereira Dias",
+      "idade": 10,
+      "data_nascimento": "14/02/2016",
+      "morada": "Rua Miroes - CESAR"
     }
   ],
   "914058805": [
@@ -2609,7 +2768,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_46.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Sofia Sousa Almeida",
+      "idade": 9,
+      "data_nascimento": "06/07/2016",
+      "morada": "Rua Ameixieira - FAJOES"
     }
   ],
   "914170332": [
@@ -2667,7 +2831,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_47.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Vitoria Rodrigues",
+      "idade": 7,
+      "data_nascimento": "19/12/2018",
+      "morada": "Rua Figueiredo - ESCARIZ"
     }
   ],
   "96339893": [
@@ -2725,13 +2894,18 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_48.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Beatriz Luginger Leite",
+      "idade": 11,
+      "data_nascimento": "20/12/2014",
+      "morada": "Rua Condor - FAJOES"
     }
   ],
   "964379973": [
     {
       "id": 49,
-      "nome": "Bruna",
+      "nome": "Bruna Alves",
       "aniversario": "17/11",
       "modalidades": [
         "Kids 2"
@@ -2770,7 +2944,7 @@
           "valor": 16.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 16.0
         },
         "junho": {
@@ -2783,7 +2957,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_49.jpg",
-      "mes_entrada": "Abril"
+      "mes_entrada": "Abril",
+      "pin": "1234",
+      "nome_completo": "Bruna Alves",
+      "idade": 10,
+      "data_nascimento": "17/11/2015",
+      "morada": "Rua do Arial - OLIVEIRA AZEMEIS"
     }
   ],
   "912111910": [
@@ -2841,7 +3020,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_50.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Carole Oliveira",
+      "idade": 11,
+      "data_nascimento": "11/09/2014",
+      "morada": "Rua Central Gandara - CESAR"
     }
   ],
   "919697115": [
@@ -2900,7 +3084,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_51.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Carolina Almeida Teixeira",
+      "idade": 11,
+      "data_nascimento": "03/11/2014",
+      "morada": "Rua dos Emigrantes - FAJOES"
     }
   ],
   "912289988": [
@@ -2945,7 +3134,7 @@
           "valor": 16.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 16.0
         },
         "junho": {
@@ -2958,7 +3147,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_52.jpg",
-      "mes_entrada": "Fevereiro"
+      "mes_entrada": "Fevereiro",
+      "pin": "1234",
+      "nome_completo": "Eduarda Ribeiro Barros",
+      "idade": 11,
+      "data_nascimento": "12/12/2014",
+      "morada": "NOGUEIRA DO CRAVO"
     }
   ],
   "965880436": [
@@ -3016,7 +3210,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_53.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Gabriela Aguiar Almeida",
+      "idade": 10,
+      "data_nascimento": "07/03/2016",
+      "morada": "Rua Sao Salvador - CARREGOSA"
     }
   ],
   "919322750": [
@@ -3074,7 +3273,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_54.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Gabriela Almeida Resende",
+      "idade": 11,
+      "data_nascimento": "11/09/2014",
+      "morada": "RUA CENTRAL - CESAR"
     }
   ],
   "937018128": [
@@ -3132,7 +3336,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_55.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Gabriela Correia Silva",
+      "idade": 12,
+      "data_nascimento": "08/02/2014",
+      "morada": "Rua D.Manuel II - PINDELO"
     }
   ],
   "912607205": [
@@ -3177,7 +3386,7 @@
           "valor": 27.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 27.0
         },
         "junho": {
@@ -3190,7 +3399,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_56.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Iara Santos Lima",
+      "idade": 10,
+      "data_nascimento": "18/04/2016",
+      "morada": "Rua da Paradela"
     }
   ],
   "914571666": [
@@ -3248,7 +3462,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_57.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Lara Cambra",
+      "idade": 11,
+      "data_nascimento": "06/03/2015",
+      "morada": "Tv Alfaiate - MILHEIROS POIARES"
     }
   ],
   "925655332": [
@@ -3307,7 +3526,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_58.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Leonor Bernardes",
+      "idade": 12,
+      "data_nascimento": "08/11/2013",
+      "morada": "Rua Manuel Paiva"
     }
   ],
   "916503989": [
@@ -3366,7 +3590,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_59.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Lorena Pinho",
+      "idade": 10,
+      "data_nascimento": "12/11/2015",
+      "morada": "Rua Vilarinho - CESAR"
     }
   ],
   "919757203": [
@@ -3424,7 +3653,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_60.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Maria Andrade",
+      "idade": 12,
+      "data_nascimento": "09/01/2014",
+      "morada": "Rua dos Vales - CESAR"
     }
   ],
   "916518128": [
@@ -3483,7 +3717,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_61.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Maria Margarida Lazar Oliveira",
+      "idade": 11,
+      "data_nascimento": "08/07/2014",
+      "morada": "R. Vila Pavao - ESCARIZ"
     }
   ],
   "960354918": [
@@ -3542,7 +3781,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_61.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Maria Margarida Lazar Oliveira",
+      "idade": 11,
+      "data_nascimento": "08/07/2014",
+      "morada": "R. Vila Pavao - ESCARIZ"
     }
   ],
   "962556835": [
@@ -3587,7 +3831,7 @@
           "valor": 27.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 27.0
         },
         "junho": {
@@ -3600,7 +3844,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_62.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Maria Miguel Pina Almeida",
+      "idade": 11,
+      "data_nascimento": "13/09/2014",
+      "morada": "Tv Cruz - FAJOES"
     }
   ],
   "916845387": [
@@ -3645,7 +3894,7 @@
           "valor": 27.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 27.0
         },
         "junho": {
@@ -3658,7 +3907,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_63.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Mariana Duarte Ferreira",
+      "idade": 10,
+      "data_nascimento": "12/07/2015",
+      "morada": "Tv 30 Agosto - FAJOES"
     }
   ],
   "914416024": [
@@ -3703,7 +3957,7 @@
           "valor": 27.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 27.0
         },
         "junho": {
@@ -3716,7 +3970,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_65.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Matilde Estrela",
+      "idade": 12,
+      "data_nascimento": "27/01/2014",
+      "morada": "Rua S.Salvador - CESAR"
     }
   ],
   "917485007": [
@@ -3762,7 +4021,7 @@
           "valor": 28.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 28.0
         },
         "junho": {
@@ -3775,7 +4034,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_66.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Matilde Martins Teixeira",
+      "idade": 11,
+      "data_nascimento": "11/07/2014",
+      "morada": "Rua Almeida Garrett - PINDELO"
     }
   ],
   "922010663": [
@@ -3835,7 +4099,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_67.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Serena Monteiro Martins",
+      "idade": 12,
+      "data_nascimento": "13/05/2014",
+      "morada": "Tv. Retorta - FAJOES"
     }
   ],
   "910547103": [
@@ -3895,7 +4164,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_67.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Serena Monteiro Martins",
+      "idade": 12,
+      "data_nascimento": "13/05/2014",
+      "morada": "Tv. Retorta - FAJOES"
     }
   ],
   "913223195": [
@@ -3953,7 +4227,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_68.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Teresa Paiva",
+      "idade": 11,
+      "data_nascimento": "09/09/2014",
+      "morada": "R. Souto Costa - FAJOES"
     }
   ],
   "914181099": [
@@ -3963,7 +4242,7 @@
       "aniversario": "23/08",
       "modalidades": [
         "Teens",
-        "Contemporâneo"
+        "Contemporâneo 2"
       ],
       "pagamentos": {
         "setembro": {
@@ -4012,7 +4291,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_69.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Gabriela Costa Duarte",
+      "idade": 14,
+      "data_nascimento": "23/08/2011",
+      "morada": "R. Aguas Ferreas - MACIEIRA SARNES"
     }
   ],
   "915437064": [
@@ -4070,7 +4354,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_70.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Ines Raphaela Oliveira Ferraz",
+      "idade": 13,
+      "data_nascimento": "01/08/2012",
+      "morada": "Rua Vista Alegre - MANSORES"
     }
   ],
   "923185337": [
@@ -4128,7 +4417,76 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_70.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Ines Raphaela Oliveira Ferraz",
+      "idade": 13,
+      "data_nascimento": "01/08/2012",
+      "morada": "Rua Vista Alegre - MANSORES"
+    }
+  ],
+  "962207278": [
+    {
+      "id": 71,
+      "nome": "Jessica Oliveira",
+      "aniversario": "27/02",
+      "modalidades": [
+        "Teens",
+        "Contemporâneo 2"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 37.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 37.0
+        },
+        "novembro": {
+          "pago": true,
+          "valor": 37.0
+        },
+        "dezembro": {
+          "pago": true,
+          "valor": 37.0
+        },
+        "janeiro": {
+          "pago": true,
+          "valor": 37.0
+        },
+        "fevereiro": {
+          "pago": true,
+          "valor": 37.0
+        },
+        "marco": {
+          "pago": true,
+          "valor": 37.0
+        },
+        "abril": {
+          "pago": true,
+          "valor": 37.0
+        },
+        "maio": {
+          "pago": true,
+          "valor": 37.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 37.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 37.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_71.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Jéssica Oliveira",
+      "idade": 16,
+      "data_nascimento": "27/02/2010",
+      "morada": "R. Interior Mato D'Arca"
     }
   ],
   "913509212": [
@@ -4173,7 +4531,7 @@
           "valor": 27.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 27.0
         },
         "junho": {
@@ -4186,7 +4544,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_73.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Madalena Baptista Gonçalves Nascimento",
+      "idade": 16,
+      "data_nascimento": "08/01/2010",
+      "morada": "Calvario - ESCARIZ"
     }
   ],
   "911155812": [
@@ -4244,13 +4607,207 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_74.jpg",
-      "mes_entrada": "Outubro"
+      "mes_entrada": "Outubro",
+      "pin": "1234",
+      "nome_completo": "Maria Campos Azevedo",
+      "idade": 14,
+      "data_nascimento": "24/01/2012",
+      "morada": "R. Pedra Ma - CESAR"
+    }
+  ],
+  "935846701": [
+    {
+      "id": 75,
+      "nome": "Leonor Varum",
+      "aniversario": "11/09",
+      "modalidades": [
+        "Teens"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "novembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "dezembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "janeiro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "fevereiro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "marco": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "abril": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "maio": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "junho": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 27.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_75.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Maria Leonor Varum",
+      "idade": 13,
+      "data_nascimento": "11/09/2012",
+      "morada": ""
+    }
+  ],
+  "926120481": [
+    {
+      "id": 75,
+      "nome": "Leonor Varum",
+      "aniversario": "11/09",
+      "modalidades": [
+        "Teens"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "novembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "dezembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "janeiro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "fevereiro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "marco": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "abril": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "maio": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "junho": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 27.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_75.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Maria Leonor Varum",
+      "idade": 13,
+      "data_nascimento": "11/09/2012",
+      "morada": ""
+    }
+  ],
+  "919707868": [
+    {
+      "id": 76,
+      "nome": "Matilde Ferreira",
+      "aniversario": "24/01",
+      "modalidades": [
+        "Teens"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "novembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "dezembro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "janeiro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "fevereiro": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "marco": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "abril": {
+          "pago": true,
+          "valor": 27.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 27.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 27.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 27.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_76.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Matilde Ferreira",
+      "idade": 14,
+      "data_nascimento": "24/01/2012",
+      "morada": "R. Carneiro Novo"
     }
   ],
   "915411701": [
     {
       "id": 77,
-      "nome": "Nuria",
+      "nome": "Nuria Teixeira",
       "aniversario": "28/05",
       "modalidades": [
         "Teens"
@@ -4302,13 +4859,18 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_77.jpg",
-      "mes_entrada": "Outubro"
+      "mes_entrada": "Outubro",
+      "pin": "1234",
+      "nome_completo": "Nuria Oliveira Teixeira",
+      "idade": 13,
+      "data_nascimento": "28/05/2012",
+      "morada": "Tv Moutas - FAJOES"
     }
   ],
   "917609885": [
     {
       "id": 77,
-      "nome": "Nuria",
+      "nome": "Nuria Teixeira",
       "aniversario": "28/05",
       "modalidades": [
         "Teens"
@@ -4360,7 +4922,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_77.jpg",
-      "mes_entrada": "Outubro"
+      "mes_entrada": "Outubro",
+      "pin": "1234",
+      "nome_completo": "Nuria Oliveira Teixeira",
+      "idade": 13,
+      "data_nascimento": "28/05/2012",
+      "morada": "Tv Moutas - FAJOES"
     }
   ],
   "913662954": [
@@ -4418,7 +4985,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_78.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Rihanna Maria Pinto Almeida",
+      "idade": 15,
+      "data_nascimento": "03/11/2010",
+      "morada": "R.Manuel Pinho Jr. - ESCARIZ"
     }
   ],
   "922282521": [
@@ -4476,7 +5048,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_78.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Rihanna Maria Pinto Almeida",
+      "idade": 15,
+      "data_nascimento": "03/11/2010",
+      "morada": "R.Manuel Pinho Jr. - ESCARIZ"
     }
   ],
   "913622154": [
@@ -4534,7 +5111,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_79.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Sofia Paiva Peixoto",
+      "idade": 14,
+      "data_nascimento": "23/08/2011",
+      "morada": "Rua Devessa - MACIEIRA SARNES"
     }
   ],
   "913622084": [
@@ -4592,7 +5174,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_79.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Sofia Paiva Peixoto",
+      "idade": 14,
+      "data_nascimento": "23/08/2011",
+      "morada": "Rua Devessa - MACIEIRA SARNES"
     }
   ],
   "968998485": [
@@ -4650,7 +5237,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_80.jpg",
-      "mes_entrada": "Outubro"
+      "mes_entrada": "Outubro",
+      "pin": "",
+      "nome_completo": "Ana Leal Ruella Azevedo Alves",
+      "idade": 16,
+      "data_nascimento": "06/11/2009",
+      "morada": "CESAR"
     }
   ],
   "924238553": [
@@ -4709,7 +5301,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_81.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Ana Clara Farias",
+      "idade": 18,
+      "data_nascimento": "26/04/2008",
+      "morada": "AZAGAES"
     }
   ],
   "912473467": [
@@ -4767,7 +5364,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_82.jpg",
-      "mes_entrada": "Outubro"
+      "mes_entrada": "Outubro",
+      "pin": "",
+      "nome_completo": "Ana Lara Teixeira Silva",
+      "idade": 16,
+      "data_nascimento": "26/02/2010",
+      "morada": "Rua Torre - FAJOES"
     }
   ],
   "969576836": [
@@ -4825,7 +5427,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_82.jpg",
-      "mes_entrada": "Outubro"
+      "mes_entrada": "Outubro",
+      "pin": "",
+      "nome_completo": "Ana Lara Teixeira Silva",
+      "idade": 16,
+      "data_nascimento": "26/02/2010",
+      "morada": "Rua Torre - FAJOES"
     }
   ],
   "900094904": [
@@ -4883,7 +5490,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_83.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Bianca Vicente",
+      "idade": 16,
+      "data_nascimento": "23/03/2010",
+      "morada": "Rua da Presa - CARREGOSA"
     }
   ],
   "916789564": [
@@ -4942,7 +5554,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_84.jpg",
-      "mes_entrada": "Março"
+      "mes_entrada": "Março",
+      "pin": "",
+      "nome_completo": "Catarina Assunçao Bernardes",
+      "idade": 16,
+      "data_nascimento": "05/02/2010",
+      "morada": "R.Herois Leoneses - CESAR"
     }
   ],
   "931127010": [
@@ -5001,7 +5618,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_85.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Diana Israel Resende Gomes",
+      "idade": 16,
+      "data_nascimento": "19/09/2009",
+      "morada": "Rua D.Manuel II - PINDELO"
     }
   ],
   "933059643": [
@@ -5060,7 +5682,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_86.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Diana Lopes",
+      "idade": 19,
+      "data_nascimento": "30/11/2006",
+      "morada": "Rua Monte - CESAR"
     }
   ],
   "918110436": [
@@ -5119,7 +5746,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_87.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Eduarda Pinto",
+      "idade": 16,
+      "data_nascimento": "11/08/2009",
+      "morada": "Av. Descobrimentos - NOG. CRAVO"
     }
   ],
   "938699796": [
@@ -5178,7 +5810,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_88.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Eva Almeida",
+      "idade": 18,
+      "data_nascimento": "14/04/2008",
+      "morada": "R. Souto Costa - FAJOES"
     }
   ],
   "914885246": [
@@ -5238,7 +5875,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_89.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "José Manuel Ferreira Chichavel",
+      "idade": 26,
+      "data_nascimento": "23/09/1999",
+      "morada": "Rua Torre - FAJOES"
     }
   ],
   "913386243": [
@@ -5297,7 +5939,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_90.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Lara Costa Portugal",
+      "idade": 18,
+      "data_nascimento": "05/11/2007",
+      "morada": "Rua Central Gandara - CESAR"
     }
   ],
   "915171153": [
@@ -5355,7 +6002,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_91.jpg",
-      "mes_entrada": "Março"
+      "mes_entrada": "Março",
+      "pin": "",
+      "nome_completo": "Lara dos Santos Paiva",
+      "idade": 18,
+      "data_nascimento": "20/09/2007",
+      "morada": "Av. 25 Abril - NOG CRAVO"
     }
   ],
   "928034063": [
@@ -5413,7 +6065,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_92.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Mafalda Barbosa Pinho",
+      "idade": 19,
+      "data_nascimento": "29/03/2007",
+      "morada": "FAJOES"
     }
   ],
   "912719290": [
@@ -5472,7 +6129,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_93.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Maria Mendes Neves de Oliveira",
+      "idade": 15,
+      "data_nascimento": "22/09/2010",
+      "morada": "Tv. 1 Maio - OLIVEIRA AZEMEIS"
     }
   ],
   "916497091": [
@@ -5530,7 +6192,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_94.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Mariana Henriques Gouveia",
+      "idade": 16,
+      "data_nascimento": "19/02/2010",
+      "morada": "R. Nossa Sra. Saude"
     }
   ],
   "914914693": [
@@ -5589,7 +6256,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_95.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Mariana Moreira",
+      "idade": 20,
+      "data_nascimento": "17/06/2005",
+      "morada": "R. Corregoncha - FAJOES"
     }
   ],
   "918425760": [
@@ -5647,7 +6319,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_96.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Alice Bastos de Oliveira",
+      "idade": 4,
+      "data_nascimento": "27/05/2021",
+      "morada": "R. Emigrantes - FAJOES"
     }
   ],
   "967366049": [
@@ -5705,7 +6382,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_97.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Clara Pinho Rodrigues",
+      "idade": 7,
+      "data_nascimento": "31/05/2018",
+      "morada": "ESPINHO"
     },
     {
       "id": 104,
@@ -5761,7 +6443,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_104.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Marta Pinho Rodrigues",
+      "idade": 5,
+      "data_nascimento": "09/09/2020",
+      "morada": "ESPINHO"
     }
   ],
   "918172980": [
@@ -5819,7 +6506,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_98.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Iris Dias Santos",
+      "idade": 6,
+      "data_nascimento": "10/02/2020",
+      "morada": "NOG CRAVO"
     }
   ],
   "910047172": [
@@ -5877,7 +6569,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_99.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Isabella Almeida Sousa",
+      "idade": 6,
+      "data_nascimento": "01/10/2019",
+      "morada": "R. Industria - NOG CRAVO"
     }
   ],
   "917256912": [
@@ -5935,7 +6632,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_99.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Isabella Almeida Sousa",
+      "idade": 6,
+      "data_nascimento": "01/10/2019",
+      "morada": "R. Industria - NOG CRAVO"
     }
   ],
   "919006336": [
@@ -5993,7 +6695,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_100.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Joana Tavares Moreira",
+      "idade": 6,
+      "data_nascimento": "17/04/2020",
+      "morada": "R. Fontao, Tropeço - AROUCA"
     }
   ],
   "911909884": [
@@ -6051,7 +6758,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_101.jpg",
-      "mes_entrada": "Outubro"
+      "mes_entrada": "Outubro",
+      "pin": "",
+      "nome_completo": "Lara Manuela Silva Nogueira",
+      "idade": 5,
+      "data_nascimento": "02/09/2020",
+      "morada": "R. Povoa - CESAR"
     }
   ],
   "914669555": [
@@ -6110,7 +6822,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_102.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Maria Joao Bastos",
+      "idade": 6,
+      "data_nascimento": "26/11/2019",
+      "morada": "Tv Alto Miroes - CESAR"
     }
   ],
   "918577056": [
@@ -6168,7 +6885,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_103.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Maria Joao Santos Pinho",
+      "idade": 5,
+      "data_nascimento": "14/01/2021",
+      "morada": "R. Conselheiro Dr Albino - FAJOES"
     }
   ],
   "917559341": [
@@ -6226,7 +6948,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_103.jpg",
-      "mes_entrada": "Setembro"
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Maria Joao Santos Pinho",
+      "idade": 5,
+      "data_nascimento": "14/01/2021",
+      "morada": "R. Conselheiro Dr Albino - FAJOES"
     }
   ],
   "916723165": [
@@ -6284,7 +7011,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_105.jpg",
-      "mes_entrada": "Março"
+      "mes_entrada": "Março",
+      "pin": "",
+      "nome_completo": "Camila Gonçalves da Silva",
+      "idade": 9,
+      "data_nascimento": "16/07/2016",
+      "morada": "R. Padre Jose M Ribeiro"
     }
   ],
   "915971934": [
@@ -6342,7 +7074,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_105.jpg",
-      "mes_entrada": "Março"
+      "mes_entrada": "Março",
+      "pin": "",
+      "nome_completo": "Camila Gonçalves da Silva",
+      "idade": 9,
+      "data_nascimento": "16/07/2016",
+      "morada": "R. Padre Jose M Ribeiro"
     }
   ],
   "910024908": [
@@ -6400,7 +7137,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_108.jpg",
-      "mes_entrada": "Março"
+      "mes_entrada": "Março",
+      "pin": "1234",
+      "nome_completo": "Andreia Carvalho",
+      "idade": 26,
+      "data_nascimento": "17/07/1999",
+      "morada": "R.Dr. Salvador Machado - OAZ"
     }
   ],
   "915422486": [
@@ -6437,15 +7179,15 @@
           "valor": 10.0
         },
         "marco": {
-          "pago": false,
+          "pago": true,
           "valor": 10.0
         },
         "abril": {
-          "pago": false,
+          "pago": true,
           "valor": 10.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 10.0
         },
         "junho": {
@@ -6458,7 +7200,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_109.jpg",
-      "mes_entrada": "Março"
+      "mes_entrada": "Março",
+      "pin": "1234",
+      "nome_completo": "Andreia Gomes Godinho",
+      "idade": 25,
+      "data_nascimento": "11/02/2001",
+      "morada": "Tv Travasso - CESAR"
     }
   ],
   "912331891": [
@@ -6499,7 +7246,7 @@
           "valor": 12.5
         },
         "abril": {
-          "pago": false,
+          "pago": true,
           "valor": 12.5
         },
         "maio": {
@@ -6516,7 +7263,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_111.jpg",
-      "mes_entrada": "Novembro"
+      "mes_entrada": "Novembro",
+      "pin": "1234",
+      "nome_completo": "Diana Filipa Almeida Oliveira",
+      "idade": 23,
+      "data_nascimento": "20/07/2002",
+      "morada": "R.Nova Vilarinho - CESAR"
     }
   ],
   "914590970": [
@@ -6574,7 +7326,76 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_113.jpg",
-      "mes_entrada": "Outubro"
+      "mes_entrada": "Outubro",
+      "pin": "1234",
+      "nome_completo": "Daniela Almeida",
+      "idade": 24,
+      "data_nascimento": "05/11/2001",
+      "morada": "FAJOES"
+    }
+  ],
+  "910866131": [
+    {
+      "id": 114,
+      "nome": "Patricia Rocha",
+      "aniversario": "25/12",
+      "modalidades": [
+        "Adultas",
+        "Pilates"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "novembro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "dezembro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "janeiro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "fevereiro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "marco": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "abril": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 20.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_114.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Patricia Silva Rocha",
+      "idade": 41,
+      "data_nascimento": "25/12/1984",
+      "morada": "CESAR"
     }
   ],
   "969642483": [
@@ -6632,7 +7453,12 @@
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_115.jpg",
-      "mes_entrada": "Maio"
+      "mes_entrada": "Maio",
+      "pin": "",
+      "nome_completo": "Ana Miguel Paiva Campos",
+      "idade": 5,
+      "data_nascimento": "04/06/2020",
+      "morada": "ESCARIZ"
     }
   ]
 }
