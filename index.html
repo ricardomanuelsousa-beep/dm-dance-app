@@ -63,10 +63,16 @@
 
         <div id="loginScreen" class="p-8 flex-1 flex flex-col justify-center">
             <div class="text-2xl font-bold text-dm-nome text-center mb-1">Área do Aluno</div>
-            <div class="text-sm text-gray-400 text-center mb-6">Faça login com o seu telefone</div>
+            <div class="text-sm text-gray-400 text-center mb-6">Faça login com o seu telefone e PIN</div>
             
             <input type="tel" id="telefone" placeholder="Digite o seu telefone" 
                    autocomplete="off" inputmode="numeric"
+                   class="w-full px-[18px] py-4 my-2.5 text-[17px] bg-[#fafafa] border-2 border-[#e0e0e0] rounded-[14px] 
+                          transition-all outline-none focus:border-dm-dourado focus:bg-white 
+                          focus:shadow-[0_0_0_4px_rgba(212,175,55,0.1)]">
+            
+            <input type="password" id="pin" placeholder="Digite o seu PIN (4 dígitos)" 
+                   autocomplete="off" inputmode="numeric" maxlength="4"
                    class="w-full px-[18px] py-4 my-2.5 text-[17px] bg-[#fafafa] border-2 border-[#e0e0e0] rounded-[14px] 
                           transition-all outline-none focus:border-dm-dourado focus:bg-white 
                           focus:shadow-[0_0_0_4px_rgba(212,175,55,0.1)]">
@@ -158,12 +164,14 @@
     </div>
 
     <script>
-        const APP_VERSAO = '4.0';
+        const APP_VERSAO = '4.1';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
         let comunicadosLista = [], eventosLista = [], galeriasLista = [], merchandisingLista = [];
         let tabAtual = 'alunos';
+        let tentativasPin = 0;
+        const MAX_TENTATIVAS = 3;
         
         const mesesNum = {"setembro":9,"outubro":10,"novembro":11,"dezembro":12,"janeiro":1,"fevereiro":2,"marco":3,"abril":4,"maio":5,"junho":6,"julho":7};
         const MESES_ORDEM = ["setembro","outubro","novembro","dezembro","janeiro","fevereiro","marco","abril","maio","junho","julho"];
@@ -313,15 +321,51 @@
             } catch(e) { merchandisingLista = []; }
         }
 
+        function verificarPin(alunos, pinDigitado) {
+            for (const aluno of alunos) {
+                const pinAluno = aluno.pin;
+                if (!pinAluno) return true;
+                if (pinAluno === pinDigitado) return true;
+            }
+            return false;
+        }
+
         async function login(){
-            const telefone=document.getElementById('telefone').value.trim(), msgDiv=document.getElementById('mensagem');
+            const telefone=document.getElementById('telefone').value.trim();
+            const pin=document.getElementById('pin').value.trim();
+            const msgDiv=document.getElementById('mensagem');
+            
             if(!telefone){msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">⚠️ Digite o telefone!</p>'; return;}
-            msgDiv.innerHTML='<div class="flex flex-col items-center justify-center my-8"><span class="pulse-logo text-[50px]">🩰</span><p class="text-gray-400 text-sm mt-3">A carregar...</p></div>';
+            if(!pin){msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">⚠️ Digite o PIN!</p>'; return;}
+            
+            msgDiv.innerHTML='<div class="flex flex-col items-center justify-center my-8"><span class="pulse-logo text-[50px]">🩰</span><p class="text-gray-400 text-sm mt-3">A verificar...</p></div>';
+            
             try{
                 const response=await fetch('dados_app.json');
                 dadosApp=await response.json();
                 if(dadosApp[telefone]){
                     const alunos=dadosApp[telefone];
+                    
+                    // Verificar PIN
+                    if (!verificarPin(alunos, pin)) {
+                        tentativasPin++;
+                        const restantes = MAX_TENTATIVAS - tentativasPin;
+                        if (restantes <= 0) {
+                            msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">🚫 Excedeu as tentativas. Contacte a escola.</p>';
+                            document.getElementById('pin').disabled = true;
+                            setTimeout(() => {
+                                document.getElementById('pin').disabled = false;
+                                tentativasPin = 0;
+                                msgDiv.innerHTML = '';
+                            }, 60000);
+                            return;
+                        }
+                        msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">❌ PIN incorreto! Tentativas restantes: ' + restantes + '</p>';
+                        return;
+                    }
+                    
+                    // PIN correto
+                    tentativasPin = 0;
                     mostrarBannerAviso(alunos);
                     await new Promise(r=>setTimeout(r,1500));
                     await carregarFraseDoDia();
@@ -348,6 +392,7 @@
 
         function logout(){
             document.getElementById('telefone').value='';
+            document.getElementById('pin').value='';
             document.getElementById('mensagem').innerHTML='';
             document.getElementById('bannerAviso').classList.add('hidden');
             document.getElementById('bannerAniversario').classList.add('hidden');
