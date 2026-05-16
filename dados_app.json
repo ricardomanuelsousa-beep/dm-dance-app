@@ -504,6 +504,67 @@
       "idade": 4,
       "data_nascimento": "11/09/2021",
       "morada": "Rua Banda Musical - FAJOES"
+    },
+    {
+      "id": 119,
+      "nome": "Claudia Patricia Almeida Silva",
+      "aniversario": null,
+      "modalidades": [
+        "Pilates"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 15.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 15.0
+        },
+        "novembro": {
+          "pago": true,
+          "valor": 15.0
+        },
+        "dezembro": {
+          "pago": true,
+          "valor": 15.0
+        },
+        "janeiro": {
+          "pago": true,
+          "valor": 15.0
+        },
+        "fevereiro": {
+          "pago": true,
+          "valor": 15.0
+        },
+        "marco": {
+          "pago": true,
+          "valor": 15.0
+        },
+        "abril": {
+          "pago": true,
+          "valor": 15.0
+        },
+        "maio": {
+          "pago": true,
+          "valor": 15.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 15.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_119.jpg",
+      "mes_entrada": "Maio",
+      "pin": "",
+      "nome_completo": "Claudia Patricia Almeida Silva",
+      "idade": null,
+      "data_nascimento": null,
+      "morada": ""
     }
   ],
   "910912949": [
@@ -561,7 +622,7 @@
           "valor": 34.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777919425/alunos/aluno_8.png",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_8.jpg",
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Iris Oliveira Santos",
@@ -940,7 +1001,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_40.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Mara Paiva",
       "idade": 10,
       "data_nascimento": "09/12/2015",
@@ -1824,7 +1885,7 @@
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Benedita Moreira",
-      "idade": 7,
+      "idade": 8,
       "data_nascimento": "16/05/2018",
       "morada": "Rua Souto Costa - FAJOES"
     }
@@ -1836,7 +1897,7 @@
       "aniversario": "23/12",
       "modalidades": [
         "Kids 1",
-        "Contemporâneo"
+        "Contemporâneo 1"
       ],
       "pagamentos": {
         "setembro": {
@@ -1872,7 +1933,7 @@
           "valor": 37.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 37.0
         },
         "junho": {
@@ -1886,7 +1947,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_27.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Clara Correia",
       "idade": 8,
       "data_nascimento": "23/12/2017",
@@ -2026,7 +2087,7 @@
       "aniversario": "14/08",
       "modalidades": [
         "Kids 1",
-        "Contemporâneo"
+        "Contemporâneo 1"
       ],
       "pagamentos": {
         "setembro": {
@@ -2062,7 +2123,7 @@
           "valor": 12.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 12.0
         },
         "junho": {
@@ -2076,7 +2137,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_30.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Irina Costa Ferreira",
       "idade": 7,
       "data_nascimento": "14/08/2018",
@@ -2403,8 +2464,8 @@
       "aniversario": "14/08",
       "modalidades": [
         "Kids 1",
-        "Ballet",
-        "Contemporâneo"
+        "Ballet Primary",
+        "Contemporâneo 1"
       ],
       "pagamentos": {
         "setembro": {
@@ -2440,7 +2501,7 @@
           "valor": 55.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 55.0
         },
         "junho": {
@@ -2454,7 +2515,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_35.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Leonor Silva Marques",
       "idade": 7,
       "data_nascimento": "14/08/2018",
@@ -2853,23 +2914,23 @@
       "pagamentos": {
         "setembro": {
           "pago": true,
-          "valor": 16.0
+          "valor": 24.5
         },
         "outubro": {
           "pago": true,
-          "valor": 16.0
+          "valor": 24.5
         },
         "novembro": {
           "pago": true,
-          "valor": 16.0
+          "valor": 24.5
         },
         "dezembro": {
           "pago": true,
-          "valor": 16.0
+          "valor": 24.5
         },
         "janeiro": {
           "pago": true,
-          "valor": 16.0
+          "valor": 24.5
         },
         "fevereiro": {
           "pago": true,
@@ -2881,24 +2942,24 @@
         },
         "abril": {
           "pago": true,
-          "valor": 8.0
+          "valor": 16.0
         },
         "maio": {
-          "pago": false,
-          "valor": 16.0
+          "pago": true,
+          "valor": 24.5
         },
         "junho": {
           "pago": false,
-          "valor": 16.0
+          "valor": 24.5
         },
         "julho": {
           "pago": false,
-          "valor": 16.0
+          "valor": 24.5
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_42.jpg",
       "mes_entrada": "Fevereiro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Maria Clara Dias Silva",
       "idade": 8,
       "data_nascimento": "16/06/2017",
@@ -3093,11 +3154,11 @@
   "933254278": [
     {
       "id": 44,
-      "nome": "Mimi",
+      "nome": "Maria Miguel",
       "aniversario": "28/01",
       "modalidades": [
         "Kids 1",
-        "Contemporâneo"
+        "Contemporâneo 1"
       ],
       "pagamentos": {
         "setembro": {
@@ -3147,7 +3208,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_44.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Maria Miguel Pinho Sousa",
       "idade": 9,
       "data_nascimento": "28/01/2017",
@@ -3157,11 +3218,11 @@
   "933205425": [
     {
       "id": 44,
-      "nome": "Mimi",
+      "nome": "Maria Miguel",
       "aniversario": "28/01",
       "modalidades": [
         "Kids 1",
-        "Contemporâneo"
+        "Contemporâneo 1"
       ],
       "pagamentos": {
         "setembro": {
@@ -3211,7 +3272,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_44.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Maria Miguel Pinho Sousa",
       "idade": 9,
       "data_nascimento": "28/01/2017",
@@ -3225,8 +3286,8 @@
       "aniversario": "14/02",
       "modalidades": [
         "Kids 1",
-        "Ballet",
-        "Contemporâneo"
+        "Contemporâneo 1",
+        "Ballet Primary"
       ],
       "pagamentos": {
         "setembro": {
@@ -3262,7 +3323,7 @@
           "valor": 55.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 55.0
         },
         "junho": {
@@ -3276,7 +3337,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_45.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Mariana Pereira Dias",
       "idade": 10,
       "data_nascimento": "14/02/2016",
@@ -4731,7 +4792,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_67.jpg",
       "mes_entrada": "Setembro",
-      "pin": "1234",
+      "pin": "1305",
       "nome_completo": "Serena Monteiro Martins",
       "idade": 12,
       "data_nascimento": "13/05/2014",
@@ -4796,7 +4857,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_67.jpg",
       "mes_entrada": "Setembro",
-      "pin": "1234",
+      "pin": "1305",
       "nome_completo": "Serena Monteiro Martins",
       "idade": 12,
       "data_nascimento": "13/05/2014",
@@ -6456,8 +6517,8 @@
       "aniversario": "23/09",
       "modalidades": [
         "Major",
-        "Contemporâneo",
-        "Competição"
+        "Competição",
+        "Contemporâneo 2"
       ],
       "pagamentos": {
         "setembro": {
@@ -6489,7 +6550,7 @@
           "valor": 50.0
         },
         "abril": {
-          "pago": false,
+          "pago": true,
           "valor": 50.0
         },
         "maio": {
@@ -6507,7 +6568,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_89.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "2721",
       "nome_completo": "José Manuel Ferreira Chichavel",
       "idade": 26,
       "data_nascimento": "23/09/1999",
@@ -7782,56 +7843,57 @@
       "nome": "Andreia Gomes",
       "aniversario": "11/02",
       "modalidades": [
-        "Adultas"
+        "Adultas",
+        "Pilates"
       ],
       "pagamentos": {
         "setembro": {
           "pago": true,
-          "valor": 10.0
+          "valor": 20.0
         },
         "outubro": {
           "pago": true,
-          "valor": 10.0
+          "valor": 20.0
         },
         "novembro": {
           "pago": true,
-          "valor": 10.0
+          "valor": 20.0
         },
         "dezembro": {
           "pago": true,
-          "valor": 10.0
+          "valor": 20.0
         },
         "janeiro": {
           "pago": true,
-          "valor": 10.0
+          "valor": 20.0
         },
         "fevereiro": {
           "pago": true,
-          "valor": 10.0
+          "valor": 20.0
         },
         "marco": {
           "pago": true,
-          "valor": 10.0
+          "valor": 20.0
         },
         "abril": {
           "pago": true,
-          "valor": 10.0
+          "valor": 20.0
         },
         "maio": {
           "pago": true,
-          "valor": 10.0
+          "valor": 20.0
         },
         "junho": {
           "pago": false,
-          "valor": 10.0
+          "valor": 20.0
         },
         "julho": {
           "pago": false,
-          "valor": 10.0
+          "valor": 20.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_109.jpg",
-      "mes_entrada": "Março",
+      "mes_entrada": "Maio",
       "pin": "1234",
       "nome_completo": "Andreia Gomes Godinho",
       "idade": 25,
@@ -8152,6 +8214,69 @@
       "idade": 40,
       "data_nascimento": "14/10/1985",
       "morada": "CESAR"
+    }
+  ],
+  "910583712": [
+    {
+      "id": 120,
+      "nome": "Maria da Graça Jesus Almeida",
+      "aniversario": null,
+      "modalidades": [
+        "Pilates"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "novembro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "dezembro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "janeiro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "fevereiro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "marco": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "abril": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "maio": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 20.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_120.jpg",
+      "mes_entrada": "Maio",
+      "pin": "",
+      "nome_completo": "Maria da Graça Jesus Almeida",
+      "idade": null,
+      "data_nascimento": null,
+      "morada": ""
     }
   ]
 }
