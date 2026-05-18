@@ -130,11 +130,11 @@
                 <div class="inline-block animate-ticker font-bold text-sm" id="newsTickerContent"></div>
             </div>
             
-            <div id="tabAlunos" class="tab-content active p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
-            <div id="tabHorarios" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
-            <div id="tabEventos" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
-            <div id="tabGaleria" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
-            <div id="tabLoja" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
+            <div id="tabAlunos" class="tab-content active p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar" style="background-color:#fff9e6;"></div>
+            <div id="tabHorarios" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar" style="background-color:#fff9e6;"></div>
+            <div id="tabEventos" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar" style="background-color:#fff9e6;"></div>
+            <div id="tabGaleria" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar" style="background-color:#fff9e6;"></div>
+            <div id="tabLoja" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar" style="background-color:#fff9e6;"></div>
             
             <div class="flex justify-around bg-dm-rosa px-2 py-2 border-t border-red-200 mt-auto" style="padding-bottom: calc(12px + env(safe-area-inset-bottom));">
                 <div class="nav-item active text-center cursor-pointer px-1.5 py-2 text-[10px] text-dm-dourado font-bold bg-dm-dourado-claro transition-all rounded-xl min-w-[50px]" onclick="mostrarTab('alunos', this)">
@@ -164,7 +164,7 @@
     </div>
 
     <script>
-        const APP_VERSAO = '5.5';
+        const APP_VERSAO = '4.4';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
@@ -330,98 +330,95 @@
             return false;
         }
 
-        async function login(){
-    		const telefone=document.getElementById('telefone').value.trim();
-    		const pin=document.getElementById('pin').value.trim();
-    		const msgDiv=document.getElementById('mensagem');
-    
-    		if(!telefone){msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">⚠️ Digite o telefone!</p>'; return;}
-    		if(!pin){msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">⚠️ Digite o PIN!</p>'; return;}
-    
-    	msgDiv.innerHTML='<div class="flex flex-col items-center justify-center my-8"><span class="pulse-logo text-[50px]">🩰</span><p class="text-gray-400 text-sm mt-3">A verificar...</p></div>';
-    
-    try{
-        // +++ ALTERAÇÃO CRÍTICA: Adiciona um parâmetro único para forçar o browser a ignorar a cache +++
-        const response=await fetch('dados_app.json?v=' + Date.now());
-        dadosApp=await response.json();
-        if(dadosApp[telefone]){
-            const alunos=dadosApp[telefone];
+        async function login(isAutoLogin = false){
+            const telefone=document.getElementById('telefone').value.trim();
+            const pin=document.getElementById('pin').value.trim();
+            const msgDiv=document.getElementById('mensagem');
             
-            if (!verificarPin(alunos, pin)) {
-                tentativasPin++;
-                const restantes = MAX_TENTATIVAS - tentativasPin;
-                if (restantes <= 0) {
-                    msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">🚫 Excedeu as tentativas. Contacte a escola.</p>';
-                    document.getElementById('pin').disabled = true;
-                    setTimeout(() => {
-                        document.getElementById('pin').disabled = false;
-                        tentativasPin = 0;
-                        msgDiv.innerHTML = '';
-                    }, 60000);
-                    return;
-                }
-                msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">❌ PIN incorreto! Tentativas restantes: ' + restantes + '</p>';
-                return;
+            if(!isAutoLogin) {
+                if(!telefone){msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">⚠️ Digite o telefone!</p>'; return;}
+                if(!pin){msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">⚠️ Digite o PIN!</p>'; return;}
+                msgDiv.innerHTML='<div class="flex flex-col items-center justify-center my-8"><span class="pulse-logo text-[50px]">🩰</span><p class="text-gray-400 text-sm mt-3">A verificar...</p></div>';
             }
             
-            tentativasPin = 0;
-            mostrarBannerAviso(alunos);
-            await new Promise(r=>setTimeout(r,1500));
-            await carregarFraseDoDia();
-            await carregarComunicadoTXT();
-            await carregarEventos();
-            await carregarGaleriaTXT();
-            await carregarMerchandisingTXT();
-            verificarAniversario(alunos);
-            telefoneLogado=telefone; alunosDoResponsavel=alunos; alunoSelecionado=alunosDoResponsavel[0];
-            localStorage.setItem('dm_telefone', telefone);
-            localStorage.setItem('dm_logado', 'true');
-            document.getElementById('loginScreen').classList.add('hidden');
-            document.getElementById('dashboardScreen').classList.remove('hidden');
-            document.getElementById('dashboardScreen').classList.add('flex');
-            document.getElementById('btnLogout').classList.remove('hidden');
-            tabAtual='alunos';
-            carregarAlunos();
-            carregarHorarios();
-            updateNavActive();
-            setTimeout(() => lucide.createIcons(), 200);
+            try{
+                const response=await fetch('dados_app.json?v=' + Date.now());
+                dadosApp=await response.json();
+                if(dadosApp[telefone]){
+                    const alunos=dadosApp[telefone];
+                    
+                    if (!verificarPin(alunos, pin)) {
+                        tentativasPin++;
+                        const restantes = MAX_TENTATIVAS - tentativasPin;
+                        if (restantes <= 0) {
+                            msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">🚫 Excedeu as tentativas. Contacte a escola.</p>';
+                            document.getElementById('pin').disabled = true;
+                            setTimeout(() => {
+                                document.getElementById('pin').disabled = false;
+                                tentativasPin = 0;
+                                msgDiv.innerHTML = '';
+                            }, 60000);
+                            return;
+                        }
+                        msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">❌ PIN incorreto! Tentativas restantes: ' + restantes + '</p>';
+                        return;
+                    }
+                    
+                    tentativasPin = 0;
+                    mostrarBannerAviso(alunos);
+                    await new Promise(r=>setTimeout(r,1500));
+                    await carregarFraseDoDia();
+                    await carregarComunicadoTXT();
+                    await carregarEventos();
+                    await carregarGaleriaTXT();
+                    await carregarMerchandisingTXT();
+                    verificarAniversario(alunos);
+                    telefoneLogado=telefone; alunosDoResponsavel=alunos; alunoSelecionado=alunosDoResponsavel[0];
+                    localStorage.setItem('dm_telefone', telefone);
+                    localStorage.setItem('dm_logado', 'true');
+                    document.getElementById('loginScreen').classList.add('hidden');
+                    document.getElementById('dashboardScreen').classList.remove('hidden');
+                    document.getElementById('dashboardScreen').classList.add('flex');
+                    document.getElementById('btnLogout').classList.remove('hidden');
+                    tabAtual='alunos';
+                    carregarAlunos();
+                    carregarHorarios();
+                    updateNavActive();
+                    setTimeout(() => lucide.createIcons(), 200);
 
-            // +++ NOVA FUNCIONALIDADE: Atualização automática silenciosa a cada minuto +++
-            if (window.autoRefreshInterval) {
-                clearInterval(window.autoRefreshInterval);
-            }
-            window.autoRefreshInterval = setInterval(async () => {
-                try {
-                    const refreshResponse = await fetch('dados_app.json?v=' + Date.now());
-                    const refreshedData = await refreshResponse.json();
-                    if (refreshedData[telefoneLogado]) {
-                        const novosAlunos = refreshedData[telefoneLogado];
-                        if (JSON.stringify(novosAlunos) !== JSON.stringify(alunosDoResponsavel)) {
-                            alunosDoResponsavel = novosAlunos;
-                            if (alunoSelecionado) {
-                                const updatedAluno = alunosDoResponsavel.find(a => a.id === alunoSelecionado.id);
-                                if (updatedAluno) {
-                                    alunoSelecionado = updatedAluno;
+                    if (window.autoRefreshInterval) {
+                        clearInterval(window.autoRefreshInterval);
+                    }
+                    window.autoRefreshInterval = setInterval(async () => {
+                        try {
+                            const refreshResponse = await fetch('dados_app.json?v=' + Date.now());
+                            const refreshedData = await refreshResponse.json();
+                            if (refreshedData[telefoneLogado]) {
+                                const novosAlunos = refreshedData[telefoneLogado];
+                                if (JSON.stringify(novosAlunos) !== JSON.stringify(alunosDoResponsavel)) {
+                                    alunosDoResponsavel = novosAlunos;
+                                    if (alunoSelecionado) {
+                                        const updatedAluno = alunosDoResponsavel.find(a => a.id === alunoSelecionado.id);
+                                        if (updatedAluno) {
+                                            alunoSelecionado = updatedAluno;
+                                        }
+                                    }
+                                    if (tabAtual === 'alunos') {
+                                        carregarAlunos();
+                                    } else if (tabAtual === 'perfil' && alunoSelecionado) {
+                                        carregarPerfil();
+                                    } else if (tabAtual === 'extrato' && alunoSelecionado) {
+                                        carregarExtrato();
+                                    }
                                 }
                             }
-                            if (tabAtual === 'alunos') {
-                                carregarAlunos();
-                            } else if (tabAtual === 'perfil' && alunoSelecionado) {
-                                carregarPerfil();
-                            } else if (tabAtual === 'extrato' && alunoSelecionado) {
-                                carregarExtrato();
-                            }
-                            console.log('📡 Dados atualizados silenciosamente.');
-                        }
-                    }
-                } catch (e) {
-                    console.log('🔄 Tentativa de atualização silenciosa falhou.');
-                }
-            }, 60000);
+                        } catch (e) {}
+                    }, 60000);
 
-        } else { msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">❌ Telefone não encontrado!</p>'; }
-    } catch(error){ msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">❌ Erro ao carregar dados.</p>'; }
-}
+                } else { msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">❌ Telefone não encontrado!</p>'; }
+            } catch(error){ msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">❌ Erro ao carregar dados.</p>'; }
+        }
+
         function logout(){
             document.getElementById('telefone').value='';
             document.getElementById('pin').value='';
@@ -433,17 +430,24 @@
             document.getElementById('dashboardScreen').classList.add('hidden');
             document.getElementById('dashboardScreen').classList.remove('flex');
             localStorage.removeItem('dm_logado');
+            if (window.autoRefreshInterval) {
+                clearInterval(window.autoRefreshInterval);
+            }
             telefoneLogado=''; alunosDoResponsavel=[]; alunoSelecionado=null;
         }
 
         function restaurarSessao(){
             const logado = localStorage.getItem('dm_logado');
             const telefone = localStorage.getItem('dm_telefone');
-            if(telefone){
+            
+            if (telefone) {
                 document.getElementById('telefone').value = telefone;
-            }
-            if(logado === 'true' && telefone){
-                login();
+                
+                if (logado === 'true') {
+                    setTimeout(() => {
+                        login(true);
+                    }, 500);
+                }
             }
         }
 
@@ -810,7 +814,7 @@
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').classList.remove('hidden');}});
         
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js?v=13')
+            navigator.serviceWorker.register('service-worker.js?v=14')
                 .then(reg => reg.update())
                 .catch(err => console.log('SW:', err));
         }
