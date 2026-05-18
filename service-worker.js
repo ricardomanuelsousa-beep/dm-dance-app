@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dm-dance-v13';
+const CACHE_NAME = 'dm-dance-v14';
 const urlsToCache = [
   '/dm-dance-app/',
   '/dm-dance-app/manifest.json',
@@ -19,36 +19,41 @@ self.addEventListener('install', event => {
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
   
-  // NÃO interferir com Cloudinary (fotos dos alunos)
-  if (url.hostname.includes('cloudinary.com')) {
-    return; // deixa o browser tratar
-  }
+  // NÃO interferir com Cloudinary
+  if (url.hostname.includes('cloudinary.com')) return;
   
-  // NÃO interferir com analytics / tracking
-  if (url.hostname.includes('google-analytics.com') || url.hostname.includes('googletagmanager.com')) {
-    return;
-  }
-  
-  // ===== ESTRATÉGIA: HTML e JSON = Network First =====
-  if (event.request.destination === 'document' || url.pathname.endsWith('.json') || url.pathname.endsWith('.txt')) {
+  // ===== ESTRATÉGIA PARA HTML: Network First com update automático =====
+  if (event.request.destination === 'document') {
     event.respondWith(
-      fetch(event.request)
-        .then(response => {
-          // Guarda no cache para offline
-          const responseClone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(event.request, responseClone));
-          return response;
-        })
-        .catch(() => {
-          // Se falhar (offline), serve do cache
-          return caches.match(event.request)
-            .then(cached => cached || caches.match('/dm-dance-app/index.html'));
-        })
+      caches.open(CACHE_NAME).then(cache => {
+        return fetch(event.request).then(networkResponse => {
+          // Atualiza a cache com a nova versão
+          cache.put(event.request, networkResponse.clone());
+          return networkResponse;
+        }).catch(() => {
+          // Se falhar (offline), serve da cache
+          return caches.match(event.request);
+        });
+      })
     );
     return;
   }
   
-  // ===== ESTRATÉGIA: Imagens, CSS, JS, Fontes = Cache First =====
+  // ===== ESTRATÉGIA PARA DADOS (JSON/TXT): Network First =====
+  if (url.pathname.endsWith('.json') || url.pathname.endsWith('.txt')) {
+    event.respondWith(
+      fetch(event.request)
+        .then(response => {
+          const responseClone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(event.request, responseClone));
+          return response;
+        })
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
+  
+  // ===== ESTRATÉGIA PARA IMAGENS, CSS, JS: Cache First =====
   event.respondWith(
     caches.match(event.request)
       .then(cached => cached || fetch(event.request))
@@ -65,11 +70,4 @@ self.addEventListener('activate', event => {
       );
     }).then(() => self.clients.claim())
   );
-});
-
-// ========== Mensagem para atualização ==========
-self.addEventListener('message', event => {
-  if (event.data === 'SKIP_WAITING') {
-    self.skipWaiting();
-  }
 });
