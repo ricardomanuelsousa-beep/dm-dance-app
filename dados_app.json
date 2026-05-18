@@ -6554,7 +6554,7 @@
           "valor": 50.0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 50.0
         },
         "junho": {
@@ -6566,7 +6566,7 @@
           "valor": 50.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_89.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1779122835/alunos/aluno_89.png",
       "mes_entrada": "Setembro",
       "pin": "2721",
       "nome_completo": "José Manuel Ferreira Chichavel",
