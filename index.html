@@ -130,6 +130,11 @@
                 <div class="inline-block animate-ticker font-bold text-sm" id="newsTickerContent"></div>
             </div>
             
+            <!-- Aulas de Hoje -->
+            <div id="aulasHoje" class="hidden px-5 py-2.5 bg-[#fff9e6] border-b border-dm-dourado text-sm text-dm-castanho">
+                <span id="aulasHojeTexto"></span>
+            </div>
+            
             <div id="tabAlunos" class="tab-content active p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar" style="background-color:#fff9e6;"></div>
             <div id="tabHorarios" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar" style="background-color:#fff9e6;"></div>
             <div id="tabEventos" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar" style="background-color:#fff9e6;"></div>
@@ -164,7 +169,7 @@
     </div>
 
     <script>
-        const APP_VERSAO = '4.4';
+        const APP_VERSAO = '4.5';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
@@ -188,6 +193,9 @@
             'competicao': 'trophy',
             'pilates': 'heart-pulse'
         };
+
+        // Mapeamento de dias da semana
+        const DIAS_SEMANA = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
 
         function getIconeModalidade(nome) {
             const n = nome.toLowerCase();
@@ -330,6 +338,82 @@
             return false;
         }
 
+        // ========== AULAS DE HOJE ==========
+        function carregarAulasDeHoje() {
+            const hoje = new Date();
+            const diaSemana = DIAS_SEMANA[hoje.getDay()];
+            
+            // Horários (mesmo array do carregarHorarios)
+            const diasHorarios = [
+                {dia:"Segunda-Feira",aulas:[
+                    {hora:"18:00 - 19:00",nome:"Dance Fusion 1",turma:"Babies"},
+                    {hora:"19:00 - 20:00",nome:"Dance Fusion 2",turma:"Kids 1"},
+                    {hora:"20:00 - 21:00",nome:"Dance Fusion 6",turma:"Adultos"}
+                ]},
+                {dia:"Terça-Feira",aulas:[
+                    {hora:"17:00 - 18:00",nome:"Competição Solos",turma:"Competição"},
+                    {hora:"18:00 - 19:00",nome:"Contemporâneo 1",turma:"Contemporâneo"},
+                    {hora:"19:00 - 20:00",nome:"Dance Fusion 5",turma:"Major"},
+                    {hora:"20:00 - 21:00",nome:"Competição Urbanas",turma:"Competição"}
+                ]},
+                {dia:"Quarta-Feira",aulas:[
+                    {hora:"18:00 - 19:00",nome:"Dance Fusion 3",turma:"Kids 2"},
+                    {hora:"19:00 - 20:00",nome:"Dance Fusion 4",turma:"Teens"}
+                ]},
+                {dia:"Quinta-Feira",aulas:[
+                    {hora:"18:00 - 19:00",nome:"Dance Fusion 1",turma:"Babies"},
+                    {hora:"19:00 - 20:00",nome:"Dance Fusion 2",turma:"Kids 1"},
+                    {hora:"20:00 - 21:00",nome:"Dance Fusion 6",turma:"Adultos"}
+                ]},
+                {dia:"Sexta-Feira",aulas:[
+                    {hora:"18:00 - 19:00",nome:"Dance Fusion 3",turma:"Kids 2"},
+                    {hora:"19:00 - 20:00",nome:"Dance Fusion 4",turma:"Teens"},
+                    {hora:"20:30 - 21:30",nome:"Pilates",turma:"Todos"}
+                ]},
+                {dia:"Sábado",aulas:[
+                    {hora:"10:30 - 12:00",nome:"Dance Fusion 5",turma:"Major"},
+                    {hora:"12:00 - 14:00",nome:"Competição Urbanas",turma:"Competição"},
+                    {hora:"14:00 - 15:30",nome:"Contemporâneo 2",turma:"Contemporâneo"},
+                    {hora:"15:30 - 16:15",nome:"Ballet Pré-Primary",turma:"Ballet"},
+                    {hora:"16:15 - 17:00",nome:"Ballet Primary",turma:"Ballet"},
+                    {hora:"17:00 - 18:00",nome:"Ensaios",turma:"Competição"}
+                ]}
+            ];
+            
+            const diaHoje = diasHorarios.find(d => d.dia === diaSemana);
+            const elAulasHoje = document.getElementById('aulasHoje');
+            const elTexto = document.getElementById('aulasHojeTexto');
+            
+            if (!diaHoje || diaHoje.aulas.length === 0) {
+                elAulasHoje.classList.add('hidden');
+                return;
+            }
+            
+            // Verificar quais aulas são do aluno selecionado
+            const modalidadesAluno = alunoSelecionado && alunoSelecionado.modalidades 
+                ? alunoSelecionado.modalidades.map(m => m.toLowerCase().trim()) 
+                : [];
+            
+            const aulasDoAluno = diaHoje.aulas.filter(a => {
+                const textoAula = (a.turma + ' ' + a.nome).toLowerCase();
+                return modalidadesAluno.some(mod => textoAula.includes(mod));
+            });
+            
+            if (aulasDoAluno.length === 0) {
+                elAulasHoje.classList.add('hidden');
+                return;
+            }
+            
+            // Mostrar as aulas do aluno
+            const nomeAluno = alunoSelecionado ? (alunoSelecionado.nome_completo || alunoSelecionado.nome) : '';
+            const aulasFormatadas = aulasDoAluno.map(a => 
+                '<span class="font-semibold">' + a.hora + '</span> ' + a.nome + ' (' + a.turma + ')'
+            ).join('  •  ');
+            
+            elTexto.innerHTML = '📅 ' + nomeAluno.split(' ')[0] + ' hoje: ' + aulasFormatadas;
+            elAulasHoje.classList.remove('hidden');
+        }
+
         async function login(isAutoLogin = false){
             const telefone=document.getElementById('telefone').value.trim();
             const pin=document.getElementById('pin').value.trim();
@@ -375,6 +459,7 @@
                     verificarAniversario(alunos);
                     telefoneLogado=telefone; alunosDoResponsavel=alunos; alunoSelecionado=alunosDoResponsavel[0];
                     localStorage.setItem('dm_telefone', telefone);
+                    localStorage.setItem('dm_pin', pin);
                     localStorage.setItem('dm_logado', 'true');
                     document.getElementById('loginScreen').classList.add('hidden');
                     document.getElementById('dashboardScreen').classList.remove('hidden');
@@ -383,6 +468,7 @@
                     tabAtual='alunos';
                     carregarAlunos();
                     carregarHorarios();
+                    carregarAulasDeHoje();
                     updateNavActive();
                     setTimeout(() => lucide.createIcons(), 200);
 
@@ -405,6 +491,7 @@
                                     }
                                     if (tabAtual === 'alunos') {
                                         carregarAlunos();
+                                        carregarAulasDeHoje();
                                     } else if (tabAtual === 'perfil' && alunoSelecionado) {
                                         carregarPerfil();
                                     } else if (tabAtual === 'extrato' && alunoSelecionado) {
@@ -425,11 +512,13 @@
             document.getElementById('mensagem').innerHTML='';
             document.getElementById('bannerAviso').classList.add('hidden');
             document.getElementById('bannerAniversario').classList.add('hidden');
+            document.getElementById('aulasHoje').classList.add('hidden');
             document.getElementById('btnLogout').classList.add('hidden');
             document.getElementById('loginScreen').classList.remove('hidden');
             document.getElementById('dashboardScreen').classList.add('hidden');
             document.getElementById('dashboardScreen').classList.remove('flex');
             localStorage.removeItem('dm_logado');
+            localStorage.removeItem('dm_pin');
             if (window.autoRefreshInterval) {
                 clearInterval(window.autoRefreshInterval);
             }
@@ -439,9 +528,13 @@
         function restaurarSessao(){
             const logado = localStorage.getItem('dm_logado');
             const telefone = localStorage.getItem('dm_telefone');
+            const pinGuardado = localStorage.getItem('dm_pin');
             
             if (telefone) {
                 document.getElementById('telefone').value = telefone;
+                if (pinGuardado) {
+                    document.getElementById('pin').value = pinGuardado;
+                }
                 
                 if (logado === 'true') {
                     setTimeout(() => {
@@ -515,6 +608,7 @@
             alunoSelecionado=alunosDoResponsavel.find(a=>a.id===id);
             if(alunoSelecionado) {
                 carregarPerfil();
+                carregarAulasDeHoje();
                 tabAtual='perfil';
                 updateNavActive();
                 history.pushState({tab:'perfil'}, '', '#perfil');
@@ -793,6 +887,7 @@
             if(tab==='loja') carregarLoja();
             if(tab==='alunos' && alunoSelecionado) {
                 carregarAlunos();
+                carregarAulasDeHoje();
             }
             history.pushState({tab:tab}, '', '#'+tab);
             setTimeout(() => lucide.createIcons(), 200);
