@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dm-dance-v14';
+const CACHE_NAME = 'dm-dance-v15';
 const urlsToCache = [
   '/dm-dance-app/',
   '/dm-dance-app/manifest.json',
