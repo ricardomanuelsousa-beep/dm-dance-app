@@ -116,7 +116,7 @@
           "valor": 27.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_2.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1779128553/alunos/aluno_2.png",
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Beatriz Tavares Santos",
@@ -378,6 +378,67 @@
       "idade": 5,
       "data_nascimento": "18/08/2020",
       "morada": "Rua Padre Baltasar - FAJOES"
+    },
+    {
+      "id": 121,
+      "nome": "Cristiana Paiva de Sà Amorim",
+      "aniversario": null,
+      "modalidades": [
+        "Pilates"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "maio": {
+          "pago": true,
+          "valor": 15.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 15.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1777729327/alunos/aluno_121.jpg",
+      "mes_entrada": "Maio",
+      "pin": "",
+      "nome_completo": "Cristiana Paiva de Sà Amorim",
+      "idade": null,
+      "data_nascimento": null,
+      "morada": "FAJOES"
     }
   ],
   "916417820": [
