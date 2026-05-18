@@ -161,16 +161,17 @@
         </div>
         
         <div class="text-center py-4 text-gray-300 text-[11px] flex items-center justify-between px-5">
-    <span>DM Dance School © 2025</span>
-    <span class="flex gap-3">
-        <a href="https://www.facebook.com/share/18jbDqhgBo/" target="_blank" class="text-gray-400 hover:text-blue-600 transition-colors">
-            <i data-lucide="facebook" class="w-4 h-4"></i>
-        </a>
-        <a href="https://www.instagram.com/dmd_academia?igsh=dmIyZHp4Njlvdmtp" target="_blank" class="text-gray-400 hover:text-pink-500 transition-colors">
-            <i data-lucide="instagram" class="w-4 h-4"></i>
-        </a>
-    </span>
-</div>
+            <span>DM Dance School © 2025</span>
+            <span class="flex gap-3">
+                <a href="https://www.facebook.com/share/18jbDqhgBo/" target="_blank" class="text-gray-400 hover:text-blue-600 transition-colors">
+                    <i data-lucide="facebook" class="w-4 h-4"></i>
+                </a>
+                <a href="https://www.instagram.com/dmd_academia?igsh=dmIyZHp4Njlvdmtp" target="_blank" class="text-gray-400 hover:text-pink-500 transition-colors">
+                    <i data-lucide="instagram" class="w-4 h-4"></i>
+                </a>
+            </span>
+        </div>
+    </div>
 
     <div class="lightbox hidden fixed inset-0 bg-black/90 z-[1000] justify-center items-center" id="lightbox" onclick="fecharLightbox(event)">
         <span class="absolute top-4 right-5 text-white text-[35px] cursor-pointer z-[1001] font-bold" onclick="document.getElementById('lightbox').classList.remove('active'); document.getElementById('lightbox').style.display='none';">&times;</span>
@@ -178,7 +179,7 @@
     </div>
 
     <script>
-        const APP_VERSAO = '4.5';
+        const APP_VERSAO = '4.6';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
@@ -203,7 +204,6 @@
             'pilates': 'heart-pulse'
         };
 
-        // Mapeamento de dias da semana
         const DIAS_SEMANA = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
 
         function getIconeModalidade(nome) {
@@ -352,7 +352,6 @@
             const hoje = new Date();
             const diaSemana = DIAS_SEMANA[hoje.getDay()];
             
-            // Horários (mesmo array do carregarHorarios)
             const diasHorarios = [
                 {dia:"Segunda-Feira",aulas:[
                     {hora:"18:00 - 19:00",nome:"Dance Fusion 1",turma:"Babies"},
@@ -385,7 +384,7 @@
                     {hora:"14:00 - 15:30",nome:"Contemporâneo 2",turma:"Contemporâneo"},
                     {hora:"15:30 - 16:15",nome:"Ballet Pré-Primary",turma:"Ballet"},
                     {hora:"16:15 - 17:00",nome:"Ballet Primary",turma:"Ballet"},
-                    {hora:"17:00 - 18:00",nome:"Ensaios",turma:"Competição"}
+                    {hora:"17:00 - 18:00",nome:"Ensaios",turma:"Competição",esporadica:true}
                 ]}
             ];
             
@@ -398,12 +397,12 @@
                 return;
             }
             
-            // Verificar quais aulas são do aluno selecionado
             const modalidadesAluno = alunoSelecionado && alunoSelecionado.modalidades 
                 ? alunoSelecionado.modalidades.map(m => m.toLowerCase().trim()) 
                 : [];
             
             const aulasDoAluno = diaHoje.aulas.filter(a => {
+                if (a.esporadica) return false;
                 const textoAula = (a.turma + ' ' + a.nome).toLowerCase();
                 return modalidadesAluno.some(mod => textoAula.includes(mod));
             });
@@ -413,7 +412,6 @@
                 return;
             }
             
-            // Mostrar as aulas do aluno
             const nomeAluno = alunoSelecionado ? (alunoSelecionado.nome_completo || alunoSelecionado.nome) : '';
             const aulasFormatadas = aulasDoAluno.map(a => 
                 '<span class="font-semibold">' + a.hora + '</span> ' + a.nome + ' (' + a.turma + ')'
@@ -752,7 +750,7 @@
                     {hora:"14:00 - 15:30",nome:"Contemporâneo 2",turma:"Contemporâneo",cor:"#C9A96E"},
                     {hora:"15:30 - 16:15",nome:"Ballet Pré-Primary",turma:"Ballet",cor:"#F8C8DC"},
                     {hora:"16:15 - 17:00",nome:"Ballet Primary",turma:"Ballet",cor:"#F8C8DC"},
-                    {hora:"17:00 - 18:00",nome:"Ensaios",turma:"Competição",cor:"#9E9E9E"}
+                    {hora:"17:00 - 18:00",nome:"Ensaios",turma:"Competição",cor:"#9E9E9E",esporadica:true}
                 ]}
             ];
             let html='<div class="text-center mb-4"><h3 class="text-dm-nome text-lg mb-1">📅 Horários</h3><p class="text-dm-castanho text-base font-bold">Ano Letivo 2025/2026</p></div>';
@@ -760,7 +758,7 @@
             for(const d of dias){
                 html+='<div class="text-dm-castanho text-sm my-4 mx-0 py-2.5 px-3.5 bg-dm-dourado-claro rounded-[10px] font-semibold text-center">📅 '+d.dia+'</div>';
                 for(const a of d.aulas){
-                    const destaque=modalidadesAluno.length>0&&ehDoAluno(a.turma,a.nome);
+                    const destaque=modalidadesAluno.length>0&&ehDoAluno(a.turma,a.nome)&&!a.esporadica;
                     const bgColor = destaque ? '#D4AF37' : a.cor+'20';
                     const borderColor = destaque ? '#D4AF37' : a.cor;
                     html+='<div class="' + (destaque ? 'pulse-gold' : '') + '" style="border-radius:12px; margin:8px 0; overflow:hidden; transition:all 0.3s; border:2px solid '+borderColor+'; background:'+bgColor+'; ' + (destaque ? 'box-shadow:0 4px 20px rgba(212,175,55,0.5); transform:scale(1.03);' : '') + '">';
