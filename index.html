@@ -130,7 +130,6 @@
                 <div class="inline-block animate-ticker font-bold text-sm" id="newsTickerContent"></div>
             </div>
             
-            <!-- Aulas de Hoje -->
             <div id="aulasHoje" class="hidden px-5 py-2.5 bg-[#f5e6c8] border-b border-dm-dourado text-sm text-dm-castanho">
                 <span id="aulasHojeTexto"></span>
             </div>
@@ -160,7 +159,6 @@
             </div>
         </div>
         
-        <!-- Footer com ícones SVG inline (22px + padding) -->
         <div style="text-align:center; padding:16px 20px; color:#ccc; font-size:11px; display:flex; align-items:center; justify-content:space-between;">
             <span>DM Dance School © 2025</span>
             <span style="display:flex; gap:8px;">
@@ -265,11 +263,14 @@
             } else { banner.classList.add('hidden'); }
         }
 
-        function atualizarDataAtualizacao() {
-            const data = new Date();
-            const dataStr = ('0' + data.getDate()).slice(-2) + '/' + ('0' + (data.getMonth() + 1)).slice(-2) + '/' + data.getFullYear();
-            const horaStr = ('0' + data.getHours()).slice(-2) + ':' + ('0' + data.getMinutes()).slice(-2);
-            ultimaAtualizacao = dataStr + ' às ' + horaStr;
+        function extrairDataAtualizacao(jsonData) {
+            if (jsonData && jsonData.ultima_atualizacao) {
+                return jsonData.ultima_atualizacao;
+            }
+            const agora = new Date();
+            const dataStr = ('0' + agora.getDate()).slice(-2) + '/' + ('0' + (agora.getMonth() + 1)).slice(-2) + '/' + agora.getFullYear();
+            const horaStr = ('0' + agora.getHours()).slice(-2) + ':' + ('0' + agora.getMinutes()).slice(-2);
+            return dataStr + ' às ' + horaStr;
         }
 
         async function carregarFraseDoDia() {
@@ -392,7 +393,6 @@
             return false;
         }
 
-        // ========== AULAS DE HOJE ==========
         function carregarAulasDeHoje() {
             if (ehFeriadoHoje()) {
                 const elAulasHoje = document.getElementById('aulasHoje');
@@ -487,7 +487,11 @@
             
             try{
                 const response=await fetch('dados_app.json?v=' + Date.now());
-                dadosApp=await response.json();
+                const jsonData = await response.json();
+                dadosApp = jsonData;
+                // Extrair data de atualização do JSON
+                ultimaAtualizacao = extrairDataAtualizacao(jsonData);
+                
                 if(dadosApp[telefone]){
                     const alunos=dadosApp[telefone];
                     
@@ -509,7 +513,6 @@
                     }
                     
                     tentativasPin = 0;
-                    atualizarDataAtualizacao();
                     mostrarBannerAviso(alunos);
                     await new Promise(r=>setTimeout(r,1500));
                     await carregarFraseDoDia();
@@ -545,13 +548,14 @@
                                 const novosAlunos = refreshedData[telefoneLogado];
                                 if (JSON.stringify(novosAlunos) !== JSON.stringify(alunosDoResponsavel)) {
                                     alunosDoResponsavel = novosAlunos;
+                                    // Atualiza a data só quando há mudanças reais
+                                    ultimaAtualizacao = extrairDataAtualizacao(refreshedData);
                                     if (alunoSelecionado) {
                                         const updatedAluno = alunosDoResponsavel.find(a => a.id === alunoSelecionado.id);
                                         if (updatedAluno) {
                                             alunoSelecionado = updatedAluno;
                                         }
                                     }
-                                    atualizarDataAtualizacao();
                                     if (tabAtual === 'alunos') {
                                         carregarAlunos();
                                         carregarAulasDeHoje();
@@ -763,7 +767,7 @@
                 </tr>`;
             }
             html+='</table>';
-            // Data de atualização
+            // Data da última atualização real (do JSON)
             html += '<p class="text-center text-gray-400 text-[10px] mt-3">📅 Atualizado: ' + ultimaAtualizacao + '</p>';
             div.innerHTML=html;
             mostrarTabConteudo('alunos');
