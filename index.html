@@ -13,7 +13,7 @@
     <meta name="theme-color" content="#D4AF37">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     
-    <link rel="stylesheet" href="app-output.css?v=4.7">
+    <link rel="stylesheet" href="app-output.css?v=4.8">
     
     <script src="https://unpkg.com/lucide@latest"></script>
     
@@ -160,7 +160,7 @@
             </div>
         </div>
         
-        <!-- Footer com ícones SVG inline (maiores: 22px + padding) -->
+        <!-- Footer com ícones SVG inline (22px + padding) -->
         <div style="text-align:center; padding:16px 20px; color:#ccc; font-size:11px; display:flex; align-items:center; justify-content:space-between;">
             <span>DM Dance School © 2025</span>
             <span style="display:flex; gap:8px;">
@@ -180,7 +180,7 @@
     </div>
 
     <script>
-        const APP_VERSAO = '4.7';
+        const APP_VERSAO = '4.8';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
@@ -188,6 +188,7 @@
         let tabAtual = 'alunos';
         let tentativasPin = 0;
         const MAX_TENTATIVAS = 3;
+        let ultimaAtualizacao = '';
         
         const mesesNum = {"setembro":9,"outubro":10,"novembro":11,"dezembro":12,"janeiro":1,"fevereiro":2,"marco":3,"abril":4,"maio":5,"junho":6,"julho":7};
         const MESES_ORDEM = ["setembro","outubro","novembro","dezembro","janeiro","fevereiro","marco","abril","maio","junho","julho"];
@@ -262,6 +263,13 @@
                 banner.classList.remove('hidden');
                 texto.textContent = nomesAtraso.length === 1 ? nomesAtraso[0] + ' tem mensalidades por regularizar. Contacte a escola.' : nomesAtraso.join(', ') + ' têm mensalidades por regularizar. Contacte a escola.';
             } else { banner.classList.add('hidden'); }
+        }
+
+        function atualizarDataAtualizacao() {
+            const data = new Date();
+            const dataStr = ('0' + data.getDate()).slice(-2) + '/' + ('0' + (data.getMonth() + 1)).slice(-2) + '/' + data.getFullYear();
+            const horaStr = ('0' + data.getHours()).slice(-2) + ':' + ('0' + data.getMinutes()).slice(-2);
+            ultimaAtualizacao = dataStr + ' às ' + horaStr;
         }
 
         async function carregarFraseDoDia() {
@@ -386,7 +394,6 @@
 
         // ========== AULAS DE HOJE ==========
         function carregarAulasDeHoje() {
-            // Verificar se é feriado
             if (ehFeriadoHoje()) {
                 const elAulasHoje = document.getElementById('aulasHoje');
                 const elTexto = document.getElementById('aulasHojeTexto');
@@ -502,6 +509,7 @@
                     }
                     
                     tentativasPin = 0;
+                    atualizarDataAtualizacao();
                     mostrarBannerAviso(alunos);
                     await new Promise(r=>setTimeout(r,1500));
                     await carregarFraseDoDia();
@@ -543,6 +551,7 @@
                                             alunoSelecionado = updatedAluno;
                                         }
                                     }
+                                    atualizarDataAtualizacao();
                                     if (tabAtual === 'alunos') {
                                         carregarAlunos();
                                         carregarAulasDeHoje();
@@ -753,7 +762,10 @@
                     <td class="p-2.5 border-b border-gray-100 text-[13px] text-center ${pago?'text-dm-pago font-semibold':'text-dm-pendente font-semibold'}">${pago?'✅ Pago':'❌ Pendente'}</td>
                 </tr>`;
             }
-            html+='</table>'; div.innerHTML=html;
+            html+='</table>';
+            // Data de atualização
+            html += '<p class="text-center text-gray-400 text-[10px] mt-3">📅 Atualizado: ' + ultimaAtualizacao + '</p>';
+            div.innerHTML=html;
             mostrarTabConteudo('alunos');
             document.getElementById('totalPago').textContent=totalPago.toFixed(2)+' €';
             document.getElementById('totalPendente').textContent=totalPendente.toFixed(2)+' €';
