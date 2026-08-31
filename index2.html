@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="manifest.json?v=26">
+    <link rel="manifest" href="manifest.json?v=27">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="DM Dance">
     <link rel="apple-touch-icon" href="icon-192x192.png">
     <meta name="theme-color" content="#D4AF37">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     
     <link rel="stylesheet" href="app-output.css">
     
@@ -164,7 +166,7 @@
     </div>
 
     <script>
-        const APP_VERSAO = '6.4';
+        const APP_VERSAO = '6.5';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
@@ -188,6 +190,29 @@
             'competicao': 'trophy',
             'pilates': 'heart-pulse'
         };
+
+        // Função para processar URL da foto com cache busting
+        function processarFotoUrl(url) {
+            if (!url) return '';
+            
+            if (url.includes('cloudinary.com')) {
+                let urlBase = url.split('?')[0];
+                let urlOtimizada = urlBase + '?q=100&w=600&h=600&c=fill&g=face&f_auto&dpr=2.0';
+                
+                if (url.includes('/v') && url.match(/\/v\d+\//)) {
+                    return urlOtimizada;
+                } else {
+                    const timestamp = Date.now();
+                    return urlOtimizada + '&v=' + timestamp;
+                }
+            }
+            
+            if (url.includes('?')) {
+                return url + '&v=' + Date.now();
+            } else {
+                return url + '?v=' + Date.now();
+            }
+        }
 
         function getIconeModalidade(nome) {
             const n = nome.toLowerCase();
@@ -439,8 +464,7 @@
             const div=document.getElementById('tabAlunos'); div.innerHTML='';
             for(const f of alunosDoResponsavel){
                 const status=obterStatusPagamento(f.pagamentos||{});
-                let fotoUrl = f.foto || '';
-                if (fotoUrl && fotoUrl.includes('cloudinary.com')) fotoUrl = fotoUrl.split('?')[0] + '?q=100&w=600&h=600&c=fill&g=face&f_auto&dpr=2.0';
+                let fotoUrl = processarFotoUrl(f.foto);
                 const statusColor = status.classe === 'pago' ? 'text-dm-pago' : status.classe === 'pendente' ? 'text-dm-pendente' : 'text-dm-atraso';
                 const modalidades = f.modalidades || [];
                 const modIcons = modalidades.map(m => {
@@ -495,8 +519,7 @@
             const div = document.getElementById('tabAlunos');
             if(!alunoSelecionado) return;
             const a = alunoSelecionado;
-            let fotoUrl = a.foto || '';
-            if (fotoUrl && fotoUrl.includes('cloudinary.com')) fotoUrl = fotoUrl.split('?')[0] + '?q=100&w=600&h=600&c=fill&g=face&f_auto&dpr=2.0';
+            let fotoUrl = processarFotoUrl(a.foto);
             const status = obterStatusPagamento(a.pagamentos||{});
             const statusColor = status.classe === 'pago' ? 'text-dm-pago' : status.classe === 'pendente' ? 'text-dm-pendente' : 'text-dm-atraso';
             const modalidades = a.modalidades || [];
@@ -774,7 +797,7 @@
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').classList.remove('hidden');}});
         
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js?v=13')
+            navigator.serviceWorker.register('service-worker.js?v=14')
                 .then(reg => reg.update())
                 .catch(err => console.log('SW:', err));
         }
