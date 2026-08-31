@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="manifest.json?v=28">
+    <link rel="manifest" href="manifest.json?v=29">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="DM Dance">
@@ -166,7 +166,7 @@
     </div>
 
     <script>
-        const APP_VERSAO = '6.6';
+        const APP_VERSAO = '7.0';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
@@ -218,7 +218,16 @@
         // Função para carregar a data de atualização
         async function carregarDataAtualizacao() {
             try {
-                const response = await fetch('atualizacao.txt');
+                const timestamp = new Date().getTime();
+                const response = await fetch('atualizacao.txt?t=' + timestamp, {
+                    cache: 'no-store'
+                });
+                
+                if (!response.ok) {
+                    dataAtualizacaoPagamentos = '';
+                    return;
+                }
+                
                 const data = await response.text();
                 dataAtualizacaoPagamentos = data.trim();
             } catch(e) {
@@ -606,8 +615,8 @@
             }
             html+='</table>';
             
-            // Adicionar data de atualização
-            if(dataAtualizacaoPagamentos) {
+            // Mostrar data APENAS se veio do ficheiro
+            if(dataAtualizacaoPagamentos && dataAtualizacaoPagamentos !== '') {
                 html += '<p class="text-center text-xs text-gray-400 mt-4">Atualizado: ' + dataAtualizacaoPagamentos + '</p>';
             }
             
@@ -820,7 +829,7 @@
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').classList.remove('hidden');}});
         
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js?v=15')
+            navigator.serviceWorker.register('service-worker.js?v=16')
                 .then(reg => reg.update())
                 .catch(err => console.log('SW:', err));
         }
