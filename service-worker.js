@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dm-dance-v15';
+const CACHE_NAME = 'dm-dance-v16';
 const urlsToCache = [
   '/dm-dance-app/',
   '/dm-dance-app/manifest.json',
@@ -22,33 +22,23 @@ self.addEventListener('fetch', event => {
   // NÃO interferir com Cloudinary
   if (url.hostname.includes('cloudinary.com')) return;
   
+  // ===== NUNCA fazer cache de ficheiros .txt ou .json =====
+  if (url.pathname.endsWith('.txt') || url.pathname.endsWith('.json')) {
+    event.respondWith(fetch(event.request));
+    return;
+  }
+  
   // ===== ESTRATÉGIA PARA HTML: Network First com update automático =====
   if (event.request.destination === 'document') {
     event.respondWith(
       caches.open(CACHE_NAME).then(cache => {
         return fetch(event.request).then(networkResponse => {
-          // Atualiza a cache com a nova versão
           cache.put(event.request, networkResponse.clone());
           return networkResponse;
         }).catch(() => {
-          // Se falhar (offline), serve da cache
           return caches.match(event.request);
         });
       })
-    );
-    return;
-  }
-  
-  // ===== ESTRATÉGIA PARA DADOS (JSON/TXT): Network First =====
-  if (url.pathname.endsWith('.json') || url.pathname.endsWith('.txt')) {
-    event.respondWith(
-      fetch(event.request)
-        .then(response => {
-          const responseClone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(event.request, responseClone));
-          return response;
-        })
-        .catch(() => caches.match(event.request))
     );
     return;
   }
