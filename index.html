@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="manifest.json?v=33">
+    <link rel="manifest" href="manifest.json?v=34">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="DM Dance">
@@ -166,13 +166,14 @@
     </div>
 
     <script>
-        const APP_VERSAO = '8.0';
+        const APP_VERSAO = '8.1';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
         let comunicadosLista = [], eventosLista = [], galeriasLista = [], merchandisingLista = [];
         let tabAtual = 'alunos';
         let tentativasPin = 0;
+        let ultimaAtualizacao = '';
         const MAX_TENTATIVAS = 3;
         
         const mesesNum = {"setembro":9,"outubro":10,"novembro":11,"dezembro":12,"janeiro":1,"fevereiro":2,"marco":3,"abril":4,"maio":5,"junho":6,"julho":7};
@@ -191,6 +192,7 @@
             'pilates': 'heart-pulse'
         };
 
+        // Função para processar URL da foto com cache busting
         function processarFotoUrl(url) {
             if (!url) return '';
             if (url.includes('cloudinary.com')) {
@@ -202,6 +204,24 @@
             }
             if (url.includes('?')) return url + '&v=' + Date.now();
             return url + '?v=' + Date.now();
+        }
+
+        // Função para carregar a data de atualização do ficheiro
+        async function carregarDataAtualizacao() {
+            try {
+                const timestamp = new Date().getTime();
+                const response = await fetch('atualizacao.txt?t=' + timestamp, {
+                    cache: 'no-store'
+                });
+                if (!response.ok) {
+                    ultimaAtualizacao = '';
+                    return;
+                }
+                const data = await response.text();
+                ultimaAtualizacao = data.trim();
+            } catch(e) {
+                ultimaAtualizacao = '';
+            }
         }
 
         function getIconeModalidade(nome) {
@@ -358,6 +378,9 @@
             try{
                 const response=await fetch('dados_app.json');
                 dadosApp=await response.json();
+                
+                // Carregar data de atualização
+                await carregarDataAtualizacao();
                 
                 if(dadosApp[telefone]){
                     const alunos=dadosApp[telefone];
@@ -579,8 +602,10 @@
             }
             html+='</table>';
             
-            // DATA FIXA - MUDAR AQUI MANUALMENTE
-            html += '<p class="text-center text-xs text-gray-400 mt-4">Atualizado: 31/08/2026 às 15:15</p>';
+            // Mostrar data carregada do ficheiro
+            if(ultimaAtualizacao && ultimaAtualizacao !== '') {
+                html += '<p class="text-center text-gray-400 text-[10px] mt-3">📅 Atualizado: ' + ultimaAtualizacao + '</p>';
+            }
             
             div.innerHTML=html;
             mostrarTabConteudo('alunos');
@@ -790,7 +815,18 @@
         function instalarApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null;document.getElementById('btnInstalar').classList.add('hidden');}}
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').classList.remove('hidden');}});
         
+        // Registo do Service Worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js?v=18')
+                .then(reg => reg.update())
+                .catch(err => console.log('SW:', err));
+        }
+        
         window.addEventListener('load', () => {
+            const versaoAnterior = localStorage.getItem('dm_versao');
+            if (versaoAnterior && versaoAnterior !== APP_VERSAO) {
+                if ('caches' in window) caches.keys().then(names => names.forEach(name => caches.delete(name)));
+            }
             localStorage.setItem('dm_versao', APP_VERSAO);
             lucide.createIcons();
             restaurarSessao();
