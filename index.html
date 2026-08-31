@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt" class="">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="manifest.json?v=26">
+    <link rel="manifest" href="manifest.json?v=33">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="DM Dance">
     <link rel="apple-touch-icon" href="icon-192x192.png">
     <meta name="theme-color" content="#D4AF37">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     
-    <link rel="stylesheet" href="app-output.css?v=4.8">
+    <link rel="stylesheet" href="app-output.css">
     
     <script src="https://unpkg.com/lucide@latest"></script>
     
@@ -130,15 +132,11 @@
                 <div class="inline-block animate-ticker font-bold text-sm" id="newsTickerContent"></div>
             </div>
             
-            <div id="aulasHoje" class="hidden px-5 py-2.5 bg-[#f5e6c8] border-b border-dm-dourado text-sm text-dm-castanho">
-                <span id="aulasHojeTexto"></span>
-            </div>
-            
-            <div id="tabAlunos" class="tab-content active p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar" style="background-color:#fff9e6;"></div>
-            <div id="tabHorarios" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar" style="background-color:#fff9e6;"></div>
-            <div id="tabEventos" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar" style="background-color:#fff9e6;"></div>
-            <div id="tabGaleria" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar" style="background-color:#fff9e6;"></div>
-            <div id="tabLoja" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar" style="background-color:#fff9e6;"></div>
+            <div id="tabAlunos" class="tab-content active p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
+            <div id="tabHorarios" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
+            <div id="tabEventos" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
+            <div id="tabGaleria" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
+            <div id="tabLoja" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
             
             <div class="flex justify-around bg-dm-rosa px-2 py-2 border-t border-red-200 mt-auto" style="padding-bottom: calc(12px + env(safe-area-inset-bottom));">
                 <div class="nav-item active text-center cursor-pointer px-1.5 py-2 text-[10px] text-dm-dourado font-bold bg-dm-dourado-claro transition-all rounded-xl min-w-[50px]" onclick="mostrarTab('alunos', this)">
@@ -159,17 +157,7 @@
             </div>
         </div>
         
-        <div style="text-align:center; padding:16px 20px; color:#ccc; font-size:11px; display:flex; align-items:center; justify-content:space-between;">
-            <span>DM Dance School © 2025</span>
-            <span style="display:flex; gap:8px;">
-                <a href="https://www.facebook.com/share/18jbDqhgBo/" target="_blank" style="color:#aaa; text-decoration:none; padding:8px;">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                </a>
-                <a href="https://www.instagram.com/dmd_academia?igsh=dmIyZHp4Njlvdmtp" target="_blank" style="color:#aaa; text-decoration:none; padding:8px;">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                </a>
-            </span>
-        </div>
+        <div class="text-center py-4 text-gray-300 text-[11px]">DM Dance School © 2025</div>
     </div>
 
     <div class="lightbox hidden fixed inset-0 bg-black/90 z-[1000] justify-center items-center" id="lightbox" onclick="fecharLightbox(event)">
@@ -178,15 +166,14 @@
     </div>
 
     <script>
-        const APP_VERSAO = '5.2';
+        const APP_VERSAO = '8.0';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
-        let comunicadosLista = [], eventosLista = [], galeriasLista = [], merchandisingLista = [], feriadosLista = [];
+        let comunicadosLista = [], eventosLista = [], galeriasLista = [], merchandisingLista = [];
         let tabAtual = 'alunos';
         let tentativasPin = 0;
         const MAX_TENTATIVAS = 3;
-        let ultimaAtualizacao = '';
         
         const mesesNum = {"setembro":9,"outubro":10,"novembro":11,"dezembro":12,"janeiro":1,"fevereiro":2,"marco":3,"abril":4,"maio":5,"junho":6,"julho":7};
         const MESES_ORDEM = ["setembro","outubro","novembro","dezembro","janeiro","fevereiro","marco","abril","maio","junho","julho"];
@@ -204,7 +191,18 @@
             'pilates': 'heart-pulse'
         };
 
-        const DIAS_SEMANA = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
+        function processarFotoUrl(url) {
+            if (!url) return '';
+            if (url.includes('cloudinary.com')) {
+                let urlBase = url.split('?')[0];
+                let urlOtimizada = urlBase + '?q=100&w=600&h=600&c=fill&g=face&f_auto&dpr=2.0';
+                if (url.includes('/v') && url.match(/\/v\d+\//)) return urlOtimizada;
+                const timestamp = Date.now();
+                return urlOtimizada + '&v=' + timestamp;
+            }
+            if (url.includes('?')) return url + '&v=' + Date.now();
+            return url + '?v=' + Date.now();
+        }
 
         function getIconeModalidade(nome) {
             const n = nome.toLowerCase();
@@ -261,16 +259,6 @@
                 banner.classList.remove('hidden');
                 texto.textContent = nomesAtraso.length === 1 ? nomesAtraso[0] + ' tem mensalidades por regularizar. Contacte a escola.' : nomesAtraso.join(', ') + ' têm mensalidades por regularizar. Contacte a escola.';
             } else { banner.classList.add('hidden'); }
-        }
-
-        function extrairDataAtualizacao(jsonData) {
-            if (jsonData && jsonData.ultima_atualizacao) {
-                return jsonData.ultima_atualizacao;
-            }
-            const agora = new Date();
-            const dataStr = ('0' + agora.getDate()).slice(-2) + '/' + ('0' + (agora.getMonth() + 1)).slice(-2) + '/' + agora.getFullYear();
-            const horaStr = ('0' + agora.getHours()).slice(-2) + ':' + ('0' + agora.getMinutes()).slice(-2);
-            return dataStr + ' às ' + horaStr;
         }
 
         async function carregarFraseDoDia() {
@@ -348,42 +336,6 @@
             } catch(e) { merchandisingLista = []; }
         }
 
-        async function carregarFeriadosTXT() {
-            try {
-                const response = await fetch('feriados.txt');
-                const texto = await response.text();
-                feriadosLista = texto.split('\n').map(l => l.trim()).filter(l => l).map(l => {
-                    l = l.trim();
-                    if (l.includes(' a ')) {
-                        const partes = l.split(' a ');
-                        return { inicio: partes[0].trim(), fim: partes[1].trim() };
-                    }
-                    return { data: l };
-                });
-            } catch(e) { feriadosLista = []; }
-        }
-
-        function ehFeriadoHoje() {
-            const hoje = new Date();
-            const hojeStr = ('0' + hoje.getDate()).slice(-2) + '/' + ('0' + (hoje.getMonth() + 1)).slice(-2) + '/' + hoje.getFullYear();
-            
-            for (const f of feriadosLista) {
-                if (f.data && f.data === hojeStr) return true;
-                if (f.inicio && f.fim) {
-                    const inicio = parseData(f.inicio);
-                    const fim = parseData(f.fim);
-                    if (inicio && fim && hoje >= inicio && hoje <= fim) return true;
-                }
-            }
-            return false;
-        }
-
-        function parseData(str) {
-            const partes = str.split('/');
-            if (partes.length !== 3) return null;
-            return new Date(parseInt(partes[2]), parseInt(partes[1]) - 1, parseInt(partes[0]));
-        }
-
         function verificarPin(alunos, pinDigitado) {
             for (const aluno of alunos) {
                 const pinAluno = aluno.pin;
@@ -393,104 +345,19 @@
             return false;
         }
 
-        function carregarAulasDeHoje() {
-            if (ehFeriadoHoje()) {
-                const elAulasHoje = document.getElementById('aulasHoje');
-                const elTexto = document.getElementById('aulasHojeTexto');
-                elTexto.innerHTML = '🏖️ A escola está fechada hoje';
-                elAulasHoje.classList.remove('hidden');
-                return;
-            }
-            
-            const hoje = new Date();
-            const diaSemana = DIAS_SEMANA[hoje.getDay()];
-            
-            const diasHorarios = [
-                {dia:"Segunda-Feira",aulas:[
-                    {hora:"18:00 - 19:00",nome:"Dance Fusion 1",turma:"Babies"},
-                    {hora:"19:00 - 20:00",nome:"Dance Fusion 2",turma:"Kids 1"},
-                    {hora:"20:00 - 21:00",nome:"Dance Fusion 6",turma:"Adultos"}
-                ]},
-                {dia:"Terça-Feira",aulas:[
-                    {hora:"17:00 - 18:00",nome:"Competição Solos",turma:"Competição"},
-                    {hora:"18:00 - 19:00",nome:"Contemporâneo 1",turma:"Contemporâneo"},
-                    {hora:"19:00 - 20:00",nome:"Dance Fusion 5",turma:"Major"},
-                    {hora:"20:00 - 21:00",nome:"Competição Urbanas",turma:"Competição"}
-                ]},
-                {dia:"Quarta-Feira",aulas:[
-                    {hora:"18:00 - 19:00",nome:"Dance Fusion 3",turma:"Kids 2"},
-                    {hora:"19:00 - 20:00",nome:"Dance Fusion 4",turma:"Teens"}
-                ]},
-                {dia:"Quinta-Feira",aulas:[
-                    {hora:"18:00 - 19:00",nome:"Dance Fusion 1",turma:"Babies"},
-                    {hora:"19:00 - 20:00",nome:"Dance Fusion 2",turma:"Kids 1"},
-                    {hora:"20:00 - 21:00",nome:"Dance Fusion 6",turma:"Adultos"}
-                ]},
-                {dia:"Sexta-Feira",aulas:[
-                    {hora:"18:00 - 19:00",nome:"Dance Fusion 3",turma:"Kids 2"},
-                    {hora:"19:00 - 20:00",nome:"Dance Fusion 4",turma:"Teens"},
-                    {hora:"20:30 - 21:30",nome:"Pilates",turma:"Todos"}
-                ]},
-                {dia:"Sábado",aulas:[
-                    {hora:"10:30 - 12:00",nome:"Dance Fusion 5",turma:"Major"},
-                    {hora:"12:00 - 14:00",nome:"Competição Urbanas",turma:"Competição"},
-                    {hora:"14:00 - 15:30",nome:"Contemporâneo 2",turma:"Contemporâneo"},
-                    {hora:"15:30 - 16:15",nome:"Ballet Pré-Primary",turma:"Ballet"},
-                    {hora:"16:15 - 17:00",nome:"Ballet Primary",turma:"Ballet"},
-                    {hora:"17:00 - 18:00",nome:"Ensaios",turma:"Competição",esporadica:true}
-                ]}
-            ];
-            
-            const diaHoje = diasHorarios.find(d => d.dia === diaSemana);
-            const elAulasHoje = document.getElementById('aulasHoje');
-            const elTexto = document.getElementById('aulasHojeTexto');
-            
-            if (!diaHoje || diaHoje.aulas.length === 0) {
-                elAulasHoje.classList.add('hidden');
-                return;
-            }
-            
-            const modalidadesAluno = alunoSelecionado && alunoSelecionado.modalidades 
-                ? alunoSelecionado.modalidades.map(m => m.toLowerCase().trim()) 
-                : [];
-            
-            const aulasDoAluno = diaHoje.aulas.filter(a => {
-                if (a.esporadica) return false;
-                const textoAula = (a.turma + ' ' + a.nome).toLowerCase();
-                return modalidadesAluno.some(mod => textoAula.includes(mod));
-            });
-            
-            if (aulasDoAluno.length === 0) {
-                elAulasHoje.classList.add('hidden');
-                return;
-            }
-            
-            const nomeAluno = alunoSelecionado ? (alunoSelecionado.nome_completo || alunoSelecionado.nome) : '';
-            const aulasFormatadas = aulasDoAluno.map(a => 
-                '<span class="font-semibold">' + a.hora + '</span> ' + a.turma
-            ).join('  •  ');
-            
-            elTexto.innerHTML = '<strong>📅 Aula ' + nomeAluno.split(' ')[0] + ' hoje:</strong> ' + aulasFormatadas;
-            elAulasHoje.classList.remove('hidden');
-        }
-
-        async function login(isAutoLogin = false){
+        async function login(){
             const telefone=document.getElementById('telefone').value.trim();
             const pin=document.getElementById('pin').value.trim();
             const msgDiv=document.getElementById('mensagem');
             
-            if(!isAutoLogin) {
-                if(!telefone){msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">⚠️ Digite o telefone!</p>'; return;}
-                if(!pin){msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">⚠️ Digite o PIN!</p>'; return;}
-                msgDiv.innerHTML='<div class="flex flex-col items-center justify-center my-8"><span class="pulse-logo text-[50px]">🩰</span><p class="text-gray-400 text-sm mt-3">A verificar...</p></div>';
-            }
+            if(!telefone){msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">⚠️ Digite o telefone!</p>'; return;}
+            if(!pin){msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">⚠️ Digite o PIN!</p>'; return;}
+            
+            msgDiv.innerHTML='<div class="flex flex-col items-center justify-center my-8"><span class="pulse-logo text-[50px]">🩰</span><p class="text-gray-400 text-sm mt-3">A verificar...</p></div>';
             
             try{
-                const response=await fetch('dados_app.json?v=' + Date.now());
-                const jsonData = await response.json();
-                dadosApp = jsonData;
-                // Extrair data de atualização do JSON
-                ultimaAtualizacao = extrairDataAtualizacao(jsonData);
+                const response=await fetch('dados_app.json');
+                dadosApp=await response.json();
                 
                 if(dadosApp[telefone]){
                     const alunos=dadosApp[telefone];
@@ -520,11 +387,9 @@
                     await carregarEventos();
                     await carregarGaleriaTXT();
                     await carregarMerchandisingTXT();
-                    await carregarFeriadosTXT();
                     verificarAniversario(alunos);
                     telefoneLogado=telefone; alunosDoResponsavel=alunos; alunoSelecionado=alunosDoResponsavel[0];
                     localStorage.setItem('dm_telefone', telefone);
-                    localStorage.setItem('dm_pin', pin);
                     localStorage.setItem('dm_logado', 'true');
                     document.getElementById('loginScreen').classList.add('hidden');
                     document.getElementById('dashboardScreen').classList.remove('hidden');
@@ -533,42 +398,8 @@
                     tabAtual='alunos';
                     carregarAlunos();
                     carregarHorarios();
-                    carregarAulasDeHoje();
                     updateNavActive();
                     setTimeout(() => lucide.createIcons(), 200);
-
-                    if (window.autoRefreshInterval) {
-                        clearInterval(window.autoRefreshInterval);
-                    }
-                    window.autoRefreshInterval = setInterval(async () => {
-                        try {
-                            const refreshResponse = await fetch('dados_app.json?v=' + Date.now());
-                            const refreshedData = await refreshResponse.json();
-                            if (refreshedData[telefoneLogado]) {
-                                const novosAlunos = refreshedData[telefoneLogado];
-                                if (JSON.stringify(novosAlunos) !== JSON.stringify(alunosDoResponsavel)) {
-                                    alunosDoResponsavel = novosAlunos;
-                                    // Atualiza a data só quando há mudanças reais
-                                    ultimaAtualizacao = extrairDataAtualizacao(refreshedData);
-                                    if (alunoSelecionado) {
-                                        const updatedAluno = alunosDoResponsavel.find(a => a.id === alunoSelecionado.id);
-                                        if (updatedAluno) {
-                                            alunoSelecionado = updatedAluno;
-                                        }
-                                    }
-                                    if (tabAtual === 'alunos') {
-                                        carregarAlunos();
-                                        carregarAulasDeHoje();
-                                    } else if (tabAtual === 'perfil' && alunoSelecionado) {
-                                        carregarPerfil();
-                                    } else if (tabAtual === 'extrato' && alunoSelecionado) {
-                                        carregarExtrato();
-                                    }
-                                }
-                            }
-                        } catch (e) {}
-                    }, 60000);
-
                 } else { msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">❌ Telefone não encontrado!</p>'; }
             } catch(error){ msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">❌ Erro ao carregar dados.</p>'; }
         }
@@ -579,35 +410,22 @@
             document.getElementById('mensagem').innerHTML='';
             document.getElementById('bannerAviso').classList.add('hidden');
             document.getElementById('bannerAniversario').classList.add('hidden');
-            document.getElementById('aulasHoje').classList.add('hidden');
             document.getElementById('btnLogout').classList.add('hidden');
             document.getElementById('loginScreen').classList.remove('hidden');
             document.getElementById('dashboardScreen').classList.add('hidden');
             document.getElementById('dashboardScreen').classList.remove('flex');
             localStorage.removeItem('dm_logado');
-            localStorage.removeItem('dm_pin');
-            if (window.autoRefreshInterval) {
-                clearInterval(window.autoRefreshInterval);
-            }
             telefoneLogado=''; alunosDoResponsavel=[]; alunoSelecionado=null;
         }
 
         function restaurarSessao(){
             const logado = localStorage.getItem('dm_logado');
             const telefone = localStorage.getItem('dm_telefone');
-            const pinGuardado = localStorage.getItem('dm_pin');
-            
-            if (telefone) {
+            if(telefone){
                 document.getElementById('telefone').value = telefone;
-                if (pinGuardado) {
-                    document.getElementById('pin').value = pinGuardado;
-                }
-                
-                if (logado === 'true') {
-                    setTimeout(() => {
-                        login(true);
-                    }, 500);
-                }
+            }
+            if(logado === 'true' && telefone){
+                login();
             }
         }
 
@@ -635,10 +453,7 @@
             const div=document.getElementById('tabAlunos'); div.innerHTML='';
             for(const f of alunosDoResponsavel){
                 const status=obterStatusPagamento(f.pagamentos||{});
-                let fotoUrl = f.foto || '';
-                if (fotoUrl && fotoUrl.includes('cloudinary.com')) {
-                    fotoUrl = fotoUrl.split('?')[0] + '?q=100&w=600&h=600&c=fill&g=face&f_auto&dpr=2.0&v=' + Date.now();
-                }
+                let fotoUrl = processarFotoUrl(f.foto);
                 const statusColor = status.classe === 'pago' ? 'text-dm-pago' : status.classe === 'pendente' ? 'text-dm-pendente' : 'text-dm-atraso';
                 const modalidades = f.modalidades || [];
                 const modIcons = modalidades.map(m => {
@@ -675,7 +490,6 @@
             alunoSelecionado=alunosDoResponsavel.find(a=>a.id===id);
             if(alunoSelecionado) {
                 carregarPerfil();
-                carregarAulasDeHoje();
                 tabAtual='perfil';
                 updateNavActive();
                 history.pushState({tab:'perfil'}, '', '#perfil');
@@ -694,10 +508,7 @@
             const div = document.getElementById('tabAlunos');
             if(!alunoSelecionado) return;
             const a = alunoSelecionado;
-            let fotoUrl = a.foto || '';
-            if (fotoUrl && fotoUrl.includes('cloudinary.com')) {
-                fotoUrl = fotoUrl.split('?')[0] + '?q=100&w=600&h=600&c=fill&g=face&f_auto&dpr=2.0&v=' + Date.now();
-            }
+            let fotoUrl = processarFotoUrl(a.foto);
             const status = obterStatusPagamento(a.pagamentos||{});
             const statusColor = status.classe === 'pago' ? 'text-dm-pago' : status.classe === 'pendente' ? 'text-dm-pendente' : 'text-dm-atraso';
             const modalidades = a.modalidades || [];
@@ -767,8 +578,10 @@
                 </tr>`;
             }
             html+='</table>';
-            // Data da última atualização real (do JSON)
-            html += '<p class="text-center text-gray-400 text-[10px] mt-3">📅 Atualizado: ' + ultimaAtualizacao + '</p>';
+            
+            // DATA FIXA - MUDAR AQUI MANUALMENTE
+            html += '<p class="text-center text-xs text-gray-400 mt-4">Atualizado: 31/08/2026 às 15:15</p>';
+            
             div.innerHTML=html;
             mostrarTabConteudo('alunos');
             document.getElementById('totalPago').textContent=totalPago.toFixed(2)+' €';
@@ -813,7 +626,7 @@
                     {hora:"14:00 - 15:30",nome:"Contemporâneo 2",turma:"Contemporâneo",cor:"#C9A96E"},
                     {hora:"15:30 - 16:15",nome:"Ballet Pré-Primary",turma:"Ballet",cor:"#F8C8DC"},
                     {hora:"16:15 - 17:00",nome:"Ballet Primary",turma:"Ballet",cor:"#F8C8DC"},
-                    {hora:"17:00 - 18:00",nome:"Ensaios",turma:"Competição",cor:"#9E9E9E",esporadica:true}
+                    {hora:"17:00 - 18:00",nome:"Ensaios",turma:"Competição",cor:"#9E9E9E"}
                 ]}
             ];
             let html='<div class="text-center mb-4"><h3 class="text-dm-nome text-lg mb-1">📅 Horários</h3><p class="text-dm-castanho text-base font-bold">Ano Letivo 2025/2026</p></div>';
@@ -821,7 +634,7 @@
             for(const d of dias){
                 html+='<div class="text-dm-castanho text-sm my-4 mx-0 py-2.5 px-3.5 bg-dm-dourado-claro rounded-[10px] font-semibold text-center">📅 '+d.dia+'</div>';
                 for(const a of d.aulas){
-                    const destaque=modalidadesAluno.length>0&&ehDoAluno(a.turma,a.nome)&&!a.esporadica;
+                    const destaque=modalidadesAluno.length>0&&ehDoAluno(a.turma,a.nome);
                     const bgColor = destaque ? '#D4AF37' : a.cor+'20';
                     const borderColor = destaque ? '#D4AF37' : a.cor;
                     html+='<div class="' + (destaque ? 'pulse-gold' : '') + '" style="border-radius:12px; margin:8px 0; overflow:hidden; transition:all 0.3s; border:2px solid '+borderColor+'; background:'+bgColor+'; ' + (destaque ? 'box-shadow:0 4px 20px rgba(212,175,55,0.5); transform:scale(1.03);' : '') + '">';
@@ -926,7 +739,7 @@
                         '<div class="w-full aspect-square rounded-xl mb-2 bg-gray-100 items-center justify-center text-3xl" style="display:none;">🛍️</div>' +
                         '<p class="font-semibold text-sm text-dm-nome">' + p.nome + '</p>' +
                         '<p class="text-dm-dourado font-bold text-lg">' + p.preco + '</p>' +
-                        '<a href="https://chat.whatsapp.com/KhZTAJ55OZlB7f7iRpskGP" target="_blank" ' +
+                        '<a href="https://chat.whatsapp.com/KhZTAJ55OZlB7f7iRpskGP?text=Olá! Quero encomendar: ' + encodeURIComponent(p.nome) + '" target="_blank" ' +
                         'class="inline-block mt-2 w-full py-2 bg-[#25D366] text-white font-bold rounded-xl text-xs cursor-pointer no-underline">' +
                         '📱 Encomendar</a>' +
                         '</div>';
@@ -957,7 +770,6 @@
             if(tab==='loja') carregarLoja();
             if(tab==='alunos' && alunoSelecionado) {
                 carregarAlunos();
-                carregarAulasDeHoje();
             }
             history.pushState({tab:tab}, '', '#'+tab);
             setTimeout(() => lucide.createIcons(), 200);
@@ -978,27 +790,7 @@
         function instalarApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null;document.getElementById('btnInstalar').classList.add('hidden');}}
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').classList.remove('hidden');}});
         
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js?v=15')
-                .then(reg => {
-                    reg.addEventListener('updatefound', () => {
-                        const newWorker = reg.installing;
-                        newWorker.addEventListener('statechange', () => {
-                            if (newWorker.state === 'activated' && navigator.serviceWorker.controller) {
-                                window.location.reload();
-                            }
-                        });
-                    });
-                    return reg.update();
-                })
-                .catch(err => console.log('SW:', err));
-        }
-        
         window.addEventListener('load', () => {
-            const versaoAnterior = localStorage.getItem('dm_versao');
-            if (versaoAnterior && versaoAnterior !== APP_VERSAO) {
-                if ('caches' in window) caches.keys().then(names => names.forEach(name => caches.delete(name)));
-            }
             localStorage.setItem('dm_versao', APP_VERSAO);
             lucide.createIcons();
             restaurarSessao();
