@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <!-- ============================================ -->
-    <!-- DATA DA ÚLTIMA ATUALIZAÇÃO DOS PAGAMENTOS   -->
-    <!-- MUDAR AQUI:                                  -->
-    <!-- ============================================ -->
-    <meta name="data-atualizacao" content="31/08/2026 às 15:15">
-    <!-- ============================================ -->
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="manifest.json?v=31">
+    <link rel="manifest" href="manifest.json?v=32">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="DM Dance">
@@ -173,7 +166,7 @@
     </div>
 
     <script>
-        const APP_VERSAO = '7.2';
+        const APP_VERSAO = '7.3';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
@@ -181,8 +174,8 @@
         let tabAtual = 'alunos';
         let tentativasPin = 0;
         
-        // Ler data da meta tag no topo do ficheiro
-        let dataAtualizacaoPagamentos = '31/08/2026 às 15:14';
+        // Data de atualização (carregada do ficheiro atualizacao.txt)
+        let dataAtualizacaoPagamentos = '';
         
         const MAX_TENTATIVAS = 3;
         
@@ -222,6 +215,26 @@
                 return url + '&v=' + Date.now();
             } else {
                 return url + '?v=' + Date.now();
+            }
+        }
+
+        // Função para carregar a data do ficheiro
+        async function carregarDataAtualizacao() {
+            try {
+                const timestamp = new Date().getTime();
+                const response = await fetch('atualizacao.txt?t=' + timestamp, {
+                    cache: 'no-store'
+                });
+                
+                if (!response.ok) {
+                    dataAtualizacaoPagamentos = '';
+                    return;
+                }
+                
+                const data = await response.text();
+                dataAtualizacaoPagamentos = data.trim();
+            } catch(e) {
+                dataAtualizacaoPagamentos = '';
             }
         }
 
@@ -379,6 +392,9 @@
             try{
                 const response=await fetch('dados_app.json');
                 dadosApp=await response.json();
+                
+                // Carregar data de atualização do ficheiro
+                await carregarDataAtualizacao();
                 
                 if(dadosApp[telefone]){
                     const alunos=dadosApp[telefone];
@@ -602,7 +618,7 @@
             }
             html+='</table>';
             
-            // Mostrar data da meta tag
+            // Mostrar data carregada do ficheiro
             if(dataAtualizacaoPagamentos && dataAtualizacaoPagamentos !== '') {
                 html += '<p class="text-center text-xs text-gray-400 mt-4">Atualizado: ' + dataAtualizacaoPagamentos + '</p>';
             }
@@ -816,7 +832,7 @@
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').classList.remove('hidden');}});
         
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js?v=18')
+            navigator.serviceWorker.register('service-worker.js?v=19')
                 .then(reg => reg.update())
                 .catch(err => console.log('SW:', err));
         }
