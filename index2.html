@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <title>DM Dance School</title>
+    
+    <link rel="manifest" href="manifest.json?v=33">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="DM Dance">
+    <link rel="apple-touch-icon" href="icon-192x192.png">
+    <meta name="theme-color" content="#D4AF37">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <link rel="stylesheet" href="app-output.css">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        @keyframes pulseGold {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+        .pulse-gold {
+            animation: pulseGold 1.5s ease-in-out infinite;
+        }
+        @keyframes pulseLogo {
+            0%, 100% { transform: scale(1); opacity: 0.6; }
+            50% { transform: scale(1.2); opacity: 1; }
+        }
+        .pulse-logo {
+            animation: pulseLogo 1s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 antialiased" style="background: linear-gradient(135deg, #FFE4E1 0%, #FFF5F5 50%, #FFE4E1 100%);">
+    
+    <div class="max-w-md mx-auto bg-white rounded-3xl shadow-[0_2px_10px_rgba(0,0,0,0.08)] overflow-hidden min-h-[90vh] flex flex-col">
+        
+        <div class="px-6 py-5 text-center relative" style="background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 40%, #8B6914 100%);" id="mainHeader">
+            <a href="https://chat.whatsapp.com/KhZTAJ55OZlB7f7iRpskGP" target="_blank" 
+               class="absolute left-4 top-4 w-9 h-9 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-md z-10 text-lg no-underline"
+               title="Falar connosco no WhatsApp">
+               <i data-lucide="message-circle" class="w-5 h-5"></i>
+            </a>
+            
+            <button onclick="logout()" 
+                    class="absolute right-4 top-4 w-9 h-9 rounded-full bg-white/20 border-none cursor-pointer flex items-center justify-center shadow-md z-10 hidden"
+                    id="btnLogout"
+                    title="Sair">
+                <i data-lucide="log-out" class="w-4 h-4 text-white"></i>
+            </button>
+            
+            <div class="w-[70px] h-[70px] mx-auto mb-2.5 bg-transparent rounded-full flex items-center justify-center shadow-[0_4px_15px_rgba(0,0,0,0.2)]">
+                <img src="logo_dm.png" alt="DM Dance School" 
+                     class="w-[60px] h-[60px] rounded-full object-cover"
+                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                <span class="text-[35px] w-[60px] h-[60px] items-center justify-center hidden">🩰</span>
+            </div>
+            <h1 class="text-xl font-bold text-dm-castanho">DM Dance School</h1>
+        </div>
+
+        <div id="loginScreen" class="p-8 flex-1 flex flex-col justify-center">
+            <div class="text-2xl font-bold text-dm-nome text-center mb-1">Área do Aluno</div>
+            <div class="text-sm text-gray-400 text-center mb-6">Faça login com o seu telefone e PIN</div>
+            
+            <input type="tel" id="telefone" placeholder="Digite o seu telefone" 
+                   autocomplete="off" inputmode="numeric"
+                   class="w-full px-[18px] py-4 my-2.5 text-[17px] bg-[#fafafa] border-2 border-[#e0e0e0] rounded-[14px] 
+                          transition-all outline-none focus:border-dm-dourado focus:bg-white 
+                          focus:shadow-[0_0_0_4px_rgba(212,175,55,0.1)]">
+            
+            <input type="password" id="pin" placeholder="Digite o seu PIN (4 dígitos)" 
+                   autocomplete="off" inputmode="numeric" maxlength="4"
+                   class="w-full px-[18px] py-4 my-2.5 text-[17px] bg-[#fafafa] border-2 border-[#e0e0e0] rounded-[14px] 
+                          transition-all outline-none focus:border-dm-dourado focus:bg-white 
+                          focus:shadow-[0_0_0_4px_rgba(212,175,55,0.1)]">
+            
+            <div id="bannerAviso" 
+                 class="bg-[#fff3cd] border-2 border-[#ffc107] rounded-xl p-3.5 my-4 text-center animate-slide-down hidden">
+                <div class="font-bold text-[#856404] text-sm mb-1">⚠️ Mensalidades em Atraso</div>
+                <div class="text-[#92600a] text-xs" id="textoAviso"></div>
+            </div>
+            
+            <button onclick="login()" 
+                    class="w-full py-4 my-2.5 text-[17px] font-bold text-white rounded-[14px] 
+                           shadow-[0_4px_15px_rgba(212,175,55,0.3)] cursor-pointer border-none"
+                    style="background: linear-gradient(135deg, #D4AF37 0%, #c49b2e 100%);">
+                Entrar
+            </button>
+            
+            <button id="btnInstalar" onclick="instalarApp()"
+                    class="w-full py-4 my-2.5 text-[17px] font-bold text-white rounded-[14px] 
+                           animate-pulse-green cursor-pointer border-none hidden"
+                    style="background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);">
+                📲 Instalar App
+            </button>
+            
+            <div id="instrucoesIOS" 
+                 class="bg-[#f0f7ff] border-2 border-[#007AFF] rounded-2xl p-[18px] my-4 text-center hidden">
+                <div class="font-bold text-[#007AFF] text-sm mb-2.5">📱 Como instalar no iPhone</div>
+                <div class="flex items-center gap-2.5 my-2 text-[13px]">
+                    <span class="bg-[#007AFF] text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0">1</span>
+                    Abra este site no <strong>Safari</strong>
+                </div>
+                <div class="flex items-center gap-2.5 my-2 text-[13px]">
+                    <span class="bg-[#007AFF] text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0">2</span>
+                    Toque no ícone <strong>Partilhar ⬆️</strong>
+                </div>
+                <div class="flex items-center gap-2.5 my-2 text-[13px]">
+                    <span class="bg-[#007AFF] text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0">3</span>
+                    Escolha <strong>➕ Adicionar ao Ecrã Principal</strong>
+                </div>
+            </div>
+            
+            <div id="mensagem"></div>
+        </div>
+
+        <div id="dashboardScreen" class="hidden flex-1 flex-col">
+            
+            <div id="fraseMotivacional" 
+                 class="text-center px-6 py-3.5 italic text-dm-castanho text-lg bg-dm-dourado-claro leading-relaxed border-b-2 border-dm-dourado animate-fade-in"></div>
+            
+            <div id="bannerAniversario" 
+                 class="text-white text-center p-4 font-bold text-[15px] animate-bounce-in hidden"
+                 style="background: linear-gradient(135deg, #ff6b6b, #ff8e8e);"></div>
+            
+            <div id="newsTicker" class="bg-dm-dourado text-dm-castanho py-2.5 overflow-hidden whitespace-nowrap hidden">
+                <div class="inline-block animate-ticker font-bold text-sm" id="newsTickerContent"></div>
+            </div>
+            
+            <div id="tabAlunos" class="tab-content active p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
+            <div id="tabHorarios" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
+            <div id="tabEventos" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
+            <div id="tabGaleria" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
+            <div id="tabLoja" class="tab-content hidden p-0 px-5 pb-4 flex-1 overflow-y-auto no-scrollbar"></div>
+            
+            <div class="flex justify-around bg-dm-rosa px-2 py-2 border-t border-red-200 mt-auto" style="padding-bottom: calc(12px + env(safe-area-inset-bottom));">
+                <div class="nav-item active text-center cursor-pointer px-1.5 py-2 text-[10px] text-dm-dourado font-bold bg-dm-dourado-claro transition-all rounded-xl min-w-[50px]" onclick="mostrarTab('alunos', this)">
+                    <i data-lucide="house" class="nav-icon w-[24px] h-[24px] block mx-auto mb-[3px] text-dm-dourado"></i>Início
+                </div>
+                <div class="nav-item text-center cursor-pointer px-1.5 py-2 text-[10px] text-gray-400 transition-all rounded-xl min-w-[50px]" onclick="mostrarTab('horarios', this)">
+                    <i data-lucide="calendar-days" class="nav-icon w-[24px] h-[24px] block mx-auto mb-[3px] text-gray-400"></i>Horários
+                </div>
+                <div class="nav-item text-center cursor-pointer px-1.5 py-2 text-[10px] text-gray-400 transition-all rounded-xl min-w-[50px]" onclick="mostrarTab('eventos', this)">
+                    <i data-lucide="party-popper" class="nav-icon w-[24px] h-[24px] block mx-auto mb-[3px] text-gray-400"></i>Eventos
+                </div>
+                <div class="nav-item text-center cursor-pointer px-1.5 py-2 text-[10px] text-gray-400 transition-all rounded-xl min-w-[50px]" onclick="mostrarTab('galeria', this)">
+                    <i data-lucide="images" class="nav-icon w-[24px] h-[24px] block mx-auto mb-[3px] text-gray-400"></i>Galeria
+                </div>
+                <div class="nav-item text-center cursor-pointer px-1.5 py-2 text-[10px] text-gray-400 transition-all rounded-xl min-w-[50px]" onclick="mostrarTab('loja', this)">
+                    <i data-lucide="shopping-bag" class="nav-icon w-[24px] h-[24px] block mx-auto mb-[3px] text-gray-400"></i>Loja
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center py-4 text-gray-300 text-[11px]">DM Dance School © 2025</div>
+    </div>
+
+    <div class="lightbox hidden fixed inset-0 bg-black/90 z-[1000] justify-center items-center" id="lightbox" onclick="fecharLightbox(event)">
+        <span class="absolute top-4 right-5 text-white text-[35px] cursor-pointer z-[1001] font-bold" onclick="document.getElementById('lightbox').classList.remove('active'); document.getElementById('lightbox').style.display='none';">&times;</span>
+        <img id="lightboxImg" src="" class="max-w-[95%] max-h-[95%] object-contain rounded-lg animate-zoom-in">
+    </div>
+
+    <script>
+        const APP_VERSAO = '8.0';
+        lucide.createIcons();
+        
+        let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
+        let comunicadosLista = [], eventosLista = [], galeriasLista = [], merchandisingLista = [];
+        let tabAtual = 'alunos';
+        let tentativasPin = 0;
+        const MAX_TENTATIVAS = 3;
+        
+        const mesesNum = {"setembro":9,"outubro":10,"novembro":11,"dezembro":12,"janeiro":1,"fevereiro":2,"marco":3,"abril":4,"maio":5,"junho":6,"julho":7};
+        const MESES_ORDEM = ["setembro","outubro","novembro","dezembro","janeiro","fevereiro","marco","abril","maio","junho","julho"];
+        const MESES_NOMES = {"setembro":"Setembro","outubro":"Outubro","novembro":"Novembro","dezembro":"Dezembro","janeiro":"Janeiro","fevereiro":"Fevereiro","marco":"Março","abril":"Abril","maio":"Maio","junho":"Junho","julho":"Julho"};
+        const DIA_LIMITE = 8;
+        const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
+        if(isIOS) document.getElementById('instrucoesIOS').classList.remove('hidden');
+
+        const ICONES_MODALIDADES = {
+            'ballet': 'drama',
+            'contemporâneo': 'theater',
+            'fusion': 'radio',
+            'competição': 'trophy',
+            'competicao': 'trophy',
+            'pilates': 'heart-pulse'
+        };
+
+        function processarFotoUrl(url) {
+            if (!url) return '';
+            if (url.includes('cloudinary.com')) {
+                let urlBase = url.split('?')[0];
+                let urlOtimizada = urlBase + '?q=100&w=600&h=600&c=fill&g=face&f_auto&dpr=2.0';
+                if (url.includes('/v') && url.match(/\/v\d+\//)) return urlOtimizada;
+                const timestamp = Date.now();
+                return urlOtimizada + '&v=' + timestamp;
+            }
+            if (url.includes('?')) return url + '&v=' + Date.now();
+            return url + '?v=' + Date.now();
+        }
+
+        function getIconeModalidade(nome) {
+            const n = nome.toLowerCase();
+            for (const [chave, icone] of Object.entries(ICONES_MODALIDADES)) {
+                if (n.includes(chave)) return icone;
+            }
+            return 'music';
+        }
+
+        function getPago(dados) { return typeof dados === 'object' ? dados.pago : dados; }
+        function getValor(dados) { return (typeof dados === 'object' && dados.valor) ? dados.valor : 0; }
+        
+        function normalizarMes(mes) {
+            if (!mes) return 'setembro';
+            return mes.toLowerCase().trim();
+        }
+
+        function filtrarMeses(pagamentos, mesEntrada) {
+            const mesNorm = normalizarMes(mesEntrada);
+            if (!MESES_ORDEM.includes(mesNorm)) return MESES_ORDEM;
+            return MESES_ORDEM.slice(MESES_ORDEM.indexOf(mesNorm));
+        }
+
+        function obterStatusPagamento(pagamentos) {
+            const hoje = new Date();
+            const mesAtual = hoje.getMonth() + 1;
+            const anoAtual = hoje.getFullYear();
+            let anoLetivo = mesAtual >= 9 ? anoAtual : anoAtual - 1;
+            for (const [mes, dados] of Object.entries(pagamentos)) {
+                const mesNum = mesesNum[mes.toLowerCase()];
+                if (!mesNum) continue;
+                let dataLimite = new Date(mesNum >= 9 ? anoLetivo : anoLetivo + 1, mesNum - 1, DIA_LIMITE);
+                if (!getPago(dados) && dataLimite < new Date()) return { texto: `❌ Atrasado (${mes})`, classe: "atraso" };
+            }
+            return { texto: "✅ Em dia", classe: "pago" };
+        }
+
+        function mostrarBannerAviso(alunos){
+            const hoje = new Date();
+            const mesAtual = hoje.getMonth() + 1;
+            const anoAtual = hoje.getFullYear();
+            let anoLetivo = mesAtual >= 9 ? anoAtual : anoAtual - 1;
+            let nomesAtraso = [];
+            for (const a of alunos) {
+                for (const [mes, dados] of Object.entries(a.pagamentos || {})) {
+                    const mesNum = mesesNum[mes.toLowerCase()];
+                    if (!mesNum || getPago(dados)) continue;
+                    let dataLimite = new Date(mesNum >= 9 ? anoLetivo : anoLetivo + 1, mesNum - 1, DIA_LIMITE);
+                    if (dataLimite < hoje) { nomesAtraso.push(a.nome); break; }
+                }
+            }
+            const banner = document.getElementById('bannerAviso'), texto = document.getElementById('textoAviso');
+            if (nomesAtraso.length > 0) {
+                banner.classList.remove('hidden');
+                texto.textContent = nomesAtraso.length === 1 ? nomesAtraso[0] + ' tem mensalidades por regularizar. Contacte a escola.' : nomesAtraso.join(', ') + ' têm mensalidades por regularizar. Contacte a escola.';
+            } else { banner.classList.add('hidden'); }
+        }
+
+        async function carregarFraseDoDia() {
+            try {
+                const response = await fetch('frases.txt');
+                const texto = await response.text();
+                const frases = texto.split('\n').map(f => f.trim()).filter(f => f !== '');
+                if (frases.length > 0) {
+                    const hoje = new Date();
+                    const diaDoAno = Math.floor((hoje - new Date(hoje.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
+                    document.getElementById('fraseMotivacional').textContent = '💫 ' + frases[diaDoAno % frases.length];
+                } else {
+                    document.getElementById('fraseMotivacional').style.display = 'none';
+                }
+            } catch(e) { document.getElementById('fraseMotivacional').style.display = 'none'; }
+        }
+
+        function verificarAniversario(alunos) {
+            const hoje = new Date();
+            const diaHoje = hoje.getDate(), mesHoje = hoje.getMonth() + 1;
+            for (const a of alunos) {
+                if (a.aniversario) {
+                    const partes = a.aniversario.split('/');
+                    if (partes.length === 2 && parseInt(partes[0]) === diaHoje && parseInt(partes[1]) === mesHoje) {
+                        const el = document.getElementById('bannerAniversario');
+                        el.textContent = `🎂 Parabéns ${a.nome}! Que tenhas um dia muito feliz! Contamos com o bolo na aula! 🎉`;
+                        el.classList.remove('hidden');
+                        return;
+                    }
+                }
+            }
+        }
+
+        async function carregarComunicadoTXT() {
+            try {
+                const response = await fetch('comunicado.txt');
+                const texto = await response.text().then(t => t.trim());
+                comunicadosLista = texto ? texto.split('---').map(p => p.trim()).filter(p => p).map(p => ({texto: p})) : [];
+            } catch(e) { comunicadosLista = []; }
+            const ticker = document.getElementById('newsTicker'), tickerContent = document.getElementById('newsTickerContent');
+            if (comunicadosLista.length === 0) { ticker.classList.add('hidden'); }
+            else { ticker.classList.remove('hidden'); tickerContent.textContent = comunicadosLista.map(c => c.texto).join('  ⭐  '); }
+        }
+
+        async function carregarEventos() {
+            try {
+                const response = await fetch('eventos.txt');
+                const texto = await response.text();
+                eventosLista = texto.split('\n').map(l => l.trim()).filter(l => l).map(l => {
+                    const partes = l.split('|');
+                    return { nome: (partes[0]||'').trim(), data: (partes[1]||'').trim(), descricao: (partes[2]||'').trim() };
+                });
+            } catch(e) { eventosLista = []; }
+        }
+
+        async function carregarGaleriaTXT() {
+            try {
+                const response = await fetch('galeria.txt');
+                const texto = await response.text();
+                galeriasLista = texto.split('\n').map(l => l.trim()).filter(l => l).map(l => {
+                    const partes = l.split('|');
+                    return { nome: (partes[0]||'').trim(), data: (partes[1]||'').trim(), pasta: (partes[2]||'').trim(), fotos: parseInt(partes[3]) || 12 };
+                });
+            } catch(e) { galeriasLista = []; }
+        }
+
+        async function carregarMerchandisingTXT() {
+            try {
+                const response = await fetch('merchandising.txt');
+                const texto = await response.text();
+                merchandisingLista = texto.split('\n').map(l => l.trim()).filter(l => l).map(l => {
+                    const partes = l.split('|');
+                    return { nome: (partes[0]||'').trim(), preco: (partes[1]||'').trim(), foto: (partes[2]||'').trim() };
+                });
+            } catch(e) { merchandisingLista = []; }
+        }
+
+        function verificarPin(alunos, pinDigitado) {
+            for (const aluno of alunos) {
+                const pinAluno = aluno.pin;
+                if (!pinAluno) return true;
+                if (pinAluno === pinDigitado) return true;
+            }
+            return false;
+        }
+
+        async function login(){
+            const telefone=document.getElementById('telefone').value.trim();
+            const pin=document.getElementById('pin').value.trim();
+            const msgDiv=document.getElementById('mensagem');
+            
+            if(!telefone){msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">⚠️ Digite o telefone!</p>'; return;}
+            if(!pin){msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">⚠️ Digite o PIN!</p>'; return;}
+            
+            msgDiv.innerHTML='<div class="flex flex-col items-center justify-center my-8"><span class="pulse-logo text-[50px]">🩰</span><p class="text-gray-400 text-sm mt-3">A verificar...</p></div>';
+            
+            try{
+                const response=await fetch('dados_app.json');
+                dadosApp=await response.json();
+                
+                if(dadosApp[telefone]){
+                    const alunos=dadosApp[telefone];
+                    
+                    if (!verificarPin(alunos, pin)) {
+                        tentativasPin++;
+                        const restantes = MAX_TENTATIVAS - tentativasPin;
+                        if (restantes <= 0) {
+                            msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">🚫 Excedeu as tentativas. Contacte a escola.</p>';
+                            document.getElementById('pin').disabled = true;
+                            setTimeout(() => {
+                                document.getElementById('pin').disabled = false;
+                                tentativasPin = 0;
+                                msgDiv.innerHTML = '';
+                            }, 60000);
+                            return;
+                        }
+                        msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">❌ PIN incorreto! Tentativas restantes: ' + restantes + '</p>';
+                        return;
+                    }
+                    
+                    tentativasPin = 0;
+                    mostrarBannerAviso(alunos);
+                    await new Promise(r=>setTimeout(r,1500));
+                    await carregarFraseDoDia();
+                    await carregarComunicadoTXT();
+                    await carregarEventos();
+                    await carregarGaleriaTXT();
+                    await carregarMerchandisingTXT();
+                    verificarAniversario(alunos);
+                    telefoneLogado=telefone; alunosDoResponsavel=alunos; alunoSelecionado=alunosDoResponsavel[0];
+                    localStorage.setItem('dm_telefone', telefone);
+                    localStorage.setItem('dm_logado', 'true');
+                    document.getElementById('loginScreen').classList.add('hidden');
+                    document.getElementById('dashboardScreen').classList.remove('hidden');
+                    document.getElementById('dashboardScreen').classList.add('flex');
+                    document.getElementById('btnLogout').classList.remove('hidden');
+                    tabAtual='alunos';
+                    carregarAlunos();
+                    carregarHorarios();
+                    updateNavActive();
+                    setTimeout(() => lucide.createIcons(), 200);
+                } else { msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">❌ Telefone não encontrado!</p>'; }
+            } catch(error){ msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">❌ Erro ao carregar dados.</p>'; }
+        }
+
+        function logout(){
+            document.getElementById('telefone').value='';
+            document.getElementById('pin').value='';
+            document.getElementById('mensagem').innerHTML='';
+            document.getElementById('bannerAviso').classList.add('hidden');
+            document.getElementById('bannerAniversario').classList.add('hidden');
+            document.getElementById('btnLogout').classList.add('hidden');
+            document.getElementById('loginScreen').classList.remove('hidden');
+            document.getElementById('dashboardScreen').classList.add('hidden');
+            document.getElementById('dashboardScreen').classList.remove('flex');
+            localStorage.removeItem('dm_logado');
+            telefoneLogado=''; alunosDoResponsavel=[]; alunoSelecionado=null;
+        }
+
+        function restaurarSessao(){
+            const logado = localStorage.getItem('dm_logado');
+            const telefone = localStorage.getItem('dm_telefone');
+            if(telefone){
+                document.getElementById('telefone').value = telefone;
+            }
+            if(logado === 'true' && telefone){
+                login();
+            }
+        }
+
+        function updateNavActive(){
+            document.querySelectorAll('.nav-item').forEach(n => { 
+                n.classList.remove('active', 'text-dm-dourado', 'font-bold', 'bg-dm-dourado-claro'); 
+                n.classList.add('text-gray-400');
+                const icon = n.querySelector('.nav-icon');
+                if(icon) { icon.classList.remove('text-dm-dourado'); icon.classList.add('text-gray-400'); }
+            });
+            const tabs = ['alunos','horarios','eventos','galeria','loja'];
+            const idx = tabs.indexOf(tabAtual);
+            if(idx >= 0){
+                const el = document.querySelectorAll('.nav-item')[idx];
+                if(el){
+                    el.classList.add('active', 'text-dm-dourado', 'font-bold', 'bg-dm-dourado-claro');
+                    el.classList.remove('text-gray-400');
+                    const icon = el.querySelector('.nav-icon');
+                    if(icon) { icon.classList.remove('text-gray-400'); icon.classList.add('text-dm-dourado'); }
+                }
+            }
+        }
+
+        function carregarAlunos(){
+            const div=document.getElementById('tabAlunos'); div.innerHTML='';
+            for(const f of alunosDoResponsavel){
+                const status=obterStatusPagamento(f.pagamentos||{});
+                let fotoUrl = processarFotoUrl(f.foto);
+                const statusColor = status.classe === 'pago' ? 'text-dm-pago' : status.classe === 'pendente' ? 'text-dm-pendente' : 'text-dm-atraso';
+                const modalidades = f.modalidades || [];
+                const modIcons = modalidades.map(m => {
+                    const iconName = getIconeModalidade(m);
+                    return '<span class="inline-flex items-center gap-1"><i data-lucide="' + iconName + '" class="w-5 h-5 flex-shrink-0"></i>' + m + '</span>';
+                }).join(', ');
+                const nickname = f.nickname || f.nome || 'Aluno';
+                div.innerHTML+=`<div class="bg-dm-rosa my-2.5 p-4 rounded-2xl border-l-[5px] border-l-dm-dourado shadow-[0_2px_10px_rgba(0,0,0,0.08)]">
+                    <div class="flex gap-3.5 items-center cursor-pointer" onclick="abrirPerfil(${f.id})">
+                        <img class="w-[90px] h-[90px] rounded-full object-cover bg-gray-200 shrink-0" src="${fotoUrl}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" crossorigin="anonymous" loading="lazy">
+                        <div class="w-[90px] h-[90px] rounded-full bg-gray-200 items-center justify-center text-4xl shrink-0" style="display:${f.foto?'none':'flex'};">👤</div>
+                        <div class="flex-1">
+                            <div class="text-dm-nome text-[22px] font-bold mb-[3px]">#${nickname}</div>
+                            <div class="text-gray-400 text-sm mb-[3px]">${modIcons || 'Sem modalidades'}</div>
+                            <div class="font-semibold text-[15px] ${statusColor} cursor-pointer underline decoration-dotted" onclick="event.stopPropagation(); selecionarAlunoExtrato(${f.id})">${status.texto}</div>
+                        </div>
+                    </div>
+                    <button onclick="abrirPerfil(${f.id})" class="mt-3 w-full py-2.5 bg-dm-dourado text-white font-bold rounded-xl cursor-pointer border-none text-sm">👤 Ver Perfil</button>
+                </div>`;
+            }
+            setTimeout(() => lucide.createIcons(), 100);
+        }
+
+        function selecionarAlunoExtrato(id){
+            alunoSelecionado = alunosDoResponsavel.find(a => a.id === id);
+            if (alunoSelecionado) {
+                carregarExtrato();
+                tabAtual = 'extrato';
+                history.pushState({tab:'extrato'}, '', '#extrato');
+            }
+        }
+
+        function abrirPerfil(id){
+            alunoSelecionado=alunosDoResponsavel.find(a=>a.id===id);
+            if(alunoSelecionado) {
+                carregarPerfil();
+                tabAtual='perfil';
+                updateNavActive();
+                history.pushState({tab:'perfil'}, '', '#perfil');
+            }
+        }
+
+        function fecharPerfil(){
+            tabAtual='alunos';
+            updateNavActive();
+            carregarAlunos();
+            mostrarTabConteudo('alunos');
+            history.pushState({tab:'alunos'}, '', '#alunos');
+        }
+
+        function carregarPerfil(){
+            const div = document.getElementById('tabAlunos');
+            if(!alunoSelecionado) return;
+            const a = alunoSelecionado;
+            let fotoUrl = processarFotoUrl(a.foto);
+            const status = obterStatusPagamento(a.pagamentos||{});
+            const statusColor = status.classe === 'pago' ? 'text-dm-pago' : status.classe === 'pendente' ? 'text-dm-pendente' : 'text-dm-atraso';
+            const modalidades = a.modalidades || [];
+            const modIcons = modalidades.map(m => {
+                const iconName = getIconeModalidade(m);
+                return '<span class="inline-flex items-center gap-2 text-sm text-gray-600"><i data-lucide="' + iconName + '" class="w-5 h-5 flex-shrink-0 text-dm-dourado"></i>' + m + '</span>';
+            }).join('');
+            const nomeCompleto = a.nome_completo || a.nome || '';
+            const idade = a.idade ? a.idade + ' anos' : '';
+            let html = '<div class="flex items-center gap-2.5 mb-4">' +
+                '<button class="w-9 h-9 rounded-full bg-gray-100 border-none text-lg cursor-pointer flex items-center justify-center" onclick="fecharPerfil()"><i data-lucide=\"arrow-left\" class=\"w-5 h-5\"></i></button>' +
+                '<h3 class="text-dm-nome text-[17px]">Perfil</h3>' +
+                '</div>' +
+                '<div class="bg-white rounded-2xl p-5 shadow-[0_2px_10px_rgba(0,0,0,0.08)] text-center">' +
+                '<img src="' + fotoUrl + '" class="w-[100px] h-[100px] rounded-full object-cover mx-auto mb-3" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\';">' +
+                '<div class="w-[100px] h-[100px] rounded-full bg-gray-200 items-center justify-center text-4xl mx-auto mb-3" style="display:' + (a.foto?'none':'flex') + ';">👤</div>' +
+                '<h2 class="text-xl font-bold text-dm-nome mb-1">' + nomeCompleto + '</h2>' +
+                (idade ? '<p class="text-sm text-gray-500 mb-1">' + idade +
