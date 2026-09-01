@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="manifest.json?v=35">
+    <link rel="manifest" href="manifest.json?v=36">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="DM Dance">
@@ -166,7 +166,7 @@
     </div>
 
     <script>
-        const APP_VERSAO = '8.7';
+        const APP_VERSAO = '10.1';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
@@ -192,19 +192,21 @@
             'pilates': 'heart-pulse'
         };
 
+        // Função para processar URL da foto - CORRIGIDA
         function processarFotoUrl(url) {
             if (!url) return '';
-            if (url.includes('cloudinary.com')) {
-                let urlBase = url.split('?')[0];
-                let urlOtimizada = urlBase + '?q=100&w=600&h=600&c=fill&g=face&f_auto&dpr=2.0';
-                if (url.includes('/v') && url.match(/\/v\d+\//)) return urlOtimizada;
-                const timestamp = Date.now();
-                return urlOtimizada + '&v=' + timestamp;
+            // Corrigir URL duplicado
+            url = url.replace('/alunos/alunos/', '/alunos/');
+            // Adicionar timestamp para evitar cache
+            const timestamp = Date.now();
+            if (url.includes('?')) {
+                return url + '&t=' + timestamp;
+            } else {
+                return url + '?t=' + timestamp;
             }
-            if (url.includes('?')) return url + '&v=' + Date.now();
-            return url + '?v=' + Date.now();
         }
 
+        // Função para carregar a data de atualização
         async function carregarDataAtualizacao() {
             try {
                 const timestamp = new Date().getTime();
@@ -391,13 +393,17 @@
             } catch(e) { merchandisingLista = []; }
         }
 
+        // Função verificarPin - CORRIGIDA
         function verificarPin(alunos, pinDigitado) {
             for (const aluno of alunos) {
                 const pinAluno = aluno.pin;
-                if (!pinAluno) return true;
-                if (pinAluno === pinDigitado) return true;
+                if (pinAluno && pinAluno === pinDigitado) {
+                    return true;
+                }
             }
-            return false;
+            // Se nenhum aluno tem PIN definido, aceitar qualquer
+            const todosSemPin = alunos.every(a => !a.pin || a.pin === '');
+            return todosSemPin;
         }
 
         async function login(){
@@ -411,7 +417,15 @@
             msgDiv.innerHTML='<div class="flex flex-col items-center justify-center my-8"><span class="pulse-logo text-[50px]">🩰</span><p class="text-gray-400 text-sm mt-3">A verificar...</p></div>';
             
             try{
-                const response=await fetch('dados_app.json');
+                // Carregar JSON sem cache
+                const timestamp = new Date().getTime();
+                const response=await fetch('dados_app.json?t=' + timestamp, {
+                    cache: 'no-store',
+                    headers: {
+                        'Cache-Control': 'no-cache, no-store, must-revalidate',
+                        'Pragma': 'no-cache'
+                    }
+                });
                 dadosApp=await response.json();
                 
                 await carregarDataAtualizacao();
@@ -849,7 +863,7 @@
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').classList.remove('hidden');}});
         
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js?v=19')
+            navigator.serviceWorker.register('service-worker.js?v=20')
                 .then(reg => reg.update())
                 .catch(err => console.log('SW:', err));
         }
