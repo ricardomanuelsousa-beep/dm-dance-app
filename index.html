@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="manifest.json?v=36">
+    <link rel="manifest" href="manifest.json?v=37">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="DM Dance">
@@ -166,7 +166,7 @@
     </div>
 
     <script>
-        const APP_VERSAO = '10.1';
+        const APP_VERSAO = '10.3';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
@@ -192,12 +192,9 @@
             'pilates': 'heart-pulse'
         };
 
-        // Função para processar URL da foto - CORRIGIDA
         function processarFotoUrl(url) {
             if (!url) return '';
-            // Corrigir URL duplicado
             url = url.replace('/alunos/alunos/', '/alunos/');
-            // Adicionar timestamp para evitar cache
             const timestamp = Date.now();
             if (url.includes('?')) {
                 return url + '&t=' + timestamp;
@@ -206,7 +203,6 @@
             }
         }
 
-        // Função para carregar a data de atualização
         async function carregarDataAtualizacao() {
             try {
                 const timestamp = new Date().getTime();
@@ -393,7 +389,6 @@
             } catch(e) { merchandisingLista = []; }
         }
 
-        // Função verificarPin - CORRIGIDA
         function verificarPin(alunos, pinDigitado) {
             for (const aluno of alunos) {
                 const pinAluno = aluno.pin;
@@ -401,7 +396,6 @@
                     return true;
                 }
             }
-            // Se nenhum aluno tem PIN definido, aceitar qualquer
             const todosSemPin = alunos.every(a => !a.pin || a.pin === '');
             return todosSemPin;
         }
@@ -417,7 +411,6 @@
             msgDiv.innerHTML='<div class="flex flex-col items-center justify-center my-8"><span class="pulse-logo text-[50px]">🩰</span><p class="text-gray-400 text-sm mt-3">A verificar...</p></div>';
             
             try{
-                // Carregar JSON sem cache
                 const timestamp = new Date().getTime();
                 const response=await fetch('dados_app.json?t=' + timestamp, {
                     cache: 'no-store',
@@ -486,10 +479,19 @@
             document.getElementById('dashboardScreen').classList.add('hidden');
             document.getElementById('dashboardScreen').classList.remove('flex');
             localStorage.removeItem('dm_logado');
+            localStorage.removeItem('dm_telefone');
             telefoneLogado=''; alunosDoResponsavel=[]; alunoSelecionado=null;
         }
 
         function restaurarSessao(){
+            const versaoAnterior = localStorage.getItem('dm_versao');
+            
+            if (versaoAnterior && versaoAnterior !== APP_VERSAO) {
+                localStorage.removeItem('dm_logado');
+                localStorage.removeItem('dm_telefone');
+                return;
+            }
+            
             const logado = localStorage.getItem('dm_logado');
             const telefone = localStorage.getItem('dm_telefone');
             if(telefone){
@@ -863,7 +865,7 @@
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').classList.remove('hidden');}});
         
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js?v=20')
+            navigator.serviceWorker.register('service-worker.js?v=22')
                 .then(reg => reg.update())
                 .catch(err => console.log('SW:', err));
         }
@@ -871,7 +873,18 @@
         window.addEventListener('load', () => {
             const versaoAnterior = localStorage.getItem('dm_versao');
             if (versaoAnterior && versaoAnterior !== APP_VERSAO) {
-                if ('caches' in window) caches.keys().then(names => names.forEach(name => caches.delete(name)));
+                // Limpar TODOS os dados antigos
+                localStorage.clear();
+                // Limpar caches
+                if ('caches' in window) {
+                    caches.keys().then(names => names.forEach(name => caches.delete(name)));
+                }
+                // Remover service workers antigos
+                if ('serviceWorker' in navigator) {
+                    navigator.serviceWorker.getRegistrations().then(registrations => {
+                        registrations.forEach(reg => reg.unregister());
+                    });
+                }
             }
             localStorage.setItem('dm_versao', APP_VERSAO);
             lucide.createIcons();
