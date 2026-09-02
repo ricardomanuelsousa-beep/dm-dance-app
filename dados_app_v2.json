@@ -1381,7 +1381,7 @@
           "valor": 57.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1788282643/alunos/aluno_5.png",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1788372663/alunos/aluno_5.png",
       "mes_entrada": "Setembro",
       "pin": "1808",
       "nome_completo": "Camila Amorim",
@@ -6813,7 +6813,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_122.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1902",
       "nome_completo": "Maria Rodrigues Soares",
       "idade": 11,
       "data_nascimento": "11/02/2015",
