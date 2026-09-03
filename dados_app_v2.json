@@ -827,48 +827,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1779128553/alunos/aluno_2.png",
@@ -950,52 +950,52 @@
       "nome": "Benedita Pinto",
       "aniversario": "25/10",
       "modalidades": [
-        "Babies"
+        "Kids 1"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1779130563/alunos/aluno_3.png",
@@ -1840,48 +1840,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 18.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_26.jpg",
@@ -5058,53 +5058,53 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 15.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_112.jpg",
       "mes_entrada": "Setembro",
-      "pin": "1234",
+      "pin": "1021",
       "nome_completo": "Leonor Dias",
       "idade": 42,
       "data_nascimento": "28/06/1984",
@@ -5119,53 +5119,53 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_42.jpg",
       "mes_entrada": "Setembro",
-      "pin": "1234",
+      "pin": "2105",
       "nome_completo": "Maria Clara Dias Silva",
       "idade": 9,
       "data_nascimento": "16/06/2017",
@@ -5176,57 +5176,57 @@
       "nome": "Luisa",
       "aniversario": "04/01",
       "modalidades": [
-        "Contemporâneo"
+        "Babies"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 18.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 18.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_106.jpg",
       "mes_entrada": "Setembro",
-      "pin": "1234",
+      "pin": "1021",
       "nome_completo": "Maria Luisa Dias Silva",
       "idade": 6,
       "data_nascimento": "04/01/2020",
@@ -5426,7 +5426,7 @@
   "911149304": [
     {
       "id": 36,
-      "nome": "Luana Beatriz Silva",
+      "nome": "Luana Silva",
       "aniversario": "30/10",
       "modalidades": [
         "Kids 1"
@@ -5434,47 +5434,47 @@
       "pagamentos": {
         "setembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_36.jpg",
@@ -8092,60 +8092,60 @@
   "914170332": [
     {
       "id": 47,
-      "nome": "Vitoria Rodrigues",
+      "nome": "Vitoria",
       "aniversario": "19/12",
       "modalidades": [
         "Kids 1"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_47.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Vitoria Rodrigues",
       "idade": 7,
       "data_nascimento": "19/12/2018",
@@ -8158,52 +8158,52 @@
       "nome": "Yara Ferreira",
       "aniversario": "16/02",
       "modalidades": [
-        "Babies"
+        "Kids 1"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1779130502/alunos/aluno_24.png",
