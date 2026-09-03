@@ -638,48 +638,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_10.jpg",
@@ -764,48 +764,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_15.jpg",
@@ -883,61 +883,61 @@
   "916995849": [
     {
       "id": 25,
-      "nome": "Benedita Moreira",
+      "nome": "Benedita",
       "aniversario": "16/05",
       "modalidades": [
         "Kids 1",
-        "Ballet"
+        "Ballet Grau 0"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 44.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 44.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 44.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 44.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 44.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 44.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 44.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 44.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 44.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 44.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 44.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_25.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "1234",
       "nome_completo": "Benedita Moreira",
       "idade": 8,
       "data_nascimento": "16/05/2018",
@@ -1081,7 +1081,7 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "outubro": {
@@ -1125,9 +1125,9 @@
           "valor": 0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_114.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1788457027/alunos/aluno_114.jpg",
       "mes_entrada": "Setembro",
-      "pin": "1234",
+      "pin": "2205",
       "nome_completo": "Patricia Silva Rocha",
       "idade": 41,
       "data_nascimento": "25/12/1984",
@@ -1337,7 +1337,7 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
+          "pago": true,
           "valor": 57.0
         },
         "outubro": {
@@ -2027,52 +2027,52 @@
       "nome": "Clara Rodrigues",
       "aniversario": "31/05",
       "modalidades": [
-        "Ballet"
+        "Ballet Grau 0"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 30.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 30.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 30.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 30.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 30.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 30.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 30.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 30.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 30.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 30.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 30.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_97.jpg",
@@ -2088,52 +2088,52 @@
       "nome": "Marta Rodrigues",
       "aniversario": "09/09",
       "modalidades": [
-        "Ballet"
+        "Ballet Pré-Primary"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 22.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_104.jpg",
@@ -3856,52 +3856,52 @@
       "nome": "Isabella",
       "aniversario": "01/10",
       "modalidades": [
-        "Ballet"
+        "Ballet Pré-Primary"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 22.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_99.jpg",
@@ -3919,52 +3919,52 @@
       "nome": "Isabella",
       "aniversario": "01/10",
       "modalidades": [
-        "Ballet"
+        "Ballet Pré-Primary"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 22.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_99.jpg",
@@ -4868,48 +4868,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1779130645/alunos/aluno_18.png",
@@ -5993,69 +5993,6 @@
       "idade": 14,
       "data_nascimento": "24/01/2012",
       "morada": "R. Pedra Ma - CESAR"
-    }
-  ],
-  "916803861": [
-    {
-      "id": 43,
-      "nome": "Maria Francisca Santos",
-      "aniversario": "04/03",
-      "modalidades": [
-        "Kids 1"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_43.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "",
-      "nome_completo": "Maria Francisca Santos",
-      "idade": 9,
-      "data_nascimento": "04/03/2017",
-      "morada": "Calçada Lavandeira - FAJOES"
     }
   ],
   "914669555": [
