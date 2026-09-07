@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
     <title>DM Dance School</title>
     
-    <link rel="manifest" href="manifest.json?v=37">
+    <link rel="manifest" href="manifest.json?v=38">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="DM Dance">
@@ -166,7 +166,7 @@
     </div>
 
     <script>
-        const APP_VERSAO = '12.6';
+        const APP_VERSAO = '10.4';
         lucide.createIcons();
         
         let deferredPrompt = null, dadosApp = {}, telefoneLogado = '', alunosDoResponsavel = [], alunoSelecionado = null;
@@ -217,6 +217,24 @@
                 ultimaAtualizacao = data.trim();
             } catch(e) {
                 ultimaAtualizacao = '';
+            }
+        }
+
+        // Função para registar login no Formspree
+        async function registarLogin(telefone, nomeAluno) {
+            try {
+                const data = new Date().toLocaleString('pt-PT');
+                await fetch('https://formspree.io/f/mqpkyyll', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        telefone: telefone,
+                        aluno: nomeAluno,
+                        data_hora: data
+                    })
+                });
+            } catch(e) {
+                // Silencioso - não afeta a app
             }
         }
 
@@ -412,7 +430,7 @@
             
             try{
                 const timestamp = new Date().getTime();
-                const response=await fetch('dados_app_v2.json?t=' + timestamp, {
+                const response=await fetch('dados_app.json?t=' + timestamp, {
                     cache: 'no-store',
                     headers: {
                         'Cache-Control': 'no-cache, no-store, must-revalidate',
@@ -463,6 +481,10 @@
                     carregarAlunos();
                     carregarHorarios();
                     updateNavActive();
+                    
+                    // Registar login no Formspree
+                    registarLogin(telefone, alunos[0]?.nome || 'Aluno');
+                    
                     setTimeout(() => lucide.createIcons(), 200);
                 } else { msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">❌ Telefone não encontrado!</p>'; }
             } catch(error){ msgDiv.innerHTML='<p class="text-dm-atraso text-center my-2.5 font-semibold">❌ Erro ao carregar dados.</p>'; }
@@ -484,14 +506,6 @@
         }
 
         function restaurarSessao(){
-            const versaoAnterior = localStorage.getItem('dm_versao');
-            
-            if (versaoAnterior && versaoAnterior !== APP_VERSAO) {
-                localStorage.removeItem('dm_logado');
-                localStorage.removeItem('dm_telefone');
-                return;
-            }
-            
             const logado = localStorage.getItem('dm_logado');
             const telefone = localStorage.getItem('dm_telefone');
             if(telefone){
@@ -865,27 +879,12 @@
         window.addEventListener('beforeinstallprompt',(e)=>{if(!isIOS){e.preventDefault();deferredPrompt=e;document.getElementById('btnInstalar').classList.remove('hidden');}});
         
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js?v=22')
+            navigator.serviceWorker.register('service-worker.js?v=23')
                 .then(reg => reg.update())
                 .catch(err => console.log('SW:', err));
         }
         
         window.addEventListener('load', () => {
-            const versaoAnterior = localStorage.getItem('dm_versao');
-            if (versaoAnterior && versaoAnterior !== APP_VERSAO) {
-                // Limpar TODOS os dados antigos
-                localStorage.clear();
-                // Limpar caches
-                if ('caches' in window) {
-                    caches.keys().then(names => names.forEach(name => caches.delete(name)));
-                }
-                // Remover service workers antigos
-                if ('serviceWorker' in navigator) {
-                    navigator.serviceWorker.getRegistrations().then(registrations => {
-                        registrations.forEach(reg => reg.unregister());
-                    });
-                }
-            }
             localStorage.setItem('dm_versao', APP_VERSAO);
             lucide.createIcons();
             restaurarSessao();
