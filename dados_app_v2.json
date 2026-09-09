@@ -575,48 +575,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 20.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_109.jpg",
@@ -1505,7 +1505,7 @@
           "valor": 20.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_105.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1788972935/alunos/aluno_105.png",
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Camila Gonçalves da Silva",
@@ -1568,7 +1568,7 @@
           "valor": 20.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_105.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1788972935/alunos/aluno_105.png",
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Camila Gonçalves da Silva",
@@ -2011,7 +2011,7 @@
           "valor": 39.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_84.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1788973327/alunos/aluno_84.png",
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Catarina Assunçao Bernardes",
@@ -2027,52 +2027,52 @@
       "aniversario": "23/12",
       "modalidades": [
         "Kids 1",
-        "Contemporâneo"
+        "Contemporâneo 1"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 39.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_27.jpg",
@@ -2203,7 +2203,7 @@
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Marta Pinho Rodrigues",
-      "idade": 5,
+      "idade": 6,
       "data_nascimento": "09/09/2020",
       "morada": "ESPINHO"
     }
@@ -2640,7 +2640,7 @@
           "valor": 30.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_86.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1788973054/alunos/aluno_86.png",
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Diana Lopes",
@@ -2785,48 +2785,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1788183789/alunos/aluno_87.png",
@@ -3102,50 +3102,50 @@
       "pagamentos": {
         "setembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_14.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1788973467/alunos/aluno_14.png",
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Francisca Teixeira",
@@ -3789,55 +3789,55 @@
   "916082403": [
     {
       "id": 31,
-      "nome": "Iris Ferreira Barbosa",
+      "nome": "Iris Barbosa",
       "aniversario": "08/07",
       "modalidades": [
         "Kids 1"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_31.jpg",
@@ -3847,6 +3847,67 @@
       "idade": 10,
       "data_nascimento": "08/07/2016",
       "morada": "Rua Nova Vilarinho - CESAR"
+    },
+    {
+      "id": 125,
+      "nome": "Silvia Ferreira",
+      "aniversario": "12/07",
+      "modalidades": [
+        "Adultas"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 10.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 10.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 10.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 10.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 10.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 10.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 10.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 10.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 10.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 10.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 10.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_125.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Silvia Cristina Vaz Ferreira",
+      "idade": 38,
+      "data_nascimento": "12/07/1988",
+      "morada": "Vilarinho  - CESAR"
     }
   ],
   "910912949": [
@@ -4037,6 +4098,69 @@
       "idade": 6,
       "data_nascimento": "01/10/2019",
       "morada": "R. Industria - NOG CRAVO"
+    }
+  ],
+  "912236094": [
+    {
+      "id": 124,
+      "nome": "Joana Oliveira",
+      "aniversario": "25/07",
+      "modalidades": [
+        "Adultas"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 15.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_124.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Joana Assunçao Oliveira",
+      "idade": 30,
+      "data_nascimento": "25/07/1996",
+      "morada": "MILHEIROS DE POIARES"
     }
   ],
   "916047110": [
@@ -4849,7 +4973,7 @@
           "valor": 30.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_90.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1788973172/alunos/aluno_90.png",
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Lara Costa Portugal",
@@ -7080,53 +7204,53 @@
       "aniversario": "14/02",
       "modalidades": [
         "Kids 1",
-        "Ballet",
-        "Contemporâneo"
+        "Ballet Primary",
+        "Contemporâneo 1"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 57.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 57.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 57.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 57.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 57.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 57.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 57.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 57.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 57.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 57.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 57.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_45.jpg",
@@ -8084,7 +8208,7 @@
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Teresa Paiva",
-      "idade": 11,
+      "idade": 12,
       "data_nascimento": "09/09/2014",
       "morada": "R. Souto Costa - FAJOES"
     }
