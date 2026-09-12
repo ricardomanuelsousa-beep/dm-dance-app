@@ -62,6 +62,255 @@
       "morada": "R. Emigrantes - FAJOES"
     }
   ],
+  "919697115": [
+    {
+      "id": 130,
+      "nome": "Lita",
+      "aniversario": "31/08",
+      "modalidades": [
+        "Pilates"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 20.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_130.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Amalia Teixeira",
+      "idade": 40,
+      "data_nascimento": "31/08/1986",
+      "morada": "Rua dos Emigrantes - FAJOES"
+    },
+    {
+      "id": 51,
+      "nome": "Carolina Teixeira",
+      "aniversario": "03/11",
+      "modalidades": [
+        "Kids 2",
+        "Contemporâneo 2"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": false,
+          "valor": 0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_51.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Carolina Almeida Teixeira",
+      "idade": 11,
+      "data_nascimento": "03/11/2014",
+      "morada": "Rua dos Emigrantes - FAJOES"
+    }
+  ],
+  "914416024": [
+    {
+      "id": 116,
+      "nome": "Ana Teixeira",
+      "aniversario": "10/12",
+      "modalidades": [
+        "Pilates"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 15.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 15.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_116.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Ana Isabel da Silva Teixeira",
+      "idade": 41,
+      "data_nascimento": "10/12/1984",
+      "morada": "CESAR"
+    },
+    {
+      "id": 65,
+      "nome": "Matilde Estrela",
+      "aniversario": "27/01",
+      "modalidades": [
+        "Kids 2"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 29.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 29.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_65.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Matilde Estrela",
+      "idade": 12,
+      "data_nascimento": "27/01/2014",
+      "morada": "Rua S.Salvador - CESAR"
+    }
+  ],
   "968998485": [
     {
       "id": 80,
@@ -375,130 +624,6 @@
       "idade": 8,
       "data_nascimento": "14/08/2018",
       "morada": "Rua Dr Francisco Portal - CESAR"
-    }
-  ],
-  "914416024": [
-    {
-      "id": 116,
-      "nome": "Ana Teixeira",
-      "aniversario": null,
-      "modalidades": [
-        "Pilates"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_116.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "",
-      "nome_completo": "Ana Teixeira",
-      "idade": null,
-      "data_nascimento": "",
-      "morada": "CESAR"
-    },
-    {
-      "id": 65,
-      "nome": "Matilde Estrela",
-      "aniversario": "27/01",
-      "modalidades": [
-        "Kids 2"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_65.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "1234",
-      "nome_completo": "Matilde Estrela",
-      "idade": 12,
-      "data_nascimento": "27/01/2014",
-      "morada": "Rua S.Salvador - CESAR"
     }
   ],
   "910024908": [
@@ -1635,73 +1760,9 @@
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Carole Oliveira",
-      "idade": 11,
+      "idade": 12,
       "data_nascimento": "11/09/2014",
       "morada": "Rua Central Gandara - CESAR"
-    }
-  ],
-  "919697115": [
-    {
-      "id": 51,
-      "nome": "Carolina Teixeira",
-      "aniversario": "03/11",
-      "modalidades": [
-        "Kids 2",
-        "Contemporâneo 2"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_51.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "1234",
-      "nome_completo": "Carolina Almeida Teixeira",
-      "idade": 11,
-      "data_nascimento": "03/11/2014",
-      "morada": "Rua dos Emigrantes - FAJOES"
     }
   ],
   "914851287": [
@@ -2218,48 +2279,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 20.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_117.jpg",
@@ -2390,7 +2451,7 @@
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Francisca Almeida e Silva",
-      "idade": 4,
+      "idade": 5,
       "data_nascimento": "11/09/2021",
       "morada": "Rua Banda Musical - FAJOES"
     }
@@ -2717,52 +2778,52 @@
       "nome": "Mara Paiva",
       "aniversario": "09/12",
       "modalidades": [
-        "Kids 1"
+        "Kids 2"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 24.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_40.jpg",
@@ -2838,69 +2899,6 @@
       "morada": "Av. Descobrimentos - NOG. CRAVO"
     }
   ],
-  "916417820": [
-    {
-      "id": 6,
-      "nome": "Eduarda Resende",
-      "aniversario": "13/07",
-      "modalidades": [
-        "Babies"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_6.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "1234",
-      "nome_completo": "Eduarda Resende",
-      "idade": 7,
-      "data_nascimento": "13/07/2019",
-      "morada": "Rua do Travasso - CESAR"
-    }
-  ],
   "912289988": [
     {
       "id": 52,
@@ -2962,6 +2960,69 @@
       "idade": 11,
       "data_nascimento": "12/12/2014",
       "morada": "NOGUEIRA DO CRAVO"
+    }
+  ],
+  "916417810": [
+    {
+      "id": 6,
+      "nome": "Eduarda Resende",
+      "aniversario": "13/07",
+      "modalidades": [
+        "Babies"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 18.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 18.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_6.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Eduarda da Silva Resende",
+      "idade": 7,
+      "data_nascimento": "13/07/2019",
+      "morada": "Rua da Lomba"
     }
   ],
   "938699796": [
@@ -3275,7 +3336,7 @@
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Gabriela Almeida Resende",
-      "idade": 11,
+      "idade": 12,
       "data_nascimento": "11/09/2014",
       "morada": "RUA CENTRAL - CESAR"
     }
@@ -3405,6 +3466,191 @@
       "idade": 15,
       "data_nascimento": "23/08/2011",
       "morada": "R. Aguas Ferreas - MACIEIRA SARNES"
+    }
+  ],
+  "913509212": [
+    {
+      "id": 129,
+      "nome": "Iara Nascimento",
+      "aniversario": "05/08",
+      "modalidades": [
+        "Pilates"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 20.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_129.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Iara Patricia Gonçalves Nascimento",
+      "idade": 19,
+      "data_nascimento": "05/08/2007",
+      "morada": "ESCARIZ"
+    },
+    {
+      "id": 73,
+      "nome": "Madalena",
+      "aniversario": "08/01",
+      "modalidades": [
+        "Teens"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": false,
+          "valor": 0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_73.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Madalena Baptista Gonçalves Nascimento",
+      "idade": 16,
+      "data_nascimento": "08/01/2010",
+      "morada": "Calvario - ESCARIZ"
+    },
+    {
+      "id": 128,
+      "nome": "Sonia Gonçalves",
+      "aniversario": "02/12",
+      "modalidades": [
+        "Pilates"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 20.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_128.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Sonia Gonçalves",
+      "idade": 41,
+      "data_nascimento": "02/12/1984",
+      "morada": "CALVARIA"
     }
   ],
   "912607205": [
@@ -5802,69 +6048,6 @@
       "morada": "Rua Sra Ribeira - FAJOES"
     }
   ],
-  "913509212": [
-    {
-      "id": 73,
-      "nome": "Madalena",
-      "aniversario": "08/01",
-      "modalidades": [
-        "Teens"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_73.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "1234",
-      "nome_completo": "Madalena Baptista Gonçalves Nascimento",
-      "idade": 16,
-      "data_nascimento": "08/01/2010",
-      "morada": "Calvario - ESCARIZ"
-    }
-  ],
   "928034063": [
     {
       "id": 92,
@@ -6430,7 +6613,7 @@
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Maria Leonor Varum",
-      "idade": 13,
+      "idade": 14,
       "data_nascimento": "11/09/2012",
       "morada": ""
     }
@@ -6493,7 +6676,7 @@
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Maria Leonor Varum",
-      "idade": 13,
+      "idade": 14,
       "data_nascimento": "11/09/2012",
       "morada": ""
     }
@@ -6751,6 +6934,67 @@
       "idade": 11,
       "data_nascimento": "13/09/2014",
       "morada": "Tv Cruz - FAJOES"
+    },
+    {
+      "id": 126,
+      "nome": "Sandra Bastos",
+      "aniversario": "05/11",
+      "modalidades": [
+        "Pilates"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 20.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 20.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 20.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_126.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Sandra Maria Pina Bastos",
+      "idade": 49,
+      "data_nascimento": "05/11/1976",
+      "morada": "Tv Cruz - FAJOES"
     }
   ],
   "933254278": [
@@ -6760,52 +7004,52 @@
       "aniversario": "28/01",
       "modalidades": [
         "Kids 1",
-        "Contemporâneo"
+        "Contemporâneo 1"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 39.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_44.jpg",
@@ -6824,52 +7068,52 @@
       "aniversario": "28/01",
       "modalidades": [
         "Kids 1",
-        "Contemporâneo"
+        "Contemporâneo 1"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 39.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_44.jpg",
@@ -7578,6 +7822,69 @@
       "morada": "Tv Moutas - FAJOES"
     }
   ],
+  "928620656": [
+    {
+      "id": 131,
+      "nome": "Ohanna",
+      "aniversario": "28/10",
+      "modalidades": [
+        "Ballet Pré-Primary"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 22.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 22.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 22.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 22.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 22.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 22.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 22.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 22.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 22.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 22.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 22.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_131.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Ohanna Fernandes Silva",
+      "idade": 3,
+      "data_nascimento": "28/10/2022",
+      "morada": "FAJOES"
+    }
+  ],
   "924888476": [
     {
       "id": 21,
@@ -7765,6 +8072,70 @@
       "idade": 15,
       "data_nascimento": "03/11/2010",
       "morada": "R.Manuel Pinho Jr. - ESCARIZ"
+    }
+  ],
+  "910378790": [
+    {
+      "id": 127,
+      "nome": "Sara Souza",
+      "aniversario": "20/07",
+      "modalidades": [
+        "Kids 2",
+        "Contemporâneo 2"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 39.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 39.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 39.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 39.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 39.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 39.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 39.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 39.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 39.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 39.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 39.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_127.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Sara Almeida Souza",
+      "idade": 12,
+      "data_nascimento": "20/07/2014",
+      "morada": "Azagaes - CARREGOSA"
     }
   ],
   "922010663": [
