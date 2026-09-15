@@ -1516,61 +1516,61 @@
     },
     {
       "id": 121,
-      "nome": "Cristiana Paiva de Sà Amorim",
+      "nome": "Cristiana Amorim",
       "aniversario": null,
       "modalidades": [
         "Pilates"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 15.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_121.jpg",
       "mes_entrada": "Setembro",
       "pin": "",
-      "nome_completo": "Cristiana Paiva de Sà Amorim",
+      "nome_completo": "Cristiana Paiva de Sá Amorim",
       "idade": null,
       "data_nascimento": "",
       "morada": "FAJOES"
@@ -2721,48 +2721,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 24.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 24.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_13.jpg",
@@ -4600,6 +4600,70 @@
       "morada": "Rua Torre - FAJOES"
     }
   ],
+  "912232309": [
+    {
+      "id": 132,
+      "nome": "Julia Santos",
+      "aniversario": "06/06",
+      "modalidades": [
+        "Babies",
+        "Ballet Pré-Primary"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 34.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 34.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_132.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Julia Maria Panini Deus Santos",
+      "idade": 5,
+      "data_nascimento": "06/06/2021",
+      "morada": "Rua Central - CESAR"
+    }
+  ],
   "962207278": [
     {
       "id": 71,
@@ -4607,52 +4671,52 @@
       "aniversario": "27/02",
       "modalidades": [
         "Teens",
-        "Contemporâneo"
+        "Contemporâneo 2"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 39.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_71.jpg",
@@ -5036,69 +5100,6 @@
       "idade": 4,
       "data_nascimento": "14/04/2022",
       "morada": "Rua Vila Cesari  - CESAR"
-    }
-  ],
-  "925489548": [
-    {
-      "id": 34,
-      "nome": "Lara Belfort Pinho",
-      "aniversario": "27/02",
-      "modalidades": [
-        "Kids 1"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_34.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "",
-      "nome_completo": "Lara Belfort Pinho",
-      "idade": 10,
-      "data_nascimento": "27/02/2016",
-      "morada": "Rua Central - CESAR"
     }
   ],
   "914571666": [
@@ -5922,56 +5923,56 @@
   "914493643": [
     {
       "id": 37,
-      "nome": "Luena Jesus Pinho",
+      "nome": "Luena",
       "aniversario": "26/10",
       "modalidades": [
         "Kids 1",
-        "Contemporâneo"
+        "Contemporâneo 1"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 39.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_37.jpg",
@@ -6249,48 +6250,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_60.jpg",
@@ -6300,6 +6301,69 @@
       "idade": 12,
       "data_nascimento": "09/01/2014",
       "morada": "Rua dos Vales - CESAR"
+    }
+  ],
+  "910186216": [
+    {
+      "id": 134,
+      "nome": "Beatriz Pangaio",
+      "aniversario": "24/04",
+      "modalidades": [
+        "Adultas"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 15.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 15.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_134.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Maria Beatriz Dias Pangaio",
+      "idade": 25,
+      "data_nascimento": "24/04/2001",
+      "morada": "Rua Sebastiao Rocha Dias - FAJOES"
     }
   ],
   "911155812": [
@@ -6371,53 +6435,53 @@
       "nome": "Maria J.Bastos",
       "aniversario": "26/11",
       "modalidades": [
-        "Ballet",
-        "Contemporâneo"
+        "Kids 1",
+        "Babies"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_102.jpg",
@@ -6931,7 +6995,7 @@
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Maria Miguel Pina Almeida",
-      "idade": 11,
+      "idade": 12,
       "data_nascimento": "13/09/2014",
       "morada": "Tv Cruz - FAJOES"
     },
@@ -7191,55 +7255,55 @@
   "910583712": [
     {
       "id": 120,
-      "nome": "Maria da Graça Jesus Almeida",
+      "nome": "Graça Almeida",
       "aniversario": null,
       "modalidades": [
         "Pilates"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 20.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_120.jpg",
@@ -7706,48 +7770,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_77.jpg",
@@ -7769,48 +7833,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_77.jpg",
@@ -8074,6 +8138,69 @@
       "morada": "R.Manuel Pinho Jr. - ESCARIZ"
     }
   ],
+  "912588237": [
+    {
+      "id": 133,
+      "nome": "Rita Brandao",
+      "aniversario": "19/12",
+      "modalidades": [
+        "Kids 1"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 29.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 29.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_133.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Rita Brandao Oliveira",
+      "idade": 8,
+      "data_nascimento": "19/12/2017",
+      "morada": "Rua Mato de Arca - CESAR"
+    }
+  ],
   "910378790": [
     {
       "id": 127,
@@ -8145,12 +8272,12 @@
       "aniversario": "13/05",
       "modalidades": [
         "Kids 2",
-        "Contemporâneo",
-        "Ballet"
+        "Contemporâneo 2",
+        "Ballet Grau 0"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "outubro": {
@@ -8210,12 +8337,12 @@
       "aniversario": "13/05",
       "modalidades": [
         "Kids 2",
-        "Contemporâneo",
-        "Ballet"
+        "Contemporâneo 2",
+        "Ballet Grau 0"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "outubro": {
@@ -8456,69 +8583,6 @@
       "idade": 15,
       "data_nascimento": "23/08/2011",
       "morada": "Rua Devessa - MACIEIRA SARNES"
-    }
-  ],
-  "914058805": [
-    {
-      "id": 46,
-      "nome": "Sofia Sousa Almeida",
-      "aniversario": "06/07",
-      "modalidades": [
-        "Kids 1"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_46.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "",
-      "nome_completo": "Sofia Sousa Almeida",
-      "idade": 10,
-      "data_nascimento": "06/07/2016",
-      "morada": "Rua Ameixieira - FAJOES"
     }
   ],
   "913223195": [
