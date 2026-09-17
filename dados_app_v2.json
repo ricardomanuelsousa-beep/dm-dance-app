@@ -134,48 +134,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 22.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_51.jpg",
@@ -636,48 +636,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 15.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_108.jpg",
@@ -2593,48 +2593,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_85.jpg",
@@ -3531,67 +3531,6 @@
       "morada": "ESCARIZ"
     },
     {
-      "id": 73,
-      "nome": "Madalena",
-      "aniversario": "08/01",
-      "modalidades": [
-        "Teens"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_73.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "1234",
-      "nome_completo": "Madalena Baptista Gonçalves Nascimento",
-      "idade": 16,
-      "data_nascimento": "08/01/2010",
-      "morada": "Calvario - ESCARIZ"
-    },
-    {
       "id": 128,
       "nome": "Sonia Gonçalves",
       "aniversario": "02/12",
@@ -4156,70 +4095,6 @@
       "morada": "Vilarinho  - CESAR"
     }
   ],
-  "910912949": [
-    {
-      "id": 8,
-      "nome": "Iris Santos",
-      "aniversario": "06/10",
-      "modalidades": [
-        "Babies",
-        "Ballet"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1779130412/alunos/aluno_8.png",
-      "mes_entrada": "Setembro",
-      "pin": "1234",
-      "nome_completo": "Iris Oliveira Santos",
-      "idade": 7,
-      "data_nascimento": "06/10/2018",
-      "morada": "Vilarinho - CESAR"
-    }
-  ],
   "910047172": [
     {
       "id": 99,
@@ -4472,69 +4347,6 @@
       "morada": "CESAR"
     }
   ],
-  "919006336": [
-    {
-      "id": 100,
-      "nome": "Joana Moreira",
-      "aniversario": "17/04",
-      "modalidades": [
-        "Ballet"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_100.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "1234",
-      "nome_completo": "Joana Tavares Moreira",
-      "idade": 6,
-      "data_nascimento": "17/04/2020",
-      "morada": "R. Fontao, Tropeço - AROUCA"
-    }
-  ],
   "914885246": [
     {
       "id": 89,
@@ -4542,53 +4354,53 @@
       "aniversario": "23/09",
       "modalidades": [
         "Major",
-        "Contemporâneo",
+        "Contemporâneo 2",
         "Competição"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 22.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 22.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1779122835/alunos/aluno_89.png",
@@ -4719,7 +4531,7 @@
           "valor": 39.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_71.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789579039/alunos/aluno_71.png",
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Jéssica Oliveira",
@@ -4789,130 +4601,6 @@
       "idade": 9,
       "data_nascimento": "21/01/2017",
       "morada": "CESAR"
-    }
-  ],
-  "915781218": [
-    {
-      "id": 33,
-      "nome": "Lais Vieira Fonseca",
-      "aniversario": "19/06",
-      "modalidades": [
-        "Kids 1"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_33.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "",
-      "nome_completo": "Lais Vieira Fonseca",
-      "idade": 9,
-      "data_nascimento": "19/06/2017",
-      "morada": "CESAR"
-    },
-    {
-      "id": 64,
-      "nome": "Marina",
-      "aniversario": "18/01",
-      "modalidades": [
-        "Kids 2"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_64.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "1234",
-      "nome_completo": "Marina Moreira",
-      "idade": 12,
-      "data_nascimento": "18/01/2014",
-      "morada": "Rua Gandara - CESAR"
     }
   ],
   "918500328": [
@@ -5800,7 +5488,7 @@
       "aniversario": "12/11",
       "modalidades": [
         "Kids 2",
-        "Contemporâneo"
+        "Contemporâneo 1"
       ],
       "pagamentos": {
         "setembro": {
@@ -6171,7 +5859,7 @@
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Mara Oliveira Silva",
-      "idade": 9,
+      "idade": 10,
       "data_nascimento": "17/09/2016",
       "morada": "Rua Afonso Henriques - ESPINHEIRO"
     }
@@ -7452,47 +7140,47 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "dezembro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "janeiro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "fevereiro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "marco": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "abril": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "maio": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "junho": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "julho": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         }
       },
@@ -7568,6 +7256,69 @@
       "idade": 10,
       "data_nascimento": "14/02/2016",
       "morada": "Rua Miroes - CESAR"
+    }
+  ],
+  "915781218": [
+    {
+      "id": 64,
+      "nome": "Marina",
+      "aniversario": "18/01",
+      "modalidades": [
+        "Kids 2"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": false,
+          "valor": 0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_64.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Marina Moreira",
+      "idade": 12,
+      "data_nascimento": "18/01/2014",
+      "morada": "Rua Gandara - CESAR"
     }
   ],
   "919570221": [
@@ -7703,52 +7454,52 @@
       "aniversario": "11/07",
       "modalidades": [
         "Kids 2",
-        "Contemporâneo"
+        "Contemporâneo 2"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 39.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_66.jpg",
