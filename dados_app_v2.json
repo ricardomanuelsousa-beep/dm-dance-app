@@ -2641,7 +2641,7 @@
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Diana Israel Resende Gomes",
-      "idade": 16,
+      "idade": 17,
       "data_nascimento": "19/09/2009",
       "morada": "Rua D.Manuel II - PINDELO"
     }
@@ -3143,7 +3143,7 @@
           "valor": 29.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_28.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789666059/alunos/aluno_28.png",
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Francisca Paiva Lima",
@@ -3709,7 +3709,7 @@
           "valor": 0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_29.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789666021/alunos/aluno_29.png",
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Ines Dias",
@@ -3977,7 +3977,7 @@
       "nome": "Iris Barbosa",
       "aniversario": "08/07",
       "modalidades": [
-        "Kids 1"
+        "Kids 2"
       ],
       "pagamentos": {
         "setembro": {
@@ -5663,7 +5663,7 @@
           "valor": 39.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_37.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789665973/alunos/aluno_37.png",
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Luena Jesus Pinho",
@@ -5728,7 +5728,7 @@
           "valor": 65.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_38.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789665924/alunos/aluno_38.png",
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Lyana Oliveira",
@@ -5919,7 +5919,7 @@
           "valor": 39.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_41.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789665898/alunos/aluno_41.png",
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Mara Santos",
@@ -6568,7 +6568,7 @@
       "aniversario": "22/09",
       "modalidades": [
         "Major",
-        "Contemporâneo"
+        "Contemporâneo 2"
       ],
       "pagamentos": {
         "setembro": {
@@ -6618,7 +6618,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_93.jpg",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "2209",
       "nome_completo": "Maria Mendes Neves de Oliveira",
       "idade": 15,
       "data_nascimento": "22/09/2010",
@@ -6931,7 +6931,7 @@
           "valor": 29.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_122.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789665848/alunos/aluno_122.png",
       "mes_entrada": "Setembro",
       "pin": "1902",
       "nome_completo": "Maria Rodrigues Soares",
@@ -8007,7 +8007,7 @@
           "valor": 39.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_127.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789665746/alunos/aluno_127.png",
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Sara Almeida Souza",
@@ -8517,7 +8517,7 @@
           "valor": 29.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_47.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789665792/alunos/aluno_47.png",
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Vitoria Rodrigues",
