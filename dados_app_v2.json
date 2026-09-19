@@ -53,7 +53,7 @@
           "valor": 22.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_96.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789829292/alunos/aluno_96.png",
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Alice Bastos de Oliveira",
@@ -116,7 +116,7 @@
           "valor": 20.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_130.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789828028/alunos/aluno_130.png",
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Amalia Teixeira",
@@ -2323,7 +2323,7 @@
           "valor": 20.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_117.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789829394/alunos/aluno_117.png",
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Clarinda Maria Correia Monteiro",
@@ -4403,7 +4403,7 @@
           "valor": 22.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1779122835/alunos/aluno_89.png",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789828934/alunos/aluno_89.png",
       "mes_entrada": "Setembro",
       "pin": "2721",
       "nome_completo": "José Manuel Ferreira Chichavel",
@@ -4467,7 +4467,7 @@
           "valor": 34.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_132.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789828127/alunos/aluno_132.png",
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Julia Maria Panini Deus Santos",
@@ -6064,48 +6064,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_74.jpg",
@@ -6187,7 +6187,7 @@
       "nome": "Maria J.Pinho",
       "aniversario": "14/01",
       "modalidades": [
-        "Ballet"
+        "Ballet Pré-Primary"
       ],
       "pagamentos": {
         "setembro": {
@@ -6235,7 +6235,7 @@
           "valor": 0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_103.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789829207/alunos/aluno_103.png",
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Maria Joao Santos Pinho",
@@ -6250,7 +6250,7 @@
       "nome": "Maria J.Pinho",
       "aniversario": "14/01",
       "modalidades": [
-        "Ballet"
+        "Ballet Pré-Primary"
       ],
       "pagamentos": {
         "setembro": {
@@ -6298,7 +6298,7 @@
           "valor": 0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_103.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789829207/alunos/aluno_103.png",
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Maria Joao Santos Pinho",
@@ -8201,7 +8201,7 @@
           "valor": 34.0
         }
       },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_22.jpg",
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789828808/alunos/aluno_22.png",
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Sofia Marques Ribeiro",
