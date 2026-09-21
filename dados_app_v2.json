@@ -4851,6 +4851,68 @@
       "idade": 11,
       "data_nascimento": "06/03/2015",
       "morada": "Tv Alfaiate - MILHEIROS POIARES"
+    },
+    {
+      "id": 136,
+      "nome": "Mara Cambra",
+      "aniversario": "04/06",
+      "modalidades": [
+        "Babies",
+        "Ballet Pré-Primary"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 41.5
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 41.5
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 41.5
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 41.5
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 41.5
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 41.5
+        },
+        "marco": {
+          "pago": false,
+          "valor": 41.5
+        },
+        "abril": {
+          "pago": false,
+          "valor": 41.5
+        },
+        "maio": {
+          "pago": false,
+          "valor": 41.5
+        },
+        "junho": {
+          "pago": false,
+          "valor": 41.5
+        },
+        "julho": {
+          "pago": false,
+          "valor": 41.5
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_136.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Mara Bernardo Cambra",
+      "idade": 6,
+      "data_nascimento": "04/06/2020",
+      "morada": "Tv Alfaiate, 16 - MILHEIROS DE POIARES"
     }
   ],
   "913386243": [
@@ -5101,7 +5163,7 @@
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Lara dos Santos Paiva",
-      "idade": 18,
+      "idade": 19,
       "data_nascimento": "20/09/2007",
       "morada": "Av. 25 Abril - NOG CRAVO"
     }
@@ -7066,69 +7128,6 @@
       "morada": "Tv 30 Agosto - FAJOES"
     }
   ],
-  "916497091": [
-    {
-      "id": 94,
-      "nome": "Mariana Gouveia",
-      "aniversario": "19/02",
-      "modalidades": [
-        "Major"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_94.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "",
-      "nome_completo": "Mariana Henriques Gouveia",
-      "idade": 16,
-      "data_nascimento": "19/02/2010",
-      "morada": "R. Nossa Sra. Saude"
-    }
-  ],
   "914914693": [
     {
       "id": 95,
@@ -7394,48 +7393,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_76.jpg",
@@ -7509,6 +7508,69 @@
       "idade": 12,
       "data_nascimento": "11/07/2014",
       "morada": "Rua Almeida Garrett - PINDELO"
+    }
+  ],
+  "917116722": [
+    {
+      "id": 135,
+      "nome": "Mia Oliveira",
+      "aniversario": "06/12",
+      "modalidades": [
+        "Babies"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 29.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 29.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_135.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Mia Oliveira",
+      "idade": 3,
+      "data_nascimento": "06/12/2022",
+      "morada": "R. Corregoncha - CESAR"
     }
   ],
   "915411701": [
@@ -7887,6 +7949,132 @@
       "idade": 15,
       "data_nascimento": "03/11/2010",
       "morada": "R.Manuel Pinho Jr. - ESCARIZ"
+    }
+  ],
+  "916238556": [
+    {
+      "id": 137,
+      "nome": "Rita Santos",
+      "aniversario": "25/02",
+      "modalidades": [
+        "Babies"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 29.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 29.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_137.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Rita Bernardo Santos",
+      "idade": 4,
+      "data_nascimento": "25/02/2022",
+      "morada": "R. Venda de Baixo 1904 - VN GAIA"
+    }
+  ],
+  "916513384": [
+    {
+      "id": 137,
+      "nome": "Rita Santos",
+      "aniversario": "25/02",
+      "modalidades": [
+        "Babies"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 29.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 29.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_137.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Rita Bernardo Santos",
+      "idade": 4,
+      "data_nascimento": "25/02/2022",
+      "morada": "R. Venda de Baixo 1904 - VN GAIA"
     }
   ],
   "912588237": [
