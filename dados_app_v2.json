@@ -753,6 +753,134 @@
       "morada": "Tv Travasso - CESAR"
     }
   ],
+  "913638842": [
+    {
+      "id": 142,
+      "nome": "Ariana Bastos",
+      "aniversario": "04/11",
+      "modalidades": [
+        "Babies",
+        "Ballet Pré-Primary"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 34.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 34.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_142.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Ariana Jesus Bastos",
+      "idade": 3,
+      "data_nascimento": "04/11/2022",
+      "morada": "R. Estrada Resumil - FERMEDO"
+    }
+  ],
+  "312788196": [
+    {
+      "id": 142,
+      "nome": "Ariana Bastos",
+      "aniversario": "04/11",
+      "modalidades": [
+        "Babies",
+        "Ballet Pré-Primary"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 34.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 34.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_142.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Ariana Jesus Bastos",
+      "idade": 3,
+      "data_nascimento": "04/11/2022",
+      "morada": "R. Estrada Resumil - FERMEDO"
+    }
+  ],
   "918176673": [
     {
       "id": 10,
@@ -3154,68 +3282,6 @@
   ],
   "912597873": [
     {
-      "id": 138,
-      "nome": "Francisca Martins",
-      "aniversario": "05/05",
-      "modalidades": [
-        "Babies",
-        "Ballet Pré-Primary"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 34.0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_138.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "",
-      "nome_completo": "Francisca da Silva Martins",
-      "idade": 4,
-      "data_nascimento": "05/05/2022",
-      "morada": "R. Francisco Maria Oliveira - CESAR"
-    },
-    {
       "id": 139,
       "nome": "Francisca Martins",
       "aniversario": "05/05",
@@ -4164,7 +4230,7 @@
       "nome": "Isabella",
       "aniversario": "01/10",
       "modalidades": [
-        "Ballet Pré-Primary"
+        "Ballet Primary"
       ],
       "pagamentos": {
         "setembro": {
@@ -4227,7 +4293,7 @@
       "nome": "Isabella",
       "aniversario": "01/10",
       "modalidades": [
-        "Ballet Pré-Primary"
+        "Ballet Primary"
       ],
       "pagamentos": {
         "setembro": {
@@ -4916,68 +4982,6 @@
       "morada": "Tv Alfaiate - MILHEIROS POIARES"
     },
     {
-      "id": 136,
-      "nome": "Mara Cambra",
-      "aniversario": "04/06",
-      "modalidades": [
-        "Babies",
-        "Ballet Pré-Primary"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 41.5
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 41.5
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 41.5
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 41.5
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 41.5
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 41.5
-        },
-        "marco": {
-          "pago": false,
-          "valor": 41.5
-        },
-        "abril": {
-          "pago": false,
-          "valor": 41.5
-        },
-        "maio": {
-          "pago": false,
-          "valor": 41.5
-        },
-        "junho": {
-          "pago": false,
-          "valor": 41.5
-        },
-        "julho": {
-          "pago": false,
-          "valor": 41.5
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_136.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "",
-      "nome_completo": "Mara Bernardo Cambra",
-      "idade": 6,
-      "data_nascimento": "04/06/2020",
-      "morada": "Tv Alfaiate, 16 - MILHEIROS DE POIARES"
-    },
-    {
       "id": 140,
       "nome": "Mara Cambra",
       "aniversario": "04/06",
@@ -5102,6 +5106,132 @@
       "idade": 18,
       "data_nascimento": "05/11/2007",
       "morada": "Rua Central Gandara - CESAR"
+    }
+  ],
+  "935964914": [
+    {
+      "id": 143,
+      "nome": "Lara Sousa",
+      "aniversario": "06/02",
+      "modalidades": [
+        "Babies"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 29.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 29.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 29.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_143.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Lara Filipa Pereira Sousa",
+      "idade": 4,
+      "data_nascimento": "06/02/2022",
+      "morada": "ROMARIZ"
+    }
+  ],
+  "913113129": [
+    {
+      "id": 143,
+      "nome": "Lara Sousa",
+      "aniversario": "06/02",
+      "modalidades": [
+        "Babies"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 29.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 29.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 29.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_143.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Lara Filipa Pereira Sousa",
+      "idade": 4,
+      "data_nascimento": "06/02/2022",
+      "morada": "ROMARIZ"
     }
   ],
   "911909884": [
@@ -5795,6 +5925,69 @@
       "morada": "Leira - ESCARIZ"
     }
   ],
+  "912873283": [
+    {
+      "id": 144,
+      "nome": "Luana Moreira",
+      "aniversario": "28/11",
+      "modalidades": [
+        "Kids 1"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 18.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 18.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 18.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_144.jpg",
+      "mes_entrada": "Outubro",
+      "pin": "",
+      "nome_completo": "Luana Moniz Almeida Moreira",
+      "idade": 7,
+      "data_nascimento": "28/11/2018",
+      "morada": "R. Antonio Jose Paiva Sousa - ROMARIZ"
+    }
+  ],
   "914493643": [
     {
       "id": 37,
@@ -6374,7 +6567,7 @@
       "nome": "Maria J.Pinho",
       "aniversario": "14/01",
       "modalidades": [
-        "Ballet Pré-Primary"
+        "Ballet Primary"
       ],
       "pagamentos": {
         "setembro": {
@@ -6437,7 +6630,7 @@
       "nome": "Maria J.Pinho",
       "aniversario": "14/01",
       "modalidades": [
-        "Ballet Pré-Primary"
+        "Ballet Primary"
       ],
       "pagamentos": {
         "setembro": {
@@ -8466,7 +8659,7 @@
       "aniversario": "11/01",
       "modalidades": [
         "Babies",
-        "Ballet Primary"
+        "Ballet Pré-Primary"
       ],
       "pagamentos": {
         "setembro": {
