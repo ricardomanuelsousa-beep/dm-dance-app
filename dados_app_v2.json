@@ -958,7 +958,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -1085,44 +1085,44 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
-          "valor": 29.0
+          "pago": true,
+          "valor": 39.0
         },
         "novembro": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "marco": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "abril": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "maio": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "junho": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "julho": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1779128553/alunos/aluno_2.png",
@@ -1513,6 +1513,69 @@
       "idade": 16,
       "data_nascimento": "23/03/2010",
       "morada": "Rua da Presa - CARREGOSA"
+    }
+  ],
+  "964379973": [
+    {
+      "id": 49,
+      "nome": "Bruna Alves",
+      "aniversario": "17/11",
+      "modalidades": [
+        "Kids 2"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 18.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 18.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 18.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 18.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_49.jpg",
+      "mes_entrada": "Outubro",
+      "pin": "1234",
+      "nome_completo": "Bruna Alves",
+      "idade": 10,
+      "data_nascimento": "17/11/2015",
+      "morada": "Rua do Arial - OLIVEIRA AZEMEIS"
     }
   ],
   "916751568": [
@@ -2097,7 +2160,7 @@
           "valor": 39.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "novembro": {
@@ -2915,7 +2978,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -4114,7 +4177,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -4175,7 +4238,7 @@
           "valor": 10.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 10.0
         },
         "novembro": {
@@ -5687,7 +5750,7 @@
           "valor": 30.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 30.0
         },
         "novembro": {
@@ -5877,7 +5940,7 @@
           "valor": 39.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "novembro": {
@@ -6133,7 +6196,7 @@
           "valor": 39.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "novembro": {
@@ -6386,7 +6449,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -6826,48 +6889,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 39.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_93.jpg",
@@ -8605,7 +8668,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -8668,7 +8731,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -8842,6 +8905,69 @@
       "idade": 5,
       "data_nascimento": "17/07/2021",
       "morada": "Tv 30 Agosto - FAJOES"
+    }
+  ],
+  "917508032": [
+    {
+      "id": 145,
+      "nome": "Vitoria Santos",
+      "aniversario": "30/11",
+      "modalidades": [
+        "Kids 2"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": false,
+          "valor": 0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_145.jpg",
+      "mes_entrada": "Outubro",
+      "pin": "",
+      "nome_completo": "Vitoria Lima e Santos",
+      "idade": 9,
+      "data_nascimento": "30/11/2016",
+      "morada": "R. Padre Joaquim Vieira Cavadas - CESAR"
     }
   ],
   "914170332": [
