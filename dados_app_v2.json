@@ -118,7 +118,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789828028/alunos/aluno_130.png",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "2203",
       "nome_completo": "Amalia Teixeira",
       "idade": 40,
       "data_nascimento": "31/08/1986",
@@ -180,7 +180,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_51.jpg",
       "mes_entrada": "Setembro",
-      "pin": "1234",
+      "pin": "2203",
       "nome_completo": "Carolina Almeida Teixeira",
       "idade": 11,
       "data_nascimento": "03/11/2014",
@@ -388,7 +388,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -451,7 +451,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -498,132 +498,6 @@
       "idade": 8,
       "data_nascimento": "02/04/2018",
       "morada": "Tv Outeirinho - AZAGAES"
-    }
-  ],
-  "918739935": [
-    {
-      "id": 107,
-      "nome": "Ana Gomes",
-      "aniversario": "07/01",
-      "modalidades": [
-        "Adultas"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 10.0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 10.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 10.0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_107.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "1234",
-      "nome_completo": "Ana Sofia Gomes Silva",
-      "idade": 38,
-      "data_nascimento": "07/01/1988",
-      "morada": "R.Dr. Francisco Portal e Silva - CESAR"
-    },
-    {
-      "id": 35,
-      "nome": "Leonor Marques",
-      "aniversario": "14/08",
-      "modalidades": [
-        "Kids 1",
-        "Ballet Grau 0",
-        "Contemporâneo 1"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 65.0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 65.0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 65.0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 65.0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 65.0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 65.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 65.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 65.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 65.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 65.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 65.0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_35.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "1234",
-      "nome_completo": "Leonor Silva Marques",
-      "idade": 8,
-      "data_nascimento": "14/08/2018",
-      "morada": "Rua Dr Francisco Portal - CESAR"
     }
   ],
   "910024908": [
@@ -1277,7 +1151,7 @@
           "valor": 52.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 52.0
         },
         "novembro": {
@@ -1403,7 +1277,7 @@
           "valor": 52.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 52.0
         },
         "novembro": {
@@ -1594,7 +1468,7 @@
           "valor": 57.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 57.0
         },
         "novembro": {
@@ -1655,7 +1529,7 @@
           "valor": 15.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 15.0
         },
         "novembro": {
@@ -2224,7 +2098,7 @@
           "valor": 39.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "novembro": {
@@ -3231,7 +3105,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -3547,7 +3421,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -3798,7 +3672,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -4051,7 +3925,7 @@
           "valor": 20.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 20.0
         },
         "novembro": {
@@ -4490,7 +4364,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -5435,47 +5309,47 @@
       "pagamentos": {
         "setembro": {
           "pago": true,
-          "valor": 15.0
+          "valor": 10.0
         },
         "outubro": {
-          "pago": false,
-          "valor": 15.0
+          "pago": true,
+          "valor": 10.0
         },
         "novembro": {
           "pago": false,
-          "valor": 15.0
+          "valor": 10.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 15.0
+          "valor": 10.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 15.0
+          "valor": 10.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 15.0
+          "valor": 10.0
         },
         "marco": {
           "pago": false,
-          "valor": 15.0
+          "valor": 10.0
         },
         "abril": {
           "pago": false,
-          "valor": 15.0
+          "valor": 10.0
         },
         "maio": {
           "pago": false,
-          "valor": 15.0
+          "valor": 10.0
         },
         "junho": {
           "pago": false,
-          "valor": 15.0
+          "valor": 10.0
         },
         "julho": {
           "pago": false,
-          "valor": 15.0
+          "valor": 10.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_112.jpg",
@@ -5499,7 +5373,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -5560,7 +5434,7 @@
           "valor": 18.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 18.0
         },
         "novembro": {
@@ -5607,6 +5481,71 @@
       "idade": 6,
       "data_nascimento": "04/01/2020",
       "morada": "R. Mina Pintor - NOG CRAVO"
+    }
+  ],
+  "918739935": [
+    {
+      "id": 35,
+      "nome": "Leonor Marques",
+      "aniversario": "14/08",
+      "modalidades": [
+        "Kids 1",
+        "Ballet Grau 0",
+        "Contemporâneo 1"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 65.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 65.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 65.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 65.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 65.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 65.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 65.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 65.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 65.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 65.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 65.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_35.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "1234",
+      "nome_completo": "Leonor Silva Marques",
+      "idade": 8,
+      "data_nascimento": "14/08/2018",
+      "morada": "Rua Dr Francisco Portal - CESAR"
     }
   ],
   "918570849": [
@@ -6132,7 +6071,7 @@
           "valor": 30.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 30.0
         },
         "novembro": {
@@ -7334,7 +7273,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -7463,7 +7402,7 @@
           "valor": 57.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 57.0
         },
         "novembro": {
@@ -7652,7 +7591,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -8221,7 +8160,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -8284,7 +8223,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -8411,7 +8350,7 @@
           "valor": 39.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "novembro": {
@@ -8605,7 +8544,7 @@
           "valor": 34.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 34.0
         },
         "novembro": {
@@ -9047,7 +8986,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
