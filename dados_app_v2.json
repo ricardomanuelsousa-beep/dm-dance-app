@@ -201,7 +201,7 @@
           "valor": 15.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 15.0
         },
         "novembro": {
@@ -262,7 +262,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -578,7 +578,7 @@
           "valor": 20.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 20.0
         },
         "novembro": {
@@ -2285,7 +2285,7 @@
           "valor": 20.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 20.0
         },
         "novembro": {
@@ -2663,7 +2663,7 @@
           "valor": 30.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 30.0
         },
         "novembro": {
@@ -2727,7 +2727,7 @@
           "valor": 24.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 24.0
         },
         "novembro": {
@@ -2788,7 +2788,7 @@
           "valor": 24.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 24.0
         },
         "novembro": {
@@ -3798,7 +3798,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -3861,7 +3861,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -4604,6 +4604,69 @@
       "idade": 16,
       "data_nascimento": "27/02/2010",
       "morada": "R. Interior Mato D'Arca"
+    }
+  ],
+  "928032350": [
+    {
+      "id": 146,
+      "nome": "Kelly",
+      "aniversario": "14/04",
+      "modalidades": [
+        "Ballet Pré-Primary"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 22.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 22.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 22.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 22.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 22.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 22.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 22.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 22.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 22.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 22.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 22.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_146.jpg",
+      "mes_entrada": "Outubro",
+      "pin": "",
+      "nome_completo": "Kelly Morgado Lopes",
+      "idade": 12,
+      "data_nascimento": "14/04/2014",
+      "morada": "R. do Emigrante - VALE"
     }
   ],
   "914665617": [
@@ -6007,7 +6070,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -7334,47 +7397,47 @@
       "pagamentos": {
         "setembro": {
           "pago": true,
-          "valor": 0
+          "valor": 30.0
         },
         "outubro": {
           "pago": true,
-          "valor": 0
+          "valor": 30.0
         },
         "novembro": {
-          "pago": true,
-          "valor": 0
+          "pago": false,
+          "valor": 30.0
         },
         "dezembro": {
-          "pago": true,
-          "valor": 0
+          "pago": false,
+          "valor": 30.0
         },
         "janeiro": {
-          "pago": true,
-          "valor": 0
+          "pago": false,
+          "valor": 30.0
         },
         "fevereiro": {
-          "pago": true,
-          "valor": 0
+          "pago": false,
+          "valor": 30.0
         },
         "marco": {
-          "pago": true,
-          "valor": 0
+          "pago": false,
+          "valor": 30.0
         },
         "abril": {
-          "pago": true,
-          "valor": 0
+          "pago": false,
+          "valor": 30.0
         },
         "maio": {
-          "pago": true,
-          "valor": 0
+          "pago": false,
+          "valor": 30.0
         },
         "junho": {
-          "pago": true,
-          "valor": 0
+          "pago": false,
+          "valor": 30.0
         },
         "julho": {
-          "pago": true,
-          "valor": 0
+          "pago": false,
+          "valor": 30.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_95.jpg",
@@ -8392,7 +8455,7 @@
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789665746/alunos/aluno_127.png",
       "mes_entrada": "Setembro",
-      "pin": "",
+      "pin": "2007",
       "nome_completo": "Sara Almeida Souza",
       "idade": 12,
       "data_nascimento": "20/07/2014",
