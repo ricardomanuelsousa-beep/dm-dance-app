@@ -325,7 +325,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -627,134 +627,6 @@
       "morada": "Tv Travasso - CESAR"
     }
   ],
-  "913638842": [
-    {
-      "id": 142,
-      "nome": "Ariana Bastos",
-      "aniversario": "04/11",
-      "modalidades": [
-        "Babies",
-        "Ballet Pré-Primary"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 34.0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_142.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "",
-      "nome_completo": "Ariana Jesus Bastos",
-      "idade": 3,
-      "data_nascimento": "04/11/2022",
-      "morada": "R. Estrada Resumil - FERMEDO"
-    }
-  ],
-  "312788196": [
-    {
-      "id": 142,
-      "nome": "Ariana Bastos",
-      "aniversario": "04/11",
-      "modalidades": [
-        "Babies",
-        "Ballet Pré-Primary"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 34.0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 34.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 34.0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_142.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "",
-      "nome_completo": "Ariana Jesus Bastos",
-      "idade": 3,
-      "data_nascimento": "04/11/2022",
-      "morada": "R. Estrada Resumil - FERMEDO"
-    }
-  ],
   "918176673": [
     {
       "id": 10,
@@ -769,44 +641,44 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
-          "valor": 29.0
+          "pago": true,
+          "valor": 18.0
         },
         "novembro": {
           "pago": false,
-          "valor": 29.0
+          "valor": 18.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 29.0
+          "valor": 18.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 29.0
+          "valor": 18.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 29.0
+          "valor": 18.0
         },
         "marco": {
           "pago": false,
-          "valor": 29.0
+          "valor": 18.0
         },
         "abril": {
           "pago": false,
-          "valor": 29.0
+          "valor": 18.0
         },
         "maio": {
           "pago": false,
-          "valor": 29.0
+          "valor": 18.0
         },
         "junho": {
           "pago": false,
-          "valor": 29.0
+          "valor": 18.0
         },
         "julho": {
           "pago": false,
-          "valor": 29.0
+          "valor": 18.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_10.jpg",
@@ -1023,7 +895,7 @@
           "valor": 44.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 44.0
         },
         "novembro": {
@@ -1070,69 +942,6 @@
       "idade": 8,
       "data_nascimento": "16/05/2018",
       "morada": "Rua Souto Costa - FAJOES"
-    }
-  ],
-  "915703452": [
-    {
-      "id": 3,
-      "nome": "Benedita Pinto",
-      "aniversario": "25/10",
-      "modalidades": [
-        "Kids 1"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 29.0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 29.0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1779130563/alunos/aluno_3.png",
-      "mes_entrada": "Setembro",
-      "pin": "1234",
-      "nome_completo": "Benedita Pinto",
-      "idade": 7,
-      "data_nascimento": "25/10/2018",
-      "morada": "Rua do Alambique - CESAR"
     }
   ],
   "910866131": [
@@ -1212,7 +1021,7 @@
           "valor": 0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "novembro": {
@@ -1970,7 +1779,7 @@
           "valor": 18.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 18.0
         },
         "novembro": {
@@ -2348,7 +2157,7 @@
           "valor": 15.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 15.0
         },
         "novembro": {
@@ -2409,7 +2218,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -2531,48 +2340,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 15.0
         },
         "outubro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 15.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_111.jpg",
@@ -2978,7 +2787,7 @@
           "valor": 18.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 18.0
         },
         "novembro": {
@@ -3974,69 +3783,6 @@
       "morada": "Rua da Lomba - NOGUEIRA CRAVO"
     }
   ],
-  "918172980": [
-    {
-      "id": 98,
-      "nome": "Iris Santos",
-      "aniversario": "10/02",
-      "modalidades": [
-        "Ballet Primary"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 0
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_98.jpg",
-      "mes_entrada": "Outubro",
-      "pin": "1234",
-      "nome_completo": "Iris Dias Santos",
-      "idade": 6,
-      "data_nascimento": "10/02/2020",
-      "morada": "NOG CRAVO"
-    }
-  ],
   "916082403": [
     {
       "id": 31,
@@ -4175,7 +3921,7 @@
           "valor": 22.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 22.0
         },
         "novembro": {
@@ -4238,7 +3984,7 @@
           "valor": 22.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 22.0
         },
         "novembro": {
@@ -4301,8 +4047,8 @@
           "valor": 15.0
         },
         "outubro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 15.0
         },
         "novembro": {
           "pago": false,
@@ -4557,7 +4303,7 @@
           "valor": 39.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "novembro": {
@@ -4790,7 +4536,7 @@
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Lara Almeida Pinho",
-      "idade": 15,
+      "idade": 16,
       "data_nascimento": "11/10/2010",
       "morada": "Rua Pe. Manuel Gomes - FAJOES"
     },
@@ -4917,68 +4663,6 @@
       "idade": 11,
       "data_nascimento": "06/03/2015",
       "morada": "Tv Alfaiate - MILHEIROS POIARES"
-    },
-    {
-      "id": 140,
-      "nome": "Mara Cambra",
-      "aniversario": "04/06",
-      "modalidades": [
-        "Babies",
-        "Ballet Pré-Primary"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 41.5
-        },
-        "outubro": {
-          "pago": false,
-          "valor": 41.5
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 41.5
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 41.5
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 41.5
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 41.5
-        },
-        "marco": {
-          "pago": false,
-          "valor": 41.5
-        },
-        "abril": {
-          "pago": false,
-          "valor": 41.5
-        },
-        "maio": {
-          "pago": false,
-          "valor": 41.5
-        },
-        "junho": {
-          "pago": false,
-          "valor": 41.5
-        },
-        "julho": {
-          "pago": false,
-          "valor": 41.5
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_140.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "",
-      "nome_completo": "Mara Bernardo Cambra",
-      "idade": 6,
-      "data_nascimento": "04/06/2020",
-      "morada": "TV Alfaiate - MILHEIROS DE POIARES"
     }
   ],
   "913386243": [
@@ -7083,7 +6767,7 @@
           "valor": 39.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "novembro": {
@@ -7147,7 +6831,7 @@
           "valor": 39.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "novembro": {
@@ -7210,7 +6894,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -7273,7 +6957,7 @@
           "valor": 20.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 20.0
         },
         "novembro": {
@@ -7528,7 +7212,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
@@ -7718,44 +7402,44 @@
           "valor": 39.0
         },
         "outubro": {
-          "pago": false,
-          "valor": 29.0
+          "pago": true,
+          "valor": 39.0
         },
         "novembro": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "marco": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "abril": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "maio": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "junho": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "julho": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_66.jpg",
@@ -8034,44 +7718,44 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
-          "valor": 29.0
+          "pago": true,
+          "valor": 39.0
         },
         "novembro": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "marco": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "abril": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "maio": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "junho": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         },
         "julho": {
           "pago": false,
-          "valor": 29.0
+          "valor": 39.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_21.jpg",
@@ -8478,7 +8162,7 @@
           "valor": 0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "novembro": {
@@ -8543,7 +8227,7 @@
           "valor": 0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "novembro": {
@@ -8919,48 +8603,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_145.jpg",
@@ -8986,7 +8670,7 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
