@@ -245,7 +245,7 @@
       "mes_entrada": "Setembro",
       "pin": "2203",
       "nome_completo": "Carolina Almeida Teixeira",
-      "idade": 11,
+      "idade": 12,
       "data_nascimento": "03/11/2014",
       "morada": "Rua dos Emigrantes - FAJOES"
     }
@@ -392,7 +392,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -577,7 +577,7 @@
           "valor": 15.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 15.0
         },
         "novembro": {
@@ -938,7 +938,7 @@
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Beatriz Tavares Santos",
-      "idade": 4,
+      "idade": 5,
       "data_nascimento": "02/11/2021",
       "morada": "Nogueira do Cravo"
     }
@@ -1344,7 +1344,7 @@
           "valor": 57.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 57.0
         },
         "dezembro": {
@@ -1405,7 +1405,7 @@
           "valor": 15.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 15.0
         },
         "dezembro": {
@@ -1911,7 +1911,7 @@
           "valor": 39.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "dezembro": {
@@ -2138,7 +2138,7 @@
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Clarinda Maria Correia Monteiro",
-      "idade": 60,
+      "idade": 61,
       "data_nascimento": "29/10/1965",
       "morada": "Rua Grupo Desportivo - FAJOES"
     }
@@ -2716,7 +2716,8 @@
       "nome": "Eduarda Barros",
       "aniversario": "12/12",
       "modalidades": [
-        "Kids 2"
+        "Kids 2",
+        "Competição"
       ],
       "pagamentos": {
         "setembro": {
@@ -2728,7 +2729,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -3045,7 +3046,7 @@
           "valor": 34.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 34.0
         },
         "dezembro": {
@@ -3108,7 +3109,7 @@
           "valor": 18.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 18.0
         },
         "dezembro": {
@@ -3234,7 +3235,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -3341,6 +3342,69 @@
       "idade": 15,
       "data_nascimento": "23/08/2011",
       "morada": "R. Aguas Ferreas - MACIEIRA SARNES"
+    }
+  ],
+  "968973917": [
+    {
+      "id": 148,
+      "nome": "Gabriela Louro",
+      "aniversario": "24/08",
+      "modalidades": [
+        "Adultas"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 15.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 15.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 15.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 15.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_148.jpg",
+      "mes_entrada": "Outubro",
+      "pin": "",
+      "nome_completo": "Gabriela Presas Louro",
+      "idade": 26,
+      "data_nascimento": "24/08/2000",
+      "morada": "R. Madalena Sotto - OLIVEIRA AZEMEIS"
     }
   ],
   "913509212": [
@@ -3485,7 +3549,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -3864,7 +3928,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -3925,7 +3989,7 @@
           "valor": 10.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 10.0
         },
         "dezembro": {
@@ -3988,7 +4052,7 @@
           "valor": 22.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 22.0
         },
         "dezembro": {
@@ -4051,7 +4115,7 @@
           "valor": 22.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 22.0
         },
         "dezembro": {
@@ -4177,7 +4241,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -4306,7 +4370,7 @@
           "valor": 34.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 34.0
         },
         "dezembro": {
@@ -4370,7 +4434,7 @@
           "valor": 39.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "dezembro": {
@@ -4679,7 +4743,7 @@
           "valor": 26.5
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 26.5
         },
         "novembro": {
@@ -4810,7 +4874,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -4873,7 +4937,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -4999,7 +5063,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -5118,54 +5182,54 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 39.0
         },
         "outubro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 39.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 39.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_58.jpg",
       "mes_entrada": "Setembro",
       "pin": "1234",
-      "nome_completo": "Leonor Bernardes",
+      "nome_completo": "Leonor Bernardes Silva",
       "idade": 12,
       "data_nascimento": "08/11/2013",
       "morada": "Rua Manuel Paiva"
@@ -5439,7 +5503,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -5502,7 +5566,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -5629,7 +5693,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -5669,7 +5733,7 @@
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Luana Beatriz Silva",
-      "idade": 9,
+      "idade": 10,
       "data_nascimento": "30/10/2016",
       "morada": "Leira - ESCARIZ"
     }
@@ -5737,6 +5801,132 @@
       "morada": "R. Antonio Jose Paiva Sousa - ROMARIZ"
     }
   ],
+  "91897114": [
+    {
+      "id": 149,
+      "nome": "Luana Nogueira",
+      "aniversario": "02/09",
+      "modalidades": [
+        "Teens"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 29.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 29.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_149.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Luana Moreira Nogueira",
+      "idade": 12,
+      "data_nascimento": "02/09/2014",
+      "morada": "R. Fonte das Barrocas - PINHEIRO BEMPOSTA"
+    }
+  ],
+  "918127778": [
+    {
+      "id": 149,
+      "nome": "Luana Nogueira",
+      "aniversario": "02/09",
+      "modalidades": [
+        "Teens"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 29.0
+        },
+        "outubro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "novembro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 29.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 29.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_149.jpg",
+      "mes_entrada": "Setembro",
+      "pin": "",
+      "nome_completo": "Luana Moreira Nogueira",
+      "idade": 12,
+      "data_nascimento": "02/09/2014",
+      "morada": "R. Fonte das Barrocas - PINHEIRO BEMPOSTA"
+    }
+  ],
   "914493643": [
     {
       "id": 37,
@@ -5796,7 +5986,7 @@
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Luena Jesus Pinho",
-      "idade": 9,
+      "idade": 10,
       "data_nascimento": "26/10/2016",
       "morada": "Rua da Torre - FAJOES"
     }
@@ -5948,7 +6138,7 @@
           "valor": 30.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 30.0
         },
         "dezembro": {
@@ -6012,7 +6202,7 @@
           "valor": 39.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "dezembro": {
@@ -6075,7 +6265,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -6138,7 +6328,7 @@
           "valor": 15.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 15.0
         },
         "dezembro": {
@@ -6705,7 +6895,7 @@
           "valor": 39.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "novembro": {
@@ -6897,7 +7087,7 @@
           "valor": 39.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "dezembro": {
@@ -6961,7 +7151,7 @@
           "valor": 39.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "dezembro": {
@@ -7824,7 +8014,7 @@
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Ohanna Fernandes Silva",
-      "idade": 3,
+      "idade": 4,
       "data_nascimento": "28/10/2022",
       "morada": "FAJOES"
     }
@@ -7951,7 +8141,7 @@
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Rihanna Maria Pinto Almeida",
-      "idade": 15,
+      "idade": 16,
       "data_nascimento": "03/11/2010",
       "morada": "R.Manuel Pinho Jr. - ESCARIZ"
     }
@@ -8014,7 +8204,7 @@
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Rihanna Maria Pinto Almeida",
-      "idade": 15,
+      "idade": 16,
       "data_nascimento": "03/11/2010",
       "morada": "R.Manuel Pinho Jr. - ESCARIZ"
     }
@@ -8037,7 +8227,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -8100,7 +8290,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -8163,7 +8353,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -8421,7 +8611,7 @@
           "valor": 34.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 34.0
         },
         "dezembro": {
@@ -8484,7 +8674,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -8547,7 +8737,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -8606,11 +8796,11 @@
           "valor": 18.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 18.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 18.0
         },
         "dezembro": {
@@ -8737,7 +8927,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -8863,7 +9053,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
