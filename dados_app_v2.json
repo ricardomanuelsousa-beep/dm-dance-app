@@ -17,7 +17,7 @@
           "valor": 22.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 22.0
         },
         "dezembro": {
@@ -432,7 +432,7 @@
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Ana Leal Ruella Azevedo Alves",
-      "idade": 16,
+      "idade": 17,
       "data_nascimento": "06/11/2009",
       "morada": "CESAR"
     }
@@ -455,7 +455,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -518,7 +518,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -690,6 +690,134 @@
       "morada": "Tv Travasso - CESAR"
     }
   ],
+  "913638842": [
+    {
+      "id": 150,
+      "nome": "Ariana",
+      "aniversario": "04/11",
+      "modalidades": [
+        "Babies",
+        "Ballet Pré-Primary"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 34.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 34.0
+        },
+        "novembro": {
+          "pago": true,
+          "valor": 34.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 34.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_150.jpg",
+      "mes_entrada": "Outubro",
+      "pin": "",
+      "nome_completo": "Ariana Jesus Bastos",
+      "idade": 4,
+      "data_nascimento": "04/11/2022",
+      "morada": "R. Estrada Resumil"
+    }
+  ],
+  "912788196": [
+    {
+      "id": 150,
+      "nome": "Ariana",
+      "aniversario": "04/11",
+      "modalidades": [
+        "Babies",
+        "Ballet Pré-Primary"
+      ],
+      "pagamentos": {
+        "setembro": {
+          "pago": true,
+          "valor": 34.0
+        },
+        "outubro": {
+          "pago": true,
+          "valor": 34.0
+        },
+        "novembro": {
+          "pago": true,
+          "valor": 34.0
+        },
+        "dezembro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "janeiro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "fevereiro": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "marco": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "abril": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "maio": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "junho": {
+          "pago": false,
+          "valor": 34.0
+        },
+        "julho": {
+          "pago": false,
+          "valor": 34.0
+        }
+      },
+      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_150.jpg",
+      "mes_entrada": "Outubro",
+      "pin": "",
+      "nome_completo": "Ariana Jesus Bastos",
+      "idade": 4,
+      "data_nascimento": "04/11/2022",
+      "morada": "R. Estrada Resumil"
+    }
+  ],
   "918176673": [
     {
       "id": 10,
@@ -771,7 +899,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -959,10 +1087,10 @@
         },
         "outubro": {
           "pago": true,
-          "valor": 44.0
+          "valor": 34.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 44.0
         },
         "dezembro": {
@@ -1027,7 +1155,7 @@
           "valor": 52.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 52.0
         },
         "dezembro": {
@@ -1153,7 +1281,7 @@
           "valor": 52.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 52.0
         },
         "dezembro": {
@@ -1783,7 +1911,7 @@
           "valor": 18.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 18.0
         },
         "dezembro": {
@@ -1847,7 +1975,7 @@
           "valor": 39.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "dezembro": {
@@ -2098,7 +2226,7 @@
           "valor": 20.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 20.0
         },
         "dezembro": {
@@ -2161,7 +2289,7 @@
           "valor": 15.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 15.0
         },
         "dezembro": {
@@ -2222,7 +2350,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -2325,7 +2453,7 @@
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Daniela Almeida",
-      "idade": 24,
+      "idade": 25,
       "data_nascimento": "05/11/2001",
       "morada": "FAJOES"
     }
@@ -2344,7 +2472,7 @@
           "valor": 15.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 15.0
         },
         "novembro": {
@@ -2665,7 +2793,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -2792,7 +2920,7 @@
           "valor": 18.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 18.0
         },
         "dezembro": {
@@ -2919,7 +3047,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -3172,7 +3300,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -3286,53 +3414,52 @@
       "nome": "Gabriela Duarte",
       "aniversario": "23/08",
       "modalidades": [
-        "Teens",
-        "Contemporâneo"
+        "Contemporâneo 2"
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 20.0
         },
         "outubro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 20.0
         },
         "novembro": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 20.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_69.jpg",
@@ -3612,7 +3739,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -3802,7 +3929,7 @@
           "valor": 20.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 20.0
         },
         "dezembro": {
@@ -3865,7 +3992,7 @@
           "valor": 22.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 22.0
         },
         "dezembro": {
@@ -4178,8 +4305,8 @@
           "valor": 15.0
         },
         "novembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 15.0
         },
         "dezembro": {
           "pago": false,
@@ -4306,7 +4433,7 @@
           "valor": 22.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 22.0
         },
         "dezembro": {
@@ -4497,7 +4624,7 @@
           "valor": 22.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 22.0
         },
         "dezembro": {
@@ -4811,7 +4938,7 @@
           "valor": 30.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 30.0
         },
         "dezembro": {
@@ -4851,7 +4978,7 @@
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Lara Costa Portugal",
-      "idade": 18,
+      "idade": 19,
       "data_nascimento": "05/11/2007",
       "morada": "Rua Central Gandara - CESAR"
     }
@@ -5230,7 +5357,7 @@
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Leonor Bernardes Silva",
-      "idade": 12,
+      "idade": 13,
       "data_nascimento": "08/11/2013",
       "morada": "Rua Manuel Paiva"
     }
@@ -5440,7 +5567,7 @@
           "valor": 65.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 65.0
         },
         "dezembro": {
@@ -5630,7 +5757,7 @@
           "valor": 30.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 30.0
         },
         "dezembro": {
@@ -5670,7 +5797,7 @@
       "mes_entrada": "Setembro",
       "pin": "1234",
       "nome_completo": "Lorena Pinho",
-      "idade": 10,
+      "idade": 11,
       "data_nascimento": "12/11/2015",
       "morada": "Rua Vilarinho - CESAR"
     }
@@ -5756,7 +5883,7 @@
           "valor": 18.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 18.0
         },
         "dezembro": {
@@ -5946,7 +6073,7 @@
           "valor": 39.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "dezembro": {
@@ -6011,7 +6138,7 @@
           "valor": 65.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 65.0
         },
         "dezembro": {
@@ -6050,7 +6177,7 @@
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1789665924/alunos/aluno_38.png",
       "mes_entrada": "Setembro",
       "pin": "",
-      "nome_completo": "Lyana Oliveira",
+      "nome_completo": "Lyana Taveira Oliveira",
       "idade": 8,
       "data_nascimento": "01/07/2018",
       "morada": "Rua Sra Ribeira - FAJOES"
@@ -6074,7 +6201,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -7063,7 +7190,7 @@
       "mes_entrada": "Setembro",
       "pin": "",
       "nome_completo": "Sandra Maria Pina Bastos",
-      "idade": 49,
+      "idade": 50,
       "data_nascimento": "05/11/1976",
       "morada": "Tv Cruz - FAJOES"
     }
@@ -7214,7 +7341,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -7277,7 +7404,7 @@
           "valor": 20.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 20.0
         },
         "dezembro": {
@@ -8038,7 +8165,7 @@
           "valor": 39.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "dezembro": {
@@ -8101,7 +8228,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -8164,7 +8291,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -8417,7 +8544,7 @@
           "valor": 39.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "dezembro": {
@@ -8864,7 +8991,7 @@
           "valor": 39.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "dezembro": {
