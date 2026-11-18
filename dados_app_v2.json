@@ -268,7 +268,7 @@
           "valor": 15.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 15.0
         },
         "dezembro": {
@@ -329,7 +329,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -581,7 +581,7 @@
           "valor": 15.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 15.0
         },
         "dezembro": {
@@ -645,7 +645,7 @@
           "valor": 20.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 20.0
         },
         "dezembro": {
@@ -962,7 +962,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -1013,8 +1013,7 @@
       "nome": "Beatriz Santos",
       "aniversario": "02/11",
       "modalidades": [
-        "Babies",
-        "Contemporâneo 1"
+        "Babies"
       ],
       "pagamentos": {
         "setembro": {
@@ -1023,43 +1022,43 @@
         },
         "outubro": {
           "pago": true,
-          "valor": 39.0
+          "valor": 29.0
         },
         "novembro": {
-          "pago": false,
-          "valor": 39.0
+          "pago": true,
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 39.0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 39.0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 39.0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 39.0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 39.0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 39.0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 39.0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 39.0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1779128553/alunos/aluno_2.png",
@@ -1197,67 +1196,6 @@
       "nome_completo": "Bianca Barbosa",
       "idade": 6,
       "data_nascimento": "22/05/2020",
-      "morada": "CESAR"
-    },
-    {
-      "id": 114,
-      "nome": "Patricia Rocha",
-      "aniversario": "25/12",
-      "modalidades": [
-        "Adultas"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1788457027/alunos/aluno_114.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "2205",
-      "nome_completo": "Patricia Silva Rocha",
-      "idade": 41,
-      "data_nascimento": "25/12/1984",
       "morada": "CESAR"
     }
   ],
@@ -1447,7 +1385,7 @@
       "mes_entrada": "Outubro",
       "pin": "1234",
       "nome_completo": "Bruna Alves",
-      "idade": 10,
+      "idade": 11,
       "data_nascimento": "17/11/2015",
       "morada": "Rua do Arial - OLIVEIRA AZEMEIS"
     }
@@ -1777,48 +1715,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "novembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_12.jpg",
@@ -1840,48 +1778,48 @@
       ],
       "pagamentos": {
         "setembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "outubro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "novembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 29.0
         },
         "dezembro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "janeiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "fevereiro": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "marco": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "abril": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "maio": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "junho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         },
         "julho": {
           "pago": false,
-          "valor": 0
+          "valor": 29.0
         }
       },
       "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_12.jpg",
@@ -2604,7 +2542,7 @@
           "valor": 30.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 30.0
         },
         "dezembro": {
@@ -3489,7 +3427,7 @@
           "valor": 15.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 15.0
         },
         "dezembro": {
@@ -4669,69 +4607,6 @@
       "morada": "R. do Emigrante - VALE"
     }
   ],
-  "914665617": [
-    {
-      "id": 32,
-      "nome": "Kyara",
-      "aniversario": "21/01",
-      "modalidades": [
-        "Kids 1"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 29.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 29.0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 29.0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_32.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "",
-      "nome_completo": "Kyara Mendes",
-      "idade": 9,
-      "data_nascimento": "21/01/2017",
-      "morada": "CESAR"
-    }
-  ],
   "918500328": [
     {
       "id": 72,
@@ -5127,7 +5002,7 @@
           "valor": 22.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 22.0
         },
         "dezembro": {
@@ -6514,11 +6389,11 @@
           "valor": 29.0
         },
         "outubro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -6569,8 +6444,7 @@
       "nome": "Maria J.Bastos",
       "aniversario": "26/11",
       "modalidades": [
-        "Kids 1",
-        "Babies"
+        "Kids 1"
       ],
       "pagamentos": {
         "setembro": {
@@ -6582,7 +6456,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -6898,7 +6772,7 @@
           "valor": 39.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "dezembro": {
@@ -6962,7 +6836,7 @@
           "valor": 39.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "dezembro": {
@@ -7089,7 +6963,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -7150,7 +7024,7 @@
           "valor": 15.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 15.0
         },
         "dezembro": {
@@ -7467,7 +7341,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -7531,19 +7405,19 @@
           "valor": 30.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 30.0
         },
         "dezembro": {
-          "pago": false,
+          "pago": true,
           "valor": 30.0
         },
         "janeiro": {
-          "pago": false,
+          "pago": true,
           "valor": 30.0
         },
         "fevereiro": {
-          "pago": false,
+          "pago": true,
           "valor": 30.0
         },
         "marco": {
@@ -7596,7 +7470,7 @@
           "valor": 57.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 57.0
         },
         "dezembro": {
@@ -7659,7 +7533,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -7785,7 +7659,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -7849,7 +7723,7 @@
           "valor": 39.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 39.0
         },
         "dezembro": {
@@ -7894,69 +7768,6 @@
       "morada": "Rua Almeida Garrett - PINDELO"
     }
   ],
-  "917116722": [
-    {
-      "id": 135,
-      "nome": "Mia Oliveira",
-      "aniversario": "06/12",
-      "modalidades": [
-        "Babies"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 29.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 29.0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 29.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 29.0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/alunos/aluno_135.jpg",
-      "mes_entrada": "Setembro",
-      "pin": "",
-      "nome_completo": "Mia Oliveira",
-      "idade": 3,
-      "data_nascimento": "06/12/2022",
-      "morada": "R. Corregoncha - CESAR"
-    }
-  ],
   "915411701": [
     {
       "id": 77,
@@ -7975,7 +7786,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -8038,7 +7849,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
@@ -8609,19 +8420,19 @@
           "valor": 0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "dezembro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "janeiro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "fevereiro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "marco": {
@@ -8674,19 +8485,19 @@
           "valor": 0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "dezembro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "janeiro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "fevereiro": {
-          "pago": false,
+          "pago": true,
           "valor": 0
         },
         "marco": {
