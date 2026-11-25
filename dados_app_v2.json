@@ -80,8 +80,8 @@
           "valor": 22.0
         },
         "novembro": {
-          "pago": false,
-          "valor": 0
+          "pago": true,
+          "valor": 22.0
         },
         "dezembro": {
           "pago": false,
@@ -143,7 +143,7 @@
           "valor": 20.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 20.0
         },
         "dezembro": {
@@ -205,7 +205,7 @@
           "valor": 22.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 22.0
         },
         "dezembro": {
@@ -1345,7 +1345,7 @@
           "valor": 18.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 18.0
         },
         "dezembro": {
@@ -1514,132 +1514,6 @@
       "idade": null,
       "data_nascimento": "",
       "morada": "FAJOES"
-    }
-  ],
-  "916723165": [
-    {
-      "id": 105,
-      "nome": "Camila Silva",
-      "aniversario": "16/07",
-      "modalidades": [
-        "Contemporâneo 2"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 20.0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1788972935/alunos/aluno_105.png",
-      "mes_entrada": "Setembro",
-      "pin": "1234",
-      "nome_completo": "Camila Gonçalves da Silva",
-      "idade": 10,
-      "data_nascimento": "16/07/2016",
-      "morada": "R. Padre Jose M Ribeiro"
-    }
-  ],
-  "915971934": [
-    {
-      "id": 105,
-      "nome": "Camila Silva",
-      "aniversario": "16/07",
-      "modalidades": [
-        "Contemporâneo 2"
-      ],
-      "pagamentos": {
-        "setembro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "outubro": {
-          "pago": true,
-          "valor": 20.0
-        },
-        "novembro": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "dezembro": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "janeiro": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "fevereiro": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "marco": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "abril": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "maio": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "junho": {
-          "pago": false,
-          "valor": 20.0
-        },
-        "julho": {
-          "pago": false,
-          "valor": 20.0
-        }
-      },
-      "foto": "https://res.cloudinary.com/dk1mfxros/image/upload/v1788972935/alunos/aluno_105.png",
-      "mes_entrada": "Setembro",
-      "pin": "1234",
-      "nome_completo": "Camila Gonçalves da Silva",
-      "idade": 10,
-      "data_nascimento": "16/07/2016",
-      "morada": "R. Padre Jose M Ribeiro"
     }
   ],
   "912111910": [
@@ -2040,7 +1914,7 @@
           "valor": 30.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 30.0
         },
         "dezembro": {
@@ -2101,7 +1975,7 @@
           "valor": 22.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 22.0
         },
         "dezembro": {
@@ -3681,7 +3555,7 @@
           "valor": 29.0
         },
         "dezembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "janeiro": {
@@ -4625,7 +4499,7 @@
           "valor": 26.5
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 26.5
         },
         "dezembro": {
@@ -4686,7 +4560,7 @@
           "valor": 26.5
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 26.5
         },
         "dezembro": {
@@ -4749,7 +4623,7 @@
           "valor": 26.5
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 26.5
         },
         "dezembro": {
@@ -5128,7 +5002,7 @@
           "valor": 18.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 18.0
         },
         "dezembro": {
@@ -6649,15 +6523,15 @@
           "valor": 29.0
         },
         "dezembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "janeiro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "fevereiro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "marco": {
@@ -6712,15 +6586,15 @@
           "valor": 29.0
         },
         "dezembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "janeiro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "fevereiro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "marco": {
@@ -7596,7 +7470,7 @@
           "valor": 26.5
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 26.5
         },
         "dezembro": {
@@ -8928,7 +8802,7 @@
           "valor": 29.0
         },
         "novembro": {
-          "pago": false,
+          "pago": true,
           "valor": 29.0
         },
         "dezembro": {
